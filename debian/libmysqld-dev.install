@@ -1,0 +1,6 @@
+#
+
+usr/lib/*/libmysqld.a
+# legal
+usr/share/doc/libmysqld-dev/COPYING
+usr/share/doc/libmysqld-dev/README
