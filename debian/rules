@@ -22,9 +22,12 @@ export DH_VERBOSE=1
 export CFLAGS=
 export CXXFLAGS=
 
+BUILDDIR=builddir
+TMP=$(CURDIR)/debian/tmp/
+
 override_dh_auto_configure:
 	@echo "RULES.$@"
-	cmake . \
+	rm -rf $(BUILDDIR) && mkdir $(BUILDDIR) && cd $(BUILDDIR) && cmake .. \
 		-DBUILD_CONFIG=mysql_release \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DINSTALL_DOCDIR=share/mysql/docs \
@@ -48,14 +51,13 @@ override_dh_auto_configure:
 		-DWITH_MECAB=system \
 		-DCOMPILATION_COMMENT="MySQL Community Server (GPL)" \
 		-DINSTALL_LAYOUT=DEB \
-		-DWITH_BOOST=boost
+		-DWITH_BOOST=../boost
 
-	cat CMakeCache.txt
 	touch $@
 
 override_dh_auto_build:
 	@echo "RULES.$@"
-	$(MAKE) -j8 VERBOSE=1
+	cd $(BUILDDIR) && $(MAKE) -j8 VERBOSE=1
 	touch $@
 
 override_dh_auto_test:
@@ -67,11 +69,7 @@ override_dh_auto_install:
 
 	@echo "RULES.$@"
 	# complete install first
-	$(MAKE) install DESTDIR=debian/tmp
-	# remove all redundant files
-	rm debian/tmp/usr/lib/mysql-test/cmake_install.cmake
-	rm debian/tmp/usr/lib/mysql-test/CTestTestfile.cmake
-	rm debian/tmp/usr/lib/mysql-test/Makefile
+	cd $(BUILDDIR) && $(MAKE) install DESTDIR=$(TMP)
 	# add missing man pages
 	install -g root -o root -m 0644 debian/extra/mysql_embedded.1 debian/tmp/usr/share/man/man1
 	# add apparmor profile
