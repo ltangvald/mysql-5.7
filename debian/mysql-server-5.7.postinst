@@ -59,7 +59,50 @@ EOF
 			else
 				su - mysql -s /bin/bash -c "/usr/sbin/mysqld --initialize-insecure=on 2>&1 > /dev/null"
 				su - mysql -s /bin/bash -c "/usr/sbin/mysqld --log_error_verbosity=2 2>&1 > /dev/null &"
+
+				## DEBIAN MAINTENANCE USER
+				mysql_cfgdir=/etc/mysql
+				dc=$mysql_cfgdir/debian.cnf;
+				if [ -e "$dc" -a -n "`fgrep mysql_upgrade $dc 2>/dev/null`" ]; then
+					pass="`sed -n 's/^[     ]*password *= *// p' $dc | head -n 1`"
+				else
+					pass=`perl -e 'print map{("a".."z","A".."Z",0..9)[int(rand(62))]}(1..16)'`;
+					if [ ! -d "$mysql_cfgdir" ]; then install -o 0 -g 0 -m 0755 -d $mysql_cfgdir; fi
+						umask 066
+						cat /dev/null > $dc
+						umask 022
+						echo "# Automatically generated for Debian scripts. DO NOT TOUCH!" >>$dc
+						echo "[client]"                                                    >>$dc
+						echo "host     = localhost"                                        >>$dc
+						echo "user     = debian-sys-maint"                                 >>$dc
+						echo "password = $pass"                                            >>$dc
+						echo "socket   = $mysql_rundir/mysqld.sock"                        >>$dc
+						echo "[mysql_upgrade]"                                             >>$dc
+						echo "host     = localhost"                                        >>$dc
+						echo "user     = debian-sys-maint"                                 >>$dc
+						echo "password = $pass"                                            >>$dc
+						echo "socket   = $mysql_rundir/mysqld.sock"                        >>$dc
+						echo "basedir  = /usr"                                             >>$dc
+					fi
+					# If this dir chmod go+w then the admin did it. But this file should not.
+					chown 0:0 $dc
+					chmod 0600 $dc
+
+					replace_query=`echo -e \
+					"USE mysql;\n" \
+					"REPLACE INTO user SET " \
+					"  host='localhost', user='debian-sys-maint', password=password('$pass'), " \
+					"  Select_priv='Y', Insert_priv='Y', Update_priv='Y', Delete_priv='Y', " \
+					"  Create_priv='Y', Drop_priv='Y', Reload_priv='Y', Shutdown_priv='Y', " \
+					"  Process_priv='Y',  File_priv='Y', Grant_priv='Y', References_priv='Y', " \
+					"  Index_priv='Y', Alter_priv='Y', Super_priv='Y', Show_db_priv='Y', "\
+					"  Create_tmp_table_priv='Y', Lock_tables_priv='Y', Execute_priv='Y', "\
+					"  Repl_slave_priv='Y', Repl_client_priv='Y', Create_view_priv='Y', "\
+					"  Show_view_priv='Y', Create_routine_priv='Y', Alter_routine_priv='Y', "\
+					"  Create_user_priv='Y', Event_priv='Y', Trigger_priv='Y'; "`;
+
 				while [ ! -e $(my_print_defaults mysqld | grep pid-file | cut -d= -f2) ]; do sleep 1; done
+				mysql -e "$replace_query"
 				mysql -e "INSTALL PLUGIN auth_socket SONAME 'auth_socket.so'"
 				mysql -e "USE mysql; UPDATE user SET plugin='auth_socket' WHERE user='root'"
 				mysqladmin shutdown
