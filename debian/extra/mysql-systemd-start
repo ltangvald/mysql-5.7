@@ -27,10 +27,18 @@ get_path () {
 }
 
 pinger () {
-	while /bin/true ; do
+	server_up=false
+	for i in $(seq 1 60); do
 		sleep 1
-		mysqladmin ping >/dev/null 2>&1 && break
+		if mysqladmin ping >/dev/null 2>&1; then
+			server_up=true
+			break
+		fi
 	done
+	if [ ! $server_up ]; then
+		echo "MySQL server not started"
+		exit 1
+	fi
 }
 
 sanity () {
