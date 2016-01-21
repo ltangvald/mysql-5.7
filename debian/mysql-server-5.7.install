@@ -12,17 +12,13 @@
 # along with this program; if not, write to the Free Software
 
 # binaries
-usr/bin/innochecksum
 usr/bin/myisamchk
 usr/bin/myisamlog
 usr/bin/myisampack
-usr/bin/my_print_defaults
-usr/bin/mysql_install_db
 usr/bin/mysql_plugin
 usr/bin/mysql_secure_installation
 usr/bin/mysql_ssl_rsa_setup
 usr/bin/mysql_tzinfo_to_sql
-usr/bin/mysql_upgrade
 usr/bin/mysqlbinlog
 usr/bin/mysqld_multi
 usr/bin/mysqld_safe
@@ -32,11 +28,13 @@ usr/bin/resolveip
 usr/bin/resolve_stack_dump
 usr/bin/lz4_decompress
 usr/bin/zlib_decompress
-usr/sbin/mysqld
+
+etc/mysql/debian-start
+usr/share/mysql/debian-start.inc.sh
 # man pages
 # confguration files
-debian/extra/mysql.cnf  etc/mysql/
-debian/extra/mysqld.cnf etc/mysql/mysql.conf.d/
+debian/additions/mysql.cnf  etc/mysql/
+debian/additions/mysqld.cnf etc/mysql/mysql.conf.d/
 # app armor profile
 etc/apparmor.d/usr.sbin.mysqld
 # SQL files
@@ -53,17 +51,7 @@ usr/lib/mysql/plugin/mysql_no_login.so
 usr/lib/mysql/plugin/rewriter.so
 usr/lib/mysql/plugin/semisync_master.so
 usr/lib/mysql/plugin/semisync_slave.so
-usr/lib/mysql/plugin/test_security_context.so
 usr/lib/mysql/plugin/validate_password.so
 usr/lib/mysql/plugin/version_token.so
 
-# support files
-usr/share/mysql/dictionary.txt
-usr/share/mysql/magic
-usr/share/mysql/my-default.cnf
-usr/share/mysql/mysql-log-rotate
 
-usr/share/mysql/mysqld_multi.server
-# legal
-usr/share/doc/mysql-server-5.7/COPYING
-usr/share/doc/mysql-server-5.7/README

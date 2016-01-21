@@ -11,7 +11,4 @@
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 
-usr/lib/*/libmysqlclient.so.*
-# legal
-usr/share/doc/libmysqlclient20/COPYING
-usr/share/doc/libmysqlclient20/README
+usr/lib/*/libmysqlclient.so.20*
