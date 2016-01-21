@@ -12,8 +12,9 @@
 # along with this program; if not, write to the Free Software
 
 # configuration file and script
-debian/extra/my.cnf.fallback etc/mysql/
-debian/extra/mysql.conf.cnf  etc/mysql/conf.d/mysql.cnf
+debian/additions/conf.d etc/mysql/
+debian/additions/configure-symlinks usr/share/mysql-common/
+debian/additions/my.cnf.fallback etc/mysql/
 
 usr/share/aclocal/mysql.m4
 usr/share/mysql/docs/INFO_SRC
@@ -23,6 +24,3 @@ usr/share/mysql/*/errmsg.sys
 # charsets
 usr/share/mysql/charsets/*.xml
 usr/share/mysql/charsets/README
-# legal
-usr/share/doc/mysql-common/COPYING
-usr/share/doc/mysql-common/README

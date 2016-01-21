@@ -1,4 +1,4 @@
-# Copyright (c) 2015, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2015, 2016 Oracle and/or its affiliates. All rights reserved.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -12,12 +12,5 @@
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+manpage-has-errors-from-man usr/share/man/man1/mysqlbinlog.1.gz 1947: warning [p 13, 0.3i, div `3tbd3,2', 0.8i]: can't break line
 
-# Additional license file is needed so overriding this warning
-mysql-server-5.7: extra-license-file usr/share/doc/mysql-server-5.7/LICENSE.mysql
-mysql-server-5.7: extra-license-file usr/share/doc/mysql-server-5.7/COPYING.gz
-mysql-server-5.7: copyright-should-refer-to-common-license-file-for-lgpl
-# Due to static linking this cannot be avoided and hence being overridden
-mysql-server-5.7: embedded-library
-# Since we ship debug plugins so this error is overridden
-mysql-server-5.7: unstripped-binary-or-object usr/lib/mysql/plugin/debug/*

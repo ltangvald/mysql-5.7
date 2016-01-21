@@ -51,6 +51,3 @@ usr/lib/mysql/plugin/rewrite_example.so
 usr/lib/mysql/plugin/test_security_context.so
 # test suite
 usr/lib/mysql-test/*
-# legal
-usr/share/doc/mysql-test-5.7/COPYING
-usr/share/doc/mysql-test-5.7/README

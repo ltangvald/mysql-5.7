@@ -24,7 +24,8 @@ mysql-5.7 (5.7.10-1ubuntu15.10) wily; urgency=low
 
   [ Balasubramanian Kandasamy ]
   * Added mysqlpump man page to d/mysql-*-client.install
-  * Added new decompression utilities lz4_decompress and zlib_decompress binaries.
+  * Added new decompression utilities lz4_decompress
+    and zlib_decompress binaries.
 
  -- Balasubramanian Kandasamy <balasubramanian.kandasamy@oracle.com>  Wed, 26 Aug 2015 15:20:12 +0530
 

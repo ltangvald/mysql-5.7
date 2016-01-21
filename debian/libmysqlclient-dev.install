@@ -1,5 +1,3 @@
-#
-
 usr/include/mysql/*.h
 usr/include/mysql/mysql/*.h
 usr/include/mysql/mysql/*.h.pp
@@ -9,6 +7,3 @@ usr/lib/*/libmysqlclient.so
 usr/lib/*/libmysqlservices.a
 usr/bin/mysql_config
 usr/bin/mysql_config_editor
-# legal
-usr/share/doc/libmysqlclient-dev/COPYING
-usr/share/doc/libmysqlclient-dev/README

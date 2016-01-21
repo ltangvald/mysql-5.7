@@ -1,33 +1,71 @@
 #!/usr/bin/make -f
 
-# Copyright (c) 2015, Oracle and/or its affiliates. All rights reserved.
-#
-# This program is free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; version 2 of the License.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
-# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
-
-%:
-	dh $@
-
 export DH_VERBOSE=1
-export CFLAGS=
-export CXXFLAGS=
 
-BUILDDIR=builddir
-TMP=$(CURDIR)/debian/tmp/
+# enable Debian Hardening
+# see: https://wiki.debian.org/Hardening
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all,-pie
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
 
-override_dh_auto_configure:
+ARCH := $(shell dpkg-architecture -qDEB_BUILD_ARCH)
+ARCH_OS := $(shell dpkg-architecture -qDEB_BUILD_ARCH_OS)
+BUILDDIR := builddir
+builddir = $(BUILDDIR)
+DEBVERSION := $(shell dpkg-parsechangelog | awk '/^Version: / { print $$2 }' | sed 's/^.*-//' )
+DEB_BUILD_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+DEB_BUILD_GNU_SYSTEM ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_SYSTEM)
+DEB_HOST_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+DEB_SOURCE_PACKAGE ?= $(strip $(shell egrep '^Source: ' debian/control | cut -f 2 -d ':'))
+DEB_VERSION ?= $(shell dpkg-parsechangelog | egrep '^Version:' | cut -f 2 -d ' ')
+DEB_NOEPOCH_VERSION ?= $(shell echo $(DEB_VERSION) | cut -d: -f2-)
+DEB_UPSTREAM_VERSION ?= $(shell echo $(DEB_NOEPOCH_VERSION) | sed 's/-[^-]*$$//')
+DEB_UPSTREAM_VERSION_MAJOR_MINOR := $(shell echo $(DEB_UPSTREAM_VERSION) | sed -r -n 's/^([0-9]+\.[0-9]+).*/\1/p')
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+DISTRIBUTION := $(shell lsb_release -i -s)
+EXPORTED_SOURCE_TARBALL := debian/mysql-source-5.7.tar.gz
+TESTSUITE_FAIL_CMD:=true
+TMP := $(CURDIR)/debian/tmp/
+NUMJOBS=$(patsubst parallel=%,%,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
+
+ifeq (,$(NUMJOBS))
+	NUMJOBS=1
+endif
+
+MAKEFLAGS += -j $(NUMJOBS)
+
+export MYSQL_BUILD_CC=$(DEB_HOST_GNU_TYPE)-gcc
+export MYSQL_BUILD_CXX=$(DEB_HOST_GNU_TYPE)-g++
+
+# The full upstream test suite takes a very long time to run, so we run
+# only the main test suite unless fulltest is specified.
+ifeq ($(findstring fulltest,$(DEB_BUILD_OPTIONS)),)
+    MTR_SUITE=--suite=main
+endif
+
+
+override_dh_auto_clean:
 	@echo "RULES.$@"
-	rm -rf $(BUILDDIR) && mkdir $(BUILDDIR) && cd $(BUILDDIR) && cmake .. \
+	dh_testdir 
+	dh_testroot
+	[ ! -d mysql-test/var ] || rm -rf mysql-test/var
+	rm -rf $(BUILDDIR)
+	debconf-updatepo
+	rm -f $(EXPORTED_SOURCE_TARBALL)
+
+override_dh_prep: 
+
+override_dh_auto_configure: configure-stamp
+
+
+configure-stamp:
+	@echo "RULES.$@"
+	dh_testdir
+	( test -d $(builddir) || mkdir $(builddir) ) && cd $(builddir) && \
+	sh -c  'PATH=$${MYSQL_BUILD_PATH:-"/bin:/usr/bin"} \
+		CC=$${MYSQL_BUILD_CC:-gcc} \
+		CXX=$${MYSQL_BUILD_CXX:-g++} \
+		cmake .. \
 		-DBUILD_CONFIG=mysql_release \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DINSTALL_DOCDIR=share/mysql/docs \
@@ -51,73 +89,112 @@ override_dh_auto_configure:
 		-DWITH_MECAB=system \
 		-DCOMPILATION_COMMENT="MySQL Community Server (GPL)" \
 		-DINSTALL_LAYOUT=DEB \
-		-DWITH_BOOST=../boost
-
+		-DWITH_BOOST=../boost'
 	touch $@
 
-override_dh_auto_build:
+override_dh_auto_build: build-stamp
+
+# $(EXPORTED_SOURCE_TARBALL) must be built before the builds commence, since
+# the builds change some of the files picked up by this tar invocation, and
+# this can race against tar with an error like "tar:
+# ./builddir-pic/strings/CMakeFiles/strings.dir: file changed as we read it".
+# So define the rule for building it here, and have the build rules depend on
+# it.
+$(EXPORTED_SOURCE_TARBALL):
+	GZIP=-n tar -zcf $(EXPORTED_SOURCE_TARBALL) \
+	    --exclude=debian . \
+	    --transform="s,^\./,mysql-5.7/,"
+
+build-stamp: $(EXPORTED_SOURCE_TARBALL)
 	@echo "RULES.$@"
-	cd $(BUILDDIR) && $(MAKE) -j8 VERBOSE=1
+	cd $(builddir) && $(MAKE)
 	touch $@
 
 override_dh_auto_test:
 	@echo "RULES.$@"
-	echo "No tests run because test 9: pfs_connect_attr is failing unreasonably"
+ifeq ($(findstring nocheck,$(DEB_BUILD_OPTIONS)),)
+	cp unittest/unit.pl $(builddir)/unittest/
+	cp -r mysql-test/* $(builddir)/mysql-test/
+	cp -r sql/share/* $(builddir)/sql/share/
+	cp -r scripts/*sql $(builddir)/scripts/
+ifeq ($(ARCH_OS),hurd)
+	# Tests not fully working under Hurd, see
+	# http://bugs.mysql.com/bug.php?id=64685. Run unit tests only.
+	cd $(builddir) && $(MAKE) test || $(TESTSUITE_FAIL_CMD) ;
+else
+	# Skip replication tests since they are timing sensitive and may
+	# result in false positives.
+	cd $(builddir)/mysql-test && ./mtr --parallel=$(NUMJOBS) --skip-rpl $(MTR_SUITE) || $(TESTSUITE_FAIL_CMD) ;
+endif
+endif
+
+override_dh_auto_install: auto_install-stamp
+
+auto_install-stamp:
+	@echo "RULES.$@"
+	dh_testdir
+	dh_testroot
+	# make install (trailing slash needed for innobase)
+	cd $(builddir) && $(MAKE) install DESTDIR=$(TMP)/
+	# After installing, remove rpath to make lintian happy.
+	set +e; \
+	find ./debian/tmp/ -type f -print0 \
+		| xargs -0 --no-run-if-empty chrpath -k 2>/dev/null \
+		| fgrep RPATH= \
+		| cut -d: -f 1 \
+		| xargs --no-run-if-empty chrpath -d; \
+	set -e
+	install -d -m 0755 -o root -g root $(TMP)/usr/lib/mysql
+	mkdir -p $(TMP)/usr/share/doc/mysql-server-5.7
+	nm -n $(BUILDDIR)/sql/mysqld |gzip -n -9 > $(TMP)/usr/share/doc/mysql-server-5.7/mysqld.sym.gz
+	# This seems to be the only safe place to fix permissions issues
+        # not handled by dh_fixperms.
+	install -m 0755 debian/additions/echo_stderr $(TMP)/usr/share/mysql/
+	mkdir -p $(TMP)/etc/mysql
+	install -m 0755 debian/additions/debian-start $(TMP)/etc/mysql/
+	install -m 0755 debian/additions/debian-start.inc.sh $(TMP)/usr/share/mysql/
+	install -m 0644 debian/additions/mysql_embedded.1 $(TMP)/usr/share/man/man1
+	install -m 0644 debian/additions/debian_create_root_user.sql $(TMP)/usr/share/mysql/
+	install -m 0755 debian/additions/mysql-systemd-start $(TMP)/usr/share/mysql/
+	# install AppArmor profile
+	install -D -m 644 debian/additions/apparmor-profile $(TMP)/etc/apparmor.d/usr.sbin.mysqld
+	# chmod 0644 $(TMP)/usr/share/mysql/*.ini
+	chmod 0644 $(TMP)/usr/lib/mysql-test/suite/innodb_stress/include/innodb_stress.inc
+	chmod 0644 $(TMP)/usr/lib/mysql-test/suite/innodb_stress/t/load_generator.py
+	chmod 0644 $(TMP)/usr/lib/mysql-test/suite/innodb_stress/t/*.test
+	chmod 0644 $(TMP)/usr/lib/mysql-test/suite/innodb/t/*.test
+	chmod 0644 $(TMP)/usr/lib/mysql-test/suite/innodb/r/*.result
+	chmod 0644 $(TMP)/usr/lib/mysql-test/suite/innodb_stress/t/*.opt
+	chmod 0644 $(TMP)/usr/lib/mysql-test/t/mysqld_safe.sh
+	chmod 0644 $(TMP)/usr/share/mysql/mysql-log-rotate
 	touch $@
 
-override_dh_auto_install:
 
-	@echo "RULES.$@"
-	# complete install first
-	cd $(BUILDDIR) && $(MAKE) install DESTDIR=$(TMP)
-	# add missing man pages
-	install -g root -o root -m 0644 debian/extra/mysql_embedded.1 debian/tmp/usr/share/man/man1
-	# add apparmor profile
-	install -g root -o root -m 0644 -D debian/extra/apparmor-profile debian/tmp/etc/apparmor.d/usr.sbin.mysqld
-	# add systemd script
-	
-	# add directory for legal docs
-	install -g root -o root -m 0755 -d debian/tmp/usr/share/doc/mysql-server
-	install -g root -o root -m 0755 -d debian/tmp/usr/share/doc/mysql-server-5.7
-	install -g root -o root -m 0755 -d debian/tmp/usr/share/doc/mysql-client
-	install -g root -o root -m 0755 -d debian/tmp/usr/share/doc/mysql-client-5.7
-	install -g root -o root -m 0755 -d debian/tmp/usr/share/doc/mysql-common
-	install -g root -o root -m 0755 -d debian/tmp/usr/share/doc/libmysqlclient20
-	install -g root -o root -m 0755 -d debian/tmp/usr/share/doc/libmysqlclient-dev
-	install -g root -o root -m 0755 -d debian/tmp/usr/share/doc/libmysqld-dev
-	install -g root -o root -m 0755 -d debian/tmp/usr/share/doc/mysql-testsuite
-	install -g root -o root -m 0755 -d debian/tmp/usr/share/doc/mysql-test-5.7
-	install -g root -o root -m 0755 -d debian/tmp/usr/share/doc/mysql-source-5.7
-	# add COPYING file to each package
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/COPYING debian/tmp/usr/share/doc/mysql-server/COPYING
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/COPYING debian/tmp/usr/share/doc/mysql-server-5.7/COPYING
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/COPYING debian/tmp/usr/share/doc/mysql-client/COPYING
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/COPYING debian/tmp/usr/share/doc/mysql-client-5.7/COPYING
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/COPYING debian/tmp/usr/share/doc/mysql-common/COPYING
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/COPYING debian/tmp/usr/share/doc/libmysqlclient20/COPYING
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/COPYING debian/tmp/usr/share/doc/libmysqlclient-dev/COPYING
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/COPYING debian/tmp/usr/share/doc/libmysqld-dev/COPYING
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/COPYING debian/tmp/usr/share/doc/mysql-testsuite/COPYING
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/COPYING debian/tmp/usr/share/doc/mysql-test-5.7/COPYING
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/COPYING debian/tmp/usr/share/doc/mysql-source-5.7/COPYING
-	# add README file to each package
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/README debian/tmp/usr/share/doc/mysql-server/README
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/README debian/tmp/usr/share/doc/mysql-server-5.7/README
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/README debian/tmp/usr/share/doc/mysql-client/README
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/README debian/tmp/usr/share/doc/mysql-client-5.7/README
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/README debian/tmp/usr/share/doc/mysql-common/README
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/README debian/tmp/usr/share/doc/libmysqlclient20/README
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/README debian/tmp/usr/share/doc/libmysqlclient-dev/README
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/README debian/tmp/usr/share/doc/libmysqld-dev/README
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/README debian/tmp/usr/share/doc/mysql-testsuite/README
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/README debian/tmp/usr/share/doc/mysql-test-5.7/README
-	install -g root -o root -m 0644 debian/tmp/usr/share/mysql/README debian/tmp/usr/share/doc/mysql-source-5.7/README
-	touch $@
+override_dh_installlogrotate-arch:
+	dh_installlogrotate --name mysql-server
 
-override_dh_installinit:
-	@echo "RULES.$@"
+override_dh_install:
+	dh_install
 	dh_apparmor -pmysql-server-5.7 --profile-name=usr.sbin.mysqld
-	
+
+override_dh_installchangelogs:
+	dh_installchangelogs Docs/ChangeLog
+
+override_dh_systemd_enable:
+	dh_systemd_enable --name=mysql
+
+# Start mysql in runlevel 19 before 20 where apache, proftpd etc gets
+# started which might depend on a running database server.
+override_dh_installinit-arch:
 	dh_installinit --name=mysql -- defaults 19 21
-	
-	touch $@
+	dh_systemd_start --restart-after-upgrade
+
+override_dh_installcron-arch:
+	dh_installcron --name mysql-server
+
+get-orig-source:
+	uscan --force-download --verbose
+
+%:
+	dh $@ --parallel --with systemd
+

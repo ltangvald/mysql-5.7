@@ -13,7 +13,3 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 
-# Additional license file is needed so overriding this warning
-mysql-client: extra-license-file usr/share/doc/mysql-client/LICENSE.mysql
-mysql-client: extra-license-file usr/share/doc/mysql-client/COPYING.gz
-mysql-client: copyright-should-refer-to-common-license-file-for-lgpl
