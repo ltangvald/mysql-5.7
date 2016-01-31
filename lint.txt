@@ -1,0 +1,39 @@
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dijit/dijit-all.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dijit/dijit.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojo/dojo.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojo/keys.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/dtl.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/gfx.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/mobile.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dijit/form/VerticalSlider.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/grid/DataGrid.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/mobile/app.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/storage/storage_dialog.fla
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/storage/storage_dialog.swf
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/analytics/profiles/analytics.profile.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/analytics/profiles/analyticsInBase.profile.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/av/resources/audio.swf
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/av/resources/video.swf
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/charting/widget/Chart2D.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/drawing/library/icons.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/form/resources/fileuploader.swf
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/form/resources/uploader.swf
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/highlight/languages/css.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/highlight/languages/delphi.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/highlight/languages/django.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/highlight/languages/python.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/highlight/languages/sql.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/mobile/app/compat.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/highlight/languages/pygments/_html.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/highlight/languages/pygments/css.js
+E: mysql-5.7 source: source-is-missing storage/ndb/mcc/frontend/dojo/dojox/highlight/languages/pygments/javascript.js
+W: mysql-test-5.7: shared-lib-without-dependency-information usr/lib/mysql/plugin/libtest_framework.so
+W: mysql-client-core-5.7: binary-without-manpage usr/bin/mysql_embedded
+W: mysql-server-5.7: shared-lib-without-dependency-information usr/lib/mysql/plugin/locking_service.so
+E: mysql-server-5.7: bad-so-link-within-manual-page usr/share/man/man1/mysqltest_embedded.1.gz
+W: mysql-server-5.7: command-with-path-in-maintainer-script postinst:16 /usr/sbin/invoke-rc.d
+W: mysql-server-5.7: command-with-path-in-maintainer-script postrm:21 /usr/sbin/invoke-rc.d
+W: mysql-server-5.7: command-with-path-in-maintainer-script preinst:30 /usr/sbin/invoke-rc.d
+W: mysql-common: maintainer-script-should-not-use-update-alternatives-remove postrm:5
+E: mysql-client-5.7: bad-so-link-within-manual-page usr/share/man/man1/mysql_client_test_embedded.1.gz
+N: 3 tags overridden (3 warnings)

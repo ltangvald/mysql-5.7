@@ -1,3 +1,0 @@
-Tests: upstream
-Depends: mysql-testsuite-5.7
-Restrictions: allow-stderr
