@@ -133,26 +133,26 @@ case "$1" in
     touch $tfile
     chmod 600 $tfile
     chown mysql:mysql $tfile
-      
-    cat << EOF > $tfile
-USE mysql;
-UPDATE user SET authentication_string=PASSWORD('$rootpw') WHERE user='root';
-CREATE user IF NOT EXISTS 'debian-sys-maint'@'localhost' IDENTIFIED BY '$pass';
-GRANT ALL ON *.* TO 'debian-sys-maint'@'localhost';
-FLUSH PRIVILEGES;
-EOF
+    echo "USE mysql; " >> $tfile
+    if [ ! -z $rootpw ]; then  
+      echo "UPDATE user SET authentication_string=PASSWORD('$rootpw') WHERE user='root';" >> $tfile
+    else # TODO: Check if the need for the password_expired change is upstream bug
+      echo "INSTALL PLUGIN auth_socket SONAME 'auth_socket.so';" >> $tfile
+      echo "ALTER USER 'root'@'localhost' IDENTIFIED WITH 'auth_socket';" >> $tfile
+      echo "UPDATE mysql.user SET password_expired='N' WHERE user='root';" >> $tfile
+    fi
+    echo "CREATE user IF NOT EXISTS 'debian-sys-maint'@'localhost' IDENTIFIED BY '$pass';" >> $tfile
+    echo "GRANT ALL ON *.* TO 'debian-sys-maint'@'localhost';" >> $tfile
+    echo "FLUSH PRIVILEGES;" >> $tfile
+    echo "SHUTDOWN;" >> $tfile
 
     set +e
-    mysqld --initialize-insecure --user=mysql --init-file=$tfile > /dev/null 2>&1
+    if [ ! "$(ls -A ${mysql_statedir})" ] && [ -d ${mysql_filesdir} ]; then
+      mysqld --initialize-insecure --user=mysql > /dev/null 2>&1
+      mysqld --user=mysql --init-file=$tfile > /dev/null 2>&1
+    fi
     rm $tfile
     
-    if [ -z $rootpw ]; then
-      su - mysql -s /bin/bash -c "/usr/sbin/mysqld --log_error_verbosity=2 2>&1 > /dev/null &"
-      while [ ! -e $(my_print_defaults mysqld | grep pid-file | cut -d= -f2) ]; do sleep 1; done
-      mysql -e "INSTALL PLUGIN auth_socket SONAME 'auth_socket.so'"
-      mysql -e "USE mysql; UPDATE user SET plugin='auth_socket' WHERE user='root'"
-      mysqladmin shutdown
-    fi
     set -e
     #invoke start
     # To avoid downgrades.
