@@ -66,6 +66,7 @@ configure-stamp:
 		CC=$${MYSQL_BUILD_CC:-gcc} \
 		CXX=$${MYSQL_BUILD_CXX:-g++} \
 		cmake .. \
+		-DCMAKE_VERBOSE_MAKEFILE=ON \
 		-DBUILD_CONFIG=mysql_release \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DINSTALL_DOCDIR=share/mysql/docs \
