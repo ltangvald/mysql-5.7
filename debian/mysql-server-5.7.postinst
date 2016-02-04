@@ -12,6 +12,9 @@ export PATH=$PATH:/sbin:/usr/sbin:/bin:/usr/bin
 # This command can be used as pipe to syslog. With "-s" it also logs to stderr.
 ERR_LOGGER="logger -p daemon.err -t mysqld_safe -i"
 
+run_init_sql() {
+  mysqld --user=mysql --init-file=$1 > /dev/null 2>&1
+}
 pathfind() {
   OLDIFS="$IFS"
   IFS=:
@@ -161,7 +164,7 @@ case "$1" in
     set +e
     if [ ! "$(ls -A ${mysql_statedir})" ] && [ -d ${mysql_filesdir} ]; then
       mysqld --initialize-insecure --user=mysql > /dev/null 2>&1
-      mysqld --user=mysql --init-file=$tfile > /dev/null 2>&1
+      run_init_sql $tfile
     fi
     rm $tfile
     
