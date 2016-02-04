@@ -87,3 +87,9 @@ _Description: NDB Cluster seems to be in use
  MySQL-5.7 no longer provides NDB Cluster support. Please migrate to the new
  mysql-cluster-server package and remove all lines starting with "ndb" from
  all config files below /etc/mysql/.
+
+Template: mysql-server/upgrade-warning
+Type: note
+Description: Upgrading from pre-5.7 GA
+ Because of significant changes to system tables, we strongly recommend
+ running mysql_upgrade before trying to use the database.
