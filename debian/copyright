@@ -191,6 +191,7 @@ Files: cmd-line-utils/libedit/config.h
  BUILD-CMAKE
  COPYING
  Doxyfile-perfschema
+ INSTALL
  INSTALL-SOURCE
  INSTALL-WIN-SOURCE
  VERSION
@@ -680,6 +681,7 @@ Files: mysys_ssl/*
  plugin/test_services/*
  plugin/test_service_sql_api/*
  plugin/version_token/*
+ plugin/keyring/*
  testclients/*
 Copyright: 2002, 2016 Oracle and/or its affiliates.
 License: GPL-2

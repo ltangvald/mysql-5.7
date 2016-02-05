@@ -17,7 +17,7 @@
 
    MySQL compressed tar file binary distributions have names of
    the form mysql-VERSION-OS.tar.gz, where VERSION is a number
-   (for example, 5.7.11), and OS indicates the type of operating
+   (for example, 5.7.12), and OS indicates the type of operating
    system for which the distribution is intended (for example,
    pc-linux-i686 or winx64).
    Warning
@@ -86,7 +86,7 @@ shell> tar zxvf /path/to/mysql-VERSION-OS.tar.gz
 shell> ln -s full-path-to-mysql-VERSION-OS mysql
 shell> cd mysql
 shell> mkdir mysql-files
-shell> chmod 770 mysql-files
+shell> chmod 750 mysql-files
 shell> chown -R mysql .
 shell> chgrp -R mysql .
 shell> bin/mysql_install_db --user=mysql    # Before MySQL 5.7.6
@@ -262,7 +262,7 @@ Additional Installation Information
    Windows service. By using a service, you can monitor and
    control the operation of the server through the standard
    Windows service management tools. For more information, see
-   Section 2.3.5.7, "Starting MySQL as a Windows Service."
+   Section 2.3.5.8, "Starting MySQL as a Windows Service."
 
    Generally, you should install MySQL on Windows using an
    account that has administrator rights. Otherwise, you may
@@ -419,8 +419,8 @@ Additional Installation Information
    Archive distributions (but not MSI distributions) of MySQL.
 
      * MySQL Installer: This package has a file name similar to
-       mysql-installer-community-5.7.11.0.msi or
-       mysql-installer-commercial-5.7.11.0.msi, and utilizes
+       mysql-installer-community-5.7.12.0.msi or
+       mysql-installer-commercial-5.7.12.0.msi, and utilizes
        MSIs to automatically install MySQL server and other
        products. It will download and apply updates to itself,
        and for each of the installed products. It also
@@ -488,7 +488,7 @@ Additional Installation Information
 
    The supported MySQL products include:
 
-     * MySQL server (http://dev.mysql.com/doc/) (one or multiple
+     * MySQL Server (http://dev.mysql.com/doc/) (one or multiple
        versions on the same system)
 
      * MySQL Workbench
@@ -514,7 +514,9 @@ Additional Installation Information
      * MySQL Documentation
 
      * MySQL Installer is also installed and remains on the
-       system as its own application
+       system as its own application, that is used to install
+       additional MySQL products, and also to update and
+       configure existing MySQL products
 
      * The Enterprise edition installs the Enterprise versions
        of the above products, and also includes MySQL Enterprise
@@ -869,16 +871,17 @@ Adding MySQL Products
 
    MySQL Installer stores a MySQL product catalog. The catalog
    can be updated either manually or automatically, and the
-   catalog change history is also available.
+   catalog change history is also available. The automatic
+   update is enabled by default.
+   Note
+
+   The product catalog update also checks for a newer version of
+   MySQL Installer, and prompts for an update if one is present.
 
    Manual updates
 
    You can update the MySQL product catalog at any time by
    clicking Catalog on the Installer dashboard.
-   Note
-
-   This also checks for a newer MySQL Installer version, and
-   prompts for an update if one is present.
 
    Figure 2.21 MySQL Installer - Open the MySQL Product Catalog
    MySQL Installer - Open the MySQL Product Catalog
@@ -887,10 +890,10 @@ Adding MySQL Products
 
    Automatic updates
 
-   You can configure MySQL Installer to automatically update the
-   MySQL product catalog once per day. To enable this feature
-   and set the update time, click the wrench icon on the
-   Installer dashboard.
+   MySQL Installer can automatically update the MySQL product
+   catalog. By default, this feature is enabled to execute each
+   day at 12:00 AM. To configure this feature, click the wrench
+   icon on the Installer dashboard.
 
    The next window configures the Automatic Catalog Update.
    Enable or disable this feature, and also set the hour.
@@ -1842,7 +1845,22 @@ datadir=E:\\mydata\\data
    platform because named pipes are slower than TCP/IP in many
    Windows configurations.
 
-2.3.5.4 Starting the Server for the First Time
+2.3.5.4 Initializing the Data Directory
+
+   If you installed MySQL using the Noinstall package, you may
+   need to initialize the data directory:
+
+     * Windows distributions prior to MySQL 5.7.7 include a data
+       directory with a set of preinitialized accounts in the
+       mysql database.
+
+     * As of 5.7.7, Windows installation operations performed
+       using the Noinstall package do not include a data
+       directory. To initialize the data directory, use the
+       instructions at Section 2.10.1.1, "Initializing the Data
+       Directory Manually Using mysqld."
+
+2.3.5.5 Starting the Server for the First Time
 
    This section gives a general overview of starting the MySQL
    server. The following sections provide more specific
@@ -1917,7 +1935,7 @@ InnoDB: foreign key constraint system tables created
    something like this, which indicates that the server is ready
    to service client connections:
 mysqld: ready for connections
-Version: '5.7.11'  socket: ''  port: 3306
+Version: '5.7.12'  socket: ''  port: 3306
 
    The server continues to write to the console any further
    diagnostic output it produces. You can open a new console
@@ -1935,7 +1953,7 @@ Version: '5.7.11'  socket: ''  port: 3306
    password for it using the instructions in Section 2.10.4,
    "Securing the Initial MySQL Accounts."
 
-2.3.5.5 Starting MySQL from the Windows Command Line
+2.3.5.6 Starting MySQL from the Windows Command Line
 
    The MySQL server can be started manually from the command
    line. This can be done on any version of Windows.
@@ -1989,7 +2007,7 @@ shutdown
    Use mysqld --verbose --help to display all the options that
    mysqld supports.
 
-2.3.5.6 Customizing the PATH for MySQL Tools
+2.3.5.7 Customizing the PATH for MySQL Tools
 
    To make it easier to invoke MySQL programs, you can add the
    path name of the MySQL bin directory to your Windows system
@@ -2034,7 +2052,7 @@ shutdown
    the existing PATH value can leave you with a malfunctioning
    or even unusable system.
 
-2.3.5.7 Starting MySQL as a Windows Service
+2.3.5.8 Starting MySQL as a Windows Service
 
    On Windows, the recommended way to run MySQL is to install it
    as a Windows service, so that MySQL starts and stops
@@ -2234,14 +2252,14 @@ Removing the service
 C:\> "C:\Program Files\MySQL\MySQL Server 5.7\bin\mysqld" --remove
 
    If mysqld is not running as a service, you can start it from
-   the command line. For instructions, see Section 2.3.5.5,
+   the command line. For instructions, see Section 2.3.5.6,
    "Starting MySQL from the Windows Command Line."
 
    If you encounter difficulties during installation. see
    Section 2.3.6, "Troubleshooting a Microsoft Windows MySQL
    Server Installation."
 
-2.3.5.8 Testing The MySQL Installation
+2.3.5.9 Testing The MySQL Installation
 
    You can test whether the MySQL server is working by executing
    any of the following commands:
@@ -2301,7 +2319,7 @@ C:\> "C:\Program Files\MySQL\MySQL Server 5.7\bin\mysql" test
    starting. Use the NET START MySQL command from the command
    line after installing mysqld as a service to see any error
    messages regarding the starting of the MySQL server as a
-   service. See Section 2.3.5.7, "Starting MySQL as a Windows
+   service. See Section 2.3.5.8, "Starting MySQL as a Windows
    Service."
 
    The following examples show other common error messages you
@@ -2428,10 +2446,10 @@ C:\> sc delete mysql
    Before assigning passwords, you might want to try running
    some client programs to make sure that you can connect to the
    server and that it is operating properly. Make sure that the
-   server is running (see Section 2.3.5.4, "Starting the Server
+   server is running (see Section 2.3.5.5, "Starting the Server
    for the First Time"). You can also set up a MySQL service
    that runs automatically when Windows starts (see Section
-   2.3.5.7, "Starting MySQL as a Windows Service").
+   2.3.5.8, "Starting MySQL as a Windows Service").
 
    These instructions assume that your current location is the
    MySQL installation directory and that it has a bin
@@ -2452,7 +2470,7 @@ C:\> cd C:\mysql
    variable setting. That enables your command interpreter to
    find MySQL programs properly, so that you can run a program
    by typing only its name, not its path name. See Section
-   2.3.5.6, "Customizing the PATH for MySQL Tools."
+   2.3.5.7, "Customizing the PATH for MySQL Tools."
 
    With the server running, issue the following commands to
    verify that you can retrieve information from the server. The
@@ -2626,7 +2644,7 @@ C:\> C:\mysql\bin\mysqld --remove
 
     8. If you were running MySQL as a Windows service and you
        had to remove the service earlier in this procedure,
-       reinstall the service. (See Section 2.3.5.7, "Starting
+       reinstall the service. (See Section 2.3.5.8, "Starting
        MySQL as a Windows Service.")
 
     9. Restart the server. For example, use NET START MySQL if

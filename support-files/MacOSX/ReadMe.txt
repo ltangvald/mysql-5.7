@@ -109,8 +109,8 @@ alias mysqladmin /usr/local/mysql/bin/mysqladmin
    When installing using the package installer, the files are
    installed into a directory within /usr/local matching the
    name of the installation version and platform. For example,
-   the installer file mysql-5.7.11-osx10.9-x86_64.dmg installs
-   MySQL into /usr/local/mysql-5.7.11-osx10.9-x86_64/ . The
+   the installer file mysql-5.7.12-osx10.9-x86_64.dmg installs
+   MySQL into /usr/local/mysql-5.7.12-osx10.9-x86_64/ . The
    following table shows the layout of the installation
    directory.
 
@@ -144,8 +144,8 @@ alias mysqladmin /usr/local/mysql/bin/mysqladmin
     2. Double-click the MySQL installer package. It will be
        named according to the version of MySQL you have
        downloaded. For example, if you have downloaded MySQL
-       server 5.7.11, double-click
-       mysql-5.7.11-osx-10.9-x86_64.pkg.
+       server 5.7.12, double-click
+       mysql-5.7.12-osx-10.9-x86_64.pkg.
 
     3. You will be presented with the opening installer dialog.
        Click Continue to begin installation.

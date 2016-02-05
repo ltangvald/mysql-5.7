@@ -13,7 +13,7 @@ export PATH=$PATH:/sbin:/usr/sbin:/bin:/usr/bin
 ERR_LOGGER="logger -p daemon.err -t mysqld_safe -i"
 
 run_init_sql() {
-  mysqld --user=mysql --init-file=$1 --socket=/tmp/mysqld.sock > /dev/null 2>&1
+  mysqld --user=mysql --init-file=$1 --socket=`mktemp -u` --pid-file=`mktemp -u` > /dev/null 2>&1
 }
 pathfind() {
   OLDIFS="$IFS"
@@ -36,7 +36,10 @@ invoke() {
 }
 
 test_mysql_access() {
-       mysql --no-defaults -u root -h localhost </dev/null >/dev/null 2>&1
+  mysql --no-defaults -u root -h localhost </dev/null >/dev/null 2>&1
+}
+test_sysmaint_access() {
+  mysql --defaults-file=/etc/mysql/debian.cnf </dev/null >/dev/null 2>&1
 }
 
 # call with $1 = "online" to connect to the server, otherwise it bootstraps
@@ -61,6 +64,7 @@ case "$1" in
     mysql_cfgdir=/etc/mysql
     mysql_upgradedir=/var/lib/mysql-upgrade
     mysql_filesdir=/var/lib/mysql-files
+    mysql_keyringdir=/var/lib/mysql-keyring
 
     # mysqld gets called during postinst configure, so any
     # updates to the AppArmor profile must be loaded first (before the
@@ -90,17 +94,24 @@ case "$1" in
     if [ ! -d "$mysql_statedir"       -a ! -L "$mysql_statedir"       ]; then mkdir "$mysql_statedir"; fi
     if [ ! -d "$mysql_logdir"         -a ! -L "$mysql_logdir"         ]; then mkdir "$mysql_logdir"; fi
     if [ ! -d "$mysql_filesdir"       -a ! -L "$mysql_filesdir"       ]; then mkdir "$mysql_filesdir"; fi
+    if [ ! -d "$mysql_keyringdir"       -a ! -L "$mysql_keyringdir"       ]; then mkdir "$mysql_keyringdir"; fi
     # When creating an ext3 jounal on an already mounted filesystem like e.g.
     # /var/lib/mysql, you get a .journal file that is not modifyable by chown.
     # The mysql_datadir must not be writable by the mysql user under any
     # circumstances as it contains scripts that are executed by root.
     set +e
     chown -R 0:0 $mysql_datadir
-    chown -R mysql $mysql_statedir
+    chown -R mysql:mysql $mysql_statedir
+    chmod 0700 $mysql_statedir
+    chown -R mysql:mysql $mysql_keyringdir
+    chmod 0700 $mysql_keyringdir
+    chown -R mysql:mysql $mysql_filesdir
+    chmod 0700 $mysql_filesdir
     touch $mysql_logdir/error.log
     chown -R mysql:adm $mysql_logdir
     chmod 0750 $mysql_logdir
     chmod 0640 $mysql_logdir/error.log
+    #chown -R mysql $mysql_rundir
     set -e
 
     # This is important to avoid dataloss when there is a removed
@@ -124,6 +135,7 @@ case "$1" in
     dc=$mysql_cfgdir/debian.cnf; 
     if [ -e "$dc" -a -n "`fgrep mysql_upgrade $dc 2>/dev/null`" ]; then
         pass="`sed -n 's/^[     ]*password *= *// p' $dc | head -n 1`"
+        sed -i '/basedir/d' "$dc"
     else
     pass=`perl -e 'print map{("a".."z","A".."Z",0..9)[int(rand(62))]}(1..16)'`;
         if [ ! -d "$mysql_cfgdir" ]; then install -o 0 -g 0 -m 0755 -d $mysql_cfgdir; fi
@@ -141,7 +153,6 @@ case "$1" in
         echo "user     = debian-sys-maint"                                 >>$dc
         echo "password = $pass"                                            >>$dc
         echo "socket   = $mysql_rundir/mysqld.sock"                        >>$dc
-        echo "basedir  = /usr"                                             >>$dc
     fi
     # If this dir chmod go+w then the admin did it. But this file should not.
     chown 0:0 $dc
@@ -155,9 +166,10 @@ case "$1" in
     if [ ! -z $rootpw ]; then  
       echo "UPDATE user SET authentication_string=PASSWORD('$rootpw') WHERE user='root';" >> $tfile
     else # TODO: Check if the need for the password_expired change is upstream bug
-      echo "INSTALL PLUGIN auth_socket SONAME 'auth_socket.so';" >> $tfile
-      echo "ALTER USER 'root'@'localhost' IDENTIFIED WITH 'auth_socket';" >> $tfile
-      echo "UPDATE mysql.user SET password_expired='N' WHERE user='root';" >> $tfile
+      echo "select 1;"
+      #echo "INSTALL PLUGIN auth_socket SONAME 'auth_socket.so';" >> $tfile
+      #echo "ALTER USER 'root'@'localhost' IDENTIFIED WITH 'auth_socket';" >> $tfile
+      #echo "UPDATE mysql.user SET password_expired='N' WHERE user='root';" >> $tfile
     fi
     echo "CREATE user IF NOT EXISTS 'debian-sys-maint'@'localhost' IDENTIFIED BY '$pass';" >> $tfile
     echo "GRANT ALL ON *.* TO 'debian-sys-maint'@'localhost';" >> $tfile
@@ -170,18 +182,31 @@ case "$1" in
     # running server, so it's generally something the user must handle themselves. One thing we can do
     # is check if the 5.7 flag is present, which would indicate that changes can be made safely.
     if [ ! "$(ls -A ${mysql_statedir})" ] && [ -d ${mysql_filesdir} ]; then
-      mysqld --initialize-insecure --user=mysql > /dev/null 2>&1
-      run_init_sql $tfile
-    else # MySQL Bug #78374: CREATE user IF NOT EXISTS returns error instead of warning if user exists
-      if [ -f $mysql_statedir/debian-5.7.flag ]; then
-        echo
-        #run_init_sql $tfile
-      else
-        db_fset mysql-server/upgrade_warning seen false
-        db_input medium mysql-server/upgrade-warning || true
+      mysqld --initialize-insecure --user=mysql --init-file=$tfile> /dev/null 2>&1
+#      run_init_sql $tfile
+    else
+      invoke start
+      if test_sysmaint_access; then
+        mysql_upgrade --defaults-file=/etc/mysql/debian.cnf
+      else # panic? break down and cry?
+        invoke stop
+        maintfile=/var/lib/mysql-files/Update-sysmaint
+        touch $maintfile
+        chmod 600 $maintfile
+        chown mysql:mysql $maintfile
+        echo "USE mysql;" >> $maintfile
+        echo "UPDATE mysql.user SET authentication_string=PASSWORD('$pass') WHERE user='debian-sys-maint';" >> $maintfile
+        echo "FLUSH PRIVILEGES;" >> $maintfile
+        echo "SHUTDOWN;" >> $maintfile
+        set +e
+        run_init_sql $maintfile
+        rm $maintfile
+        invoke start
+        mysql_upgrade --defaults-file=/etc/mysql/debian.cnf 
       fi
     fi
-
+    
+    invoke stop
     rm $tfile
     set -e
 

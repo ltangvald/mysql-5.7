@@ -1,2 +1,1 @@
-manpage-has-errors-from-man usr/share/man/man1/mysqlbinlog.1.gz 1947: warning [p 13, 0.3i, div `3tbd3,2', 0.8i]: can't break line
-
+manpage-has-errors-from-man usr/share/man/man1/mysqlbinlog.1.gz 1979: warning [p 13, 2.7i, div `3tbd3,2', 0.8i]: can't break line

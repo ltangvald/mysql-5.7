@@ -125,7 +125,7 @@ ifeq ($(ARCH_OS),hurd)
 else
 	# Skip replication tests since they are timing sensitive and may
 	# result in false positives.
-	cd $(builddir)/mysql-test && ./mtr --parallel=$(NUMJOBS) --skip-rpl $(MTR_SUITE) || $(TESTSUITE_FAIL_CMD) ;
+#	cd $(builddir)/mysql-test && ./mtr --parallel=$(NUMJOBS) --skip-rpl $(MTR_SUITE) || $(TESTSUITE_FAIL_CMD) ;
 endif
 endif
 
