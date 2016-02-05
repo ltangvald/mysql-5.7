@@ -1,7 +1,0 @@
-# Copyright (c) 2015, Oracle and/or its affiliates. All rights reserved.
-#
-
-# Additional license file is needed so overriding this warning
-libmysqld-dev: extra-license-file usr/share/doc/libmysqld-dev/LICENSE.mysql
-libmysqld-dev: extra-license-file usr/share/doc/libmysqld-dev/COPYING.gz
-libmysqld-dev: copyright-should-refer-to-common-license-file-for-lgpl
