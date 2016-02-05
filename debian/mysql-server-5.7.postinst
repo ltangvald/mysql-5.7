@@ -13,7 +13,7 @@ export PATH=$PATH:/sbin:/usr/sbin:/bin:/usr/bin
 ERR_LOGGER="logger -p daemon.err -t mysqld_safe -i"
 
 run_init_sql() {
-  mysqld --user=mysql --init-file=$1 > /dev/null 2>&1
+  mysqld --user=mysql --init-file=$1 --socket=/tmp/mysqld.sock > /dev/null 2>&1
 }
 pathfind() {
   OLDIFS="$IFS"
@@ -90,7 +90,6 @@ case "$1" in
     if [ ! -d "$mysql_statedir"       -a ! -L "$mysql_statedir"       ]; then mkdir "$mysql_statedir"; fi
     if [ ! -d "$mysql_logdir"         -a ! -L "$mysql_logdir"         ]; then mkdir "$mysql_logdir"; fi
     if [ ! -d "$mysql_filesdir"       -a ! -L "$mysql_filesdir"       ]; then mkdir "$mysql_filesdir"; fi
-    if [ ! -d "$mysql_rundir"       -a ! -L "$mysql_rundir"       ]; then mkdir "$mysql_rundir"; fi
     # When creating an ext3 jounal on an already mounted filesystem like e.g.
     # /var/lib/mysql, you get a .journal file that is not modifyable by chown.
     # The mysql_datadir must not be writable by the mysql user under any
@@ -100,7 +99,6 @@ case "$1" in
     chown -R mysql $mysql_statedir
     touch $mysql_logdir/error.log
     chown -R mysql:adm $mysql_logdir
-    chown -R mysql:adm $mysql_rundir
     chmod 0750 $mysql_logdir
     chmod 0640 $mysql_logdir/error.log
     set -e
@@ -179,6 +177,7 @@ case "$1" in
         echo
         #run_init_sql $tfile
       else
+        db_fset mysql-server/upgrade_warning seen false
         db_input medium mysql-server/upgrade-warning || true
       fi
     fi

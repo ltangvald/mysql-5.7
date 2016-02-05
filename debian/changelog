@@ -1,4 +1,4 @@
-mysql-5.7 (5.7.10-1ubuntu16.04) UNRELEASED; urgency=medium
+mysql-5.7 (5.7.10-1ubuntu16.04) xenial; urgency=medium
 
   * Updated packaging for Ubuntu 16.04 
 
