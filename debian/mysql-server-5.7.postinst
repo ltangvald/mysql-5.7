@@ -3,7 +3,6 @@
 set -e
 . /usr/share/debconf/confmodule
 
-DEBIAN_SCRIPT_DEBUG=1
 if [ -n "$DEBIAN_SCRIPT_DEBUG" ]; then set -v -x; DEBIAN_SCRIPT_TRACE=1; fi
 ${DEBIAN_SCRIPT_TRACE:+ echo "#42#DEBUG# RUNNING $0 $*" 1>&2 }
  
@@ -28,6 +27,7 @@ pathfind() {
   return 1
 }
 invoke() {
+  deb-systemd-helper unmask mysql.service >/dev/null || true
   if pathfind invoke-rc.d; then
     invoke-rc.d mysql $1
   else
@@ -111,7 +111,6 @@ case "$1" in
     chown -R mysql:adm $mysql_logdir
     chmod 0750 $mysql_logdir
     chmod 0640 $mysql_logdir/error.log
-    #chown -R mysql $mysql_rundir
     set -e
 
     # This is important to avoid dataloss when there is a removed
@@ -176,19 +175,15 @@ case "$1" in
     echo "FLUSH PRIVILEGES;" >> $tfile
     echo "SHUTDOWN;" >> $tfile
 
+    # If database doesn't exist we create it. Otherwise we run mysql_upgrade
     set +e
-    # TODO: 5.7 introduces significant changes to system tables when compared to earlier server versions
-    # Changes should not be made without running mysql_upgrade first and it requires a valid login to a
-    # running server, so it's generally something the user must handle themselves. One thing we can do
-    # is check if the 5.7 flag is present, which would indicate that changes can be made safely.
     if [ ! "$(ls -A ${mysql_statedir})" ] && [ -d ${mysql_filesdir} ]; then
       mysqld --initialize-insecure --user=mysql --init-file=$tfile> /dev/null 2>&1
-#      run_init_sql $tfile
     else
       invoke start
       if test_sysmaint_access; then
         mysql_upgrade --defaults-file=/etc/mysql/debian.cnf
-      else # panic? break down and cry?
+      else # In case the debian user can't log in we try setting the password
         invoke stop
         maintfile=/var/lib/mysql-files/Update-sysmaint
         touch $maintfile
@@ -230,25 +225,16 @@ esac
 # fails for any other reason, nothing happens.
 if [ "$1" = "configure" ]; then
   if test_mysql_access; then
-    echo "We recommend setting a password for the root user."
-#    db_input medium mysql-server/root_password || true
-#    db_go
-#    db_get mysql-server/root_password && rootpw="$RET"
-#    touch $tfile
-#    chmod 600 $tfile
-#    chown mysql:mysql $tfile
-#    echo "USE mysql; " >> $tfile
-#    if [ ! -z $rootpw ]; then
-#      echo "UPDATE user SET authentication_string=PASSWORD('$rootpw') WHERE user='root';" >> $tfile
-#    else # TODO: Check if the need for the password_expired change is upstream bug
-#      echo "INSTALL PLUGIN auth_socket SONAME 'auth_socket.so';" >> $tfile # Will throw an error if plugin already exists
-#      echo "ALTER USER 'root'@'localhost' IDENTIFIED WITH 'auth_socket';" >> $tfile
-#      echo "UPDATE mysql.user SET password_expired='N' WHERE user='root';" >> $tfile
-#    fi
-#    set +e
-#    run_init_sql $tfile
-#    set -e
-#    rm $tfile
+    db_input medium mysql-server/root_password || true
+    db_go
+    db_get mysql-server/root_password && rootpw="$RET"
+    if [ ! -z $rootpw ]; then
+      touch $tfile
+      chmod 600 $tfile
+      chown mysql:mysql $tfile
+      echo "ALTER USER 'root'@'localhost' IDENTIFIED BY '$rootpw';" >> $tfile
+      run_init_sql $tfile
+    fi
   fi
 fi
 
