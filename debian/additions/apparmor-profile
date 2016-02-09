@@ -1,11 +1,13 @@
 # vim:syntax=apparmor
-# Last Modified: Fri Feb 28 18:06:30 2014
+# Last Modified: Tue Feb 09 15:28:30 2016
 #include <tunables/global>
 
 /usr/sbin/mysqld {
   #include <abstractions/base>
   #include <abstractions/nameservice>
   #include <abstractions/user-tmp>
+  #include <abstractions/mysql>
+  #include <abstractions/winbind>
 
 # Allow system resource access
   /sys/devices/system/cpu/ r,
@@ -13,6 +15,12 @@
   capability dac_override,
   capability setuid,
   capability setgid,
+
+# Allow network access
+  network tcp,
+
+  /etc/hosts.allow r,
+  /etc/hosts.deny r,
 
 # Allow config access
   /etc/mysql/** r,
@@ -56,4 +64,7 @@
 # Allow log file access
   /var/log/mysql/ r,
   /var/log/mysql/** rw,
+
+  # Site-specific additions and overrides. See local/README for details.
+  #include <local/usr.sbin.mysqld>
 }
