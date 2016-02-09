@@ -28,6 +28,8 @@ rpl.rpl_gtid_mode : Requires starting server as root ref http://bugs.mysql.com/b
 EOF
 
 cd /usr/lib/mysql-test
-echo "starting mysql-test-tun.pl..."
-./mysql-test-run.pl --suite=main --vardir=$WORKDIR/var --tmpdir=$WORKDIR/tmp --force | tee /tmp/testresults.txt
+echo "starting mysql-test-run.pl..."
+./mysql-test-run.pl --suite=main --vardir=$WORKDIR/var --tmpdir=$WORKDIR/tmp \
+    --skip-ndbcluster --parallel=auto --skip-rpl --report-features \
+    --force --skip-test-list=$SKIP_TEST_LST $@ 2>&1
 echo "run: OK"
