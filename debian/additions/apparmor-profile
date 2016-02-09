@@ -62,6 +62,8 @@
   /var/lib/mysql-keyring/** rwk,
 
 # Allow log file access
+  /var/log/mysql.err rw,
+  /var/log/mysql.log rw,
   /var/log/mysql/ r,
   /var/log/mysql/** rw,
 
