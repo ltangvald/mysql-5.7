@@ -1,2 +1,2 @@
-rm_conffile /etc/mysql/conf.d/.keepme 5.7.10-1~ mysql-common
-rm_conffile /etc/mysql/my.cnf 5.7.10-1~ mysql-common
+rm_conffile /etc/mysql/conf.d/.keepme 5.7.11-1~ mysql-common
+rm_conffile /etc/mysql/my.cnf 5.7.11-1~ mysql-common

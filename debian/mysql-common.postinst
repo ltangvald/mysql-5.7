@@ -18,7 +18,7 @@ if [ "$1" = "configure" ]; then
     update-alternatives --install /etc/mysql/my.cnf my.cnf /etc/mysql/my.cnf.fallback 100
 fi
 
-if [ "$1" = "configure" -a -f /etc/mysql/my.cnf.dpkg-bak ] && dpkg --compare-versions "$2" le "5.7.10-1~exp1ubuntu2~"; then
+if [ "$1" = "configure" -a -f /etc/mysql/my.cnf.dpkg-bak ] && dpkg --compare-versions "$2" le "5.6.19-1~exp1ubuntu2~"; then
     echo "Moving /etc/mysql/my.cnf.dpkg-bak to /etc/mysql/my.cnf.migrated"
     cat - /etc/mysql/my.cnf.dpkg-bak <<EOT > /etc/mysql/my.cnf.migrated
 # This file has been automatically moved from your previous
