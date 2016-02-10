@@ -1,0 +1,19 @@
+Description: port of mips64 patch for 5.6
+ Fix MIPS64 asm constraints.
+ Original author: YunQiang Su <wzssyqa@gmail.com>
+Author: Lars Tangvald <lars.tangvald@oracle.com>
+Bug: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=798126
+Forwarded: yes, http://bugs.mysql.com/69978
+Last-Update: 2016-02-10 
+
+--- mysql-5.7-5.7.11.orig/extra/yassl/taocrypt/src/integer.cpp
++++ mysql-5.7-5.7.11/extra/yassl/taocrypt/src/integer.cpp
+@@ -178,7 +178,7 @@ DWord() {}
+                 "a" (a), "rm" (b) : "cc");
+ 
+         #elif defined(__mips64)
+-            __asm__("dmultu %2,%3" : "=h" (r.halfs_.high), "=l" (r.halfs_.low)
++            __asm__("dmultu %2,%3" : "=d" (r.halfs_.high), "=lc" (r.halfs_.low)
+                 : "r" (a), "r" (b));
+ 
+         #elif defined(_M_IX86)
