@@ -195,6 +195,7 @@ case "$1" in
       echo "GRANT ALL ON *.* TO 'debian-sys-maint'@'localhost';" >> $initfile
       echo "SHUTDOWN;" >> $initfile
       mysqld --initialize-insecure --user=mysql --init-file=$initfile> /dev/null 2>&1
+      rm $initfile
     else
       invoke start
       if test_sysmaint_access; then
@@ -208,7 +209,6 @@ case "$1" in
     fi
     
     invoke stop
-    rm $initfile
     set -e
 
     # To avoid downgrades. This has to happen after the database is created, or --initialize will fail
