@@ -24,6 +24,7 @@ echo "Setting up skip-tests-list"
 cat > $SKIP_TEST_LST << EOF
 binlog.binlog_server_start_options : Requires writable /usr
 main.ctype_uca : Requires writable /usr
+main.mysql_plugin: Requires writable /usr
 rpl.rpl_gtid_mode : Requires starting server as root ref http://bugs.mysql.com/bug.php?id=70517
 EOF
 
