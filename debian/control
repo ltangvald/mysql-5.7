@@ -258,6 +258,10 @@ Conflicts: mysql-testsuite-5.5,
            virtual-mysql-testsuite
 Replaces: mysql-testsuite-5.5,
           mysql-testsuite-5.6,
+          mysql-client-5.5,
+          mysql-client-5.6,
+          mysql-server-5.5,
+          mysql-server-5.6,
           virtual-mysql-testsuite
 Breaks: mysql-client-5.5 (>= 5.5),
         mysql-client-5.6 (>= 5.6),
