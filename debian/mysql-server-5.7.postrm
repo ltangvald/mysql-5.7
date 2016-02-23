@@ -71,6 +71,8 @@ if [ "$1" = "purge" -a ! \( -x /usr/sbin/mysqld -o -L /usr/sbin/mysqld \) ]; the
     # else we ran into big trouble on the next install!
     rm -f /etc/mysql/debian.cnf
     rm -rf /var/lib/mysql
+    rm -rf /var/lib/mysql-files
+    rm -rf /var/lib/mysql-keyring
     userdel mysql || true
   fi
 fi
