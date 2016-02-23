@@ -40,6 +40,9 @@ _Description: Remove all MySQL databases?
  The /var/lib/mysql directory which contains the MySQL databases is about
  to be removed.
  .
+ This will also erase all data in /var/lib/mysql-files as well as
+ /var/lib/mysql-keyring.
+ .
  If you're removing the MySQL package in order to later install a more
  recent version or if a different mysql-server package is already
  using it, the data should be kept.
