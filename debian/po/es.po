@@ -41,7 +41,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysql-5.7\n"
 "Report-Msgid-Bugs-To: mysql-5.7@packages.debian.org\n"
-"POT-Creation-Date: 2011-11-08 11:42-0800\n"
+"POT-Creation-Date: 2016-02-25 17:19+0100\n"
 "PO-Revision-Date: 2012-06-17 09:49-0500\n"
 "Last-Translator: Javier Fernández-Sanguino <jfs@debian.org>\n"
 "Language-Team: Debian l10 Spanish <debian-l10n-spanish@lists.debian.org>\n"
@@ -126,6 +126,14 @@ msgid ""
 msgstr ""
 "El directorio /var/lib/mysql contiene bases de datos MySQL que van a "
 "eliminarse."
+
+#. Type: boolean
+#. Description
+#: ../mysql-server-5.7.templates:4001
+msgid ""
+"This will also erase all data in /var/lib/mysql-files as well as /var/lib/"
+"mysql-keyring."
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -247,8 +255,8 @@ msgid ""
 "all config files below /etc/mysql/."
 msgstr ""
 "MySQL-5.7 ya no brinda soporte para NDB Cluster. Migre al nuevo paquete "
-"mysql-cluster-server y elimine todas las líneas que empiecen con \"ndb\" "
-"de todos los ficheros de configuración bajo /etc/mysql/."
+"mysql-cluster-server y elimine todas las líneas que empiecen con \"ndb\" de "
+"todos los ficheros de configuración bajo /etc/mysql/."
 
 #~ msgid ""
 #~ "To use MySQL, the following entries for users and groups should be added "

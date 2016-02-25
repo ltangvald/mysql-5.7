@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysql-5.1 5.1.49-3\n"
 "Report-Msgid-Bugs-To: mysql-5.7@packages.debian.org\n"
-"POT-Creation-Date: 2011-11-08 11:42-0800\n"
+"POT-Creation-Date: 2016-02-25 17:19+0100\n"
 "PO-Revision-Date: 2011-01-04 12:55+0100\n"
 "Last-Translator: Slavko <linux@slavino.sk>\n"
 "Language-Team: Slovak <nomail>\n"
@@ -89,6 +89,14 @@ msgid ""
 "be removed."
 msgstr ""
 "Adresár /var/lib/mysql, ktorý obsahuje databázy MySQL, bude odstránený."
+
+#. Type: boolean
+#. Description
+#: ../mysql-server-5.7.templates:4001
+msgid ""
+"This will also erase all data in /var/lib/mysql-files as well as /var/lib/"
+"mysql-keyring."
+msgstr ""
 
 #. Type: boolean
 #. Description

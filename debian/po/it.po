@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysql-dfsg-5.7 5.7.8 italian debconf templates\n"
 "Report-Msgid-Bugs-To: mysql-5.7@packages.debian.org\n"
-"POT-Creation-Date: 2011-11-08 11:42-0800\n"
+"POT-Creation-Date: 2016-02-25 17:19+0100\n"
 "PO-Revision-Date: 2009-08-08 11:03+0200\n"
 "Last-Translator: Luca Monducci <luca.mo@tiscali.it>\n"
 "Language-Team: Italian <debian-l10n-italian@lists.debian.org>\n"
@@ -90,6 +90,14 @@ msgid ""
 msgstr ""
 "La directory /var/lib/mysql contenente i database di MySQL sta per essere "
 "eliminata."
+
+#. Type: boolean
+#. Description
+#: ../mysql-server-5.7.templates:4001
+msgid ""
+"This will also erase all data in /var/lib/mysql-files as well as /var/lib/"
+"mysql-keyring."
+msgstr ""
 
 #. Type: boolean
 #. Description

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: templates\n"
 "Report-Msgid-Bugs-To: mysql-5.7@packages.debian.org\n"
-"POT-Creation-Date: 2011-11-08 11:42-0800\n"
+"POT-Creation-Date: 2016-02-25 17:19+0100\n"
 "PO-Revision-Date: 2007-05-01 13:04+0300\n"
 "Last-Translator: Ossama M. Khayat <okhayat@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
@@ -99,6 +99,14 @@ msgid ""
 "The /var/lib/mysql directory which contains the MySQL databases is about to "
 "be removed."
 msgstr "الدليل /var/lib/mysql الذي يحتوي قواعد بيانات MySQL ستتم إزالته."
+
+#. Type: boolean
+#. Description
+#: ../mysql-server-5.7.templates:4001
+msgid ""
+"This will also erase all data in /var/lib/mysql-files as well as /var/lib/"
+"mysql-keyring."
+msgstr ""
 
 #. Type: boolean
 #. Description

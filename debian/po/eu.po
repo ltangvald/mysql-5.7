@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: mysql-5.7@packages.debian.org\n"
-"POT-Creation-Date: 2011-11-08 11:42-0800\n"
+"POT-Creation-Date: 2016-02-25 17:19+0100\n"
 "PO-Revision-Date: 2009-07-29 11:59+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: Euskara <debian-l10n-eu@lists.debian.org>\n"
@@ -95,6 +95,14 @@ msgid ""
 "The /var/lib/mysql directory which contains the MySQL databases is about to "
 "be removed."
 msgstr "MySQL datubaseak dituen /var/lib/mysql direktorioa ezabatua izango da."
+
+#. Type: boolean
+#. Description
+#: ../mysql-server-5.7.templates:4001
+msgid ""
+"This will also erase all data in /var/lib/mysql-files as well as /var/lib/"
+"mysql-keyring."
+msgstr ""
 
 #. Type: boolean
 #. Description
