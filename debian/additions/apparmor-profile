@@ -33,10 +33,6 @@
   /run/mysqld/mysqld.sock rw,
   /run/mysqld/mysqld.sock.lock rw,
 
-# Allow read/ write to /tmp
-  /tmp/ r,
-  /tmp/* rw,
-
 # Allow execution of server binary
   /usr/sbin/mysqld mr,
   /usr/sbin/mysqld-debug mr,
