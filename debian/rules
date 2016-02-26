@@ -164,15 +164,13 @@ auto_install-stamp:
 	install -m 0644 debian/additions/mysql_embedded.1 $(TMP)/usr/share/man/man1
 	install -m 0644 debian/additions/debian_create_root_user.sql $(TMP)/usr/share/mysql/
 	install -m 0755 debian/additions/mysql-systemd-start $(TMP)/usr/share/mysql/
+	# These files are incorrectly marked as executable. Upstream bug: http://bugs.mysql.com/bug.php?id=80571
+	chmod 0644 $(TMP)/usr/lib/mysql-test/t/mysqld_safe.sh
+	chmod 0644 $(TMP)/usr/lib/mysql-test/suite/innodb/t/alter_rename_existing.test
+	chmod 0644 $(TMP)/usr/lib/mysql-test/suite/innodb/r/alter_rename_existing.result
+	chmod 0644 $(TMP)/usr/share/mysql/mysql-log-rotate
 	# install AppArmor profile
 	install -D -m 644 debian/additions/apparmor-profile $(TMP)/etc/apparmor.d/usr.sbin.mysqld
-	chmod 0755 $(TMP)/usr/share/mysql-test/std_data/checkDBI_DBD-mysql.pl
-	# chmod 0644 $(TMP)/usr/share/mysql/*.ini
-	chmod 0644 $(TMP)/usr/bin/mysqlaccess.conf
-	chmod 0644 $(TMP)/usr/share/mysql-test/suite/innodb_stress/include/innodb_stress.inc
-	chmod 0644 $(TMP)/usr/share/mysql-test/suite/innodb_stress/t/load_generator.py
-	chmod 0644 $(TMP)/usr/share/mysql-test/suite/innodb_stress/t/*.test
-	chmod 0644 $(TMP)/usr/share/mysql-test/suite/innodb_stress/t/*.opt
 	touch $@
 
 
