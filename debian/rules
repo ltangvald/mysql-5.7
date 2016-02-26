@@ -163,7 +163,6 @@ auto_install-stamp:
 	install -m 0755 debian/additions/debian-start.inc.sh $(TMP)/usr/share/mysql/
 	install -m 0644 debian/additions/mysql_embedded.1 $(TMP)/usr/share/man/man1
 	install -m 0644 debian/additions/debian_create_root_user.sql $(TMP)/usr/share/mysql/
-	install -m 0755 debian/additions/mysql-systemd-start $(TMP)/usr/share/mysql/
 	# These files are incorrectly marked as executable. Upstream bug: http://bugs.mysql.com/bug.php?id=80571
 	chmod 0644 $(TMP)/usr/lib/mysql-test/t/mysqld_safe.sh
 	chmod 0644 $(TMP)/usr/lib/mysql-test/suite/innodb/t/alter_rename_existing.test
