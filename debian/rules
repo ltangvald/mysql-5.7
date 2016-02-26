@@ -73,6 +73,7 @@ configure-stamp:
 		-DWITH_ZLIB=system \
 		-DWITH_EDITLINE=system \
 		-DWITH_SSL=bundled \
+		-DWITH_MECAB=system \
 		-DCOMPILATION_COMMENT="($(DISTRIBUTION))" \
 		-DMYSQL_SERVER_SUFFIX="-$(DEBVERSION)" \
 		-DSYSTEM_TYPE="debian-$(DEB_BUILD_GNU_SYSTEM)" \
