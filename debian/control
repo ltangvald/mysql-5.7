@@ -30,7 +30,7 @@ Vcs-Git: git://anonscm.debian.org/pkg-mysql/mysql-5.7.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-mysql/mysql-5.7.git
 XS-Testsuite: autopkgtest
 
-Package: libmysqlclient18
+Package: libmysqlclient20
 Section: libs
 Architecture: any
 Depends: mysql-common (>= 5.5), ${misc:Depends}, ${shlibs:Depends}
@@ -59,7 +59,7 @@ Description: MySQL embedded database development files
 Package: libmysqlclient-dev
 Architecture: any
 Section: libdevel
-Depends: libmysqlclient18 (= ${binary:Version}),
+Depends: libmysqlclient20 (= ${binary:Version}),
          zlib1g-dev,
          ${misc:Depends},
          ${shlibs:Depends}
