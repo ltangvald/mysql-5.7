@@ -20,6 +20,19 @@ DATADIR=/var/lib/mysql
 LOGDIR=/var/log/mysql
 UPGRADEDIR=/var/lib/mysql-upgrade
 
+pathfind() {
+  OLDIFS="$IFS"
+  IFS=:
+  for p in $PATH; do
+    if [ -x "$p/$*" ]; then
+      IFS="$OLDIFS"
+      return 0
+    fi
+  done
+  IFS="$OLDIFS"
+  return 1
+}
+
 # Try to stop the server in a sane way. If it does not success let the admin
 # do it himself. No database directories should be removed while the server
 # is running! Another mysqld in e.g. a different chroot is fine for us.
@@ -27,7 +40,7 @@ stop_server() {
     if [ ! -x /etc/init.d/mysql ]; then return; fi
 
     set +e
-    if [ -x /usr/sbin/invoke-rc.d ]; then
+    if pathfind invoke-rc.d; then
       cmd="invoke-rc.d mysql stop"
     else
       cmd="/etc/init.d/mysql stop"
@@ -48,7 +61,7 @@ stop_server() {
 
 ################################ main() ##########################
 
-this_version=5.6
+this_version=5.7
 
 # Abort if an NDB cluster is in use.
 if egrep -qi -r '^[^#]*ndb.connectstring|^[[:space:]]*\[[[:space:]]*ndb_mgmd' /etc/mysql/; then

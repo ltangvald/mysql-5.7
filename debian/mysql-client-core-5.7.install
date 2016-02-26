@@ -1,0 +1,4 @@
+# binaries
+usr/bin/mysql
+usr/bin/mysql_embedded
+usr/bin/mysqlcheck

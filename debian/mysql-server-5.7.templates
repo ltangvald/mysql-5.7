@@ -7,7 +7,7 @@
 # Even minor modifications require translation updates and such
 # changes should be coordinated with translators and reviewers.
 
-Template: mysql-server-5.6/really_downgrade
+Template: mysql-server-5.7/really_downgrade
 Type: boolean
 Default: false
 _Description: Really proceed with downgrade?
@@ -19,7 +19,7 @@ _Description: Really proceed with downgrade?
  There is no guarantee that the version you're currently installing
  will be able to use the current databases.
 
-Template: mysql-server-5.6/nis_warning
+Template: mysql-server-5.7/nis_warning
 Type: note
 #flag:translate!:3,5
 _Description: Important note for NIS/YP users
@@ -33,7 +33,7 @@ _Description: Important note for NIS/YP users
  .
   /var/lib/mysql: drwxr-xr-x   mysql    mysql
 
-Template: mysql-server-5.6/postrm_remove_databases
+Template: mysql-server-5.7/postrm_remove_databases
 Type: boolean
 Default: false
 _Description: Remove all MySQL databases?
@@ -44,7 +44,7 @@ _Description: Remove all MySQL databases?
  recent version or if a different mysql-server package is already
  using it, the data should be kept.
 
-Template: mysql-server-5.6/start_on_boot
+Template: mysql-server-5.7/start_on_boot
 Type: boolean
 Default: true
 _Description: Start the MySQL server on boot?
@@ -73,7 +73,7 @@ _Description: Unable to set password for the MySQL "root" user
  .
  You should check the account's password after the package installation.
  .
- Please read the /usr/share/doc/mysql-server-5.6/README.Debian file
+ Please read the /usr/share/doc/mysql-server-5.7/README.Debian file
  for more information.
 
 Template: mysql-server/password_mismatch
@@ -84,6 +84,6 @@ _Description: Password input error
 Template: mysql-server/no_upgrade_when_using_ndb
 Type: error
 _Description: NDB Cluster seems to be in use
- MySQL-5.6 no longer provides NDB Cluster support. Please migrate to the new
+ MySQL-5.7 no longer provides NDB Cluster support. Please migrate to the new
  mysql-cluster-server package and remove all lines starting with "ndb" from
  all config files below /etc/mysql/.

@@ -1,0 +1,5 @@
+etc/init.d
+etc/mysql/mysql.conf.d
+usr/lib/mysql
+usr/lib/mysql/plugin
+var/lib/mysql-upgrade
