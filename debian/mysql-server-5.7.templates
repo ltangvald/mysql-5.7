@@ -73,7 +73,7 @@ _Description: Unable to set password for the MySQL "root" user
  .
  You should check the account's password after the package installation.
  .
- Please read the /usr/share/doc/mysql-server-5.6/README.Debian file
+ Please read the /usr/share/doc/mysql-server-5.7/README.Debian file
  for more information.
 
 Template: mysql-server/password_mismatch
@@ -84,6 +84,6 @@ _Description: Password input error
 Template: mysql-server/no_upgrade_when_using_ndb
 Type: error
 _Description: NDB Cluster seems to be in use
- MySQL-5.6 no longer provides NDB Cluster support. Please migrate to the new
+ MySQL-5.7 no longer provides NDB Cluster support. Please migrate to the new
  mysql-cluster-server package and remove all lines starting with "ndb" from
  all config files below /etc/mysql/.

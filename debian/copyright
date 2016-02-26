@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: MySQL 5.6
+Upstream-Name: MySQL 5.7
 Upstream-Contact: http://bugs.mysql.com/
-Source: http://dev.mysql.com/downloads/mysql/5.6.html
+Source: http://dev.mysql.com/downloads/mysql/5.7.html
 Comments:
  The file Docs/mysql.info is removed from the upstream source
  because it is incompatible with the Debian Free Software Guidelines.
