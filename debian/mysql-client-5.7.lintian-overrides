@@ -4,7 +4,5 @@
 # 2012-01-09 jesusch-guest
 # These long lines reproduce actual output and to reformat them
 # would damage the integrity of the man page.
-mysql-client-5.6: manpage-has-errors-from-man usr/share/man/man1/mysqladmin.1.gz 28: warning [p 1, 1.5i]: can't break line
-mysql-client-5.6: manpage-has-errors-from-man usr/share/man/man1/mysqladmin.1.gz 37: warning [p 1, 1.5i]: can't break line
-mysql-client-5.6: manpage-has-errors-from-man usr/share/man/man1/mysqldump.1.gz 1350: warning [p 8, 9.0i, div `3tbd3,1', 0.3i]: can't break line
-mysql-client-5.6: manpage-has-errors-from-man usr/share/man/man1/mysqldump.1.gz 2151: warning [p 12, 6.5i, div `3tbd2,1', 0.2i]: can't break line
+manpage-has-errors-from-man usr/share/man/man1/mysqladmin.1.gz 37: warning [p 1, 1.5i]: can't break line
+manpage-has-errors-from-man usr/share/man/man1/mysqldump.1.gz 1623: warning [p 9, 10.2i, div `3tbd3,1', 0.3i]: can't break line
