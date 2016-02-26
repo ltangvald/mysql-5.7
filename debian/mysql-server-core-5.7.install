@@ -3,6 +3,8 @@ usr/bin/my_print_defaults
 usr/bin/mysql_install_db
 usr/bin/mysql_upgrade
 usr/sbin/mysqld
+usr/share/mysql/magic
+usr/share/mysql/mysql-log-rotate
 usr/share/mysql/bulgarian
 usr/share/mysql/charsets
 usr/share/mysql/czech
