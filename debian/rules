@@ -167,7 +167,7 @@ auto_install-stamp:
 	install -m 0644 debian/additions/debian_create_root_user.sql $(TMP)/usr/share/mysql/
 	install -m 0755 debian/additions/mysql-systemd-start $(TMP)/usr/share/mysql/
 	# install AppArmor profile
-	install -D -m 644 debian/apparmor-profile $(TMP)/etc/apparmor.d/usr.sbin.mysqld
+	install -D -m 644 debian/additions/apparmor-profile $(TMP)/etc/apparmor.d/usr.sbin.mysqld
 	chmod 0755 $(TMP)/usr/share/mysql-test/std_data/checkDBI_DBD-mysql.pl
 	# chmod 0644 $(TMP)/usr/share/mysql/*.ini
 	chmod 0644 $(TMP)/usr/bin/mysqlaccess.conf
