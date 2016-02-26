@@ -26,11 +26,11 @@ set -ex
 # using the test user and test database.
 
 debconf-set-selections <<EOT
-mysql-server-5.6 mysql-server/root_password password rootpassword
-mysql-server-5.6 mysql-server/root_password_again password rootpassword
+mysql-server-5.7 mysql-server/root_password password rootpassword
+mysql-server-5.7 mysql-server/root_password_again password rootpassword
 EOT
 
-DEBIAN_FRONTEND=noninteractive dpkg-reconfigure mysql-server-5.6
+DEBIAN_FRONTEND=noninteractive dpkg-reconfigure mysql-server-5.7
 
 mysql --user=root --password=rootpassword <<EOT
 CREATE DATABASE testdatabase;
