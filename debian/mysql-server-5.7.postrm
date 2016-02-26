@@ -13,12 +13,25 @@ ${DEBIAN_SCRIPT_TRACE:+ echo "#42#DEBUG# RUNNING $0 $*" 1>&2 }
 mysql_cfgdir=/etc/mysql
 MYADMIN="/usr/bin/mysqladmin --defaults-file=/etc/mysql/debian.cnf"
 
+pathfind() {
+  OLDIFS="$IFS"
+  IFS=:
+  for p in $PATH; do
+    if [ -x "$p/$*" ]; then
+      IFS="$OLDIFS"
+      return 0
+    fi
+  done
+  IFS="$OLDIFS"
+  return 1
+}
+
 # Try to stop the server in a sane way. If it does not success let the admin
 # do it himself. No database directories should be removed while the server
 # is running!
 stop_server() {
   set +e
-  if [ -x /usr/sbin/invoke-rc.d ]; then
+  if pathfind invoke-rc.d; then
     invoke-rc.d mysql stop
   else
     /etc/init.d/mysql stop

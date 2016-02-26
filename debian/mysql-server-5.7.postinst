@@ -12,8 +12,23 @@ export PATH=$PATH:/sbin:/usr/sbin:/bin:/usr/bin
 # This command can be used as pipe to syslog. With "-s" it also logs to stderr.
 ERR_LOGGER="logger -p daemon.err -t mysqld_safe -i"
 
+# To avoid having hardcoded paths in the script, we do a search on the path, as suggested at:
+# https://www.debian.org/doc/manuals/developers-reference/ch06.en.html#bpp-debian-maint-scripts
+pathfind() {
+  OLDIFS="$IFS"
+  IFS=:
+  for p in $PATH; do
+    if [ -x "$p/$*" ]; then
+      IFS="$OLDIFS"
+      return 0
+    fi
+  done
+  IFS="$OLDIFS"
+  return 1
+}
+
 invoke() {
-  if [ -x /usr/sbin/invoke-rc.d ]; then
+  if pathfind invoke-rc.d; then
     invoke-rc.d mysql $1
   else
     /etc/init.d/mysql $1
