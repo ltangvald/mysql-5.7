@@ -1,14 +1,16 @@
-Description: port of mips64 patch for 5.6
- Fix MIPS64 asm constraints.
- Original author: YunQiang Su <wzssyqa@gmail.com>
-Author: Lars Tangvald <lars.tangvald@oracle.com>
+Description: Fix MIPS64 asm constraints
+  Assembly problem, using =l instead of =lc.
+  http://stackoverflow.com/questions/3652153/impossible-constraint-in-asm
+Author: YunQiang Su <wzssyqa@gmail.com>
 Bug: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=798126
 Forwarded: yes, http://bugs.mysql.com/69978
-Last-Update: 2016-02-10 
+Last-Update: 2015-09-21
 
---- mysql-5.7-5.7.11.orig/extra/yassl/taocrypt/src/integer.cpp
-+++ mysql-5.7-5.7.11/extra/yassl/taocrypt/src/integer.cpp
-@@ -178,7 +178,7 @@ DWord() {}
+Index: mysql-5.6/extra/yassl/taocrypt/src/integer.cpp
+===================================================================
+--- mysql-5.6.orig/extra/yassl/taocrypt/src/integer.cpp
++++ mysql-5.6/extra/yassl/taocrypt/src/integer.cpp
+@@ -192,7 +192,7 @@
                  "a" (a), "rm" (b) : "cc");
  
          #elif defined(__mips64)
