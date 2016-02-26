@@ -20,7 +20,9 @@ usr/share/mysql/innodb_memcached_config.sql
 usr/share/mysql/italian
 usr/share/mysql/japanese
 usr/share/mysql/korean
+usr/share/mysql/magic
 usr/share/mysql/my-default.cnf
+usr/share/mysql/mysql-log-rotate
 usr/share/mysql/mysql_security_commands.sql
 usr/share/mysql/mysql_system_tables.sql
 usr/share/mysql/mysql_system_tables_data.sql
