@@ -1,7 +1,3 @@
-#usr/share/mysql/config.huge.ini
-#usr/share/mysql/config.medium.ini
-#usr/share/mysql/config.small.ini
-#usr/share/mysql/ndb-config-2-node.ini
 debian/additions/mysql-systemd-start usr/share/mysql/
 debian/additions/mysql.cnf etc/mysql/
 debian/additions/mysql.conf.d etc/mysql/
