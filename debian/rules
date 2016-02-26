@@ -161,38 +161,6 @@ auto_install-stamp:
 	chmod 0644 $(TMP)/usr/share/mysql-test/suite/innodb_stress/t/*.opt
 	touch $@
 
-# Use the --fail-missing to check for stuff that we should be installing
-#       Exclusion                                       Package         Type
-#       usr/share/man/                                  various         man
-#       usr/share/mysql/magic                           M-server-5.6    example
-#       usr/bin/mysqlaccess.conf                        M-client-5.6    example
-#       usr/lib/mysql/plugin/daemon_example.ini         M-server-5.6    example
-#       usr/share/mysql/my-                             M-server-5.6    example
-# The following exclusions have been inherited from pre short form
-# debian/rules days.
-#        usr/share/mysql/mi_test_all
-#        usr/share/mysql/mysql-log-rotate
-#        usr/share/mysql/mysql.server
-#        usr/share/mysql/binary-configure
-# NOTE(james-page) usr/include -> end can be dropped when 5.6 becomes default
-# NOTE(james-page) skip --fail-missing until package is complete 5.5 replacement
-#override_dh_install:
-#	dh_install --fail-missing                       \
-#        -Xusr/share/man/                                \
-#        -Xusr/share/info/mysql.info                     \
-#        -Xusr/share/mysql/magic                         \
-#        -Xusr/share/mysql/solaris/postinstall-solaris   \
-#        -Xusr/lib/mysql/plugin/daemon_example.ini       \
-#        -Xusr/bin/mysqlaccess.conf                      \
-#        -Xusr/share/mysql/mi_test_all                   \
-#        -Xusr/share/mysql/mysql-log-rotate              \
-#        -Xusr/share/mysql/mysql.server                  \
-#        -Xusr/share/mysql/binary-configure              \
-#        -Xusr/share/mysql/my-                           \
-#        -Xusr/include                                   \
-#        -Xusr/bin/mysql_config                          \
-#        -Xusr/share/aclocal/mysql.m4                    \
-#        -Xlibmysql
 
 override_dh_installlogrotate-arch:
 	dh_installlogrotate --name mysql-server
