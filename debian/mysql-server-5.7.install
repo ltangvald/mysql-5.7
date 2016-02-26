@@ -1,7 +1,7 @@
 debian/additions/mysql-systemd-start usr/share/mysql/
 debian/additions/mysql.cnf etc/mysql/
 debian/additions/mysql.conf.d etc/mysql/
-debian/additions/source_mysql-5.6.py usr/share/apport/package-hooks/
+debian/additions/source_mysql-5.7.py usr/share/apport/package-hooks/
 etc/apparmor.d/usr.sbin.mysqld
 etc/mysql/debian-start
 usr/bin/msql2mysql
