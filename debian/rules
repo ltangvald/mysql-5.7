@@ -78,7 +78,6 @@ configure-stamp:
 		-DWITH_BOOST=../boost \
 		-DCOMPILATION_COMMENT="($(DISTRIBUTION))" \
 		-DMYSQL_SERVER_SUFFIX="-$(DEBVERSION)" \
-		-DSYSTEM_TYPE="debian-$(DEB_BUILD_GNU_SYSTEM)" \
 		-DINSTALL_LAYOUT=DEB \
 		-DINSTALL_DOCDIR=share/mysql/docs \
 		-DINSTALL_DOCREADMEDIR=share/mysql \
