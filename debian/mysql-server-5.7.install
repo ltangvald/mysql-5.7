@@ -46,5 +46,5 @@ usr/share/mysql/install_rewriter.sql
 usr/share/mysql/uninstall_rewriter.sql
 usr/share/mysql/echo_stderr
 usr/share/mysql/errmsg-utf8.txt
-usr/share/mysql/mysql-systemd-start
+debian/additions/mysql-systemd-start usr/share/mysql/
 usr/share/mysql/mysqld_multi.server
