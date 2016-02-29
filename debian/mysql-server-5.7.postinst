@@ -95,6 +95,8 @@ case "$1" in
     mysql_logdir=/var/log/mysql
     mysql_cfgdir=/etc/mysql
     mysql_upgradedir=/var/lib/mysql-upgrade
+    mysql_filesdir=/var/lib/mysql-files
+    mysql_keyringdir=/var/lib/mysql-keyring
 
     # mysqld gets called via $MYSQL_BOOTSTRAP during postinst configure, so any
     # updates to the AppArmor profile must be loaded first (before the
@@ -121,16 +123,19 @@ case "$1" in
 
     # Ensure the existence and right permissions for the database and
     # log files.
-    if [ ! -d "$mysql_statedir"       -a ! -L "$mysql_statedir"       ]; then mkdir "$mysql_statedir"; fi
-    if [ ! -d "$mysql_logdir"         -a ! -L "$mysql_logdir"         ]; then mkdir "$mysql_logdir"; fi
+    for d in $mysql_statedir $mysql_filesdir $mysql_keyringdir $mysql_logdir
+    do
+      if [ ! -d "$d" -a ! -L "$d" ]; then mkdir "$d"; fi
+      chown -R mysql:mysql $d
+      chmod 0700 $d
+    done
+
     # When creating an ext3 jounal on an already mounted filesystem like e.g.
     # /var/lib/mysql, you get a .journal file that is not modifyable by chown.
     # The mysql_datadir must not be writable by the mysql user under any
     # circumstances as it contains scripts that are executed by root.
     set +e
     chown -R 0:0 $mysql_datadir
-    chown -R mysql:mysql $mysql_statedir
-    chmod 0700 $mysql_statedir
     touch $mysql_logdir/error.log
     chown -R mysql:adm $mysql_logdir
     chmod 0750 $mysql_logdir
