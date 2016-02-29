@@ -179,6 +179,8 @@ case "$1" in
     dc=$mysql_cfgdir/debian.cnf; 
     if [ -e "$dc" -a -n "`fgrep mysql_upgrade $dc 2>/dev/null`" ]; then
       pass="`sed -n 's/^[     ]*password *= *// p' $dc | head -n 1`"
+      # Basedir is deprecated. Remove the option if it's in an existing debian.cnf
+      sed -i '/basedir/d' "$dc"
     else
       pass=`perl -e 'print map{("a".."z","A".."Z",0..9)[int(rand(62))]}(1..16)'`;
       if [ ! -d "$mysql_cfgdir" ]; then install -o 0 -g 0 -m 0755 -d $mysql_cfgdir; fi
@@ -196,7 +198,6 @@ case "$1" in
       echo "user     = debian-sys-maint"                                 >>$dc
       echo "password = $pass"                                            >>$dc
       echo "socket   = $mysql_rundir/mysqld.sock"                        >>$dc
-      echo "basedir  = /usr"                                             >>$dc
     fi
     # If this dir chmod go+w then the admin did it. But this file should not.
     chown 0:0 $dc
