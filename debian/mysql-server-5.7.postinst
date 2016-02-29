@@ -255,6 +255,9 @@ if [ "$1" = "configure" ]; then
 
 fi
 
+# forget we ever saw the password.  don't use reset to keep the seen status
+db_set mysql-server/root_password ""
+db_set mysql-server/root_password_again ""
 db_stop # in case invoke failes
 
 #DEBHELPER#
