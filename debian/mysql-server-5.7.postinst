@@ -48,7 +48,7 @@ invoke() {
 MYSQL_BOOTSTRAP="/usr/sbin/mysqld --bootstrap --user=mysql --skip-grant-tables"
 
 test_mysql_access() {
-       mysql --no-defaults -u root -h localhost </dev/null >/dev/null 2>&1
+  mysql --no-defaults -u root -h localhost </dev/null >/dev/null 2>&1
 }
 
 # call with $1 = "online" to connect to the server, otherwise it bootstraps
@@ -106,13 +106,13 @@ case "$1" in
     #
     # This a workaround. Status is tracked at https://launchpad.net/bugs/1435368
     if aa-status --enabled 2>/dev/null; then
-	# It is common for this to fail because
-	# /etc/apparmor.d/local/usr.sbin.mysqld doesn't exist (eg. on first
-	# install). But if this happens, then the workaround is not required,
-	# so it doesn't matter. If instead it causes a security issue, then
-	# that doesn't really matter here as dh_apparmor should handle that
-	# correctly later on.
-        apparmor_parser -r -T -W /etc/apparmor.d/usr.sbin.mysqld 2>/dev/null || true
+      # It is common for this to fail because
+      # /etc/apparmor.d/local/usr.sbin.mysqld doesn't exist (eg. on first
+      # install). But if this happens, then the workaround is not required,
+      # so it doesn't matter. If instead it causes a security issue, then
+      # that doesn't really matter here as dh_apparmor should handle that
+      # correctly later on.
+      apparmor_parser -r -T -W /etc/apparmor.d/usr.sbin.mysqld 2>/dev/null || true
     fi
 
     # New packaging paradigm for my.cnf as of Dec-2014 for sharing mysql
@@ -178,25 +178,25 @@ case "$1" in
     # recreate the credentials file if not present or without mysql_upgrade stanza
     dc=$mysql_cfgdir/debian.cnf; 
     if [ -e "$dc" -a -n "`fgrep mysql_upgrade $dc 2>/dev/null`" ]; then
-        pass="`sed -n 's/^[     ]*password *= *// p' $dc | head -n 1`"
+      pass="`sed -n 's/^[     ]*password *= *// p' $dc | head -n 1`"
     else
-	pass=`perl -e 'print map{("a".."z","A".."Z",0..9)[int(rand(62))]}(1..16)'`;
-        if [ ! -d "$mysql_cfgdir" ]; then install -o 0 -g 0 -m 0755 -d $mysql_cfgdir; fi
-        umask 066
-        cat /dev/null > $dc
-        umask 022
-        echo "# Automatically generated for Debian scripts. DO NOT TOUCH!" >>$dc
-        echo "[client]"                                                    >>$dc
-        echo "host     = localhost"                                        >>$dc
-        echo "user     = debian-sys-maint"                                 >>$dc
-        echo "password = $pass"                                            >>$dc
-        echo "socket   = $mysql_rundir/mysqld.sock"                        >>$dc
-        echo "[mysql_upgrade]"                                             >>$dc
-        echo "host     = localhost"                                        >>$dc
-        echo "user     = debian-sys-maint"                                 >>$dc
-        echo "password = $pass"                                            >>$dc
-        echo "socket   = $mysql_rundir/mysqld.sock"                        >>$dc
-        echo "basedir  = /usr"                                             >>$dc
+      pass=`perl -e 'print map{("a".."z","A".."Z",0..9)[int(rand(62))]}(1..16)'`;
+      if [ ! -d "$mysql_cfgdir" ]; then install -o 0 -g 0 -m 0755 -d $mysql_cfgdir; fi
+      umask 066
+      cat /dev/null > $dc
+      umask 022
+      echo "# Automatically generated for Debian scripts. DO NOT TOUCH!" >>$dc
+      echo "[client]"                                                    >>$dc
+      echo "host     = localhost"                                        >>$dc
+      echo "user     = debian-sys-maint"                                 >>$dc
+      echo "password = $pass"                                            >>$dc
+      echo "socket   = $mysql_rundir/mysqld.sock"                        >>$dc
+      echo "[mysql_upgrade]"                                             >>$dc
+      echo "host     = localhost"                                        >>$dc
+      echo "user     = debian-sys-maint"                                 >>$dc
+      echo "password = $pass"                                            >>$dc
+      echo "socket   = $mysql_rundir/mysqld.sock"                        >>$dc
+      echo "basedir  = /usr"                                             >>$dc
     fi
     # If this dir chmod go+w then the admin did it. But this file should not.
     chown 0:0 $dc
