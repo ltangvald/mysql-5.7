@@ -191,6 +191,7 @@ Files: cmd-line-utils/libedit/config.h
  BUILD-CMAKE
  COPYING
  Doxyfile-perfschema
+ INSTALL
  INSTALL-SOURCE
  INSTALL-WIN-SOURCE
  VERSION
@@ -293,7 +294,7 @@ Files: BUILD/*
  support-files/RHEL4-SElinux/*
  support-files/MySQL-shared-compat.spec.sh
  support-files/mysql.spec.sh
- support-files/mysql.5.6.*.spec
+ support-files/mysql.5.7.*.spec
  support-files/mysql.m4
  support-files/ndb-config-2-node.ini.sh
  tests/*
@@ -670,8 +671,19 @@ License: BSD-3-clause
 
 Files: mysys_ssl/*
  packaging/*
+ libbinlogevents/*
+ libbinlogstandalone/*
  plugin/password_validation/*
-Copyright: 2002, 2015 Oracle and/or its affiliates.
+ plugin/replication_observers_example/*
+ plugin/rewriter/*
+ plugin/rewrite_example/*
+ plugin/semisync/*
+ plugin/test_services/*
+ plugin/test_service_sql_api/*
+ plugin/version_token/*
+ plugin/keyring/*
+ testclients/*
+Copyright: 2002, 2016 Oracle and/or its affiliates.
 License: GPL-2
 
 Files: packaging/*
