@@ -122,7 +122,6 @@ case "$1" in
     # Ensure the existence and right permissions for the database and
     # log files.
     if [ ! -d "$mysql_statedir"       -a ! -L "$mysql_statedir"       ]; then mkdir "$mysql_statedir"; fi
-    if [ ! -d "$mysql_statedir/mysql" -a ! -L "$mysql_statedir/mysql" ]; then mkdir "$mysql_statedir/mysql"; fi
     if [ ! -d "$mysql_logdir"         -a ! -L "$mysql_logdir"         ]; then mkdir "$mysql_logdir"; fi
     # When creating an ext3 jounal on an already mounted filesystem like e.g.
     # /var/lib/mysql, you get a .journal file that is not modifyable by chown.
@@ -131,7 +130,7 @@ case "$1" in
     set +e
     chown -R 0:0 $mysql_datadir
     chown -R mysql $mysql_statedir
-    chmod 700 $mysql_statedir $mysql_statedir/mysql
+    chmod 700 $mysql_statedir
     touch $mysql_logdir/error.log
     chown -R mysql:adm $mysql_logdir
     chmod 0750 $mysql_logdir
