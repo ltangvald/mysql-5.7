@@ -3,8 +3,6 @@ usr/bin/my_print_defaults
 usr/bin/mysql_install_db
 usr/bin/mysql_upgrade
 usr/sbin/mysqld
-usr/share/mysql/magic
-usr/share/mysql/mysql-log-rotate
 usr/share/mysql/bulgarian
 usr/share/mysql/charsets
 usr/share/mysql/czech
@@ -22,7 +20,9 @@ usr/share/mysql/innodb_memcached_config.sql
 usr/share/mysql/italian
 usr/share/mysql/japanese
 usr/share/mysql/korean
+usr/share/mysql/magic
 usr/share/mysql/my-default.cnf
+usr/share/mysql/mysql-log-rotate
 usr/share/mysql/mysql_security_commands.sql
 usr/share/mysql/mysql_system_tables.sql
 usr/share/mysql/mysql_system_tables_data.sql

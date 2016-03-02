@@ -17,10 +17,10 @@ Build-Depends: bison,
                libaio-dev[linux-any],
                libedit-dev,
                libevent-dev,
+               liblz4-dev,
                libmecab-dev,
                libncurses5-dev (>= 5.0-6),
                libnuma-dev,
-               liblz4-dev,
                libwrap0-dev (>= 7.6-8.3),
                lsb-release,
                perl,
@@ -36,9 +36,7 @@ XS-Testsuite: autopkgtest
 Package: libmysqlclient20
 Section: libs
 Architecture: any
-Depends: mysql-common (>= 5.5), 
-         ${misc:Depends}, 
-         ${shlibs:Depends}
+Depends: mysql-common (>= 5.5), ${misc:Depends}, ${shlibs:Depends}
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
 Description: MySQL database client library
@@ -52,8 +50,7 @@ Description: MySQL database client library
 Package: libmysqld-dev
 Architecture: any
 Section: libdevel
-Depends: libmysqlclient-dev (>= ${binary:Version}),
-         ${misc:Depends}
+Depends: libmysqlclient-dev (>= ${binary:Version}), ${misc:Depends}
 Description: MySQL embedded database development files
  MySQL is a fast, stable and true multi-user, multi-threaded SQL database
  server. SQL (Structured Query Language) is the most popular database query
@@ -79,8 +76,7 @@ Description: MySQL database development files
 
 Package: mysql-common
 Architecture: all
-Depends: ${misc:Depends},
-         ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Conflicts: mariadb-server-5.5,
            mysql-common-5.6,
            mysql-server-5.5,
@@ -102,8 +98,7 @@ Description: MySQL database common files, e.g. /etc/mysql/my.cnf
 
 Package: mysql-client-core-5.7
 Architecture: any
-Depends: ${misc:Depends}, 
-         ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: virtual-mysql-client-core
 Conflicts: mysql-client-5.5, mysql-client-core-5.5, virtual-mysql-client-core
 Replaces: mysql-client-5.5, mysql-client-core-5.5, virtual-mysql-client-core
@@ -117,19 +112,15 @@ Description: MySQL database core client binaries
 
 Package: mysql-client-5.7
 Architecture: any
-Depends: mysql-client-core-5.7,
+Depends: debianutils (>=1.6),
+         mysql-client-core-5.7,
          mysql-common (>= 5.5),
-         debianutils (>=1.6),
          ${misc:Depends},
          ${shlibs:Depends}
 Provides: virtual-mysql-client
-Conflicts: mysql-client-5.5,
-           mysql-client-5.6,
-           virtual-mysql-client
+Conflicts: mysql-client-5.5, mysql-client-5.6, virtual-mysql-client
 Breaks: mysql-server-core-5.6 (<< 5.6.22-1~)
-Replaces: mysql-client-5.5,
-          mysql-client-5.6,
-          virtual-mysql-client
+Replaces: mysql-client-5.5, mysql-client-5.6, virtual-mysql-client
 Description: MySQL database client binaries
  MySQL is a fast, stable and true multi-user, multi-threaded SQL database
  server. SQL (Structured Query Language) is the most popular database query
@@ -143,9 +134,7 @@ Package: mysql-server-core-5.7
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: virtual-mysql-server-core
-Breaks: mariadb-client-10.0 (<< 10.0.16-2~),
-        mysql-client-5.6,
-        mysql-server-5.6,
+Breaks: mariadb-client-10.0 (<< 10.0.16-2~), mysql-client-5.6, mysql-server-5.6
 Conflicts: mysql-client-5.5,
            mysql-client-5.6,
            mysql-server-core-5.5,
@@ -206,8 +195,7 @@ Description: MySQL database server binaries and system database setup
 
 Package: mysql-server
 Architecture: all
-Depends: mysql-server-5.7,
-         ${misc:Depends}
+Depends: mysql-server-5.7, ${misc:Depends}
 Description: MySQL database server (metapackage depending on the latest version)
  This is an empty package that depends on the current "best" version of
  mysql-server (currently mysql-server-5.7), as determined by the MySQL
@@ -222,8 +210,7 @@ Description: MySQL database server (metapackage depending on the latest version)
 
 Package: mysql-client
 Architecture: all
-Depends: mysql-client-5.7,
-         ${misc:Depends}
+Depends: mysql-client-5.7, ${misc:Depends}
 Description: MySQL database client (metapackage depending on the latest version)
  This is an empty package that depends on the current "best" version of
  mysql-client (currently mysql-client-5.7), as determined by the MySQL
@@ -233,8 +220,7 @@ Description: MySQL database client (metapackage depending on the latest version)
 
 Package: mysql-testsuite
 Architecture: all
-Depends: mysql-testsuite-5.7,
-         ${misc:Depends}
+Depends: mysql-testsuite-5.7, ${misc:Depends}
 Description: MySQL regression tests
  This is an empty package that depends on the current "best" version of
  mysql-testsuite (currently mysql-testsuite-5.7), as determined by the
@@ -249,15 +235,13 @@ Depends: mysql-client-5.7 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Provides: virtual-mysql-testsuite
-Conflicts: mysql-testsuite-5.5,
-           mysql-testsuite-5.6,
-           virtual-mysql-testsuite
-Replaces: mysql-testsuite-5.5,
-          mysql-testsuite-5.6,
-          mysql-client-5.5,
+Conflicts: mysql-testsuite-5.5, mysql-testsuite-5.6, virtual-mysql-testsuite
+Replaces: mysql-client-5.5,
           mysql-client-5.6,
           mysql-server-5.5,
           mysql-server-5.6,
+          mysql-testsuite-5.5,
+          mysql-testsuite-5.6,
           virtual-mysql-testsuite
 Breaks: mysql-client-5.5 (>= 5.5),
         mysql-client-5.6 (>= 5.6),
@@ -273,8 +257,7 @@ Description: MySQL 5.7 testsuite
 
 Package: mysql-source-5.7
 Architecture: any
-Depends: ${misc:Depends},
-         ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: MySQL source
  MySQL is a fast, stable, and true multi-user, multi-threaded SQL database
  server.  SQL (Structured Query Language) is the most popular database query
