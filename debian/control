@@ -133,17 +133,18 @@ Package: mysql-server-core-5.7
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: virtual-mysql-server-core
-Breaks: mariadb-client-10.0 (<< 10.0.16-2~), mysql-client-5.6, mysql-server-5.6
+Breaks: mariadb-client-10.0 (<< 10.0.16-2~),
+        mysql-client-5.6 (<< 5.6.22-1~),
+        mysql-server-5.6 (<< 5.6.25-3~)
 Conflicts: mysql-client-5.5,
            mysql-client-5.6,
            mysql-server-core-5.5,
            mysql-server-core-5.6,
            virtual-mysql-server-core
 Replaces: mariadb-client-10.0 (<< 10.0.16-2~),
-          mysql-client-5.5,
-          mysql-client-5.6,
-          mysql-server-5.5,
-          mysql-server-5.6,
+          mysql-client-5.5 (<< 5.6),
+          mysql-client-5.6 (<< 5.6.22-1~),
+          mysql-server-5.6 (<< 5.6.25-3~),
           mysql-server-core-5.5,
           mysql-server-core-5.6,
           virtual-mysql-server-core
