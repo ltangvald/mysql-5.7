@@ -1,5 +1,5 @@
 Tests: smoke
-Depends: mysql-server-5.6
+Depends: mysql-server-5.7
 Restrictions: allow-stderr needs-root breaks-testbed
 
 Tests: upstream
