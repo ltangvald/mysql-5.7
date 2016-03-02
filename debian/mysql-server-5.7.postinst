@@ -79,21 +79,6 @@ set +e; invoke stop; set -e
     
 case "$1" in
   configure)
-    # The service may have been masked by previous removals,
-    # restricting access
-    deb-systemd-helper unmask mysql.service >/dev/null || true
-    # Fixes an issue where the service won't start when upgrading 
-    # from 5.5
-    if deb-systemd-helper --quiet was-enabled mysql.service; then
-      # Enables the unit on first installation, creates new
-      # symlinks on upgrades if the unit file has changed.
-      deb-systemd-helper enable mysql.service >/dev/null || true
-    else
-      # Update the statefile to add new symlinks (if any), which need to be
-      # cleaned up on purge. Also remove old symlinks.
-      deb-systemd-helper update-state mysql.service >/dev/null || true
-    fi
-
     mysql_datadir=/usr/share/mysql
     mysql_statedir=/var/lib/mysql
     mysql_rundir=/var/run/mysqld
@@ -205,19 +190,8 @@ case "$1" in
       echo "SHUTDOWN;" >> $initfile
       mysqld --initialize-insecure --user=mysql --init-file=$initfile> /dev/null 2>&1
       rm $initfile
-    else
-      invoke start
-      if test_sysmaint_access; then
-        mysql_upgrade --defaults-file=/etc/mysql/debian.cnf
-      else # In case the debian user can't log in we try setting the password
-        invoke stop
-        set_mysql_pw "debian-sys-maint" "$pass"
-        invoke start
-        mysql_upgrade --defaults-file=/etc/mysql/debian.cnf 
-      fi
     fi
     
-    invoke stop
     set -e
 
     # To avoid downgrades. This has to happen after the database is created, or --initialize will fail
@@ -234,20 +208,29 @@ case "$1" in
   ;;
 esac
 
-# here we check to see if we can connect as root without a password
-# this should catch upgrades from previous versions where the root
-# password wasn't set.  if there is a password, or if the connection
-# fails for any other reason, nothing happens.
+#DEBHELPER#
 if [ "$1" = "configure" ]; then
-  invoke start
+  # The debhelper section is needed to unmask and enable the service
+  # in some cases like when upgrading from 5.5
+  if test_sysmaint_access; then
+    mysql_upgrade --defaults-file=/etc/mysql/debian.cnf
+  else # In case the debian user can't log in we try setting the password
+    invoke stop
+    set_mysql_pw "debian-sys-maint" "$pass"
+    invoke start
+    mysql_upgrade --defaults-file=/etc/mysql/debian.cnf 
+  fi
+  # here we check to see if we can connect as root without a password
+  # this should catch upgrades from previous versions where the root
+  # password wasn't set.  if there is a password, or if the connection
+  # fails for any other reason, nothing happens.
   if test_mysql_access; then
     db_get mysql-server/root_password && rootpw="$RET"
-    invoke stop
     if [ ! -z $rootpw ]; then
+      invoke stop
       set_mysql_pw 'root' $rootpw
+      invoke start
     fi
-  else
-    invoke stop
   fi
 fi
 
@@ -255,7 +238,5 @@ fi
 db_set mysql-server/root_password ""
 db_set mysql-server/root_password_again ""
 db_stop # in case invoke failes
-
-#DEBHELPER#
 
 exit 0
