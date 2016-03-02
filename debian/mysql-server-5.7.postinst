@@ -76,7 +76,7 @@ set_mysql_pw() {
 # In case the server wasn't running at all it should be ok if the stop
 # script fails. I can't tell at this point because of the cleaned /var/run.
 set +e; invoke stop; set -e
-    
+
 case "$1" in
   configure)
     mysql_datadir=/usr/share/mysql
@@ -190,6 +190,8 @@ case "$1" in
       echo "SHUTDOWN;" >> $initfile
       mysqld --initialize-insecure --user=mysql --init-file=$initfile> /dev/null 2>&1
       rm $initfile
+    else
+     existingdatabase=1
     fi
     
     set -e
@@ -209,27 +211,31 @@ case "$1" in
 esac
 
 #DEBHELPER#
+
+# We put this after the debhelper section because it is needed to unmask
+# and enable the service in some cases like when upgrading from 5.5
 if [ "$1" = "configure" ]; then
-  # The debhelper section is needed to unmask and enable the service
-  # in some cases like when upgrading from 5.5
-  if test_sysmaint_access; then
-    mysql_upgrade --defaults-file=/etc/mysql/debian.cnf
-  else # In case the debian user can't log in we try setting the password
-    invoke stop
-    set_mysql_pw "debian-sys-maint" "$pass"
-    invoke start
-    mysql_upgrade --defaults-file=/etc/mysql/debian.cnf 
-  fi
-  # here we check to see if we can connect as root without a password
-  # this should catch upgrades from previous versions where the root
-  # password wasn't set.  if there is a password, or if the connection
-  # fails for any other reason, nothing happens.
-  if test_mysql_access; then
-    db_get mysql-server/root_password && rootpw="$RET"
-    if [ ! -z $rootpw ]; then
+  # We don't need to do this if there was no existing database
+  if [ $existingdatabase = 1 ]; then
+    if test_sysmaint_access; then
+      mysql_upgrade --defaults-file=/etc/mysql/debian.cnf
+    else # In case the debian user can't log in we try setting the password
       invoke stop
-      set_mysql_pw 'root' $rootpw
+      set_mysql_pw "debian-sys-maint" "$pass"
       invoke start
+      mysql_upgrade --defaults-file=/etc/mysql/debian.cnf
+    fi
+    # here we check to see if we can connect as root without a password
+    # this should catch upgrades from previous versions where the root
+    # password wasn't set.  if there is a password, or if the connection
+    # fails for any other reason, nothing happens.
+    if test_mysql_access; then
+      db_get mysql-server/root_password && rootpw="$RET"
+      if [ ! -z $rootpw ]; then
+        invoke stop
+        set_mysql_pw 'root' $rootpw
+        invoke start
+      fi
     fi
   fi
 fi
