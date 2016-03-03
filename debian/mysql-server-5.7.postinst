@@ -12,6 +12,16 @@ export PATH=$PATH:/sbin:/usr/sbin:/bin:/usr/bin
 # This command can be used as pipe to syslog. With "-s" it also logs to stderr.
 ERR_LOGGER="logger -p daemon.err -t mysqld_safe -i"
 
+# Runs an arbitrary init sql file supplied in $1. Does not require login access
+run_init_sql() {
+  tmpdir=`mktemp -d`
+  chown mysql:mysql "$tmpdir"
+  mysqld --user=mysql --init-file="$1" --socket="$tmpdir/mysqld.sock" --pid-file="$tmpdir/mysqld.pid" > /dev/null 2>&1
+  result=$?
+  rm -rf "$tmpdir"
+  return $result
+}
+
 # To avoid having hardcoded paths in the script, we do a search on the path, as suggested at:
 # https://www.debian.org/doc/manuals/developers-reference/ch06.en.html#bpp-debian-maint-scripts
 pathfind() {
