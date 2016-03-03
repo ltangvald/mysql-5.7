@@ -1,7 +1,3 @@
-# binaries
-# manpages
-# plugins
-# test suite
 usr/bin/mysql_client_test
 usr/bin/mysql_client_test_embedded
 usr/bin/mysqltest
