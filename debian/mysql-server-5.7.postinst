@@ -61,7 +61,7 @@ test_sysmaint_access() {
 set_mysql_pw() {
   user="$1"
   pass="$2"
-  passfile=/var/lib/mysql-files/passchange
+  passfile=`mktemp --tmpdir=/var/lib/mysql-files/`
   touch $passfile
   chmod 600 $passfile
   chown mysql:mysql $passfile
