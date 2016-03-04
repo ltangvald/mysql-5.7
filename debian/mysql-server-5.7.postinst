@@ -51,6 +51,22 @@ test_mysql_access() {
   mysql --no-defaults -u root -h localhost </dev/null >/dev/null 2>&1
 }
 
+# $1 is username, e.g. 'root' $2 is password
+set_mysql_pw() {
+  # These variables are global (POSIX doesn't define local) so prefix them
+  # to avoid any potential collisions.
+  set_mysql_pw_user="$1"
+  set_mysql_pw_pass="$2"
+  set_mysql_pw_passfile=`mktemp --tmpdir=/var/lib/mysql-files/`
+  chown mysql:mysql "$set_mysql_pw_passfile"
+  echo "USE mysql;" >> "$set_mysql_pw_passfile"
+  echo "UPDATE user SET authentication_string=PASSWORD('$set_mysql_pw_pass') WHERE user='$set_mysql_pw_user';" >> "$set_mysql_pw_passfile"
+  echo "FLUSH PRIVILEGES;" >> "$set_mysql_pw_passfile"
+  echo "SHUTDOWN;" >> "$set_mysql_pw_passfile"
+  run_init_sql "$set_mysql_pw_passfile"
+  rm "$set_mysql_pw_passfile"
+}
+
 # call with $1 = "online" to connect to the server, otherwise it bootstraps
 set_mysql_rootpw() {
        # forget we ever saw the password.  don't use reset to keep the seen status
