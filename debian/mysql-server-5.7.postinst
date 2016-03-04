@@ -215,21 +215,26 @@ case "$1" in
     chown 0:0 $dc
     chmod 0600 $dc
 
-    # initiate databases. Output is not allowed by debconf :-(
-    # Debian: can safely run on upgrades with existing databases
-
-    set +e
-    tfile_select_db=`mktemp`
-    echo "USE mysql;" > $tfile_select_db
-    MYSQL_EXTRA_OPTS=" --default-storage-engine=myisam --lc-messages-dir=/usr/share/mysql/english/.."
-    MYSQL_CMDLINE=$MYSQL_BOOTSTRAP$MYSQL_EXTRA_OPTS
-    cat $tfile_select_db $mysql_datadir/mysql_system_tables.sql $mysql_datadir/debian_create_root_user.sql $mysql_datadir/fill_help_tables.sql | $MYSQL_CMDLINE 2>&1 | $ERR_LOGGER
-    rm $tfile_select_db
-    set -e
-
-    db_get mysql-server/root_password && rootpw="$RET"
-    if ! set_mysql_rootpw; then
-        password_error="yes"
+    # Initiate database. Output is not allowed by debconf :-(
+    # If database doesn't exist we create it.
+    if [ ! "$(ls -A "${mysql_statedir}")" ] && [ -d "${mysql_filesdir}" ]; then
+      initfile=`mktemp --tmpdir=/var/lib/mysql-files/`
+      touch "$initfile"
+      chmod 600 "$initfile"
+      chown mysql:mysql "$initfile"
+      echo "USE mysql; " >> "$initfile"
+      db_get mysql-server/root_password && rootpw="$RET"
+      if [ ! -z $rootpw ]; then
+        echo "ALTER USER 'root'@'localhost' IDENTIFIED BY '$rootpw';" >> "$initfile"
+      fi
+      echo "CREATE USER IF NOT EXISTS 'debian-sys-maint'@'localhost' IDENTIFIED BY '$pass';" >> "$initfile"
+      echo "GRANT ALL ON *.* TO 'debian-sys-maint'@'localhost';" >> "$initfile"
+      echo "SHUTDOWN;" >> "$initfile"
+      # mysqld returns an error instead of a warning if CREATE USER IF NOT
+      # EXISTS fails, so ignore errors as a workaround. See:
+      # http://bugs.mysql.com/bug.php?id=80636
+      mysqld --initialize-insecure --user=mysql --init-file="$initfile"> /dev/null 2>&1 || true
+      rm "$initfile"
     fi
 
     replace_query=`echo -e \
