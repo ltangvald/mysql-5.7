@@ -175,17 +175,7 @@ case "$1" in
     # - It is easier to regenerate the password every time but as people
     #   use fancy rsync scripts and file alteration monitors, the existing
     #   password is used and existing files not touched.
-    # - The mysqld statement is like that in mysql_install_db because the
-    #   server is not already running. This has some implications:
-    # 	- The amount of newlines and semicolons in the query is important!
-    #   - GRANT is not possible with --skip-grant-tables and "INSERT
-    #     (user,host..) VALUES" is not --ansi compliant
     # - The echo is just for readability. ash's buildin has no "-e" so use /bin/echo.
-    # - The Super_priv, Show_db_priv, Create_tmp_table_priv and Lock_tables_priv
-    #   may not be present as old Woody 3.23 databases did not have it and the
-    #   admin might not already have run mysql_upgrade which adds them.
-    #   As the binlog cron scripts to need at least the Super_priv, I do first
-    #   the old query which always succeeds and then the new which may or may not.
 
     # recreate the credentials file if not present or without mysql_upgrade stanza
     dc=$mysql_cfgdir/debian.cnf; 
