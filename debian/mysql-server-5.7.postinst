@@ -51,6 +51,22 @@ test_mysql_access() {
   mysql --no-defaults -u root -h localhost </dev/null >/dev/null 2>&1
 }
 
+# $1 is username, e.g. 'root' $2 is password
+set_mysql_pw() {
+  user="$1"
+  pass="$2"
+  passfile=/var/lib/mysql-files/passchange
+  touch $passfile
+  chmod 600 $passfile
+  chown mysql:mysql $passfile
+  echo "USE mysql;" >> $passfile
+  echo "UPDATE user SET authentication_string=PASSWORD('$pass') WHERE user='$user';" >> $passfile
+  echo "FLUSH PRIVILEGES;" >> $passfile
+  echo "SHUTDOWN;" >> $passfile
+  run_init_sql $passfile
+  rm $passfile
+}
+
 # call with $1 = "online" to connect to the server, otherwise it bootstraps
 set_mysql_rootpw() {
        # forget we ever saw the password.  don't use reset to keep the seen status
