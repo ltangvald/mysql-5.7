@@ -52,6 +52,11 @@ test_mysql_access() {
   mysql --no-defaults -u root -h localhost </dev/null >/dev/null 2>&1
 }
 
+# Check if the debian-sys-maint user can log in
+test_sysmaint_access() {
+  mysql --defaults-file=/etc/mysql/debian.cnf </dev/null >/dev/null 2>&1
+}
+
 # $1 is username, e.g. 'root' $2 is password
 set_mysql_pw() {
   # These variables are global (POSIX doesn't define local) so prefix them
