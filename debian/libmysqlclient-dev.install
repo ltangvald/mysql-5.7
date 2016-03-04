@@ -5,5 +5,6 @@ usr/include/mysql/mysql/*.h.pp
 usr/include/mysql/mysql/psi/*.h
 usr/lib/*/libmysqlclient.a
 usr/lib/*/libmysqlclient.so
+usr/lib/*/libmysqlservices.a
 usr/lib/*/pkgconfig/mysqlclient.pc
 usr/share/aclocal/mysql.m4
