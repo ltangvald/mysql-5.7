@@ -237,6 +237,10 @@ case "$1" in
   ;;
 esac
 
+# The debhelper section is needed to unmask and enable the service
+# in some cases like when upgrading from 5.5
+#DEBHELPER#
+
 # here we check to see if we can connect as root without a password
 # this should catch upgrades from previous versions where the root
 # password wasn't set.  if there is a password, or if the connection
@@ -264,6 +268,5 @@ db_set mysql-server/root_password ""
 db_set mysql-server/root_password_again ""
 db_stop # in case invoke failes
 
-#DEBHELPER#
 
 exit 0
