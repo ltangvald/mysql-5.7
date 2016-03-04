@@ -169,17 +169,6 @@ case "$1" in
     # data directory and then somewhen gets purged by the admin.
     db_set mysql-server/postrm_remove_database false || true
 
-    # initiate databases. Output is not allowed by debconf :-(
-    # Debian: can safely run on upgrades with existing databases 
-
-    set +e
-    tfile_select_db=`mktemp`
-    echo "USE mysql;" > $tfile_select_db
-    MYSQL_EXTRA_OPTS=" --default-storage-engine=myisam --lc-messages-dir=/usr/share/mysql/english/.."
-    MYSQL_CMDLINE=$MYSQL_BOOTSTRAP$MYSQL_EXTRA_OPTS
-    cat $tfile_select_db $mysql_datadir/mysql_system_tables.sql $mysql_datadir/debian_create_root_user.sql $mysql_datadir/fill_help_tables.sql | $MYSQL_CMDLINE 2>&1 | $ERR_LOGGER
-    rm $tfile_select_db
-    set -e
 
     ## On every reconfiguration the maintenance user is recreated.
     #
@@ -226,6 +215,23 @@ case "$1" in
     chown 0:0 $dc
     chmod 0600 $dc
 
+    # initiate databases. Output is not allowed by debconf :-(
+    # Debian: can safely run on upgrades with existing databases
+
+    set +e
+    tfile_select_db=`mktemp`
+    echo "USE mysql;" > $tfile_select_db
+    MYSQL_EXTRA_OPTS=" --default-storage-engine=myisam --lc-messages-dir=/usr/share/mysql/english/.."
+    MYSQL_CMDLINE=$MYSQL_BOOTSTRAP$MYSQL_EXTRA_OPTS
+    cat $tfile_select_db $mysql_datadir/mysql_system_tables.sql $mysql_datadir/debian_create_root_user.sql $mysql_datadir/fill_help_tables.sql | $MYSQL_CMDLINE 2>&1 | $ERR_LOGGER
+    rm $tfile_select_db
+    set -e
+
+    db_get mysql-server/root_password && rootpw="$RET"
+    if ! set_mysql_rootpw; then
+        password_error="yes"
+    fi
+
     replace_query=`echo -e \
         "USE mysql;\n" \
         "REPLACE INTO user SET " \
@@ -238,11 +244,6 @@ case "$1" in
         "  Repl_slave_priv='Y', Repl_client_priv='Y', Create_view_priv='Y', "\
         "  Show_view_priv='Y', Create_routine_priv='Y', Alter_routine_priv='Y', "\
         "  Create_user_priv='Y', Event_priv='Y', Trigger_priv='Y'; "`;
-
-    db_get mysql-server/root_password && rootpw="$RET"
-    if ! set_mysql_rootpw; then
-        password_error="yes"
-    fi
 
     echo "$replace_query"                                    | $MYSQL_BOOTSTRAP 2>&1 | $ERR_LOGGER
 
