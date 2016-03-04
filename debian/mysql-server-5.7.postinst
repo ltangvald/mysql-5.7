@@ -47,6 +47,7 @@ invoke() {
 
 MYSQL_BOOTSTRAP="/usr/sbin/mysqld --bootstrap --user=mysql --skip-grant-tables"
 
+# Check if there is passwordless root login
 test_mysql_access() {
   mysql --no-defaults -u root -h localhost </dev/null >/dev/null 2>&1
 }
