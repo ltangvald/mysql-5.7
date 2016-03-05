@@ -268,14 +268,9 @@ if [ "$1" = "configure" ]; then
     db_go
     db_get mysql-server/root_password && rootpw="$RET"
 
-    if ! set_mysql_rootpw "online"; then
-      password_error="yes"
-    fi
-  fi
-
-  if [ "$password_error" = "yes" ]; then
-    db_input high mysql-server/error_setting_password || true
-    db_go
+    invoke stop
+    set_mysql_pw "root" "$rootpw"
+    invoke start
   fi
 fi
 
