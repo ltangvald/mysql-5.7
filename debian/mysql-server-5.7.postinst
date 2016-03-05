@@ -248,10 +248,6 @@ esac
 # in some cases like when upgrading from 5.5
 #DEBHELPER#
 
-# here we check to see if we can connect as root without a password
-# this should catch upgrades from previous versions where the root
-# password wasn't set.  if there is a password, or if the connection
-# fails for any other reason, nothing happens.
 if [ "$1" = "configure" ]; then
   # We want to run mysql_upgrade to cover users upgrading. First we check if
   # the debian-sys-maint user can log in. If not, we reset its password first.
@@ -263,21 +259,24 @@ if [ "$1" = "configure" ]; then
     fi
     mysql_upgrade --defaults-file=/etc/mysql/debian.cnf
   fi
-       if test_mysql_access; then
-               db_input medium mysql-server/root_password || true
-               db_go
-               db_get mysql-server/root_password && rootpw="$RET"
+  # here we check to see if we can connect as root without a password
+  # this should catch upgrades from previous versions where the root
+  # password wasn't set.  if there is a password, or if the connection
+  # fails for any other reason, nothing happens.
+  if test_mysql_access; then
+    db_input medium mysql-server/root_password || true
+    db_go
+    db_get mysql-server/root_password && rootpw="$RET"
 
-               if ! set_mysql_rootpw "online"; then
-                       password_error="yes"
-               fi
-       fi
+    if ! set_mysql_rootpw "online"; then
+      password_error="yes"
+    fi
+  fi
 
-       if [ "$password_error" = "yes" ]; then
-               db_input high mysql-server/error_setting_password || true
-               db_go
-       fi
-
+  if [ "$password_error" = "yes" ]; then
+    db_input high mysql-server/error_setting_password || true
+    db_go
+  fi
 fi
 
 # forget we ever saw the password.  don't use reset to keep the seen status
