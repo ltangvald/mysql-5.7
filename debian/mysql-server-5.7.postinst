@@ -208,6 +208,7 @@ case "$1" in
     # Initiate database. Output is not allowed by debconf :-(
     # If database doesn't exist we create it.
     if [ ! "$(ls -A "${mysql_statedir}")" ] && [ -d "${mysql_filesdir}" ]; then
+      existingdatabase=0
       initfile=`mktemp --tmpdir=/var/lib/mysql-files/`
       touch "$initfile"
       chmod 600 "$initfile"
@@ -225,6 +226,8 @@ case "$1" in
       # http://bugs.mysql.com/bug.php?id=80636
       mysqld --initialize-insecure --user=mysql --init-file="$initfile"> /dev/null 2>&1 || true
       rm "$initfile"
+    else
+      existingdatabase=1
     fi
 
     # To avoid downgrades. This has to happen after the database is created, or --initialize will fail
@@ -250,6 +253,16 @@ esac
 # password wasn't set.  if there is a password, or if the connection
 # fails for any other reason, nothing happens.
 if [ "$1" = "configure" ]; then
+  # We want to run mysql_upgrade to cover users upgrading. First we check if
+  # the debian-sys-maint user can log in. If not, we reset its password first.
+  if [ $existingdatabase = 1 ]; then
+    if ! test_sysmaint_access; then
+      invoke stop
+      set_mysql_pw "debian-sys-maint" "$pass"
+      invoke start
+    fi
+    mysql_upgrade --defaults-file=/etc/mysql/debian.cnf
+  fi
        if test_mysql_access; then
                db_input medium mysql-server/root_password || true
                db_go
