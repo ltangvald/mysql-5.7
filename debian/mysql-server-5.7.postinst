@@ -73,36 +73,6 @@ set_mysql_pw() {
   rm "$set_mysql_pw_passfile"
 }
 
-# call with $1 = "online" to connect to the server, otherwise it bootstraps
-set_mysql_rootpw() {
-       # forget we ever saw the password.  don't use reset to keep the seen status
-       db_set mysql-server/root_password ""
-       db_set mysql-server/root_password_again ""
-
-       tfile=`mktemp`
-       if [ ! -f "$tfile" ]; then
-               return 1
-       fi
-
-       # this avoids us having to call "test" or "[" on $rootpw
-       cat << EOF > $tfile
-USE mysql;
-UPDATE user SET password=PASSWORD("$rootpw") WHERE user='root';
-FLUSH PRIVILEGES;
-EOF
-       if grep -q 'PASSWORD("")' $tfile; then
-               retval=0
-       elif [ "$1" = "online" ]; then
-               mysql --no-defaults -u root -h localhost <$tfile >/dev/null
-               retval=$?
-       else
-               $MYSQL_BOOTSTRAP <$tfile
-               retval=$?
-       fi
-       rm -f $tfile
-       return $retval
-}
-
 # This is necessary because mysql_install_db removes the pid file in /var/run
 # and because changed configuration options should take effect immediately.
 # In case the server wasn't running at all it should be ok if the stop
