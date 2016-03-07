@@ -66,19 +66,6 @@ Template: mysql-server/root_password_again
 Type: password
 _Description: Repeat password for the MySQL "root" user:
 
-Template: mysql-server/error_setting_password
-Type: error
-_Description: Unable to set password for the MySQL "root" user
- An error occurred while setting the password for the MySQL
- administrative user. This may have happened because the account
- already has a password, or because of a communication problem with
- the MySQL server.
- .
- You should check the account's password after the package installation.
- .
- Please read the /usr/share/doc/mysql-server-5.7/README.Debian file
- for more information.
-
 Template: mysql-server/password_mismatch
 Type: error
 _Description: Password input error
