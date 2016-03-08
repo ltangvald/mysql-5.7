@@ -4,7 +4,7 @@ debian/additions/mysql.conf.d etc/mysql/
 debian/additions/source_mysql-5.7.py usr/share/apport/package-hooks/
 etc/apparmor.d/usr.sbin.mysqld
 etc/mysql/debian-start
-usr/bin/lz4_decompress
+usr/bin/lz4_decompress usr/lib/mysql/lz4_decompress
 usr/bin/myisamchk
 usr/bin/myisamlog
 usr/bin/myisampack
@@ -17,9 +17,9 @@ usr/bin/mysqld_multi
 usr/bin/mysqld_safe
 usr/bin/perror
 usr/bin/replace
-usr/bin/resolve_stack_dump
+usr/bin/resolve_stack_dump usr/lib/mysql/resolve_stack_dump
 usr/bin/resolveip
-usr/bin/zlib_decompress
+usr/bin/zlib_decompress usr/lib/mysql/zlib_decompress
 usr/lib/mysql/plugin/adt_null.so
 usr/lib/mysql/plugin/auth_socket.so
 usr/lib/mysql/plugin/innodb_engine.so
