@@ -1,3 +1,13 @@
+mysql-5.7 (5.7.11-0ubuntu1) xenial; urgency=medium
+
+  * Ubuntu upload from Debian VCS 10798b9.
+  * FFe update to MySQL 5.7 (LP: #1528583).
+  * Revert "Build with libmecab-dev" since libmecab-dev is in universe.
+  * mysql-server-5.7: depend on apparmor (>= 2.10) for Trusty upgrade
+    path.
+
+ -- Robie Basak <robie.basak@ubuntu.com>  Wed, 16 Mar 2016 14:01:31 +0000
+
 mysql-5.7 (5.7.11-1~exp1) UNRELEASED; urgency=medium
 
   [ Bjoern Boschman ]
