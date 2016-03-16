@@ -25,7 +25,6 @@ usr/lib/mysql/plugin/auth_socket.so
 usr/lib/mysql/plugin/innodb_engine.so
 usr/lib/mysql/plugin/keyring_file.so
 usr/lib/mysql/plugin/libmemcached.so
-usr/lib/mysql/plugin/libpluginmecab.so
 usr/lib/mysql/plugin/locking_service.so
 usr/lib/mysql/plugin/mypluglib.so
 usr/lib/mysql/plugin/mysql_no_login.so
