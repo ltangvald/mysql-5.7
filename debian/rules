@@ -74,7 +74,6 @@ configure-stamp:
 		-DWITH_ZLIB=system \
 		-DWITH_EDITLINE=system \
 		-DWITH_SSL=bundled \
-		-DWITH_MECAB=system \
 		-DWITH_BOOST=../boost \
 		-DCOMPILATION_COMMENT="($(DISTRIBUTION))" \
 		-DMYSQL_SERVER_SUFFIX="-$(DEBVERSION)" \
