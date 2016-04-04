@@ -1,0 +1,145 @@
+commit 79977252890749571132e4654f9a4873eff722c3
+Author: Norvald H. Ryeng <norvald@ryeng.name>
+Date:   Wed Mar 23 01:34:52 2016 +0100
+
+    Add __atomic alternative to __sync in InnoDB
+    
+    Most InnoDB atomic operations have an alternative to __sync
+    operations, but ifdef checks are for HAVE_GCC_ATOMIC_BUILTINS
+    instead of HAVE_GCC_SYNC_BUILTINS. Change it to SYNC.
+    
+    Add an alternative implementation using __atomic where missing.
+
+diff --git a/plugin/innodb_memcached/daemon_memcached/daemon/memcached.c b/plugin/innodb_memcached/daemon_memcached/daemon/memcached.c
+index 26213dd..4478238 100644
+--- a/plugin/innodb_memcached/daemon_memcached/daemon/memcached.c
++++ b/plugin/innodb_memcached/daemon_memcached/daemon/memcached.c
+@@ -89,7 +89,7 @@ static inline void item_set_cas(const void *cookie, item *it, uint64_t cas) {
+ #define STATS_MISS(conn, op, key, nkey) \
+     STATS_TWO(conn, op##_misses, cmd_##op, key, nkey)
+ 
+-#if defined(HAVE_GCC_ATOMIC_BUILTINS)
++#if defined(HAVE_GCC_SYNC_BUILTINS)
+ 
+ #define STATS_NOKEY(conn, op)	\
+ do { \
+@@ -115,7 +115,7 @@ do { \
+ 
+ #define MEMCACHED_ATOMIC_MSG	"InnoDB MEMCACHED: Memcached uses atomic increment \n"
+ 
+-#else /* HAVE_GCC_ATOMIC_BUILTINS */
++#else /* HAVE_GCC_SYNC_BUILTINS */
+ #define STATS_NOKEY(conn, op) { \
+     struct thread_stats *thread_stats = \
+         get_thread_stats(conn); \
+@@ -142,7 +142,7 @@ do { \
+ }
+ 
+ #define MEMCACHED_ATOMIC_MSG	"InnoDB Memcached: Memcached DOES NOT use atomic increment"
+-#endif /* HAVE_GCC_ATOMIC_BUILTINS */
++#endif /* HAVE_GCC_SYNC_BUILTINS */
+ 
+ volatile sig_atomic_t memcached_shutdown;
+ volatile sig_atomic_t memcached_initialized;
+diff --git a/plugin/innodb_memcached/innodb_memcache/src/innodb_api.c b/plugin/innodb_memcached/innodb_memcache/src/innodb_api.c
+index a33f8d0..5b90e2b 100644
+--- a/plugin/innodb_memcached/innodb_memcache/src/innodb_api.c
++++ b/plugin/innodb_memcached/innodb_memcache/src/innodb_api.c
+@@ -938,7 +938,7 @@ mci_get_cas(
+ {
+ 	static uint64_t cas_id = 0;
+ 
+-#if defined(HAVE_GCC_ATOMIC_BUILTINS)
++#if defined(HAVE_GCC_SYNC_BUILTINS)
+ 	return(__sync_add_and_fetch(&cas_id, 1));
+ #else
+ 	pthread_mutex_lock(&eng->cas_mutex);
+diff --git a/storage/innobase/include/os0atomic.h b/storage/innobase/include/os0atomic.h
+index 1368176..1095789 100644
+--- a/storage/innobase/include/os0atomic.h
++++ b/storage/innobase/include/os0atomic.h
+@@ -208,6 +208,8 @@ amount to decrement. There is no atomic substract function on Windows */
+ Returns true if swapped, ptr is pointer to target, old_val is value to
+ compare to, new_val is the value to swap in. */
+ 
++#if defined(HAVE_GCC_SYNC_BUILTINS)
++
+ # define os_compare_and_swap(ptr, old_val, new_val) \
+ 	__sync_bool_compare_and_swap(ptr, old_val, new_val)
+ 
+@@ -220,9 +222,47 @@ compare to, new_val is the value to swap in. */
+ # define os_compare_and_swap_uint32(ptr, old_val, new_val) \
+ 	os_compare_and_swap(ptr, old_val, new_val)
+ 
++#else
++
++UNIV_INLINE
++bool
++os_compare_and_swap_ulint(volatile ulint* ptr, ulint old_val, ulint new_val)
++{
++  return __atomic_compare_exchange_n(ptr, &old_val, new_val, 0,
++                                     __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST);
++}
++
++UNIV_INLINE
++bool
++os_compare_and_swap_lint(volatile lint* ptr, lint old_val, lint new_val)
++{
++  return __atomic_compare_exchange_n(ptr, &old_val, new_val, 0,
++				     __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST);
++}
++
++UNIV_INLINE
++bool
++os_compare_and_swap_uint32(volatile ib_uint32_t* ptr, ib_uint32_t old_val, ib_uint32_t new_val)
++{
++  return __atomic_compare_exchange_n(ptr, &old_val, new_val, 0,
++                                     __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST);
++}
++
++#endif /* HAVE_GCC_SYNC_BUILTINS */
++
+ # ifdef HAVE_IB_ATOMIC_PTHREAD_T_GCC
++#if defined(HAVE_GCC_SYNC_BUILTINS)
+ #  define os_compare_and_swap_thread_id(ptr, old_val, new_val) \
+ 	os_compare_and_swap(ptr, old_val, new_val)
++#else
++UNIV_INLINE
++bool
++os_compare_and_swap_thread_id(volatile os_thread_id_t* ptr, os_thread_id_t old_val, os_thread_id_t new_val)
++{
++  return __atomic_compare_exchange_n(ptr, &old_val, new_val, 0,
++                                     __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST);
++}
++#endif /* HAVE_GCC_SYNC_BUILTINS */
+ #  define INNODB_RW_LOCKS_USE_ATOMICS
+ #  define IB_ATOMICS_STARTUP_MSG \
+ 	"Mutexes and rw_locks use GCC atomic builtins"
+@@ -235,8 +275,13 @@ compare to, new_val is the value to swap in. */
+ Returns the resulting value, ptr is pointer to target, amount is the
+ amount of increment. */
+ 
++#if defined(HAVE_GCC_SYNC_BUILTINS)
+ # define os_atomic_increment(ptr, amount) \
+ 	__sync_add_and_fetch(ptr, amount)
++#else
++# define os_atomic_increment(ptr, amount) \
++	__atomic_add_fetch(ptr, amount, __ATOMIC_SEQ_CST)
++#endif /* HAVE_GCC_SYNC_BUILTINS */
+ 
+ # define os_atomic_increment_lint(ptr, amount) \
+ 	os_atomic_increment(ptr, amount)
+@@ -253,8 +298,13 @@ amount of increment. */
+ /* Returns the resulting value, ptr is pointer to target, amount is the
+ amount to decrement. */
+ 
++#if defined(HAVE_GCC_SYNC_BUILTINS)
+ # define os_atomic_decrement(ptr, amount) \
+ 	__sync_sub_and_fetch(ptr, amount)
++#else
++# define os_atomic_decrement(ptr, amount) \
++	__atomic_sub_fetch(ptr, amount, __ATOMIC_SEQ_CST)
++#endif /* HAVE_GCC_SYNC_BUILTINS */
+ 
+ # define os_atomic_decrement_lint(ptr, amount) \
+ 	os_atomic_decrement(ptr, amount)

@@ -6,3 +6,4 @@ mysql-test-run-paths
 removedojo.patch
 mysql-atomic.patch
 mysql-atomic-link.patch
+mysql-atomic-innodb.patch
