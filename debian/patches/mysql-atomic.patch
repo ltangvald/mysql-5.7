@@ -1,0 +1,430 @@
+commit 4f9294bf74ed27eae7a2bf2eea82808c5069c374
+Author: Norvald H. Ryeng <norvald@ryeng.name>
+Date:   Tue Mar 22 17:58:19 2016 +0100
+
+    Add support for GCC __atomic builtins
+    
+    MySQL 5.7 upstream uses GCC __sync builtins, but they aren't
+    defined on all platforms, GCC 5.3.1 on powerpc being one
+    exception. GCC 4.7 introduced __atomic builtins. Add support for
+    GCC __atomic builtins, but prefer __sync builtins if they exist.
+
+diff --git a/cmake/os/WindowsCache.cmake b/cmake/os/WindowsCache.cmake
+index 6d594c6..ee4ef1f 100644
+--- a/cmake/os/WindowsCache.cmake
++++ b/cmake/os/WindowsCache.cmake
+@@ -210,6 +210,7 @@ SET(HAVE_BUILTIN_UNREACHABLE CACHE  INTERNAL "")
+ SET(HAVE_BUILTIN_EXPECT CACHE  INTERNAL "")
+ SET(HAVE_BUILTIN_STPCPY CACHE  INTERNAL "")
+ SET(HAVE_GCC_ATOMIC_BUILTINS CACHE  INTERNAL "")
++SET(HAVE_GCC_SYNC_BUILTINS CACHE  INTERNAL "")
+ # Derived result HAVE_VALGRIND
+ 
+ # IPV6
+diff --git a/config.h.cmake b/config.h.cmake
+index 8916660..79ed19f 100644
+--- a/config.h.cmake
++++ b/config.h.cmake
+@@ -195,6 +195,7 @@
+ #cmakedefine HAVE_BUILTIN_EXPECT 1
+ #cmakedefine HAVE_BUILTIN_STPCPY 1
+ #cmakedefine HAVE_GCC_ATOMIC_BUILTINS 1
++#cmakedefine HAVE_GCC_SYNC_BUILTINS 1
+ #cmakedefine HAVE_VALGRIND
+ 
+ /* IPV6 */
+diff --git a/configure.cmake b/configure.cmake
+index 5b5ea36..32829f9 100644
+--- a/configure.cmake
++++ b/configure.cmake
+@@ -719,6 +719,33 @@ CHECK_CXX_SOURCE_COMPILES("
+   {
+     int foo= -10; int bar= 10;
+     long long int foo64= -10; long long int bar64= 10;
++    if (!__atomic_fetch_add(&foo, bar, __ATOMIC_SEQ_CST) || foo)
++      return -1;
++    bar= __atomic_exchange_n(&foo, bar, __ATOMIC_SEQ_CST);
++    if (bar || foo != 10)
++      return -1;
++    bar= __atomic_compare_exchange_n(&bar, &foo, 15, 0,
++                                     __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST);
++    if (bar)
++      return -1;
++    if (!__atomic_fetch_add(&foo64, bar64, __ATOMIC_SEQ_CST) || foo64)
++      return -1;
++    bar64= __atomic_exchange_n(&foo64, bar64, __ATOMIC_SEQ_CST);
++    if (bar64 || foo64 != 10)
++      return -1;
++    bar64= __atomic_compare_exchange_n(&bar64, &foo64, 15, 0,
++                                       __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST);
++    if (bar64)
++      return -1;
++    return 0;
++  }"
++  HAVE_GCC_ATOMIC_BUILTINS)
++
++CHECK_CXX_SOURCE_COMPILES("
++  int main()
++  {
++    int foo= -10; int bar= 10;
++    long long int foo64= -10; long long int bar64= 10;
+     if (!__sync_fetch_and_add(&foo, bar) || foo)
+       return -1;
+     bar= __sync_lock_test_and_set(&foo, bar);
+@@ -737,7 +764,7 @@ CHECK_CXX_SOURCE_COMPILES("
+       return -1;
+     return 0;
+   }"
+-  HAVE_GCC_ATOMIC_BUILTINS)
++  HAVE_GCC_SYNC_BUILTINS)
+ 
+ IF(WITH_VALGRIND)
+   SET(VALGRIND_HEADERS "valgrind/memcheck.h;valgrind/valgrind.h")
+diff --git a/include/atomic/gcc_atomic.h b/include/atomic/gcc_atomic.h
+new file mode 100644
+index 0000000..73e3682
+--- /dev/null
++++ b/include/atomic/gcc_atomic.h
+@@ -0,0 +1,94 @@
++#ifndef GCC_ATOMIC_INCLUDED
++#define GCC_ATOMIC_INCLUDED
++
++/* Copyright (c) 2015, Oracle and/or its affiliates. All rights reserved.
++
++   This program is free software; you can redistribute it and/or modify
++   it under the terms of the GNU General Public License as published by
++   the Free Software Foundation; version 2 of the License.
++
++   This program is distributed in the hope that it will be useful,
++   but WITHOUT ANY WARRANTY; without even the implied warranty of
++   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++   GNU General Public License for more details.
++
++   You should have received a copy of the GNU General Public License
++   along with this program; if not, write to the Free Software
++   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA */
++
++/* New GCC __atomic builtins introduced in GCC 4.7 */
++
++static inline int my_atomic_cas32(int32 volatile *a, int32 *cmp, int32 set)
++{
++  return __atomic_compare_exchange_n(a, cmp, set, 0,
++                                     __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST);
++}
++
++static inline int my_atomic_cas64(int64 volatile *a, int64 *cmp, int64 set)
++{
++  return __atomic_compare_exchange_n(a, cmp, set, 0,
++                                     __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST);
++}
++
++static inline int my_atomic_casptr(void * volatile *a, void **cmp, void *set)
++{
++  return __atomic_compare_exchange_n(a, cmp, set, 0,
++                                     __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST);
++}
++
++static inline int32 my_atomic_add32(int32 volatile *a, int32 v)
++{
++  return __atomic_fetch_add(a, v, __ATOMIC_SEQ_CST);
++}
++
++static inline int64 my_atomic_add64(int64 volatile *a, int64 v)
++{
++  return __atomic_fetch_add(a, v, __ATOMIC_SEQ_CST);
++}
++
++static inline int32 my_atomic_fas32(int32 volatile *a, int32 v)
++{
++  return __atomic_exchange_n(a, v, __ATOMIC_SEQ_CST);
++}
++
++static inline int64 my_atomic_fas64(int64 volatile *a, int64 v)
++{
++  return __atomic_exchange_n(a, v, __ATOMIC_SEQ_CST);
++}
++
++static inline void * my_atomic_fasptr(void * volatile *a, void * v)
++{
++  return __atomic_exchange_n(a, v, __ATOMIC_SEQ_CST);
++}
++
++static inline int32 my_atomic_load32(int32 volatile *a)
++{
++  return __atomic_load_n(a, __ATOMIC_SEQ_CST);
++}
++
++static inline int64 my_atomic_load64(int64 volatile *a)
++{
++  return __atomic_load_n(a, __ATOMIC_SEQ_CST);
++}
++
++static inline void* my_atomic_loadptr(void * volatile *a)
++{
++  return __atomic_load_n(a, __ATOMIC_SEQ_CST);
++}
++
++static inline void my_atomic_store32(int32 volatile *a, int32 v)
++{
++  __atomic_store_n(a, v, __ATOMIC_SEQ_CST);
++}
++
++static inline void my_atomic_store64(int64 volatile *a, int64 v)
++{
++  __atomic_store_n(a, v, __ATOMIC_SEQ_CST);
++}
++
++static inline void my_atomic_storeptr(void * volatile *a, void *v)
++{
++  __atomic_store_n(a, v, __ATOMIC_SEQ_CST);
++}
++
++#endif /* GCC_ATOMIC_INCLUDED */
+diff --git a/include/atomic/gcc_builtins.h b/include/atomic/gcc_builtins.h
+deleted file mode 100644
+index 9e868f9..0000000
+--- a/include/atomic/gcc_builtins.h
++++ /dev/null
+@@ -1,104 +0,0 @@
+-#ifndef ATOMIC_GCC_BUILTINS_INCLUDED
+-#define ATOMIC_GCC_BUILTINS_INCLUDED
+-
+-/* Copyright (c) 2008, 2014, Oracle and/or its affiliates. All rights reserved.
+-
+-   This program is free software; you can redistribute it and/or modify
+-   it under the terms of the GNU General Public License as published by
+-   the Free Software Foundation; version 2 of the License.
+-
+-   This program is distributed in the hope that it will be useful,
+-   but WITHOUT ANY WARRANTY; without even the implied warranty of
+-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-   GNU General Public License for more details.
+-
+-   You should have received a copy of the GNU General Public License
+-   along with this program; if not, write to the Free Software
+-   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA */
+-
+-static inline int my_atomic_cas32(int32 volatile *a, int32 *cmp, int32 set)
+-{
+-  int32 cmp_val= *cmp;
+-  int32 sav= __sync_val_compare_and_swap(a, cmp_val, set);
+-  int ret= (sav == cmp_val);
+-  if (!ret)
+-    *cmp = sav;
+-  return ret;
+-}
+-
+-static inline int my_atomic_cas64(int64 volatile *a, int64 *cmp, int64 set)
+-{
+-  int64 cmp_val= *cmp;
+-  int64 sav= __sync_val_compare_and_swap(a, cmp_val, set);
+-  int ret= (sav == cmp_val);
+-  if (!ret)
+-    *cmp = sav;
+-  return ret;
+-}
+-
+-static inline int my_atomic_casptr(void * volatile *a, void **cmp, void *set)
+-{
+-  void *cmp_val= *cmp;
+-  void *sav= __sync_val_compare_and_swap(a, cmp_val, set);
+-  int ret= (sav == cmp_val);
+-  if (!ret)
+-    *cmp = sav;
+-  return ret;
+-}
+-
+-static inline int32 my_atomic_add32(int32 volatile *a, int32 v)
+-{
+-  return __sync_fetch_and_add(a, v);
+-}
+-
+-static inline int64 my_atomic_add64(int64 volatile *a, int64 v)
+-{
+-  return __sync_fetch_and_add(a, v);
+-}
+-
+-static inline int32 my_atomic_fas32(int32 volatile *a, int32 v)
+-{
+-  return __sync_lock_test_and_set(a, v);
+-}
+-
+-static inline int64 my_atomic_fas64(int64 volatile *a, int64 v)
+-{
+-  return __sync_lock_test_and_set(a, v);
+-}
+-
+-static inline void * my_atomic_fasptr(void * volatile *a, void * v)
+-{
+-  return __sync_lock_test_and_set(a, v);
+-}
+-
+-static inline int32 my_atomic_load32(int32 volatile *a)
+-{
+-  return __sync_fetch_and_or(a, 0);
+-}
+-
+-static inline int64 my_atomic_load64(int64 volatile *a)
+-{
+-  return __sync_fetch_and_or(a, 0);
+-}
+-
+-static inline void* my_atomic_loadptr(void * volatile *a)
+-{
+-  return __sync_fetch_and_or(a, 0);
+-}
+-
+-static inline void my_atomic_store32(int32 volatile *a, int32 v)
+-{
+-  (void) __sync_lock_test_and_set(a, v);
+-}
+-
+-static inline void my_atomic_store64(int64 volatile *a, int64 v)
+-{
+-  (void) __sync_lock_test_and_set(a, v);
+-}
+-
+-static inline void my_atomic_storeptr(void * volatile *a, void *v)
+-{
+-  (void) __sync_lock_test_and_set(a, v);
+-}
+-
+-#endif /* ATOMIC_GCC_BUILTINS_INCLUDED */
+diff --git a/include/atomic/gcc_sync.h b/include/atomic/gcc_sync.h
+new file mode 100644
+index 0000000..d71fb6b
+--- /dev/null
++++ b/include/atomic/gcc_sync.h
+@@ -0,0 +1,106 @@
++#ifndef GCC_SYNC_INCLUDED
++#define GCC_SYNC_INCLUDED
++
++/* Copyright (c) 2008, 2015, Oracle and/or its affiliates. All rights reserved.
++
++   This program is free software; you can redistribute it and/or modify
++   it under the terms of the GNU General Public License as published by
++   the Free Software Foundation; version 2 of the License.
++
++   This program is distributed in the hope that it will be useful,
++   but WITHOUT ANY WARRANTY; without even the implied warranty of
++   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++   GNU General Public License for more details.
++
++   You should have received a copy of the GNU General Public License
++   along with this program; if not, write to the Free Software
++   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA */
++
++/* Old GCC __sync builtins introduced in GCC 4.1 */
++
++static inline int my_atomic_cas32(int32 volatile *a, int32 *cmp, int32 set)
++{
++  int32 cmp_val= *cmp;
++  int32 sav= __sync_val_compare_and_swap(a, cmp_val, set);
++  int ret= (sav == cmp_val);
++  if (!ret)
++    *cmp = sav;
++  return ret;
++}
++
++static inline int my_atomic_cas64(int64 volatile *a, int64 *cmp, int64 set)
++{
++  int64 cmp_val= *cmp;
++  int64 sav= __sync_val_compare_and_swap(a, cmp_val, set);
++  int ret= (sav == cmp_val);
++  if (!ret)
++    *cmp = sav;
++  return ret;
++}
++
++static inline int my_atomic_casptr(void * volatile *a, void **cmp, void *set)
++{
++  void *cmp_val= *cmp;
++  void *sav= __sync_val_compare_and_swap(a, cmp_val, set);
++  int ret= (sav == cmp_val);
++  if (!ret)
++    *cmp = sav;
++  return ret;
++}
++
++static inline int32 my_atomic_add32(int32 volatile *a, int32 v)
++{
++  return __sync_fetch_and_add(a, v);
++}
++
++static inline int64 my_atomic_add64(int64 volatile *a, int64 v)
++{
++  return __sync_fetch_and_add(a, v);
++}
++
++static inline int32 my_atomic_fas32(int32 volatile *a, int32 v)
++{
++  return __sync_lock_test_and_set(a, v);
++}
++
++static inline int64 my_atomic_fas64(int64 volatile *a, int64 v)
++{
++  return __sync_lock_test_and_set(a, v);
++}
++
++static inline void * my_atomic_fasptr(void * volatile *a, void * v)
++{
++  return __sync_lock_test_and_set(a, v);
++}
++
++static inline int32 my_atomic_load32(int32 volatile *a)
++{
++  return __sync_fetch_and_or(a, 0);
++}
++
++static inline int64 my_atomic_load64(int64 volatile *a)
++{
++  return __sync_fetch_and_or(a, 0);
++}
++
++static inline void* my_atomic_loadptr(void * volatile *a)
++{
++  return __sync_fetch_and_or(a, 0);
++}
++
++static inline void my_atomic_store32(int32 volatile *a, int32 v)
++{
++  (void) __sync_lock_test_and_set(a, v);
++}
++
++static inline void my_atomic_store64(int64 volatile *a, int64 v)
++{
++  (void) __sync_lock_test_and_set(a, v);
++}
++
++static inline void my_atomic_storeptr(void * volatile *a, void *v)
++{
++  (void) __sync_lock_test_and_set(a, v);
++}
++
++#endif /* GCC_SYNC_INCLUDED */
+diff --git a/include/my_atomic.h b/include/my_atomic.h
+index 8cde9cb..dc74225 100644
+--- a/include/my_atomic.h
++++ b/include/my_atomic.h
+@@ -1,7 +1,7 @@
+ #ifndef MY_ATOMIC_INCLUDED
+ #define MY_ATOMIC_INCLUDED
+ 
+-/* Copyright (c) 2006, 2014, Oracle and/or its affiliates. All rights reserved.
++/* Copyright (c) 2006, 2015, Oracle and/or its affiliates. All rights reserved.
+ 
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+@@ -56,8 +56,10 @@
+ #  include "atomic/generic-msvc.h"
+ #elif defined(HAVE_SOLARIS_ATOMIC)
+ #  include "atomic/solaris.h"
+-#elif defined(HAVE_GCC_ATOMIC_BUILTINS)
+-#  include "atomic/gcc_builtins.h"
++#elif defined(HAVE_GCC_SYNC_BUILTINS)   /* Upstream uses __sync */
++#  include "atomic/gcc_sync.h"
++#elif defined(HAVE_GCC_ATOMIC_BUILTINS) /* Use __atomic on powerpc */
++#  include "atomic/gcc_atomic.h"
+ #else
+ #  error Native atomics support not found!
+ #endif
