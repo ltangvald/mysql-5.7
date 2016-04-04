@@ -1,3 +1,14 @@
+mysql-5.7 (5.7.11-0ubuntu2) xenial; urgency=medium
+
+  * debian/rules: Use the system libevent, not the bundled version.
+  * debian/control: Limit libnuma build-dep to arches that have it.
+  * debian/patches/mysql-atomic.patch: Patch from upstream to add
+    support for __atomic builtins and prefer __sync where available.
+  * debian/patches/mysql-atomic-link.patch: Link atomic when needed.
+  * debian/patches/mysql-atomic-innodb.patch: Update innodb atomics.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Mon, 21 Mar 2016 18:14:50 -0600
+
 mysql-5.7 (5.7.11-0ubuntu1) xenial; urgency=medium
 
   * Ubuntu upload from Debian VCS 10798b9.
