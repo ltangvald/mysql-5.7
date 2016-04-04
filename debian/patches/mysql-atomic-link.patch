@@ -1,0 +1,36 @@
+commit f6b5ca72c646e60d3a370eccd7847e624aa17b26
+Author: Norvald H. Ryeng <norvald@ryeng.name>
+Date:   Tue Mar 22 19:49:46 2016 +0100
+
+    Link with libatomic when necessary
+    
+    When lock free instructions are not available, GCC will expect
+    them to be implemented by an atomics library. Check if __sync or
+    __atomic symbols are implemented by a library and link with it if
+    they are.
+    
+    The symbols used in the checks are chosen randomly. If some
+    operations are built in and others are implemented by libatomic,
+    it may be that just these symbols happen to be built in. In that
+    case, more checks should be added for symbols that aren't built
+    in.
+
+diff --git a/configure.cmake b/configure.cmake
+index 32829f9..1a2df09 100644
+--- a/configure.cmake
++++ b/configure.cmake
+@@ -314,9 +314,13 @@ IF(UNIX)
+     MY_SEARCH_LIBS(clock_gettime rt LIBRT)
+   ENDIF()
+   MY_SEARCH_LIBS(timer_create rt LIBRT)
++  MY_SEARCH_LIBS(__sync_fetch_and_add_8 atomic LIBATOMIC)
++  IF(NOT LIBATOMIC)
++    MY_SEARCH_LIBS(__atomic_load_8 atomic LIBATOMIC)
++  ENDIF()
+ 
+   SET(CMAKE_REQUIRED_LIBRARIES 
+-    ${LIBM} ${LIBNSL} ${LIBBIND} ${LIBCRYPT} ${LIBSOCKET} ${LIBDL} ${CMAKE_THREAD_LIBS_INIT} ${LIBRT})
++    ${LIBM} ${LIBNSL} ${LIBBIND} ${LIBCRYPT} ${LIBSOCKET} ${LIBDL} ${CMAKE_THREAD_LIBS_INIT} ${LIBRT} ${LIBATOMIC})
+   # Need explicit pthread for gcc -fsanitize=address
+   IF(CMAKE_C_FLAGS MATCHES "-fsanitize=")
+     SET(CMAKE_REQUIRED_LIBRARIES ${CMAKE_REQUIRED_LIBRARIES} pthread)

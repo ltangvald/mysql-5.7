@@ -5,3 +5,4 @@ mips64el.patch
 mysql-test-run-paths
 removedojo.patch
 mysql-atomic.patch
+mysql-atomic-link.patch
