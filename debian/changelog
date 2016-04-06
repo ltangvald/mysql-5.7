@@ -1,3 +1,9 @@
+mysql-5.7 (5.7.11-0ubuntu4) xenial; urgency=medium
+
+  * d/p/allowemptyport.patch: update corresponding test.
+
+ -- Robie Basak <robie.basak@ubuntu.com>  Wed, 06 Apr 2016 12:48:52 +0100
+
 mysql-5.7 (5.7.11-0ubuntu3) xenial; urgency=medium
 
   * Ubuntu upload from Debian VCS c17404a.

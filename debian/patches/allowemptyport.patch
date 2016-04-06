@@ -8,7 +8,7 @@ Origin: upstream
 Bug: http://bugs.mysql.com/bug.php?id=80903
 Bug-Ubuntu: https://launchpad.net/bugs/1563274
 Forwarded: no
-Last-Update: 2016-03-30
+Last-Update: 2016-04-06
 
 --- mysql-5.7-5.7.11.orig/mysys_ssl/my_getopt.cc
 +++ mysql-5.7-5.7.11/mysys_ssl/my_getopt.cc
@@ -34,3 +34,35 @@ Last-Update: 2016-03-30
    }
  
    if (value)
+--- mysql-5.7-5.7.11.orig/mysql-test/r/mysql.result
++++ mysql-5.7-5.7.11/mysql-test/r/mysql.result
+@@ -523,8 +523,12 @@ a
+ #
+ # Bug #16102788: INDETERMINATE BEHAVIOR DUE TO EMPTY OPTION VALUES
+ #
+-mysql: [ERROR] mysql: Empty value for 'port' specified
+-mysql: [ERROR] mysql: Empty value for 'port' specified
++mysql: [Warning] /usr/bin/mysql: Empty value for 'port' specified. Will throw an error in future versions
++1
++1
++mysql: [Warning] /usr/bin/mysql: Empty value for 'port' specified. Will throw an error in future versions
++1
++1
+ #
+ # Bug #21464621: MYSQL CLI SHOULD SUGGEST CONNECT-EXPIRED-PASSWORD WHEN ERROR 1862 OCCURS
+ #
+--- mysql-5.7-5.7.11.orig/mysql-test/t/mysql.test
++++ mysql-5.7-5.7.11/mysql-test/t/mysql.test
+@@ -636,12 +636,8 @@ EOF
+ --echo # Bug #16102788: INDETERMINATE BEHAVIOR DUE TO EMPTY OPTION VALUES
+ --echo #
+
+---replace_regex /mysql: .ERROR. [^ ]*: Empty value for 'port' specified/mysql: [ERROR] mysql: Empty value for 'port' specified/
+---error 5
+ --exec $MYSQL --port= -e "SELECT 1" 2>&1
+
+---replace_regex /mysql: .ERROR. [^ ]*: Empty value for 'port' specified/mysql: [ERROR] mysql: Empty value for 'port' specified/
+---error 5
+ --exec $MYSQL -P "" -e "SELECT 1" 2>&1
+
+ --echo #
