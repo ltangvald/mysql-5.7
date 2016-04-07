@@ -8,3 +8,4 @@ mysql-atomic.patch
 mysql-atomic-link.patch
 mysql-atomic-innodb.patch
 allowemptyport.patch
+mysql-export-scramble.patch

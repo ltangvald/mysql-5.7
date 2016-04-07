@@ -3,8 +3,10 @@ libmysqlclient.so.20 libmysqlclient20 #MINVER#
  get_tty_password@libmysqlclient_20.0 5.7.11
  handle_options@libmysqlclient_20.0 5.7.11
  libmysqlclient_20.0@libmysqlclient_20.0 5.7.11
+ libmysqlclient_20.3@libmysqlclient_20.3 5.7.11
  my_init@libmysqlclient_20.0 5.7.11
  my_load_defaults@libmysqlclient_20.0 5.7.11
+ my_make_scrambled_password@libmysqlclient_20.3 5.7.11
  mysql_affected_rows@libmysqlclient_20.0 5.7.11
  mysql_autocommit@libmysqlclient_20.0 5.7.11
  mysql_change_user@libmysqlclient_20.0 5.7.11
