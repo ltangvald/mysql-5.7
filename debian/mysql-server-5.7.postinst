@@ -225,7 +225,14 @@ if [ "$1" = "configure" ]; then
       set_mysql_pw "debian-sys-maint" "$pass"
       invoke start
     fi
-    mysql_upgrade --defaults-file=/etc/mysql/debian.cnf
+    # mysql_upgrade returns exit status 2 if the database is already upgraded
+    # (LP: #1566406) so ignore its exit status if it is 2.
+    result=0
+    mysql_upgrade --defaults-file=/etc/mysql/debian.cnf || result=$?
+    if [ $result -ne 0 -a $result -ne 2 ]; then
+      echo "mysql_upgrade failed with exit status $result" >&2
+      exit 1
+    fi
   fi
   # Here we check to see if we can connect as root without a password
   # this should catch upgrades from previous versions where the root

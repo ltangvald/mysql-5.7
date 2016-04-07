@@ -1,3 +1,11 @@
+mysql-5.7 (5.7.11-0ubuntu5) xenial; urgency=medium
+
+  * d/mysql-server-5.7.postinst: ignore mysql_upgrade's exit status when
+    it is one that includes the indication that there is nothing to do
+    (LP: #1566406).
+
+ -- Robie Basak <robie.basak@ubuntu.com>  Thu, 07 Apr 2016 11:58:28 +0100
+
 mysql-5.7 (5.7.11-0ubuntu4) xenial; urgency=medium
 
   * d/p/allowemptyport.patch: update corresponding test.
