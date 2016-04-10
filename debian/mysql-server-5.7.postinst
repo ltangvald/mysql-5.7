@@ -240,27 +240,40 @@ if [ "$1" = "configure" ]; then
   # auth_socket plugin and enable it for the root user to improve
   # security.
   if test_mysql_access; then
-    # Try to install auth_socket plugin. This throws an error if the plugin is
-    # already installed, which would end execution of the init sql to stop if
-    # --init-file was used. Bug: http://bugs.mysql.com/bug.php?id=80642
-    pluginfile=`mktemp --tmpdir=/var/lib/mysql-files/`
-    echo "INSTALL PLUGIN auth_socket SONAME 'auth_socket.so';" >> "$pluginfile"
-    mysql --no-defaults -uroot < "$pluginfile" > /dev/null 2>&1 || true
-    rm "$pluginfile"
-    invoke stop
-    initfile=`mktemp --tmpdir=/var/lib/mysql-files/`
-    chown mysql:mysql "$initfile"
-    # If there is no root password set we enable the auth_socket plugin for the root user
-    echo "USE mysql;"                                                                   >> "$initfile"
-    echo "ALTER USER 'root'@'localhost' IDENTIFIED WITH 'auth_socket';"                 >> "$initfile"
-    # Bug: http://bugs.mysql.com/bug.php?id=80632
-    echo "UPDATE user SET password_expired='N', account_locked='N' WHERE user='root';"  >> "$initfile"
-    echo "FLUSH PRIVILEGES;"                                                            >> "$initfile"
-    echo "SHUTDOWN;"                                                                    >> "$initfile"
-    # The INSTALL PLUGIN line will throw an error if the plugin is already installed
-    run_init_sql "$initfile"
-    rm "$initfile"
-    invoke start
+    db_get mysql-server/root_password && rootpw="$RET"
+    if [ ! -z $rootpw ]; then
+      invoke stop
+      initfile=`mktemp --tmpdir=/var/lib/mysql-files/`
+      chown mysql:mysql "$initfile"
+      echo "ALTER USER 'root'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY '$rootpw';" >> "$initfile"
+      echo "SHUTDOWN;"                                                                           >> "$initfile"
+      invoke stop
+      run_init_sql "$initfile"
+      rm "$initfile"
+      invoke start
+    else
+      # Try to install auth_socket plugin. This throws an error if the plugin is
+      # already installed, which would end execution of the init sql to stop if
+      # --init-file was used. Bug: http://bugs.mysql.com/bug.php?id=80642
+      pluginfile=`mktemp --tmpdir=/var/lib/mysql-files/`
+      echo "INSTALL PLUGIN auth_socket SONAME 'auth_socket.so';" >> "$pluginfile"
+      mysql --no-defaults -uroot < "$pluginfile" > /dev/null 2>&1 || true
+      rm "$pluginfile"
+      invoke stop
+      initfile=`mktemp --tmpdir=/var/lib/mysql-files/`
+      chown mysql:mysql "$initfile"
+      # If there is no root password set we enable the auth_socket plugin for the root user
+      echo "USE mysql;"                                                                   >> "$initfile"
+      echo "ALTER USER 'root'@'localhost' IDENTIFIED WITH 'auth_socket';"                 >> "$initfile"
+      # Bug: http://bugs.mysql.com/bug.php?id=80632
+      echo "UPDATE user SET password_expired='N', account_locked='N' WHERE user='root';"  >> "$initfile"
+      echo "FLUSH PRIVILEGES;"                                                            >> "$initfile"
+      echo "SHUTDOWN;"                                                                    >> "$initfile"
+      # The INSTALL PLUGIN line will throw an error if the plugin is already installed
+      run_init_sql "$initfile"
+      rm "$initfile"
+      invoke start
+    fi
   fi
 fi
 
