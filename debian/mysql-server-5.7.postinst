@@ -245,7 +245,7 @@ if [ "$1" = "configure" ]; then
     # --init-file was used. Bug: http://bugs.mysql.com/bug.php?id=80642
     pluginfile=`mktemp --tmpdir=/var/lib/mysql-files/`
     echo "INSTALL PLUGIN auth_socket SONAME 'auth_socket.so';" >> "$pluginfile"
-    mysql -uroot < "$pluginfile" > /dev/null 2>&1 || true
+    mysql --no-defaults -uroot < "$pluginfile" > /dev/null 2>&1 || true
     rm "$pluginfile"
     invoke stop
     initfile=`mktemp --tmpdir=/var/lib/mysql-files/`
