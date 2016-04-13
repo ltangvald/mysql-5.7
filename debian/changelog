@@ -10,6 +10,10 @@ mysql-5.7 (5.7.11-0ubuntu6) xenial; urgency=medium
 
   [ Robie Basak ]
   * d/mysql-server-5.7.postinst: quote "$rootpw" correctly.
+  * d/control: add libnuma-dev and libaio-dev to libmysqld-dev
+    dependencies, since these are required according to "mysql_config
+    --libmysqld-libs". This fixes FTBFS of packages that use
+    libmysqld-dev.
 
  -- Lars Tangvald <lars.tangvald@oracle.com>  Sun, 10 Apr 2016 11:28:10 +0200
 
