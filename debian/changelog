@@ -15,7 +15,7 @@ mysql-5.7 (5.7.11-0ubuntu6) xenial; urgency=medium
     --libmysqld-libs". This fixes FTBFS of packages that use
     libmysqld-dev.
 
- -- Lars Tangvald <lars.tangvald@oracle.com>  Sun, 10 Apr 2016 11:28:10 +0200
+ -- Robie Basak <robie.basak@ubuntu.com>  Wed, 13 Apr 2016 17:34:08 +0100
 
 mysql-5.7 (5.7.11-0ubuntu5) xenial; urgency=medium
 
