@@ -183,7 +183,7 @@ case "$1" in
       chown mysql:mysql "$initfile"
       echo "USE mysql; " >> "$initfile"
       db_get mysql-server/root_password && rootpw="$RET"
-      if [ ! -z $rootpw ]; then
+      if [ ! -z "$rootpw" ]; then
         echo "ALTER USER 'root'@'localhost' IDENTIFIED BY '$rootpw';" >> "$initfile"
       fi
       echo "CREATE USER IF NOT EXISTS 'debian-sys-maint'@'localhost' IDENTIFIED BY '$pass';" >> "$initfile"
@@ -241,7 +241,7 @@ if [ "$1" = "configure" ]; then
   # security.
   if test_mysql_access; then
     db_get mysql-server/root_password && rootpw="$RET"
-    if [ ! -z $rootpw ]; then
+    if [ ! -z "$rootpw" ]; then
       invoke stop
       initfile=`mktemp --tmpdir=/var/lib/mysql-files/`
       chown mysql:mysql "$initfile"

@@ -1,11 +1,15 @@
 mysql-5.7 (5.7.11-0ubuntu6) xenial; urgency=medium
 
+  [ Lars Tangvald ]
   * Added patch for exporting my_make_scrambled_password to fix
     pure-ftpd FTBFS.
   * Client commands in d/postinst will ignore custom config (LP:
     #1567695)
   * Enable changing root password on install if previous db had empty
     (LP: #1567098)
+
+  [ Robie Basak ]
+  * d/mysql-server-5.7.postinst: quote "$rootpw" correctly.
 
  -- Lars Tangvald <lars.tangvald@oracle.com>  Sun, 10 Apr 2016 11:28:10 +0200
 
