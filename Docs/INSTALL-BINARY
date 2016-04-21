@@ -17,7 +17,7 @@
 
    MySQL compressed tar file binary distributions have names of
    the form mysql-VERSION-OS.tar.gz, where VERSION is a number
-   (for example, 5.7.12), and OS indicates the type of operating
+   (for example, 5.7.13), and OS indicates the type of operating
    system for which the distribution is intended (for example,
    pc-linux-i686 or winx64).
    Warning
@@ -241,7 +241,7 @@ Simple Installation Method
 
    You probably also installed other helpful MySQL products like
    MySQL Workbench and MySQL Notifier on your system. Consider
-   loading Chapter 26, "MySQL Workbench" to check your new MySQL
+   loading Chapter 27, "MySQL Workbench" to check your new MySQL
    server connection, and Section 2.3.4, "MySQL Notifier" to
    view the connection's status. By default, these two programs
    automatically start after installing MySQL.
@@ -341,7 +341,7 @@ Additional Installation Information
        If you need tables with a size larger than 4GB, install
        MySQL on an NTFS or newer file system. Do not forget to
        use MAX_ROWS and AVG_ROW_LENGTH when you create tables.
-       See Section 13.1.14, "CREATE TABLE Syntax."
+       See Section 13.1.18, "CREATE TABLE Syntax."
 
      * MySQL and Virus Checking Software
        Virus-scanning software such as Norton/Symantec
@@ -404,7 +404,7 @@ Additional Installation Information
    directory named data under the installation directory. After
    an installation has been performed using this package, the
    template data directory can be copied to set up additional
-   MySQL instances. See Section 5.3, "Running Multiple MySQL
+   MySQL instances. See Section 5.5, "Running Multiple MySQL
    Instances on One Machine."
 
 2.3.2 Choosing An Installation Package
@@ -419,8 +419,8 @@ Additional Installation Information
    Archive distributions (but not MSI distributions) of MySQL.
 
      * MySQL Installer: This package has a file name similar to
-       mysql-installer-community-5.7.12.0.msi or
-       mysql-installer-commercial-5.7.12.0.msi, and utilizes
+       mysql-installer-community-5.7.13.0.msi or
+       mysql-installer-commercial-5.7.13.0.msi, and utilizes
        MSIs to automatically install MySQL server and other
        products. It will download and apply updates to itself,
        and for each of the installed products. It also
@@ -1225,7 +1225,6 @@ C:\> MySQLInstallerConsole update
 
    The MySQL Notifier is installed by MySQL Installer, and (by
    default) will start-up when Microsoft Windows is started.
-   Note
 
    To install, download and execute the MySQL Installer
    (http://dev.mysql.com/downloads/installer/), be sure the
@@ -1241,7 +1240,8 @@ C:\> MySQLInstallerConsole update
    (http://forums.mysql.com/list.php?173) for additional MySQL
    Notifier help and support.
 
-   Features include:
+Features include:
+
 
      * Start, Stop, and Restart instances of the MySQL Server.
 
@@ -1265,11 +1265,9 @@ C:\> MySQLInstallerConsole update
        Instance and SQL Editor options are available for local
        (but not remote) MySQL instances.
 
-     * Monitoring of both local and remote MySQL instances.
+     * Monitors both local and remote MySQL instances.
 
-   Note
-
-   Remote monitoring is available since MySQL Notifier 1.1.0.
+2.3.4.1 MySQL Notifier Usage
 
    The MySQL Notifier resides in the system tray and provides
    visual status information for your MySQL Server instances. A
@@ -1285,11 +1283,6 @@ C:\> MySQLInstallerConsole update
    services are either discovered or experience status changes,
    and are also enabled by default. And uninstalling a service
    will also remove the service from the MySQL Notifier.
-   Note
-
-   The Automatically add new services whose name contains option
-   default changed from ".*mysqld.*" to "mysql" in Notifier
-   1.1.0.
 
    Clicking the system tray icon will reveal several options, as
    seen in the screenshots below:
@@ -1309,10 +1302,6 @@ C:\> MySQLInstallerConsole update
 
    The main menu will not show the Actions menu when there are
    no services being monitored by MySQL Notifier.
-   Note
-
-   The Refresh Status feature is available since MySQL Notifier
-   1.1.0.
 
    Figure 2.33 MySQL Notifier Actions menu
    MySQL Notifier Actions menu
@@ -1337,8 +1326,6 @@ C:\> MySQLInstallerConsole update
        Windows services. monitored services, and also filters
        the list of the Microsoft Windows services for the Add
        New Service dialog.
-       Prior to version 1.1.0, this option was named
-       "Automatically add new services that match this pattern."
 
      * Notify me when a service is automatically added: Will
        display a balloon notification from the taskbar when a
@@ -1374,24 +1361,47 @@ C:\> MySQLInstallerConsole update
    Figure 2.37 MySQL Notifier Adding new services
    MySQL Notifier Adding new services
 
-   And instances:
+   Add instances:
 
    Figure 2.38 MySQL Notifier Adding new instances
    MySQL Notifier Adding new instances
-   Note
 
-   The Instances tab available since MySQL Notifier 1.1.0.
+Troubleshooting
 
-2.3.4.1 Remote monitoring set up and installation instructions
+   For issues that are not documented here, visit the MySQL
+   Notifier Support Forum (http://forums.mysql.com/list.php?173)
+   for MySQL Notifier help and support.
+
+     * Problem: attempting to start/stop/restart a MySQL service
+       might generate an error similar to "The Service
+       MySQLVERSION failed the most recent status change request
+       with the message "The service mysqlVERSION was not found
+       in the Windows Services".
+       Explanation: this is a case-sensitivity issue, in that
+       the service name is MySQLVERSION compared to having
+       mysqlVERSION in the configuration file.
+       Solution: either update your MySQL Notifier configuration
+       file with the correct information, or stop Notifier and
+       delete this configuration file. The Notifier
+       configuration file is located at %APPDATA%\Oracle\MySQL
+       Notifier\settings.config where %APPDATA% is a variable
+       and depends on your system. A typical location is
+       "C:\Users\YourUsername\AppData\Running\Oracle\MySQL
+       Notifier\system.config" where YourUsername is your
+       system's username. In this file, and within the
+       ServerList section, change the ServerName values from
+       lowercase to the actual service names. For example,
+       change mysqlVERSION to MySQLVERSION, save, and then
+       restart Notifier. Alternatively, stop MySQL Notifier,
+       delete this file, then restart MySQL Notifier.
+
+2.3.4.2 Remote monitoring set up and installation instructions
 
    The MySQL Notifier uses Windows Management Instrumentation
    (WMI) to manage and monitor services in remote computers
    running Windows XP or later. This guide explains how it
    works, and how to set up your system to monitor remote MySQL
    instances.
-   Note
-
-   Remote monitoring is available since MySQL Notifier 1.1.0.
 
    In order to configure WMI, it is important to understand that
    the underlying Distributed Component Object Model (DCOM)
@@ -1418,7 +1428,7 @@ C:\> MySQLInstallerConsole update
    notifications are related to Windows Firewall blocking the
    communication, or to DCOM / WMI settings not being set up
    properly. For a list of common errors with solutions, see
-   Section 2.3.4.1, "."
+   Section 2.3.4.2, "."
 
    The following steps are required to make WMI function. These
    steps are divided between two machines. A single host
@@ -1935,7 +1945,7 @@ InnoDB: foreign key constraint system tables created
    something like this, which indicates that the server is ready
    to service client connections:
 mysqld: ready for connections
-Version: '5.7.12'  socket: ''  port: 3306
+Version: '5.7.13'  socket: ''  port: 3306
 
    The server continues to write to the console any further
    diagnostic output it produces. You can open a new console
@@ -2002,12 +2012,19 @@ shutdown
    The last option is to start mysqld with the --standalone and
    --debug options. In this case, mysqld writes a log file
    C:\mysqld.trace that should contain the reason why mysqld
-   doesn't start. See Section 24.5.3, "The DBUG Package."
+   doesn't start. See Section 25.5.3, "The DBUG Package."
 
    Use mysqld --verbose --help to display all the options that
    mysqld supports.
 
 2.3.5.7 Customizing the PATH for MySQL Tools
+
+   Warning
+
+   You must exercise great care when editing your system PATH by
+   hand; accidental deletion or modification of any portion of
+   the existing PATH value can leave you with a malfunctioning
+   or even unusable system.
 
    To make it easier to invoke MySQL programs, you can add the
    path name of the MySQL bin directory to your Windows system
@@ -2035,22 +2052,17 @@ shutdown
        values present in this field.
        Dismiss this dialogue, and each dialogue in turn, by
        clicking OK until all of the dialogues that were opened
-       have been dismissed. You should now be able to invoke any
-       MySQL executable program by typing its name at the DOS
-       prompt from any directory on the system, without having
-       to supply the path. This includes the servers, the mysql
-       client, and all MySQL command-line utilities such as
-       mysqladmin and mysqldump.
-       You should not add the MySQL bin directory to your
-       Windows PATH if you are running multiple MySQL servers on
-       the same machine.
+       have been dismissed. The new PATH value should now be
+       available to any new command shell you open, allowing you
+       to invoke any MySQL executable program by typing its name
+       at the DOS prompt from any directory on the system,
+       without having to supply the path. This includes the
+       servers, the mysql client, and all MySQL command-line
+       utilities such as mysqladmin and mysqldump.
 
-   Warning
-
-   You must exercise great care when editing your system PATH by
-   hand; accidental deletion or modification of any portion of
-   the existing PATH value can leave you with a malfunctioning
-   or even unusable system.
+   You should not add the MySQL bin directory to your Windows
+   PATH if you are running multiple MySQL servers on the same
+   machine.
 
 2.3.5.8 Starting MySQL as a Windows Service
 
@@ -2311,7 +2323,7 @@ C:\> "C:\Program Files\MySQL\MySQL Server 5.7\bin\mysql" test
    The C:\ProgramData directory is hidden by default. You need
    to change your folder options to see the directory and
    contents. For more information on the error log and
-   understanding the content, see Section 5.2.2, "The Error
+   understanding the content, see Section 5.4.2, "The Error
    Log."
 
    For information regarding possible errors, also consult the

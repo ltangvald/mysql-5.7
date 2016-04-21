@@ -71,7 +71,7 @@
 
 /* Copy the first part of user declarations.  */
 /* Line 371 of yacc.c  */
-#line 24 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 24 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
 
 /*
 Note: YYTHD is passed as an argument to yyparse(), and subsequently to yylex().
@@ -499,7 +499,7 @@ bool my_yyoverflow(short **a, YYSTYPE **b, YYLTYPE **c, ulong *yystacksize);
 
 
 /* Line 371 of yacc.c  */
-#line 503 "/export/home/pb2/build/sb_0-17781452-1454369753.15/dist_GPL/sql/sql_yacc.cc"
+#line 503 "/export/home/pb2/build/sb_0-18410672-1459188430.24/dist_GPL/sql/sql_yacc.cc"
 
 # ifndef YY_NULL
 #  if defined __cplusplus && 201103L <= __cplusplus
@@ -519,8 +519,8 @@ bool my_yyoverflow(short **a, YYSTYPE **b, YYLTYPE **c, ulong *yystacksize);
 
 /* In a future release of Bison, this section will be replaced
    by #include "sql_yacc.h".  */
-#ifndef YY_MYSQL_EXPORT_HOME_PB2_BUILD_SB_0_17781452_1454369753_15_DIST_GPL_SQL_SQL_YACC_H_INCLUDED
-# define YY_MYSQL_EXPORT_HOME_PB2_BUILD_SB_0_17781452_1454369753_15_DIST_GPL_SQL_SQL_YACC_H_INCLUDED
+#ifndef YY_MYSQL_EXPORT_HOME_PB2_BUILD_SB_0_18410672_1459188430_24_DIST_GPL_SQL_SQL_YACC_H_INCLUDED
+# define YY_MYSQL_EXPORT_HOME_PB2_BUILD_SB_0_18410672_1459188430_24_DIST_GPL_SQL_SQL_YACC_H_INCLUDED
 /* Enabling traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -1873,12 +1873,12 @@ int MYSQLparse ();
 #endif
 #endif /* ! YYPARSE_PARAM */
 
-#endif /* !YY_MYSQL_EXPORT_HOME_PB2_BUILD_SB_0_17781452_1454369753_15_DIST_GPL_SQL_SQL_YACC_H_INCLUDED  */
+#endif /* !YY_MYSQL_EXPORT_HOME_PB2_BUILD_SB_0_18410672_1459188430_24_DIST_GPL_SQL_SQL_YACC_H_INCLUDED  */
 
 /* Copy the second part of user declarations.  */
 
 /* Line 390 of yacc.c  */
-#line 1882 "/export/home/pb2/build/sb_0-17781452-1454369753.15/dist_GPL/sql/sql_yacc.cc"
+#line 1882 "/export/home/pb2/build/sb_0-18410672-1459188430.24/dist_GPL/sql/sql_yacc.cc"
 
 #ifdef short
 # undef short
@@ -19806,7 +19806,7 @@ yyreduce:
     {
         case 2:
 /* Line 1792 of yacc.c  */
-#line 1591 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1591 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             if (!thd->bootstrap &&
@@ -19822,7 +19822,7 @@ yyreduce:
 
   case 3:
 /* Line 1792 of yacc.c  */
-#line 1603 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1603 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex_input_stream *lip = YYLIP;
 
@@ -19849,7 +19849,7 @@ yyreduce:
 
   case 5:
 /* Line 1792 of yacc.c  */
-#line 1628 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1628 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /* Single query, not terminated. */
             YYLIP->found_semicolon= NULL;
@@ -19858,55 +19858,55 @@ yyreduce:
 
   case 20:
 /* Line 1792 of yacc.c  */
-#line 1656 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1656 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {  MAKE_CMD((yyvsp[(1) - (1)].statement)); }
     break;
 
   case 22:
 /* Line 1792 of yacc.c  */
-#line 1658 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1658 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { CONTEXTUALIZE((yyvsp[(1) - (1)].select)); }
     break;
 
   case 31:
 /* Line 1792 of yacc.c  */
-#line 1667 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1667 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { MAKE_CMD((yyvsp[(1) - (1)].statement)); }
     break;
 
   case 46:
 /* Line 1792 of yacc.c  */
-#line 1682 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1682 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { MAKE_CMD((yyvsp[(1) - (1)].statement)); }
     break;
 
   case 52:
 /* Line 1792 of yacc.c  */
-#line 1688 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1688 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { CONTEXTUALIZE((yyvsp[(1) - (1)].select)); }
     break;
 
   case 53:
 /* Line 1792 of yacc.c  */
-#line 1689 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1689 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { CONTEXTUALIZE((yyvsp[(1) - (1)].set)); }
     break;
 
   case 56:
 /* Line 1792 of yacc.c  */
-#line 1692 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1692 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { MAKE_CMD((yyvsp[(1) - (1)].statement)); }
     break;
 
   case 62:
 /* Line 1792 of yacc.c  */
-#line 1698 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1698 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { MAKE_CMD((yyvsp[(1) - (1)].statement)); }
     break;
 
   case 65:
 /* Line 1792 of yacc.c  */
-#line 1705 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1705 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -19917,7 +19917,7 @@ yyreduce:
 
   case 68:
 /* Line 1792 of yacc.c  */
-#line 1720 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1720 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -19938,7 +19938,7 @@ yyreduce:
 
   case 69:
 /* Line 1792 of yacc.c  */
-#line 1740 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1740 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -19949,7 +19949,7 @@ yyreduce:
 
   case 70:
 /* Line 1792 of yacc.c  */
-#line 1747 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1747 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -19960,7 +19960,7 @@ yyreduce:
 
   case 71:
 /* Line 1792 of yacc.c  */
-#line 1757 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1757 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -19971,13 +19971,13 @@ yyreduce:
 
   case 72:
 /* Line 1792 of yacc.c  */
-#line 1764 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1764 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 77:
 /* Line 1792 of yacc.c  */
-#line 1779 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1779 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             LEX_STRING *lexstr= (LEX_STRING*)sql_memdup(&(yyvsp[(2) - (2)].lex_str), sizeof(LEX_STRING));
@@ -19988,7 +19988,7 @@ yyreduce:
 
   case 78:
 /* Line 1792 of yacc.c  */
-#line 1791 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1791 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (Lex->sphead)
             {
@@ -20000,7 +20000,7 @@ yyreduce:
 
   case 79:
 /* Line 1792 of yacc.c  */
-#line 1799 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1799 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_HELP;
@@ -20010,7 +20010,7 @@ yyreduce:
 
   case 80:
 /* Line 1792 of yacc.c  */
-#line 1810 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1810 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex = Lex;
             lex->sql_command = SQLCOM_CHANGE_MASTER;
@@ -20025,13 +20025,13 @@ yyreduce:
 
   case 81:
 /* Line 1792 of yacc.c  */
-#line 1821 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1821 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 82:
 /* Line 1792 of yacc.c  */
-#line 1823 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1823 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX* lex= thd->lex;
@@ -20045,13 +20045,13 @@ yyreduce:
 
   case 83:
 /* Line 1792 of yacc.c  */
-#line 1833 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1833 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 86:
 /* Line 1792 of yacc.c  */
-#line 1842 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1842 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Sql_cmd_change_repl_filter * filter_sql_cmd=
               (Sql_cmd_change_repl_filter*) Lex->m_sql_cmd;
@@ -20062,7 +20062,7 @@ yyreduce:
 
   case 87:
 /* Line 1792 of yacc.c  */
-#line 1849 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1849 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Sql_cmd_change_repl_filter * filter_sql_cmd=
               (Sql_cmd_change_repl_filter*) Lex->m_sql_cmd;
@@ -20073,7 +20073,7 @@ yyreduce:
 
   case 88:
 /* Line 1792 of yacc.c  */
-#line 1856 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1856 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Sql_cmd_change_repl_filter * filter_sql_cmd=
               (Sql_cmd_change_repl_filter*) Lex->m_sql_cmd;
@@ -20084,7 +20084,7 @@ yyreduce:
 
   case 89:
 /* Line 1792 of yacc.c  */
-#line 1863 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1863 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Sql_cmd_change_repl_filter * filter_sql_cmd=
               (Sql_cmd_change_repl_filter*) Lex->m_sql_cmd;
@@ -20095,7 +20095,7 @@ yyreduce:
 
   case 90:
 /* Line 1792 of yacc.c  */
-#line 1870 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1870 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Sql_cmd_change_repl_filter * filter_sql_cmd=
               (Sql_cmd_change_repl_filter*) Lex->m_sql_cmd;
@@ -20106,7 +20106,7 @@ yyreduce:
 
   case 91:
 /* Line 1792 of yacc.c  */
-#line 1877 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1877 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Sql_cmd_change_repl_filter * filter_sql_cmd=
               (Sql_cmd_change_repl_filter*) Lex->m_sql_cmd;
@@ -20118,7 +20118,7 @@ yyreduce:
 
   case 92:
 /* Line 1792 of yacc.c  */
-#line 1885 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1885 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Sql_cmd_change_repl_filter * filter_sql_cmd=
               (Sql_cmd_change_repl_filter*) Lex->m_sql_cmd;
@@ -20129,7 +20129,7 @@ yyreduce:
 
   case 93:
 /* Line 1792 of yacc.c  */
-#line 1894 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1894 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list)= new (YYTHD->mem_root) List<Item>;
             if ((yyval.item_list) == NULL)
@@ -20139,7 +20139,7 @@ yyreduce:
 
   case 94:
 /* Line 1792 of yacc.c  */
-#line 1900 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1900 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list)= (yyvsp[(2) - (3)].item_list);
           }
@@ -20147,7 +20147,7 @@ yyreduce:
 
   case 95:
 /* Line 1792 of yacc.c  */
-#line 1907 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1907 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list)= new (YYTHD->mem_root) List<Item>;
             if ((yyval.item_list) == NULL)
@@ -20158,7 +20158,7 @@ yyreduce:
 
   case 96:
 /* Line 1792 of yacc.c  */
-#line 1914 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1914 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyvsp[(1) - (3)].item_list)->push_back((yyvsp[(3) - (3)].item));
             (yyval.item_list)= (yyvsp[(1) - (3)].item_list);
@@ -20167,7 +20167,7 @@ yyreduce:
 
   case 97:
 /* Line 1792 of yacc.c  */
-#line 1922 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1922 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             Item *db_item= new (thd->mem_root) Item_string((yyvsp[(1) - (1)].lex_str).str,
@@ -20179,7 +20179,7 @@ yyreduce:
 
   case 98:
 /* Line 1792 of yacc.c  */
-#line 1932 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1932 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list)= new (YYTHD->mem_root) List<Item>;
             if ((yyval.item_list) == NULL)
@@ -20189,7 +20189,7 @@ yyreduce:
 
   case 99:
 /* Line 1792 of yacc.c  */
-#line 1938 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1938 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list)= (yyvsp[(2) - (3)].item_list);
           }
@@ -20197,7 +20197,7 @@ yyreduce:
 
   case 100:
 /* Line 1792 of yacc.c  */
-#line 1944 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1944 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list)= new (YYTHD->mem_root) List<Item>;
             if ((yyval.item_list) == NULL)
@@ -20209,7 +20209,7 @@ yyreduce:
 
   case 101:
 /* Line 1792 of yacc.c  */
-#line 1952 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1952 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyvsp[(1) - (7)].item_list)->push_back((yyvsp[(4) - (7)].item));
             (yyvsp[(1) - (7)].item_list)->push_back((yyvsp[(6) - (7)].item));
@@ -20219,7 +20219,7 @@ yyreduce:
 
   case 102:
 /* Line 1792 of yacc.c  */
-#line 1960 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1960 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list)= new (YYTHD->mem_root) List<Item>;
             if ((yyval.item_list) == NULL)
@@ -20229,7 +20229,7 @@ yyreduce:
 
   case 103:
 /* Line 1792 of yacc.c  */
-#line 1966 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1966 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list)= (yyvsp[(2) - (3)].item_list);
           }
@@ -20237,7 +20237,7 @@ yyreduce:
 
   case 104:
 /* Line 1792 of yacc.c  */
-#line 1973 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1973 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list)= new (YYTHD->mem_root) List<Item>;
             if ((yyval.item_list) == NULL)
@@ -20248,7 +20248,7 @@ yyreduce:
 
   case 105:
 /* Line 1792 of yacc.c  */
-#line 1980 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1980 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyvsp[(1) - (3)].item_list)->push_back((yyvsp[(3) - (3)].item));
             (yyval.item_list)= (yyvsp[(1) - (3)].item_list);
@@ -20257,7 +20257,7 @@ yyreduce:
 
   case 106:
 /* Line 1792 of yacc.c  */
-#line 1988 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 1988 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             Item_string *table_item= new (thd->mem_root) Item_string((yyvsp[(1) - (3)].lex_str).str,
@@ -20271,7 +20271,7 @@ yyreduce:
 
   case 107:
 /* Line 1792 of yacc.c  */
-#line 2001 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2001 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list)= new (YYTHD->mem_root) List<Item>;
             if ((yyval.item_list) == NULL)
@@ -20281,7 +20281,7 @@ yyreduce:
 
   case 108:
 /* Line 1792 of yacc.c  */
-#line 2007 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2007 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list)= (yyvsp[(2) - (3)].item_list);
           }
@@ -20289,7 +20289,7 @@ yyreduce:
 
   case 109:
 /* Line 1792 of yacc.c  */
-#line 2014 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2014 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list)= new (YYTHD->mem_root) List<Item>;
             if ((yyval.item_list) == NULL)
@@ -20300,7 +20300,7 @@ yyreduce:
 
   case 110:
 /* Line 1792 of yacc.c  */
-#line 2021 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2021 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyvsp[(1) - (3)].item_list)->push_back((yyvsp[(3) - (3)].item));
             (yyval.item_list)= (yyvsp[(1) - (3)].item_list);
@@ -20309,7 +20309,7 @@ yyreduce:
 
   case 111:
 /* Line 1792 of yacc.c  */
-#line 2029 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2029 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             Item *string_item= new (thd->mem_root) Item_string((yyvsp[(1) - (1)].lex_str).str,
@@ -20321,7 +20321,7 @@ yyreduce:
 
   case 114:
 /* Line 1792 of yacc.c  */
-#line 2045 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2045 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.host = (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -20329,7 +20329,7 @@ yyreduce:
 
   case 115:
 /* Line 1792 of yacc.c  */
-#line 2049 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2049 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.bind_addr = (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -20337,7 +20337,7 @@ yyreduce:
 
   case 116:
 /* Line 1792 of yacc.c  */
-#line 2053 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2053 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.user = (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -20345,7 +20345,7 @@ yyreduce:
 
   case 117:
 /* Line 1792 of yacc.c  */
-#line 2057 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2057 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.password = (yyvsp[(3) - (3)].lex_str).str;
             if (strlen((yyvsp[(3) - (3)].lex_str).str) > 32)
@@ -20359,7 +20359,7 @@ yyreduce:
 
   case 118:
 /* Line 1792 of yacc.c  */
-#line 2067 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2067 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.port = (yyvsp[(3) - (3)].ulong_num);
           }
@@ -20367,7 +20367,7 @@ yyreduce:
 
   case 119:
 /* Line 1792 of yacc.c  */
-#line 2071 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2071 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.connect_retry = (yyvsp[(3) - (3)].ulong_num);
           }
@@ -20375,7 +20375,7 @@ yyreduce:
 
   case 120:
 /* Line 1792 of yacc.c  */
-#line 2075 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2075 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.retry_count= (yyvsp[(3) - (3)].ulong_num);
             Lex->mi.retry_count_opt= LEX_MASTER_INFO::LEX_MI_ENABLE;
@@ -20384,7 +20384,7 @@ yyreduce:
 
   case 121:
 /* Line 1792 of yacc.c  */
-#line 2080 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2080 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(3) - (3)].ulong_num) > MASTER_DELAY_MAX)
             {
@@ -20399,7 +20399,7 @@ yyreduce:
 
   case 122:
 /* Line 1792 of yacc.c  */
-#line 2091 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2091 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.ssl= (yyvsp[(3) - (3)].ulong_num) ?
               LEX_MASTER_INFO::LEX_MI_ENABLE : LEX_MASTER_INFO::LEX_MI_DISABLE;
@@ -20408,7 +20408,7 @@ yyreduce:
 
   case 123:
 /* Line 1792 of yacc.c  */
-#line 2096 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2096 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.ssl_ca= (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -20416,7 +20416,7 @@ yyreduce:
 
   case 124:
 /* Line 1792 of yacc.c  */
-#line 2100 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2100 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.ssl_capath= (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -20424,7 +20424,7 @@ yyreduce:
 
   case 125:
 /* Line 1792 of yacc.c  */
-#line 2104 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2104 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.tls_version= (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -20432,7 +20432,7 @@ yyreduce:
 
   case 126:
 /* Line 1792 of yacc.c  */
-#line 2108 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2108 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.ssl_cert= (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -20440,7 +20440,7 @@ yyreduce:
 
   case 127:
 /* Line 1792 of yacc.c  */
-#line 2112 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2112 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.ssl_cipher= (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -20448,7 +20448,7 @@ yyreduce:
 
   case 128:
 /* Line 1792 of yacc.c  */
-#line 2116 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2116 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.ssl_key= (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -20456,7 +20456,7 @@ yyreduce:
 
   case 129:
 /* Line 1792 of yacc.c  */
-#line 2120 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2120 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.ssl_verify_server_cert= (yyvsp[(3) - (3)].ulong_num) ?
               LEX_MASTER_INFO::LEX_MI_ENABLE : LEX_MASTER_INFO::LEX_MI_DISABLE;
@@ -20465,7 +20465,7 @@ yyreduce:
 
   case 130:
 /* Line 1792 of yacc.c  */
-#line 2125 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2125 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.ssl_crl= (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -20473,7 +20473,7 @@ yyreduce:
 
   case 131:
 /* Line 1792 of yacc.c  */
-#line 2129 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2129 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.ssl_crlpath= (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -20481,7 +20481,7 @@ yyreduce:
 
   case 132:
 /* Line 1792 of yacc.c  */
-#line 2134 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2134 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(3) - (3)].item), &(yyvsp[(3) - (3)].item));
 
@@ -20518,7 +20518,7 @@ yyreduce:
 
   case 133:
 /* Line 1792 of yacc.c  */
-#line 2167 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2167 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.repl_ignore_server_ids_opt= LEX_MASTER_INFO::LEX_MI_ENABLE;
            }
@@ -20526,7 +20526,7 @@ yyreduce:
 
   case 134:
 /* Line 1792 of yacc.c  */
-#line 2172 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2172 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.auto_position= (yyvsp[(3) - (3)].ulong_num) ?
               LEX_MASTER_INFO::LEX_MI_ENABLE :
@@ -20536,7 +20536,7 @@ yyreduce:
 
   case 139:
 /* Line 1792 of yacc.c  */
-#line 2189 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2189 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.repl_ignore_server_ids.push_back((yyvsp[(1) - (1)].ulong_num));
           }
@@ -20544,7 +20544,7 @@ yyreduce:
 
   case 140:
 /* Line 1792 of yacc.c  */
-#line 2195 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2195 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.log_file_name = (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -20552,7 +20552,7 @@ yyreduce:
 
   case 141:
 /* Line 1792 of yacc.c  */
-#line 2199 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2199 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.pos = (yyvsp[(3) - (3)].ulonglong_number);
             /*
@@ -20572,7 +20572,7 @@ yyreduce:
 
   case 142:
 /* Line 1792 of yacc.c  */
-#line 2215 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2215 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.relay_log_name = (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -20580,7 +20580,7 @@ yyreduce:
 
   case 143:
 /* Line 1792 of yacc.c  */
-#line 2219 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2219 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.relay_log_pos = (yyvsp[(3) - (3)].ulong_num);
             /* Adjust if < BIN_LOG_HEADER_SIZE (same comment as Lex->mi.pos) */
@@ -20591,7 +20591,7 @@ yyreduce:
 
   case 144:
 /* Line 1792 of yacc.c  */
-#line 2229 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2229 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
          Lex->mi.channel= "";
          Lex->mi.for_channel= false;
@@ -20600,7 +20600,7 @@ yyreduce:
 
   case 145:
 /* Line 1792 of yacc.c  */
-#line 2234 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2234 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
          /*
            channel names are case insensitive. This means, even the results
@@ -20616,7 +20616,7 @@ yyreduce:
 
   case 146:
 /* Line 1792 of yacc.c  */
-#line 2251 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2251 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -20646,7 +20646,7 @@ yyreduce:
 
   case 147:
 /* Line 1792 of yacc.c  */
-#line 2277 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2277 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -20669,7 +20669,7 @@ yyreduce:
 
   case 148:
 /* Line 1792 of yacc.c  */
-#line 2296 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2296 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (add_create_index_prepare(Lex, (yyvsp[(7) - (7)].table)))
               MYSQL_YYABORT;
@@ -20678,7 +20678,7 @@ yyreduce:
 
   case 149:
 /* Line 1792 of yacc.c  */
-#line 2301 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2301 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (add_create_index(Lex, (yyvsp[(2) - (12)].key_type), (yyvsp[(4) - (12)].lex_str)))
               MYSQL_YYABORT;
@@ -20687,13 +20687,13 @@ yyreduce:
 
   case 150:
 /* Line 1792 of yacc.c  */
-#line 2305 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2305 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { }
     break;
 
   case 151:
 /* Line 1792 of yacc.c  */
-#line 2308 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2308 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (add_create_index_prepare(Lex, (yyvsp[(7) - (7)].table)))
               MYSQL_YYABORT;
@@ -20702,7 +20702,7 @@ yyreduce:
 
   case 152:
 /* Line 1792 of yacc.c  */
-#line 2313 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2313 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (add_create_index(Lex, (yyvsp[(2) - (12)].key_type), (yyvsp[(4) - (12)].lex_str)))
               MYSQL_YYABORT;
@@ -20711,13 +20711,13 @@ yyreduce:
 
   case 153:
 /* Line 1792 of yacc.c  */
-#line 2317 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2317 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { }
     break;
 
   case 154:
 /* Line 1792 of yacc.c  */
-#line 2320 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2320 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (add_create_index_prepare(Lex, (yyvsp[(7) - (7)].table)))
               MYSQL_YYABORT;
@@ -20726,7 +20726,7 @@ yyreduce:
 
   case 155:
 /* Line 1792 of yacc.c  */
-#line 2325 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2325 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (add_create_index(Lex, (yyvsp[(2) - (12)].key_type), (yyvsp[(4) - (12)].lex_str)))
               MYSQL_YYABORT;
@@ -20735,13 +20735,13 @@ yyreduce:
 
   case 156:
 /* Line 1792 of yacc.c  */
-#line 2329 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2329 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { }
     break;
 
   case 157:
 /* Line 1792 of yacc.c  */
-#line 2331 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2331 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.default_table_charset= NULL;
             Lex->create_info.used_fields= 0;
@@ -20750,7 +20750,7 @@ yyreduce:
 
   case 158:
 /* Line 1792 of yacc.c  */
-#line 2336 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2336 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command=SQLCOM_CREATE_DB;
@@ -20761,7 +20761,7 @@ yyreduce:
 
   case 159:
 /* Line 1792 of yacc.c  */
-#line 2343 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2343 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_view_mode= VIEW_CREATE_NEW;
             Lex->create_view_algorithm= VIEW_ALGORITHM_UNDEFINED;
@@ -20771,13 +20771,13 @@ yyreduce:
 
   case 160:
 /* Line 1792 of yacc.c  */
-#line 2349 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2349 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 161:
 /* Line 1792 of yacc.c  */
-#line 2352 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2352 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command = SQLCOM_CREATE_USER;
@@ -20787,7 +20787,7 @@ yyreduce:
 
   case 162:
 /* Line 1792 of yacc.c  */
-#line 2358 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2358 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_tablespace_info->ts_cmd_type= CREATE_LOGFILE_GROUP;
           }
@@ -20795,7 +20795,7 @@ yyreduce:
 
   case 163:
 /* Line 1792 of yacc.c  */
-#line 2362 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2362 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_tablespace_info->ts_cmd_type= CREATE_TABLESPACE;
           }
@@ -20803,7 +20803,7 @@ yyreduce:
 
   case 164:
 /* Line 1792 of yacc.c  */
-#line 2367 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2367 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command= SQLCOM_CREATE_SERVER;
             Lex->server_options.m_server_name= (yyvsp[(3) - (11)].lex_str);
@@ -20815,7 +20815,7 @@ yyreduce:
 
   case 167:
 /* Line 1792 of yacc.c  */
-#line 2383 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2383 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->server_options.set_username((yyvsp[(2) - (2)].lex_str));
           }
@@ -20823,7 +20823,7 @@ yyreduce:
 
   case 168:
 /* Line 1792 of yacc.c  */
-#line 2387 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2387 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->server_options.set_host((yyvsp[(2) - (2)].lex_str));
           }
@@ -20831,7 +20831,7 @@ yyreduce:
 
   case 169:
 /* Line 1792 of yacc.c  */
-#line 2391 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2391 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->server_options.set_db((yyvsp[(2) - (2)].lex_str));
           }
@@ -20839,7 +20839,7 @@ yyreduce:
 
   case 170:
 /* Line 1792 of yacc.c  */
-#line 2395 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2395 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->server_options.set_owner((yyvsp[(2) - (2)].lex_str));
           }
@@ -20847,7 +20847,7 @@ yyreduce:
 
   case 171:
 /* Line 1792 of yacc.c  */
-#line 2399 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2399 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->server_options.set_password((yyvsp[(2) - (2)].lex_str));
             Lex->contains_plaintext_password= true;
@@ -20856,7 +20856,7 @@ yyreduce:
 
   case 172:
 /* Line 1792 of yacc.c  */
-#line 2404 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2404 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->server_options.set_socket((yyvsp[(2) - (2)].lex_str));
           }
@@ -20864,7 +20864,7 @@ yyreduce:
 
   case 173:
 /* Line 1792 of yacc.c  */
-#line 2408 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2408 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->server_options.set_port((yyvsp[(2) - (2)].ulong_num));
           }
@@ -20872,7 +20872,7 @@ yyreduce:
 
   case 174:
 /* Line 1792 of yacc.c  */
-#line 2415 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2415 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex=Lex;
@@ -20892,7 +20892,7 @@ yyreduce:
 
   case 175:
 /* Line 1792 of yacc.c  */
-#line 2435 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2435 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /*
               sql_command is set here because some rules in ev_sql_stmt
@@ -20904,7 +20904,7 @@ yyreduce:
 
   case 176:
 /* Line 1792 of yacc.c  */
-#line 2446 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2446 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(2) - (3)].item), &(yyvsp[(2) - (3)].item));
 
@@ -20915,7 +20915,7 @@ yyreduce:
 
   case 178:
 /* Line 1792 of yacc.c  */
-#line 2455 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2455 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(2) - (2)].item), &(yyvsp[(2) - (2)].item));
 
@@ -20925,13 +20925,13 @@ yyreduce:
 
   case 179:
 /* Line 1792 of yacc.c  */
-#line 2463 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2463 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 0; }
     break;
 
   case 180:
 /* Line 1792 of yacc.c  */
-#line 2465 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2465 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->event_parse_data->status= Event_parse_data::ENABLED;
             Lex->event_parse_data->status_changed= true;
@@ -20941,7 +20941,7 @@ yyreduce:
 
   case 181:
 /* Line 1792 of yacc.c  */
-#line 2471 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2471 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->event_parse_data->status= Event_parse_data::SLAVESIDE_DISABLED;
             Lex->event_parse_data->status_changed= true;
@@ -20951,7 +20951,7 @@ yyreduce:
 
   case 182:
 /* Line 1792 of yacc.c  */
-#line 2477 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2477 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->event_parse_data->status= Event_parse_data::DISABLED;
             Lex->event_parse_data->status_changed= true;
@@ -20961,7 +20961,7 @@ yyreduce:
 
   case 183:
 /* Line 1792 of yacc.c  */
-#line 2486 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2486 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Item *item= new (YYTHD->mem_root) Item_func_now_local(0);
             if (item == NULL)
@@ -20972,7 +20972,7 @@ yyreduce:
 
   case 184:
 /* Line 1792 of yacc.c  */
-#line 2493 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2493 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(2) - (2)].item), &(yyvsp[(2) - (2)].item));
 
@@ -20982,7 +20982,7 @@ yyreduce:
 
   case 186:
 /* Line 1792 of yacc.c  */
-#line 2503 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2503 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(2) - (2)].item), &(yyvsp[(2) - (2)].item));
 
@@ -20992,13 +20992,13 @@ yyreduce:
 
   case 187:
 /* Line 1792 of yacc.c  */
-#line 2511 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2511 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 0; }
     break;
 
   case 189:
 /* Line 1792 of yacc.c  */
-#line 2517 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2517 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->event_parse_data->on_completion=
                                   Event_parse_data::ON_COMPLETION_PRESERVE;
@@ -21008,7 +21008,7 @@ yyreduce:
 
   case 190:
 /* Line 1792 of yacc.c  */
-#line 2523 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2523 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->event_parse_data->on_completion=
                                   Event_parse_data::ON_COMPLETION_DROP;
@@ -21018,13 +21018,13 @@ yyreduce:
 
   case 191:
 /* Line 1792 of yacc.c  */
-#line 2531 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2531 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 0; }
     break;
 
   case 192:
 /* Line 1792 of yacc.c  */
-#line 2533 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2533 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->comment= Lex->event_parse_data->comment= (yyvsp[(2) - (2)].lex_str);
             (yyval.num)= 1;
@@ -21033,7 +21033,7 @@ yyreduce:
 
   case 193:
 /* Line 1792 of yacc.c  */
-#line 2540 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2540 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -21083,7 +21083,7 @@ yyreduce:
 
   case 194:
 /* Line 1792 of yacc.c  */
-#line 2586 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2586 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -21097,7 +21097,7 @@ yyreduce:
 
   case 208:
 /* Line 1792 of yacc.c  */
-#line 2615 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2615 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
            LEX *lex=Lex;
            lex->users_list.empty();
@@ -21115,7 +21115,7 @@ yyreduce:
 
   case 209:
 /* Line 1792 of yacc.c  */
-#line 2632 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2632 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
            LEX *lex=Lex;
            lex->alter_password.update_password_expired_fields= false;
@@ -21127,7 +21127,7 @@ yyreduce:
 
   case 210:
 /* Line 1792 of yacc.c  */
-#line 2643 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2643 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!(yyvsp[(1) - (3)].lex_str).str ||
                 (check_and_convert_db_name(&(yyvsp[(1) - (3)].lex_str), FALSE) != IDENT_NAME_OK))
@@ -21145,7 +21145,7 @@ yyreduce:
 
   case 211:
 /* Line 1792 of yacc.c  */
-#line 2657 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2657 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -21165,91 +21165,91 @@ yyreduce:
 
   case 212:
 /* Line 1792 of yacc.c  */
-#line 2675 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2675 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 213:
 /* Line 1792 of yacc.c  */
-#line 2676 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2676 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 214:
 /* Line 1792 of yacc.c  */
-#line 2680 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2680 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 215:
 /* Line 1792 of yacc.c  */
-#line 2681 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2681 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 216:
 /* Line 1792 of yacc.c  */
-#line 2687 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2687 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->sp_chistics.comment= (yyvsp[(2) - (2)].lex_str); }
     break;
 
   case 217:
 /* Line 1792 of yacc.c  */
-#line 2689 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2689 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { /* Just parse it, we only have one language for now. */ }
     break;
 
   case 218:
 /* Line 1792 of yacc.c  */
-#line 2691 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2691 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->sp_chistics.daccess= SP_NO_SQL; }
     break;
 
   case 219:
 /* Line 1792 of yacc.c  */
-#line 2693 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2693 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->sp_chistics.daccess= SP_CONTAINS_SQL; }
     break;
 
   case 220:
 /* Line 1792 of yacc.c  */
-#line 2695 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2695 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->sp_chistics.daccess= SP_READS_SQL_DATA; }
     break;
 
   case 221:
 /* Line 1792 of yacc.c  */
-#line 2697 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2697 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->sp_chistics.daccess= SP_MODIFIES_SQL_DATA; }
     break;
 
   case 222:
 /* Line 1792 of yacc.c  */
-#line 2699 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2699 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 223:
 /* Line 1792 of yacc.c  */
-#line 2704 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2704 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { }
     break;
 
   case 224:
 /* Line 1792 of yacc.c  */
-#line 2705 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2705 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->sp_chistics.detistic= TRUE; }
     break;
 
   case 225:
 /* Line 1792 of yacc.c  */
-#line 2706 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2706 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->sp_chistics.detistic= FALSE; }
     break;
 
   case 226:
 /* Line 1792 of yacc.c  */
-#line 2711 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2711 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sp_chistics.suid= SP_IS_SUID;
           }
@@ -21257,7 +21257,7 @@ yyreduce:
 
   case 227:
 /* Line 1792 of yacc.c  */
-#line 2715 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2715 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sp_chistics.suid= SP_IS_NOT_SUID;
           }
@@ -21265,7 +21265,7 @@ yyreduce:
 
   case 228:
 /* Line 1792 of yacc.c  */
-#line 2722 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2722 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex = Lex;
 
@@ -21278,13 +21278,13 @@ yyreduce:
 
   case 229:
 /* Line 1792 of yacc.c  */
-#line 2730 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2730 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 234:
 /* Line 1792 of yacc.c  */
-#line 2746 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2746 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(3) - (3)].item), &(yyvsp[(3) - (3)].item));
 
@@ -21294,7 +21294,7 @@ yyreduce:
 
   case 235:
 /* Line 1792 of yacc.c  */
-#line 2752 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2752 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(1) - (1)].item), &(yyvsp[(1) - (1)].item));
 
@@ -21304,7 +21304,7 @@ yyreduce:
 
   case 240:
 /* Line 1792 of yacc.c  */
-#line 2772 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2772 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
 
@@ -21325,7 +21325,7 @@ yyreduce:
 
   case 241:
 /* Line 1792 of yacc.c  */
-#line 2792 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2792 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -21356,7 +21356,7 @@ yyreduce:
 
   case 246:
 /* Line 1792 of yacc.c  */
-#line 2833 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2833 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -21386,43 +21386,43 @@ yyreduce:
 
   case 247:
 /* Line 1792 of yacc.c  */
-#line 2861 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2861 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= sp_variable::MODE_IN; }
     break;
 
   case 248:
 /* Line 1792 of yacc.c  */
-#line 2862 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2862 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= sp_variable::MODE_IN; }
     break;
 
   case 249:
 /* Line 1792 of yacc.c  */
-#line 2863 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2863 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= sp_variable::MODE_OUT; }
     break;
 
   case 250:
 /* Line 1792 of yacc.c  */
-#line 2864 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2864 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= sp_variable::MODE_INOUT; }
     break;
 
   case 251:
 /* Line 1792 of yacc.c  */
-#line 2868 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2868 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 253:
 /* Line 1792 of yacc.c  */
-#line 2873 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2873 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 255:
 /* Line 1792 of yacc.c  */
-#line 2879 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2879 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.spblock).vars= (yyval.spblock).conds= (yyval.spblock).hndlrs= (yyval.spblock).curs= 0;
           }
@@ -21430,7 +21430,7 @@ yyreduce:
 
   case 256:
 /* Line 1792 of yacc.c  */
-#line 2883 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2883 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /* We check for declarations out of (standard) order this way
               because letting the grammar rules reflect it caused tricky
@@ -21457,7 +21457,7 @@ yyreduce:
 
   case 257:
 /* Line 1792 of yacc.c  */
-#line 2910 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2910 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                     /*$3*/
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -21471,7 +21471,7 @@ yyreduce:
 
   case 258:
 /* Line 1792 of yacc.c  */
-#line 2921 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2921 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                     /*$6*/
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -21548,7 +21548,7 @@ yyreduce:
 
   case 259:
 /* Line 1792 of yacc.c  */
-#line 2994 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 2994 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -21569,7 +21569,7 @@ yyreduce:
 
   case 260:
 /* Line 1792 of yacc.c  */
-#line 3011 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3011 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -21615,7 +21615,7 @@ yyreduce:
 
   case 261:
 /* Line 1792 of yacc.c  */
-#line 3053 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3053 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -21653,7 +21653,7 @@ yyreduce:
 
   case 262:
 /* Line 1792 of yacc.c  */
-#line 3090 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3090 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {             /*$5*/
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -21666,7 +21666,7 @@ yyreduce:
 
   case 263:
 /* Line 1792 of yacc.c  */
-#line 3099 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3099 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {             /*$7*/
             CONTEXTUALIZE((yyvsp[(6) - (6)].select));
 
@@ -21733,31 +21733,31 @@ yyreduce:
 
   case 264:
 /* Line 1792 of yacc.c  */
-#line 3164 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3164 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= sp_handler::EXIT; }
     break;
 
   case 265:
 /* Line 1792 of yacc.c  */
-#line 3165 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3165 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= sp_handler::CONTINUE; }
     break;
 
   case 266:
 /* Line 1792 of yacc.c  */
-#line 3171 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3171 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 1; }
     break;
 
   case 267:
 /* Line 1792 of yacc.c  */
-#line 3173 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3173 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)+= 1; }
     break;
 
   case 268:
 /* Line 1792 of yacc.c  */
-#line 3178 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3178 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             sp_head *sp= lex->sphead;
@@ -21781,7 +21781,7 @@ yyreduce:
 
   case 269:
 /* Line 1792 of yacc.c  */
-#line 3201 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3201 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { /* mysql errno */
             if ((yyvsp[(1) - (1)].ulong_num) == 0)
             {
@@ -21796,7 +21796,7 @@ yyreduce:
 
   case 271:
 /* Line 1792 of yacc.c  */
-#line 3216 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3216 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { /* SQLSTATE */
 
             /*
@@ -21819,19 +21819,19 @@ yyreduce:
 
   case 272:
 /* Line 1792 of yacc.c  */
-#line 3237 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3237 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 273:
 /* Line 1792 of yacc.c  */
-#line 3238 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3238 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 274:
 /* Line 1792 of yacc.c  */
-#line 3243 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3243 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.spcondvalue)= (yyvsp[(1) - (1)].spcondvalue);
           }
@@ -21839,7 +21839,7 @@ yyreduce:
 
   case 275:
 /* Line 1792 of yacc.c  */
-#line 3247 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3247 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             sp_pcontext *pctx= lex->get_sp_current_parsing_ctx();
@@ -21856,7 +21856,7 @@ yyreduce:
 
   case 276:
 /* Line 1792 of yacc.c  */
-#line 3260 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3260 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.spcondvalue)= new (YYTHD->mem_root) sp_condition_value(sp_condition_value::WARNING);
             if ((yyval.spcondvalue) == NULL)
@@ -21866,7 +21866,7 @@ yyreduce:
 
   case 277:
 /* Line 1792 of yacc.c  */
-#line 3266 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3266 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.spcondvalue)= new (YYTHD->mem_root) sp_condition_value(sp_condition_value::NOT_FOUND);
             if ((yyval.spcondvalue) == NULL)
@@ -21876,7 +21876,7 @@ yyreduce:
 
   case 278:
 /* Line 1792 of yacc.c  */
-#line 3272 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3272 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.spcondvalue)= new (YYTHD->mem_root) sp_condition_value(sp_condition_value::EXCEPTION);
             if ((yyval.spcondvalue) == NULL)
@@ -21886,7 +21886,7 @@ yyreduce:
 
   case 279:
 /* Line 1792 of yacc.c  */
-#line 3281 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3281 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -21900,7 +21900,7 @@ yyreduce:
 
   case 280:
 /* Line 1792 of yacc.c  */
-#line 3294 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3294 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             sp_pcontext *pctx= lex->get_sp_current_parsing_ctx();
@@ -21930,37 +21930,37 @@ yyreduce:
 
   case 281:
 /* Line 1792 of yacc.c  */
-#line 3320 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3320 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.spcondvalue)= (yyvsp[(1) - (1)].spcondvalue); }
     break;
 
   case 282:
 /* Line 1792 of yacc.c  */
-#line 3325 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3325 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.spcondvalue)= NULL; }
     break;
 
   case 283:
 /* Line 1792 of yacc.c  */
-#line 3327 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3327 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.spcondvalue)= (yyvsp[(1) - (1)].spcondvalue); }
     break;
 
   case 284:
 /* Line 1792 of yacc.c  */
-#line 3332 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3332 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.signal_item_list)= new (YYTHD->mem_root) Set_signal_information(); }
     break;
 
   case 285:
 /* Line 1792 of yacc.c  */
-#line 3334 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3334 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.signal_item_list)= (yyvsp[(2) - (2)].signal_item_list); }
     break;
 
   case 286:
 /* Line 1792 of yacc.c  */
-#line 3339 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3339 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.signal_item_list)= new (YYTHD->mem_root) Set_signal_information();
             if ((yyval.signal_item_list)->set_item((yyvsp[(1) - (3)].da_condition_item_name), (yyvsp[(3) - (3)].item)))
@@ -21970,7 +21970,7 @@ yyreduce:
 
   case 287:
 /* Line 1792 of yacc.c  */
-#line 3346 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3346 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.signal_item_list)= (yyvsp[(1) - (5)].signal_item_list);
             if ((yyval.signal_item_list)->set_item((yyvsp[(3) - (5)].da_condition_item_name), (yyvsp[(5) - (5)].item)))
@@ -21980,13 +21980,13 @@ yyreduce:
 
   case 288:
 /* Line 1792 of yacc.c  */
-#line 3358 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3358 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { ITEMIZE((yyvsp[(1) - (1)].item), &(yyval.item)); }
     break;
 
   case 289:
 /* Line 1792 of yacc.c  */
-#line 3360 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3360 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(1) - (1)].item), &(yyvsp[(1) - (1)].item));
 
@@ -22010,85 +22010,85 @@ yyreduce:
 
   case 290:
 /* Line 1792 of yacc.c  */
-#line 3380 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3380 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { ITEMIZE((yyvsp[(1) - (1)].item), &(yyval.item)); }
     break;
 
   case 291:
 /* Line 1792 of yacc.c  */
-#line 3386 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3386 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.da_condition_item_name)= CIN_CLASS_ORIGIN; }
     break;
 
   case 292:
 /* Line 1792 of yacc.c  */
-#line 3388 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3388 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.da_condition_item_name)= CIN_SUBCLASS_ORIGIN; }
     break;
 
   case 293:
 /* Line 1792 of yacc.c  */
-#line 3390 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3390 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.da_condition_item_name)= CIN_CONSTRAINT_CATALOG; }
     break;
 
   case 294:
 /* Line 1792 of yacc.c  */
-#line 3392 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3392 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.da_condition_item_name)= CIN_CONSTRAINT_SCHEMA; }
     break;
 
   case 295:
 /* Line 1792 of yacc.c  */
-#line 3394 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3394 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.da_condition_item_name)= CIN_CONSTRAINT_NAME; }
     break;
 
   case 296:
 /* Line 1792 of yacc.c  */
-#line 3396 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3396 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.da_condition_item_name)= CIN_CATALOG_NAME; }
     break;
 
   case 297:
 /* Line 1792 of yacc.c  */
-#line 3398 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3398 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.da_condition_item_name)= CIN_SCHEMA_NAME; }
     break;
 
   case 298:
 /* Line 1792 of yacc.c  */
-#line 3400 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3400 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.da_condition_item_name)= CIN_TABLE_NAME; }
     break;
 
   case 299:
 /* Line 1792 of yacc.c  */
-#line 3402 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3402 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.da_condition_item_name)= CIN_COLUMN_NAME; }
     break;
 
   case 300:
 /* Line 1792 of yacc.c  */
-#line 3404 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3404 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.da_condition_item_name)= CIN_CURSOR_NAME; }
     break;
 
   case 301:
 /* Line 1792 of yacc.c  */
-#line 3406 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3406 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.da_condition_item_name)= CIN_MESSAGE_TEXT; }
     break;
 
   case 302:
 /* Line 1792 of yacc.c  */
-#line 3408 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3408 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.da_condition_item_name)= CIN_MYSQL_ERRNO; }
     break;
 
   case 303:
 /* Line 1792 of yacc.c  */
-#line 3413 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3413 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -22103,7 +22103,7 @@ yyreduce:
 
   case 304:
 /* Line 1792 of yacc.c  */
-#line 3427 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3427 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Diagnostics_information *info= (yyvsp[(4) - (4)].diag_info);
 
@@ -22120,25 +22120,25 @@ yyreduce:
 
   case 305:
 /* Line 1792 of yacc.c  */
-#line 3443 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3443 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.diag_area)= Diagnostics_information::CURRENT_AREA; }
     break;
 
   case 306:
 /* Line 1792 of yacc.c  */
-#line 3445 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3445 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.diag_area)= Diagnostics_information::CURRENT_AREA; }
     break;
 
   case 307:
 /* Line 1792 of yacc.c  */
-#line 3447 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3447 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.diag_area)= Diagnostics_information::STACKED_AREA; }
     break;
 
   case 308:
 /* Line 1792 of yacc.c  */
-#line 3452 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3452 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.diag_info)= new (YYTHD->mem_root) Statement_information((yyvsp[(1) - (1)].stmt_info_list));
             if ((yyval.diag_info) == NULL)
@@ -22148,7 +22148,7 @@ yyreduce:
 
   case 309:
 /* Line 1792 of yacc.c  */
-#line 3458 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3458 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.diag_info)= new (YYTHD->mem_root) Condition_information((yyvsp[(2) - (3)].item), (yyvsp[(3) - (3)].cond_info_list));
             if ((yyval.diag_info) == NULL)
@@ -22158,7 +22158,7 @@ yyreduce:
 
   case 310:
 /* Line 1792 of yacc.c  */
-#line 3467 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3467 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.stmt_info_list)= new (YYTHD->mem_root) List<Statement_information_item>;
             if ((yyval.stmt_info_list) == NULL || (yyval.stmt_info_list)->push_back((yyvsp[(1) - (1)].stmt_info_item)))
@@ -22168,7 +22168,7 @@ yyreduce:
 
   case 311:
 /* Line 1792 of yacc.c  */
-#line 3473 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3473 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(1) - (3)].stmt_info_list)->push_back((yyvsp[(3) - (3)].stmt_info_item)))
               MYSQL_YYABORT;
@@ -22178,7 +22178,7 @@ yyreduce:
 
   case 312:
 /* Line 1792 of yacc.c  */
-#line 3482 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3482 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.stmt_info_item)= new (YYTHD->mem_root) Statement_information_item((yyvsp[(3) - (3)].stmt_info_item_name), (yyvsp[(1) - (3)].item));
             if ((yyval.stmt_info_item) == NULL)
@@ -22188,7 +22188,7 @@ yyreduce:
 
   case 313:
 /* Line 1792 of yacc.c  */
-#line 3490 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3490 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -22220,7 +22220,7 @@ yyreduce:
 
   case 314:
 /* Line 1792 of yacc.c  */
-#line 3518 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3518 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_get_user_var((yyloc), (yyvsp[(2) - (2)].lex_str));
             ITEMIZE((yyval.item), &(yyval.item));
@@ -22229,25 +22229,25 @@ yyreduce:
 
   case 315:
 /* Line 1792 of yacc.c  */
-#line 3526 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3526 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.stmt_info_item_name)= Statement_information_item::NUMBER; }
     break;
 
   case 316:
 /* Line 1792 of yacc.c  */
-#line 3528 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3528 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.stmt_info_item_name)= Statement_information_item::ROW_COUNT; }
     break;
 
   case 317:
 /* Line 1792 of yacc.c  */
-#line 3537 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3537 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= (yyvsp[(1) - (1)].item); }
     break;
 
   case 318:
 /* Line 1792 of yacc.c  */
-#line 3542 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3542 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.cond_info_list)= new (YYTHD->mem_root) List<Condition_information_item>;
             if ((yyval.cond_info_list) == NULL || (yyval.cond_info_list)->push_back((yyvsp[(1) - (1)].cond_info_item)))
@@ -22257,7 +22257,7 @@ yyreduce:
 
   case 319:
 /* Line 1792 of yacc.c  */
-#line 3548 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3548 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(1) - (3)].cond_info_list)->push_back((yyvsp[(3) - (3)].cond_info_item)))
               MYSQL_YYABORT;
@@ -22267,7 +22267,7 @@ yyreduce:
 
   case 320:
 /* Line 1792 of yacc.c  */
-#line 3557 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3557 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.cond_info_item)= new (YYTHD->mem_root) Condition_information_item((yyvsp[(3) - (3)].cond_info_item_name), (yyvsp[(1) - (3)].item));
             if ((yyval.cond_info_item) == NULL)
@@ -22277,85 +22277,85 @@ yyreduce:
 
   case 321:
 /* Line 1792 of yacc.c  */
-#line 3565 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3565 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.cond_info_item_name)= Condition_information_item::CLASS_ORIGIN; }
     break;
 
   case 322:
 /* Line 1792 of yacc.c  */
-#line 3567 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3567 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.cond_info_item_name)= Condition_information_item::SUBCLASS_ORIGIN; }
     break;
 
   case 323:
 /* Line 1792 of yacc.c  */
-#line 3569 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3569 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.cond_info_item_name)= Condition_information_item::CONSTRAINT_CATALOG; }
     break;
 
   case 324:
 /* Line 1792 of yacc.c  */
-#line 3571 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3571 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.cond_info_item_name)= Condition_information_item::CONSTRAINT_SCHEMA; }
     break;
 
   case 325:
 /* Line 1792 of yacc.c  */
-#line 3573 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3573 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.cond_info_item_name)= Condition_information_item::CONSTRAINT_NAME; }
     break;
 
   case 326:
 /* Line 1792 of yacc.c  */
-#line 3575 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3575 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.cond_info_item_name)= Condition_information_item::CATALOG_NAME; }
     break;
 
   case 327:
 /* Line 1792 of yacc.c  */
-#line 3577 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3577 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.cond_info_item_name)= Condition_information_item::SCHEMA_NAME; }
     break;
 
   case 328:
 /* Line 1792 of yacc.c  */
-#line 3579 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3579 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.cond_info_item_name)= Condition_information_item::TABLE_NAME; }
     break;
 
   case 329:
 /* Line 1792 of yacc.c  */
-#line 3581 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3581 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.cond_info_item_name)= Condition_information_item::COLUMN_NAME; }
     break;
 
   case 330:
 /* Line 1792 of yacc.c  */
-#line 3583 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3583 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.cond_info_item_name)= Condition_information_item::CURSOR_NAME; }
     break;
 
   case 331:
 /* Line 1792 of yacc.c  */
-#line 3585 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3585 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.cond_info_item_name)= Condition_information_item::MESSAGE_TEXT; }
     break;
 
   case 332:
 /* Line 1792 of yacc.c  */
-#line 3587 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3587 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.cond_info_item_name)= Condition_information_item::MYSQL_ERRNO; }
     break;
 
   case 333:
 /* Line 1792 of yacc.c  */
-#line 3589 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3589 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.cond_info_item_name)= Condition_information_item::RETURNED_SQLSTATE; }
     break;
 
   case 334:
 /* Line 1792 of yacc.c  */
-#line 3594 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3594 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /* NOTE: field definition is filled in sp_decl section. */
 
@@ -22379,7 +22379,7 @@ yyreduce:
 
   case 335:
 /* Line 1792 of yacc.c  */
-#line 3614 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3614 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /* NOTE: field definition is filled in sp_decl section. */
 
@@ -22403,19 +22403,19 @@ yyreduce:
 
   case 336:
 /* Line 1792 of yacc.c  */
-#line 3637 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3637 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item) = NULL; }
     break;
 
   case 337:
 /* Line 1792 of yacc.c  */
-#line 3639 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3639 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->sphead->m_parser_data.push_expr_start_ptr((yylsp[(1) - (1)]).raw.end); }
     break;
 
   case 338:
 /* Line 1792 of yacc.c  */
-#line 3641 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3641 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(3) - (3)].item), &(yyvsp[(3) - (3)].item));
 
@@ -22425,13 +22425,13 @@ yyreduce:
 
   case 352:
 /* Line 1792 of yacc.c  */
-#line 3666 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3666 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->sphead->m_parser_data.new_cont_backpatch(); }
     break;
 
   case 353:
 /* Line 1792 of yacc.c  */
-#line 3668 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3668 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             sp_head *sp= Lex->sphead;
 
@@ -22441,7 +22441,7 @@ yyreduce:
 
   case 354:
 /* Line 1792 of yacc.c  */
-#line 3676 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3676 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -22454,7 +22454,7 @@ yyreduce:
 
   case 355:
 /* Line 1792 of yacc.c  */
-#line 3685 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3685 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -22502,7 +22502,7 @@ yyreduce:
 
   case 356:
 /* Line 1792 of yacc.c  */
-#line 3732 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3732 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {             /*$2*/
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -22516,7 +22516,7 @@ yyreduce:
 
   case 357:
 /* Line 1792 of yacc.c  */
-#line 3742 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3742 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {             /*$4*/
             ITEMIZE((yyvsp[(3) - (3)].item), &(yyvsp[(3) - (3)].item));
 
@@ -22566,7 +22566,7 @@ yyreduce:
 
   case 358:
 /* Line 1792 of yacc.c  */
-#line 3790 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3790 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { /* Unlabeled controls get a secret label. */
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -22581,7 +22581,7 @@ yyreduce:
 
   case 359:
 /* Line 1792 of yacc.c  */
-#line 3801 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3801 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             sp_head *sp= lex->sphead;
@@ -22594,7 +22594,7 @@ yyreduce:
 
   case 360:
 /* Line 1792 of yacc.c  */
-#line 3813 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3813 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -22654,7 +22654,7 @@ yyreduce:
 
   case 361:
 /* Line 1792 of yacc.c  */
-#line 3872 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3872 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -22705,7 +22705,7 @@ yyreduce:
 
   case 362:
 /* Line 1792 of yacc.c  */
-#line 3922 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3922 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -22730,7 +22730,7 @@ yyreduce:
 
   case 363:
 /* Line 1792 of yacc.c  */
-#line 3946 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3946 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -22755,13 +22755,13 @@ yyreduce:
 
   case 364:
 /* Line 1792 of yacc.c  */
-#line 3967 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3967 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 365:
 /* Line 1792 of yacc.c  */
-#line 3972 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 3972 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -22786,7 +22786,7 @@ yyreduce:
 
   case 369:
 /* Line 1792 of yacc.c  */
-#line 4002 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4002 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             sp_head *sp= lex->sphead;
@@ -22808,7 +22808,7 @@ yyreduce:
 
   case 370:
 /* Line 1792 of yacc.c  */
-#line 4020 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4020 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             sp_head *sp= lex->sphead;
@@ -22830,7 +22830,7 @@ yyreduce:
 
   case 371:
 /* Line 1792 of yacc.c  */
-#line 4040 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4040 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                     /*$1*/
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -22843,7 +22843,7 @@ yyreduce:
 
   case 372:
 /* Line 1792 of yacc.c  */
-#line 4049 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4049 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                     /*$3*/
             ITEMIZE((yyvsp[(2) - (2)].item), &(yyvsp[(2) - (2)].item));
 
@@ -22885,7 +22885,7 @@ yyreduce:
 
   case 373:
 /* Line 1792 of yacc.c  */
-#line 4088 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4088 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                     /*$6*/
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -22908,7 +22908,7 @@ yyreduce:
 
   case 374:
 /* Line 1792 of yacc.c  */
-#line 4107 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4107 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                     /*$8*/
             LEX *lex= Lex;
             sp_head *sp= lex->sphead;
@@ -22921,7 +22921,7 @@ yyreduce:
 
   case 380:
 /* Line 1792 of yacc.c  */
-#line 4130 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4130 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                             /*$2*/
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -22936,7 +22936,7 @@ yyreduce:
 
   case 381:
 /* Line 1792 of yacc.c  */
-#line 4141 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4141 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                             /*$4*/
             ITEMIZE((yyvsp[(3) - (3)].item), &(yyvsp[(3) - (3)].item));
 
@@ -22983,7 +22983,7 @@ yyreduce:
 
   case 382:
 /* Line 1792 of yacc.c  */
-#line 4187 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4187 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                             /*$9*/
             case_stmt_action_end_case(Lex, true);
           }
@@ -22991,7 +22991,7 @@ yyreduce:
 
   case 383:
 /* Line 1792 of yacc.c  */
-#line 4194 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4194 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             case_stmt_action_case(YYTHD);
           }
@@ -22999,7 +22999,7 @@ yyreduce:
 
   case 384:
 /* Line 1792 of yacc.c  */
-#line 4201 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4201 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             case_stmt_action_end_case(Lex, false);
           }
@@ -23007,7 +23007,7 @@ yyreduce:
 
   case 389:
 /* Line 1792 of yacc.c  */
-#line 4218 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4218 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                             /*$2*/
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -23020,7 +23020,7 @@ yyreduce:
 
   case 390:
 /* Line 1792 of yacc.c  */
-#line 4227 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4227 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                             /*$4*/
             /* Simple case: <caseval> = <whenval> */
 
@@ -23066,7 +23066,7 @@ yyreduce:
 
   case 391:
 /* Line 1792 of yacc.c  */
-#line 4270 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4270 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                             /*$7*/
             if (case_stmt_action_then(YYTHD, Lex))
               MYSQL_YYABORT;
@@ -23075,7 +23075,7 @@ yyreduce:
 
   case 392:
 /* Line 1792 of yacc.c  */
-#line 4278 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4278 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                             /*$2*/
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -23088,7 +23088,7 @@ yyreduce:
 
   case 393:
 /* Line 1792 of yacc.c  */
-#line 4287 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4287 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                             /*$4*/
             ITEMIZE((yyvsp[(3) - (3)].item), &(yyvsp[(3) - (3)].item));
 
@@ -23129,7 +23129,7 @@ yyreduce:
 
   case 394:
 /* Line 1792 of yacc.c  */
-#line 4325 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4325 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                             /*$8*/
             if (case_stmt_action_then(YYTHD, Lex))
               MYSQL_YYABORT;
@@ -23138,7 +23138,7 @@ yyreduce:
 
   case 395:
 /* Line 1792 of yacc.c  */
-#line 4333 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4333 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -23156,7 +23156,7 @@ yyreduce:
 
   case 397:
 /* Line 1792 of yacc.c  */
-#line 4351 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4351 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             sp_head *sp= lex->sphead;
@@ -23178,7 +23178,7 @@ yyreduce:
 
   case 398:
 /* Line 1792 of yacc.c  */
-#line 4369 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4369 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             sp_head *sp= lex->sphead;
@@ -23199,19 +23199,19 @@ yyreduce:
 
   case 399:
 /* Line 1792 of yacc.c  */
-#line 4388 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4388 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)= null_lex_str; }
     break;
 
   case 400:
 /* Line 1792 of yacc.c  */
-#line 4389 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4389 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)= (yyvsp[(1) - (1)].lex_str); }
     break;
 
   case 401:
 /* Line 1792 of yacc.c  */
-#line 4394 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4394 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             sp_head *sp= lex->sphead;
@@ -23231,7 +23231,7 @@ yyreduce:
 
   case 402:
 /* Line 1792 of yacc.c  */
-#line 4410 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4410 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             sp_pcontext *pctx= lex->get_sp_current_parsing_ctx();
@@ -23250,7 +23250,7 @@ yyreduce:
 
   case 403:
 /* Line 1792 of yacc.c  */
-#line 4427 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4427 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { /* Unlabeled blocks get a secret label. */
             LEX *lex= Lex;
             sp_head *sp= lex->sphead;
@@ -23265,7 +23265,7 @@ yyreduce:
 
   case 404:
 /* Line 1792 of yacc.c  */
-#line 4438 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4438 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->get_sp_current_parsing_ctx()->pop_label();
@@ -23274,7 +23274,7 @@ yyreduce:
 
   case 405:
 /* Line 1792 of yacc.c  */
-#line 4446 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4446 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { /* QQ This is just a dummy for grouping declarations and statements
               together. No [[NOT] ATOMIC] yet, and we need to figure out how
               make it coexist with the existing BEGIN COMMIT/ROLLBACK. */
@@ -23291,7 +23291,7 @@ yyreduce:
 
   case 406:
 /* Line 1792 of yacc.c  */
-#line 4461 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4461 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -23327,7 +23327,7 @@ yyreduce:
 
   case 407:
 /* Line 1792 of yacc.c  */
-#line 4497 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4497 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -23346,7 +23346,7 @@ yyreduce:
 
   case 408:
 /* Line 1792 of yacc.c  */
-#line 4512 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4512 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                             /*$2*/
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -23359,7 +23359,7 @@ yyreduce:
 
   case 409:
 /* Line 1792 of yacc.c  */
-#line 4521 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4521 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                             /*$4*/
             ITEMIZE((yyvsp[(3) - (3)].item), &(yyvsp[(3) - (3)].item));
 
@@ -23401,7 +23401,7 @@ yyreduce:
 
   case 410:
 /* Line 1792 of yacc.c  */
-#line 4562 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4562 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                             /*$14*/
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -23421,7 +23421,7 @@ yyreduce:
 
   case 411:
 /* Line 1792 of yacc.c  */
-#line 4580 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4580 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                             /*$4*/
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -23434,7 +23434,7 @@ yyreduce:
 
   case 412:
 /* Line 1792 of yacc.c  */
-#line 4589 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4589 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                             /*$6*/
             ITEMIZE((yyvsp[(5) - (5)].item), &(yyvsp[(5) - (5)].item));
 
@@ -23477,43 +23477,43 @@ yyreduce:
 
   case 414:
 /* Line 1792 of yacc.c  */
-#line 4633 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4633 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= TRG_ACTION_BEFORE; }
     break;
 
   case 415:
 /* Line 1792 of yacc.c  */
-#line 4635 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4635 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= TRG_ACTION_AFTER; }
     break;
 
   case 416:
 /* Line 1792 of yacc.c  */
-#line 4640 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4640 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= TRG_EVENT_INSERT; }
     break;
 
   case 417:
 /* Line 1792 of yacc.c  */
-#line 4642 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4642 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= TRG_EVENT_UPDATE; }
     break;
 
   case 418:
 /* Line 1792 of yacc.c  */
-#line 4644 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4644 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= TRG_EVENT_DELETE; }
     break;
 
   case 422:
 /* Line 1792 of yacc.c  */
-#line 4678 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4678 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 423:
 /* Line 1792 of yacc.c  */
-#line 4680 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4680 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->logfile_group_name= (yyvsp[(4) - (4)].lex_str).str;
@@ -23522,7 +23522,7 @@ yyreduce:
 
   case 424:
 /* Line 1792 of yacc.c  */
-#line 4690 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4690 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_tablespace_info->ts_alter_tablespace_type= ALTER_TABLESPACE_ADD_FILE;
           }
@@ -23530,7 +23530,7 @@ yyreduce:
 
   case 425:
 /* Line 1792 of yacc.c  */
-#line 4696 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4696 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_tablespace_info->ts_alter_tablespace_type= ALTER_TABLESPACE_DROP_FILE;
           }
@@ -23538,13 +23538,13 @@ yyreduce:
 
   case 430:
 /* Line 1792 of yacc.c  */
-#line 4719 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4719 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 482:
 /* Line 1792 of yacc.c  */
-#line 4818 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4818 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->data_file_name= (yyvsp[(2) - (2)].lex_str).str;
@@ -23553,7 +23553,7 @@ yyreduce:
 
   case 483:
 /* Line 1792 of yacc.c  */
-#line 4826 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4826 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->undo_file_name= (yyvsp[(2) - (2)].lex_str).str;
@@ -23562,7 +23562,7 @@ yyreduce:
 
   case 484:
 /* Line 1792 of yacc.c  */
-#line 4834 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4834 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->redo_file_name= (yyvsp[(2) - (2)].lex_str).str;
@@ -23571,7 +23571,7 @@ yyreduce:
 
   case 485:
 /* Line 1792 of yacc.c  */
-#line 4842 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4842 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info= new st_alter_tablespace();
@@ -23584,7 +23584,7 @@ yyreduce:
 
   case 486:
 /* Line 1792 of yacc.c  */
-#line 4854 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4854 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info= new st_alter_tablespace();
@@ -23597,7 +23597,7 @@ yyreduce:
 
   case 487:
 /* Line 1792 of yacc.c  */
-#line 4866 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4866 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->ts_access_mode= TS_READ_ONLY;
@@ -23606,7 +23606,7 @@ yyreduce:
 
   case 488:
 /* Line 1792 of yacc.c  */
-#line 4871 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4871 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->ts_access_mode= TS_READ_WRITE;
@@ -23615,7 +23615,7 @@ yyreduce:
 
   case 489:
 /* Line 1792 of yacc.c  */
-#line 4876 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4876 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->ts_access_mode= TS_NOT_ACCESSIBLE;
@@ -23624,7 +23624,7 @@ yyreduce:
 
   case 490:
 /* Line 1792 of yacc.c  */
-#line 4884 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4884 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->initial_size= (yyvsp[(3) - (3)].ulonglong_number);
@@ -23633,7 +23633,7 @@ yyreduce:
 
   case 491:
 /* Line 1792 of yacc.c  */
-#line 4892 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4892 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->autoextend_size= (yyvsp[(3) - (3)].ulonglong_number);
@@ -23642,7 +23642,7 @@ yyreduce:
 
   case 492:
 /* Line 1792 of yacc.c  */
-#line 4900 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4900 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->max_size= (yyvsp[(3) - (3)].ulonglong_number);
@@ -23651,7 +23651,7 @@ yyreduce:
 
   case 493:
 /* Line 1792 of yacc.c  */
-#line 4908 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4908 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->extent_size= (yyvsp[(3) - (3)].ulonglong_number);
@@ -23660,7 +23660,7 @@ yyreduce:
 
   case 494:
 /* Line 1792 of yacc.c  */
-#line 4916 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4916 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->undo_buffer_size= (yyvsp[(3) - (3)].ulonglong_number);
@@ -23669,7 +23669,7 @@ yyreduce:
 
   case 495:
 /* Line 1792 of yacc.c  */
-#line 4924 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4924 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->redo_buffer_size= (yyvsp[(3) - (3)].ulonglong_number);
@@ -23678,7 +23678,7 @@ yyreduce:
 
   case 496:
 /* Line 1792 of yacc.c  */
-#line 4932 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4932 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             if (lex->alter_tablespace_info->nodegroup_id != UNDEF_NODEGROUP)
@@ -23692,7 +23692,7 @@ yyreduce:
 
   case 497:
 /* Line 1792 of yacc.c  */
-#line 4945 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4945 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             if (lex->alter_tablespace_info->ts_comment != NULL)
@@ -23706,7 +23706,7 @@ yyreduce:
 
   case 498:
 /* Line 1792 of yacc.c  */
-#line 4958 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4958 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             if (lex->alter_tablespace_info->storage_engine != NULL)
@@ -23721,7 +23721,7 @@ yyreduce:
 
   case 499:
 /* Line 1792 of yacc.c  */
-#line 4972 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4972 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             if (lex->alter_tablespace_info->file_block_size != 0)
@@ -23736,7 +23736,7 @@ yyreduce:
 
   case 500:
 /* Line 1792 of yacc.c  */
-#line 4986 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4986 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->wait_until_completed= TRUE;
@@ -23745,7 +23745,7 @@ yyreduce:
 
   case 501:
 /* Line 1792 of yacc.c  */
-#line 4991 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 4991 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             if (!(lex->alter_tablespace_info->wait_until_completed))
@@ -23759,13 +23759,13 @@ yyreduce:
 
   case 502:
 /* Line 1792 of yacc.c  */
-#line 5003 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5003 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulonglong_number)= (yyvsp[(1) - (1)].ulonglong_number);}
     break;
 
   case 503:
 /* Line 1792 of yacc.c  */
-#line 5005 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5005 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ulonglong number;
             uint text_shift_number= 0;
@@ -23813,19 +23813,19 @@ yyreduce:
 
   case 504:
 /* Line 1792 of yacc.c  */
-#line 5055 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5055 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 505:
 /* Line 1792 of yacc.c  */
-#line 5058 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5058 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 506:
 /* Line 1792 of yacc.c  */
-#line 5060 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5060 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             TABLE_LIST *src_table;
@@ -23844,7 +23844,7 @@ yyreduce:
 
   case 507:
 /* Line 1792 of yacc.c  */
-#line 5075 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5075 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             TABLE_LIST *src_table;
@@ -23863,13 +23863,13 @@ yyreduce:
 
   case 508:
 /* Line 1792 of yacc.c  */
-#line 5094 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5094 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 509:
 /* Line 1792 of yacc.c  */
-#line 5097 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5097 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
              CONTEXTUALIZE((yyvsp[(2) - (3)].create_select));
              Select->set_braces(1);
@@ -23878,7 +23878,7 @@ yyreduce:
 
   case 510:
 /* Line 1792 of yacc.c  */
-#line 5102 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5102 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
              if ((yyvsp[(5) - (5)].node) != NULL)
                CONTEXTUALIZE((yyvsp[(5) - (5)].node));
@@ -23887,13 +23887,13 @@ yyreduce:
 
   case 511:
 /* Line 1792 of yacc.c  */
-#line 5109 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5109 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 512:
 /* Line 1792 of yacc.c  */
-#line 5111 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5111 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             CONTEXTUALIZE((yyvsp[(3) - (3)].create_select));
             Select->set_braces(0);
@@ -23902,7 +23902,7 @@ yyreduce:
 
   case 513:
 /* Line 1792 of yacc.c  */
-#line 5116 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5116 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(5) - (5)].union_list) != NULL)
               CONTEXTUALIZE((yyvsp[(5) - (5)].union_list));
@@ -23911,7 +23911,7 @@ yyreduce:
 
   case 514:
 /* Line 1792 of yacc.c  */
-#line 5121 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5121 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             CONTEXTUALIZE((yyvsp[(4) - (5)].create_select));
             Select->set_braces(1);
@@ -23920,7 +23920,7 @@ yyreduce:
 
   case 515:
 /* Line 1792 of yacc.c  */
-#line 5126 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5126 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
              if ((yyvsp[(7) - (7)].node) != NULL)
                CONTEXTUALIZE((yyvsp[(7) - (7)].node));
@@ -23929,7 +23929,7 @@ yyreduce:
 
   case 516:
 /* Line 1792 of yacc.c  */
-#line 5134 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5134 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /*
               Remove all tables used in PARTITION clause from the global table
@@ -23943,13 +23943,13 @@ yyreduce:
 
   case 517:
 /* Line 1792 of yacc.c  */
-#line 5170 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5170 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 519:
 /* Line 1792 of yacc.c  */
-#line 5176 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5176 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->part_info= new partition_info();
@@ -23967,7 +23967,7 @@ yyreduce:
 
   case 521:
 /* Line 1792 of yacc.c  */
-#line 5194 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5194 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             if (!lex->part_info)
@@ -23984,13 +23984,13 @@ yyreduce:
 
   case 522:
 /* Line 1792 of yacc.c  */
-#line 5206 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5206 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 524:
 /* Line 1792 of yacc.c  */
-#line 5215 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5215 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             part_info->list_of_part_fields= TRUE;
@@ -24001,61 +24001,61 @@ yyreduce:
 
   case 525:
 /* Line 1792 of yacc.c  */
-#line 5222 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5222 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->part_type= HASH_PARTITION; }
     break;
 
   case 526:
 /* Line 1792 of yacc.c  */
-#line 5223 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5223 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 527:
 /* Line 1792 of yacc.c  */
-#line 5225 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5225 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->part_type= RANGE_PARTITION; }
     break;
 
   case 528:
 /* Line 1792 of yacc.c  */
-#line 5227 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5227 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->part_type= RANGE_PARTITION; }
     break;
 
   case 529:
 /* Line 1792 of yacc.c  */
-#line 5229 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5229 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->part_type= LIST_PARTITION; }
     break;
 
   case 530:
 /* Line 1792 of yacc.c  */
-#line 5231 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5231 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->part_type= LIST_PARTITION; }
     break;
 
   case 531:
 /* Line 1792 of yacc.c  */
-#line 5235 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5235 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 532:
 /* Line 1792 of yacc.c  */
-#line 5237 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5237 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->linear_hash_ind= TRUE;}
     break;
 
   case 533:
 /* Line 1792 of yacc.c  */
-#line 5242 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5242 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->key_algorithm= partition_info::KEY_ALGORITHM_NONE;}
     break;
 
   case 534:
 /* Line 1792 of yacc.c  */
-#line 5244 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5244 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             switch ((yyvsp[(3) - (3)].ulong_num)) {
             case 1:
@@ -24073,31 +24073,31 @@ yyreduce:
 
   case 535:
 /* Line 1792 of yacc.c  */
-#line 5260 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5260 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 536:
 /* Line 1792 of yacc.c  */
-#line 5261 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5261 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 537:
 /* Line 1792 of yacc.c  */
-#line 5265 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5265 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 538:
 /* Line 1792 of yacc.c  */
-#line 5266 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5266 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 539:
 /* Line 1792 of yacc.c  */
-#line 5271 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5271 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             part_info->num_columns++;
@@ -24117,7 +24117,7 @@ yyreduce:
 
   case 540:
 /* Line 1792 of yacc.c  */
-#line 5290 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5290 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             part_info->column_list= TRUE;
@@ -24127,7 +24127,7 @@ yyreduce:
 
   case 541:
 /* Line 1792 of yacc.c  */
-#line 5300 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5300 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             /*
@@ -24144,7 +24144,7 @@ yyreduce:
 
   case 542:
 /* Line 1792 of yacc.c  */
-#line 5316 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5316 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /*
               TODO: replace @1.cpp.end with @2.cpp.start: we don't need whitespaces at
@@ -24158,13 +24158,13 @@ yyreduce:
 
   case 543:
 /* Line 1792 of yacc.c  */
-#line 5329 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5329 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 544:
 /* Line 1792 of yacc.c  */
-#line 5331 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5331 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             uint num_parts= (yyvsp[(2) - (2)].ulong_num);
             partition_info *part_info= Lex->part_info;
@@ -24181,25 +24181,25 @@ yyreduce:
 
   case 545:
 /* Line 1792 of yacc.c  */
-#line 5346 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5346 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 546:
 /* Line 1792 of yacc.c  */
-#line 5348 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5348 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->subpart_type= HASH_PARTITION; }
     break;
 
   case 547:
 /* Line 1792 of yacc.c  */
-#line 5349 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5349 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 548:
 /* Line 1792 of yacc.c  */
-#line 5352 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5352 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             part_info->subpart_type= HASH_PARTITION;
@@ -24209,25 +24209,25 @@ yyreduce:
 
   case 549:
 /* Line 1792 of yacc.c  */
-#line 5357 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5357 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 550:
 /* Line 1792 of yacc.c  */
-#line 5361 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5361 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 551:
 /* Line 1792 of yacc.c  */
-#line 5362 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5362 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 552:
 /* Line 1792 of yacc.c  */
-#line 5367 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5367 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             if (part_info->subpart_field_list.push_back((yyvsp[(1) - (1)].lex_str).str))
@@ -24246,7 +24246,7 @@ yyreduce:
 
   case 553:
 /* Line 1792 of yacc.c  */
-#line 5385 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5385 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(1) - (1)].item), &(yyvsp[(1) - (1)].item));
 
@@ -24265,13 +24265,13 @@ yyreduce:
 
   case 554:
 /* Line 1792 of yacc.c  */
-#line 5402 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5402 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 555:
 /* Line 1792 of yacc.c  */
-#line 5404 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5404 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             uint num_parts= (yyvsp[(2) - (2)].ulong_num);
             LEX *lex= Lex;
@@ -24287,7 +24287,7 @@ yyreduce:
 
   case 556:
 /* Line 1792 of yacc.c  */
-#line 5419 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5419 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             if (part_info->part_type == RANGE_PARTITION)
@@ -24307,7 +24307,7 @@ yyreduce:
 
   case 557:
 /* Line 1792 of yacc.c  */
-#line 5435 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5435 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             uint count_curr_parts= part_info->partitions.elements;
@@ -24330,19 +24330,19 @@ yyreduce:
 
   case 558:
 /* Line 1792 of yacc.c  */
-#line 5456 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5456 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 559:
 /* Line 1792 of yacc.c  */
-#line 5457 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5457 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 560:
 /* Line 1792 of yacc.c  */
-#line 5462 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5462 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             partition_element *p_elem= new partition_element();
@@ -24362,13 +24362,13 @@ yyreduce:
 
   case 561:
 /* Line 1792 of yacc.c  */
-#line 5481 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5481 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 562:
 /* Line 1792 of yacc.c  */
-#line 5486 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5486 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             partition_element *p_elem= part_info->curr_part_elem;
@@ -24378,7 +24378,7 @@ yyreduce:
 
   case 563:
 /* Line 1792 of yacc.c  */
-#line 5495 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5495 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             partition_info *part_info= lex->part_info;
@@ -24404,7 +24404,7 @@ yyreduce:
 
   case 564:
 /* Line 1792 of yacc.c  */
-#line 5517 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5517 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             partition_info *part_info= lex->part_info;
@@ -24424,13 +24424,13 @@ yyreduce:
 
   case 565:
 /* Line 1792 of yacc.c  */
-#line 5532 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5532 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 566:
 /* Line 1792 of yacc.c  */
-#line 5534 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5534 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             partition_info *part_info= lex->part_info;
@@ -24450,13 +24450,13 @@ yyreduce:
 
   case 567:
 /* Line 1792 of yacc.c  */
-#line 5549 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5549 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 568:
 /* Line 1792 of yacc.c  */
-#line 5554 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5554 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
 
@@ -24482,13 +24482,13 @@ yyreduce:
 
   case 569:
 /* Line 1792 of yacc.c  */
-#line 5575 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5575 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 570:
 /* Line 1792 of yacc.c  */
-#line 5580 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5580 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             partition_info *part_info= lex->part_info;
@@ -24521,7 +24521,7 @@ yyreduce:
 
   case 571:
 /* Line 1792 of yacc.c  */
-#line 5609 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5609 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             if (part_info->num_columns < 2U)
@@ -24534,19 +24534,19 @@ yyreduce:
 
   case 572:
 /* Line 1792 of yacc.c  */
-#line 5620 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5620 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 573:
 /* Line 1792 of yacc.c  */
-#line 5621 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5621 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 574:
 /* Line 1792 of yacc.c  */
-#line 5626 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5626 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             part_info->print_debug("( part_value_item", NULL);
@@ -24562,13 +24562,13 @@ yyreduce:
 
   case 575:
 /* Line 1792 of yacc.c  */
-#line 5637 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5637 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 576:
 /* Line 1792 of yacc.c  */
-#line 5639 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5639 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             part_info->print_debug(") part_value_item", NULL);
@@ -24593,19 +24593,19 @@ yyreduce:
 
   case 577:
 /* Line 1792 of yacc.c  */
-#line 5662 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5662 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 578:
 /* Line 1792 of yacc.c  */
-#line 5663 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5663 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 579:
 /* Line 1792 of yacc.c  */
-#line 5668 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5668 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             if (part_info->part_type == LIST_PARTITION)
@@ -24622,7 +24622,7 @@ yyreduce:
 
   case 580:
 /* Line 1792 of yacc.c  */
-#line 5681 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5681 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(1) - (1)].item), &(yyvsp[(1) - (1)].item));
 
@@ -24644,7 +24644,7 @@ yyreduce:
 
   case 581:
 /* Line 1792 of yacc.c  */
-#line 5703 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5703 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             if (part_info->num_subparts != 0 &&
@@ -24662,7 +24662,7 @@ yyreduce:
 
   case 582:
 /* Line 1792 of yacc.c  */
-#line 5717 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5717 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             if (part_info->num_subparts != 0)
@@ -24689,19 +24689,19 @@ yyreduce:
 
   case 583:
 /* Line 1792 of yacc.c  */
-#line 5742 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5742 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 584:
 /* Line 1792 of yacc.c  */
-#line 5743 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5743 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 585:
 /* Line 1792 of yacc.c  */
-#line 5748 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5748 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             partition_element *curr_part= part_info->current_partition;
@@ -24738,49 +24738,49 @@ yyreduce:
 
   case 586:
 /* Line 1792 of yacc.c  */
-#line 5780 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5780 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 587:
 /* Line 1792 of yacc.c  */
-#line 5785 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5785 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->curr_part_elem->partition_name= (yyvsp[(1) - (1)].lex_str).str; }
     break;
 
   case 588:
 /* Line 1792 of yacc.c  */
-#line 5789 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5789 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 589:
 /* Line 1792 of yacc.c  */
-#line 5790 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5790 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 590:
 /* Line 1792 of yacc.c  */
-#line 5794 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5794 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 591:
 /* Line 1792 of yacc.c  */
-#line 5795 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5795 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 592:
 /* Line 1792 of yacc.c  */
-#line 5800 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5800 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->curr_part_elem->tablespace_name= (yyvsp[(3) - (3)].lex_str).str; }
     break;
 
   case 593:
 /* Line 1792 of yacc.c  */
-#line 5802 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5802 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             part_info->curr_part_elem->engine_type= (yyvsp[(4) - (4)].db_type);
@@ -24790,43 +24790,43 @@ yyreduce:
 
   case 594:
 /* Line 1792 of yacc.c  */
-#line 5808 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5808 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->curr_part_elem->nodegroup_id= (uint16) (yyvsp[(3) - (3)].ulong_num); }
     break;
 
   case 595:
 /* Line 1792 of yacc.c  */
-#line 5810 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5810 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->curr_part_elem->part_max_rows= (ha_rows) (yyvsp[(3) - (3)].ulonglong_number); }
     break;
 
   case 596:
 /* Line 1792 of yacc.c  */
-#line 5812 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5812 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->curr_part_elem->part_min_rows= (ha_rows) (yyvsp[(3) - (3)].ulonglong_number); }
     break;
 
   case 597:
 /* Line 1792 of yacc.c  */
-#line 5814 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5814 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->curr_part_elem->data_file_name= (yyvsp[(4) - (4)].lex_str).str; }
     break;
 
   case 598:
 /* Line 1792 of yacc.c  */
-#line 5816 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5816 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->curr_part_elem->index_file_name= (yyvsp[(4) - (4)].lex_str).str; }
     break;
 
   case 599:
 /* Line 1792 of yacc.c  */
-#line 5818 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5818 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->part_info->curr_part_elem->part_comment= (yyvsp[(3) - (3)].lex_str).str; }
     break;
 
   case 600:
 /* Line 1792 of yacc.c  */
-#line 5827 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5827 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.create_select)= NEW_PTN PT_create_select((yyvsp[(1) - (4)].optimizer_hints), (yyvsp[(2) - (4)].select_options), (yyvsp[(3) - (4)].item_list2), (yyvsp[(4) - (4)].table_expression));
           }
@@ -24834,97 +24834,97 @@ yyreduce:
 
   case 601:
 /* Line 1792 of yacc.c  */
-#line 5833 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5833 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 602:
 /* Line 1792 of yacc.c  */
-#line 5834 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5834 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 603:
 /* Line 1792 of yacc.c  */
-#line 5838 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5838 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 604:
 /* Line 1792 of yacc.c  */
-#line 5839 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5839 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 605:
 /* Line 1792 of yacc.c  */
-#line 5843 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5843 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 606:
 /* Line 1792 of yacc.c  */
-#line 5844 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5844 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 607:
 /* Line 1792 of yacc.c  */
-#line 5848 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5848 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 608:
 /* Line 1792 of yacc.c  */
-#line 5849 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5849 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 609:
 /* Line 1792 of yacc.c  */
-#line 5853 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5853 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 0; }
     break;
 
   case 610:
 /* Line 1792 of yacc.c  */
-#line 5854 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5854 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= (yyvsp[(1) - (1)].num);}
     break;
 
   case 611:
 /* Line 1792 of yacc.c  */
-#line 5858 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5858 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=(yyvsp[(1) - (1)].num); }
     break;
 
   case 612:
 /* Line 1792 of yacc.c  */
-#line 5859 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5859 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= (yyvsp[(1) - (2)].num) | (yyvsp[(2) - (2)].num); }
     break;
 
   case 613:
 /* Line 1792 of yacc.c  */
-#line 5863 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5863 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=HA_LEX_CREATE_TMP_TABLE; }
     break;
 
   case 614:
 /* Line 1792 of yacc.c  */
-#line 5867 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5867 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 0; }
     break;
 
   case 615:
 /* Line 1792 of yacc.c  */
-#line 5868 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5868 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=HA_LEX_CREATE_IF_NOT_EXISTS; }
     break;
 
   case 623:
 /* Line 1792 of yacc.c  */
-#line 5889 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5889 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.db_type= (yyvsp[(3) - (3)].db_type);
             Lex->create_info.used_fields|= HA_CREATE_USED_ENGINE;
@@ -24933,7 +24933,7 @@ yyreduce:
 
   case 624:
 /* Line 1792 of yacc.c  */
-#line 5894 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5894 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.max_rows= (yyvsp[(3) - (3)].ulonglong_number);
             Lex->create_info.used_fields|= HA_CREATE_USED_MAX_ROWS;
@@ -24942,7 +24942,7 @@ yyreduce:
 
   case 625:
 /* Line 1792 of yacc.c  */
-#line 5899 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5899 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.min_rows= (yyvsp[(3) - (3)].ulonglong_number);
             Lex->create_info.used_fields|= HA_CREATE_USED_MIN_ROWS;
@@ -24951,7 +24951,7 @@ yyreduce:
 
   case 626:
 /* Line 1792 of yacc.c  */
-#line 5904 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5904 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.avg_row_length=(yyvsp[(3) - (3)].ulong_num);
             Lex->create_info.used_fields|= HA_CREATE_USED_AVG_ROW_LENGTH;
@@ -24960,7 +24960,7 @@ yyreduce:
 
   case 627:
 /* Line 1792 of yacc.c  */
-#line 5909 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5909 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.password=(yyvsp[(3) - (3)].lex_str).str;
             Lex->create_info.used_fields|= HA_CREATE_USED_PASSWORD;
@@ -24969,7 +24969,7 @@ yyreduce:
 
   case 628:
 /* Line 1792 of yacc.c  */
-#line 5914 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5914 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.comment=(yyvsp[(3) - (3)].lex_str);
             Lex->create_info.used_fields|= HA_CREATE_USED_COMMENT;
@@ -24978,7 +24978,7 @@ yyreduce:
 
   case 629:
 /* Line 1792 of yacc.c  */
-#line 5919 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5919 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.used_fields|= HA_CREATE_USED_COMPRESS;
             Lex->create_info.compress= (yyvsp[(3) - (3)].lex_str);
@@ -24987,7 +24987,7 @@ yyreduce:
 
   case 630:
 /* Line 1792 of yacc.c  */
-#line 5924 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5924 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.used_fields|= HA_CREATE_USED_ENCRYPT;
             Lex->create_info.encrypt_type= (yyvsp[(3) - (3)].lex_str);
@@ -24996,7 +24996,7 @@ yyreduce:
 
   case 631:
 /* Line 1792 of yacc.c  */
-#line 5929 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5929 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.auto_increment_value=(yyvsp[(3) - (3)].ulonglong_number);
             Lex->create_info.used_fields|= HA_CREATE_USED_AUTO;
@@ -25005,7 +25005,7 @@ yyreduce:
 
   case 632:
 /* Line 1792 of yacc.c  */
-#line 5934 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5934 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             switch((yyvsp[(3) - (3)].ulong_num)) {
             case 0:
@@ -25024,7 +25024,7 @@ yyreduce:
 
   case 633:
 /* Line 1792 of yacc.c  */
-#line 5949 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5949 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.table_options&=
               ~(HA_OPTION_PACK_KEYS | HA_OPTION_NO_PACK_KEYS);
@@ -25034,7 +25034,7 @@ yyreduce:
 
   case 634:
 /* Line 1792 of yacc.c  */
-#line 5955 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5955 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             switch((yyvsp[(3) - (3)].ulong_num)) {
             case 0:
@@ -25053,7 +25053,7 @@ yyreduce:
 
   case 635:
 /* Line 1792 of yacc.c  */
-#line 5970 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5970 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.stats_auto_recalc= HA_STATS_AUTO_RECALC_DEFAULT;
             Lex->create_info.used_fields|= HA_CREATE_USED_STATS_AUTO_RECALC;
@@ -25062,7 +25062,7 @@ yyreduce:
 
   case 636:
 /* Line 1792 of yacc.c  */
-#line 5975 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5975 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             switch((yyvsp[(3) - (3)].ulong_num)) {
             case 0:
@@ -25081,7 +25081,7 @@ yyreduce:
 
   case 637:
 /* Line 1792 of yacc.c  */
-#line 5990 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5990 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.table_options&=
               ~(HA_OPTION_STATS_PERSISTENT | HA_OPTION_NO_STATS_PERSISTENT);
@@ -25091,7 +25091,7 @@ yyreduce:
 
   case 638:
 /* Line 1792 of yacc.c  */
-#line 5996 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 5996 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /* From user point of view STATS_SAMPLE_PAGES can be specified as
             STATS_SAMPLE_PAGES=N (where 0<N<=65535, it does not make sense to
@@ -25113,7 +25113,7 @@ yyreduce:
 
   case 639:
 /* Line 1792 of yacc.c  */
-#line 6014 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6014 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.stats_sample_pages=0;
             Lex->create_info.used_fields|= HA_CREATE_USED_STATS_SAMPLE_PAGES;
@@ -25122,7 +25122,7 @@ yyreduce:
 
   case 640:
 /* Line 1792 of yacc.c  */
-#line 6019 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6019 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.table_options|= (yyvsp[(3) - (3)].ulong_num) ? HA_OPTION_CHECKSUM : HA_OPTION_NO_CHECKSUM;
             Lex->create_info.used_fields|= HA_CREATE_USED_CHECKSUM;
@@ -25131,7 +25131,7 @@ yyreduce:
 
   case 641:
 /* Line 1792 of yacc.c  */
-#line 6024 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6024 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
              Lex->create_info.table_options|= (yyvsp[(3) - (3)].ulong_num) ? HA_OPTION_CHECKSUM : HA_OPTION_NO_CHECKSUM;
              Lex->create_info.used_fields|= HA_CREATE_USED_CHECKSUM;
@@ -25140,7 +25140,7 @@ yyreduce:
 
   case 642:
 /* Line 1792 of yacc.c  */
-#line 6029 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6029 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.table_options|= (yyvsp[(3) - (3)].ulong_num) ? HA_OPTION_DELAY_KEY_WRITE : HA_OPTION_NO_DELAY_KEY_WRITE;
             Lex->create_info.used_fields|= HA_CREATE_USED_DELAY_KEY_WRITE;
@@ -25149,7 +25149,7 @@ yyreduce:
 
   case 643:
 /* Line 1792 of yacc.c  */
-#line 6034 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6034 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.row_type= (yyvsp[(3) - (3)].row_type);
             Lex->create_info.used_fields|= HA_CREATE_USED_ROW_FORMAT;
@@ -25158,7 +25158,7 @@ yyreduce:
 
   case 644:
 /* Line 1792 of yacc.c  */
-#line 6039 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6039 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->select_lex->table_list.save_and_clear(&Lex->save_list);
           }
@@ -25166,7 +25166,7 @@ yyreduce:
 
   case 645:
 /* Line 1792 of yacc.c  */
-#line 6043 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6043 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /*
               Move the union list to the merge_list and exclude its tables
@@ -25192,7 +25192,7 @@ yyreduce:
 
   case 648:
 /* Line 1792 of yacc.c  */
-#line 6067 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6067 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.merge_insert_method= (yyvsp[(3) - (3)].ulong_num);
             Lex->create_info.used_fields|= HA_CREATE_USED_INSERT_METHOD;
@@ -25201,7 +25201,7 @@ yyreduce:
 
   case 649:
 /* Line 1792 of yacc.c  */
-#line 6072 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6072 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.data_file_name= (yyvsp[(4) - (4)].lex_str).str;
             Lex->create_info.used_fields|= HA_CREATE_USED_DATADIR;
@@ -25210,7 +25210,7 @@ yyreduce:
 
   case 650:
 /* Line 1792 of yacc.c  */
-#line 6077 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6077 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.index_file_name= (yyvsp[(4) - (4)].lex_str).str;
             Lex->create_info.used_fields|= HA_CREATE_USED_INDEXDIR;
@@ -25219,7 +25219,7 @@ yyreduce:
 
   case 651:
 /* Line 1792 of yacc.c  */
-#line 6082 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6082 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.tablespace= (yyvsp[(3) - (3)].lex_str).str;
             Lex->create_info.used_fields|= HA_CREATE_USED_TABLESPACE;
@@ -25228,19 +25228,19 @@ yyreduce:
 
   case 652:
 /* Line 1792 of yacc.c  */
-#line 6087 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6087 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {Lex->create_info.storage_media= HA_SM_DISK;}
     break;
 
   case 653:
 /* Line 1792 of yacc.c  */
-#line 6089 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6089 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {Lex->create_info.storage_media= HA_SM_MEMORY;}
     break;
 
   case 654:
 /* Line 1792 of yacc.c  */
-#line 6091 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6091 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.connect_string.str= (yyvsp[(3) - (3)].lex_str).str;
             Lex->create_info.connect_string.length= (yyvsp[(3) - (3)].lex_str).length;
@@ -25250,7 +25250,7 @@ yyreduce:
 
   case 655:
 /* Line 1792 of yacc.c  */
-#line 6097 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6097 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.used_fields|= HA_CREATE_USED_KEY_BLOCK_SIZE;
             Lex->create_info.key_block_size= (yyvsp[(3) - (3)].ulong_num);
@@ -25259,7 +25259,7 @@ yyreduce:
 
   case 656:
 /* Line 1792 of yacc.c  */
-#line 6105 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6105 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             HA_CREATE_INFO *cinfo= &Lex->create_info;
             if ((cinfo->used_fields & HA_CREATE_USED_DEFAULT_CHARSET) &&
@@ -25278,7 +25278,7 @@ yyreduce:
 
   case 657:
 /* Line 1792 of yacc.c  */
-#line 6123 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6123 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             HA_CREATE_INFO *cinfo= &Lex->create_info;
             if ((cinfo->used_fields & HA_CREATE_USED_DEFAULT_CHARSET) &&
@@ -25296,7 +25296,7 @@ yyreduce:
 
   case 658:
 /* Line 1792 of yacc.c  */
-#line 6140 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6140 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             plugin_ref plugin=
@@ -25323,7 +25323,7 @@ yyreduce:
 
   case 659:
 /* Line 1792 of yacc.c  */
-#line 6166 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6166 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -25342,85 +25342,85 @@ yyreduce:
 
   case 660:
 /* Line 1792 of yacc.c  */
-#line 6183 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6183 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.row_type)= ROW_TYPE_DEFAULT; }
     break;
 
   case 661:
 /* Line 1792 of yacc.c  */
-#line 6184 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6184 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.row_type)= ROW_TYPE_FIXED; }
     break;
 
   case 662:
 /* Line 1792 of yacc.c  */
-#line 6185 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6185 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.row_type)= ROW_TYPE_DYNAMIC; }
     break;
 
   case 663:
 /* Line 1792 of yacc.c  */
-#line 6186 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6186 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.row_type)= ROW_TYPE_COMPRESSED; }
     break;
 
   case 664:
 /* Line 1792 of yacc.c  */
-#line 6187 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6187 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.row_type)= ROW_TYPE_REDUNDANT; }
     break;
 
   case 665:
 /* Line 1792 of yacc.c  */
-#line 6188 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6188 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.row_type)= ROW_TYPE_COMPACT; }
     break;
 
   case 666:
 /* Line 1792 of yacc.c  */
-#line 6192 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6192 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= MERGE_INSERT_DISABLED; }
     break;
 
   case 667:
 /* Line 1792 of yacc.c  */
-#line 6193 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6193 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= MERGE_INSERT_TO_FIRST; }
     break;
 
   case 668:
 /* Line 1792 of yacc.c  */
-#line 6194 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6194 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= MERGE_INSERT_TO_LAST; }
     break;
 
   case 669:
 /* Line 1792 of yacc.c  */
-#line 6198 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6198 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {(yyval.num) = (int) STRING_RESULT; }
     break;
 
   case 670:
 /* Line 1792 of yacc.c  */
-#line 6199 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6199 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {(yyval.num) = (int) REAL_RESULT; }
     break;
 
   case 671:
 /* Line 1792 of yacc.c  */
-#line 6200 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6200 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {(yyval.num) = (int) DECIMAL_RESULT; }
     break;
 
   case 672:
 /* Line 1792 of yacc.c  */
-#line 6201 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6201 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {(yyval.num) = (int) INT_RESULT; }
     break;
 
   case 673:
 /* Line 1792 of yacc.c  */
-#line 6207 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6207 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
           Lex->create_last_non_select_table= Lex->last_table();
         }
@@ -25428,7 +25428,7 @@ yyreduce:
 
   case 679:
 /* Line 1792 of yacc.c  */
-#line 6225 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6225 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->col_list.empty(); /* Alloced by sql_alloc */
           }
@@ -25436,7 +25436,7 @@ yyreduce:
 
   case 680:
 /* Line 1792 of yacc.c  */
-#line 6232 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6232 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (add_create_index (Lex, (yyvsp[(1) - (7)].key_type), (yyvsp[(2) - (7)].lex_str)))
               MYSQL_YYABORT;
@@ -25445,7 +25445,7 @@ yyreduce:
 
   case 681:
 /* Line 1792 of yacc.c  */
-#line 6238 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6238 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (add_create_index (Lex, (yyvsp[(1) - (8)].key_type), (yyvsp[(3) - (8)].lex_str)))
               MYSQL_YYABORT;
@@ -25454,7 +25454,7 @@ yyreduce:
 
   case 682:
 /* Line 1792 of yacc.c  */
-#line 6244 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6244 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (add_create_index (Lex, (yyvsp[(1) - (8)].key_type), (yyvsp[(3) - (8)].lex_str)))
               MYSQL_YYABORT;
@@ -25463,7 +25463,7 @@ yyreduce:
 
   case 683:
 /* Line 1792 of yacc.c  */
-#line 6250 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6250 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (add_create_index (Lex, (yyvsp[(2) - (8)].key_type), (yyvsp[(3) - (8)].lex_str).str ? (yyvsp[(3) - (8)].lex_str) : (yyvsp[(1) - (8)].lex_str)))
               MYSQL_YYABORT;
@@ -25472,7 +25472,7 @@ yyreduce:
 
   case 684:
 /* Line 1792 of yacc.c  */
-#line 6255 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6255 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             Key *key= new Foreign_key((yyvsp[(4) - (8)].lex_str).str ? (yyvsp[(4) - (8)].lex_str) : (yyvsp[(1) - (8)].lex_str), lex->col_list,
@@ -25495,7 +25495,7 @@ yyreduce:
 
   case 685:
 /* Line 1792 of yacc.c  */
-#line 6274 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6274 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->col_list.empty(); /* Alloced by sql_alloc */
           }
@@ -25503,7 +25503,7 @@ yyreduce:
 
   case 688:
 /* Line 1792 of yacc.c  */
-#line 6286 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6286 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(3) - (4)].item), &(yyvsp[(3) - (4)].item));
           }
@@ -25511,25 +25511,25 @@ yyreduce:
 
   case 689:
 /* Line 1792 of yacc.c  */
-#line 6293 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6293 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)= null_lex_str; }
     break;
 
   case 690:
 /* Line 1792 of yacc.c  */
-#line 6294 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6294 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)= (yyvsp[(1) - (1)].lex_str); }
     break;
 
   case 691:
 /* Line 1792 of yacc.c  */
-#line 6298 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6298 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)=(yyvsp[(2) - (2)].lex_str); }
     break;
 
   case 692:
 /* Line 1792 of yacc.c  */
-#line 6303 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6303 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->length=lex->dec=0;
@@ -25543,7 +25543,7 @@ yyreduce:
 
   case 693:
 /* Line 1792 of yacc.c  */
-#line 6313 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6313 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             if (add_field_to_list(lex->thd, &(yyvsp[(1) - (3)].lex_str), (enum enum_field_types) (yyvsp[(3) - (3)].num),
@@ -25559,13 +25559,13 @@ yyreduce:
 
   case 694:
 /* Line 1792 of yacc.c  */
-#line 6327 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6327 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 695:
 /* Line 1792 of yacc.c  */
-#line 6331 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6331 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= (yyvsp[(1) - (9)].num);
             if (Lex->charset)
@@ -25582,7 +25582,7 @@ yyreduce:
 
   case 702:
 /* Line 1792 of yacc.c  */
-#line 6362 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6362 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->type|= UNIQUE_FLAG;
@@ -25592,7 +25592,7 @@ yyreduce:
 
   case 703:
 /* Line 1792 of yacc.c  */
-#line 6368 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6368 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->type|= UNIQUE_KEY_FLAG;
@@ -25602,19 +25602,19 @@ yyreduce:
 
   case 704:
 /* Line 1792 of yacc.c  */
-#line 6373 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6373 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->comment= (yyvsp[(2) - (2)].lex_str); }
     break;
 
   case 705:
 /* Line 1792 of yacc.c  */
-#line 6374 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6374 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= NOT_NULL_FLAG; }
     break;
 
   case 707:
 /* Line 1792 of yacc.c  */
-#line 6377 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6377 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->type|= PRI_KEY_FLAG | NOT_NULL_FLAG;
@@ -25624,7 +25624,7 @@ yyreduce:
 
   case 710:
 /* Line 1792 of yacc.c  */
-#line 6388 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6388 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->gcol_info->set_field_stored(TRUE);
           }
@@ -25632,7 +25632,7 @@ yyreduce:
 
   case 711:
 /* Line 1792 of yacc.c  */
-#line 6395 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6395 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /* 
               "PARSE_GCOL_EXPR" can only be used by the SQL server
@@ -25649,7 +25649,7 @@ yyreduce:
 
   case 712:
 /* Line 1792 of yacc.c  */
-#line 6411 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6411 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->gcol_info= new Generated_column();
             if (!Lex->gcol_info)
@@ -25679,7 +25679,7 @@ yyreduce:
 
   case 713:
 /* Line 1792 of yacc.c  */
-#line 6440 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6440 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char *>((yyvsp[(2) - (3)].c_str));
             (yyval.num)=(yyvsp[(1) - (3)].num);
@@ -25688,7 +25688,7 @@ yyreduce:
 
   case 714:
 /* Line 1792 of yacc.c  */
-#line 6445 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6445 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)=(yyvsp[(1) - (3)].num);
             Lex->length= const_cast<char *>((yyvsp[(2) - (3)].precision).length);
@@ -25698,7 +25698,7 @@ yyreduce:
 
   case 715:
 /* Line 1792 of yacc.c  */
-#line 6451 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6451 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char *>((yyvsp[(2) - (3)].precision).length);
             Lex->dec= const_cast<char *>((yyvsp[(2) - (3)].precision).dec);
@@ -25708,7 +25708,7 @@ yyreduce:
 
   case 716:
 /* Line 1792 of yacc.c  */
-#line 6457 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6457 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= (char*) "1";
             (yyval.num)=MYSQL_TYPE_BIT;
@@ -25717,7 +25717,7 @@ yyreduce:
 
   case 717:
 /* Line 1792 of yacc.c  */
-#line 6462 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6462 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char *>((yyvsp[(2) - (2)].c_str));
             (yyval.num)=MYSQL_TYPE_BIT;
@@ -25726,7 +25726,7 @@ yyreduce:
 
   case 718:
 /* Line 1792 of yacc.c  */
-#line 6467 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6467 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= (char*) "1";
             (yyval.num)=MYSQL_TYPE_TINY;
@@ -25735,7 +25735,7 @@ yyreduce:
 
   case 719:
 /* Line 1792 of yacc.c  */
-#line 6472 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6472 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= (char*) "1";
             (yyval.num)=MYSQL_TYPE_TINY;
@@ -25744,7 +25744,7 @@ yyreduce:
 
   case 720:
 /* Line 1792 of yacc.c  */
-#line 6477 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6477 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char *>((yyvsp[(2) - (3)].c_str));
             Lex->charset= (yyvsp[(3) - (3)].charset_with_flags).charset;
@@ -25755,7 +25755,7 @@ yyreduce:
 
   case 721:
 /* Line 1792 of yacc.c  */
-#line 6484 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6484 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= (char*) "1";
             Lex->charset= (yyvsp[(2) - (2)].charset_with_flags).charset;
@@ -25766,7 +25766,7 @@ yyreduce:
 
   case 722:
 /* Line 1792 of yacc.c  */
-#line 6491 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6491 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char *>((yyvsp[(2) - (3)].c_str));
             Lex->type|= (yyvsp[(3) - (3)].ulong_num);
@@ -25777,7 +25777,7 @@ yyreduce:
 
   case 723:
 /* Line 1792 of yacc.c  */
-#line 6498 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6498 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= (char*) "1";
             Lex->type|= (yyvsp[(2) - (2)].ulong_num);
@@ -25788,7 +25788,7 @@ yyreduce:
 
   case 724:
 /* Line 1792 of yacc.c  */
-#line 6505 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6505 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char *>((yyvsp[(2) - (2)].c_str));
             Lex->charset=&my_charset_bin;
@@ -25798,7 +25798,7 @@ yyreduce:
 
   case 725:
 /* Line 1792 of yacc.c  */
-#line 6511 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6511 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= (char*) "1";
             Lex->charset=&my_charset_bin;
@@ -25808,7 +25808,7 @@ yyreduce:
 
   case 726:
 /* Line 1792 of yacc.c  */
-#line 6517 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6517 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char *>((yyvsp[(2) - (3)].c_str));
             Lex->charset= (yyvsp[(3) - (3)].charset_with_flags).charset;
@@ -25819,7 +25819,7 @@ yyreduce:
 
   case 727:
 /* Line 1792 of yacc.c  */
-#line 6524 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6524 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char *>((yyvsp[(2) - (3)].c_str));
             Lex->type|= (yyvsp[(3) - (3)].ulong_num);
@@ -25830,7 +25830,7 @@ yyreduce:
 
   case 728:
 /* Line 1792 of yacc.c  */
-#line 6531 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6531 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char *>((yyvsp[(2) - (2)].c_str));
             Lex->charset=&my_charset_bin;
@@ -25840,7 +25840,7 @@ yyreduce:
 
   case 729:
 /* Line 1792 of yacc.c  */
-#line 6537 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6537 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char *>((yyvsp[(2) - (3)].c_str));
             if (Lex->length)
@@ -25860,13 +25860,13 @@ yyreduce:
 
   case 730:
 /* Line 1792 of yacc.c  */
-#line 6553 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6553 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=MYSQL_TYPE_DATE; }
     break;
 
   case 731:
 /* Line 1792 of yacc.c  */
-#line 6555 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6555 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->dec= const_cast<char *>((yyvsp[(2) - (2)].c_str));
             (yyval.num)= MYSQL_TYPE_TIME2;
@@ -25875,7 +25875,7 @@ yyreduce:
 
   case 732:
 /* Line 1792 of yacc.c  */
-#line 6560 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6560 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->dec= const_cast<char *>((yyvsp[(2) - (2)].c_str));
             if (YYTHD->variables.sql_mode & MODE_MAXDB)
@@ -25903,7 +25903,7 @@ yyreduce:
 
   case 733:
 /* Line 1792 of yacc.c  */
-#line 6584 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6584 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->dec= const_cast<char *>((yyvsp[(2) - (2)].c_str));
             (yyval.num)= MYSQL_TYPE_DATETIME2;
@@ -25912,7 +25912,7 @@ yyreduce:
 
   case 734:
 /* Line 1792 of yacc.c  */
-#line 6589 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6589 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->charset=&my_charset_bin;
             (yyval.num)=MYSQL_TYPE_TINY_BLOB;
@@ -25921,7 +25921,7 @@ yyreduce:
 
   case 735:
 /* Line 1792 of yacc.c  */
-#line 6594 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6594 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char *>((yyvsp[(2) - (2)].c_str));
             Lex->charset=&my_charset_bin;
@@ -25931,7 +25931,7 @@ yyreduce:
 
   case 736:
 /* Line 1792 of yacc.c  */
-#line 6600 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6600 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->charset=&my_charset_bin;
             Lex->uint_geom_type= (uint)(yyvsp[(1) - (1)].num);
@@ -25941,7 +25941,7 @@ yyreduce:
 
   case 737:
 /* Line 1792 of yacc.c  */
-#line 6606 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6606 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->charset=&my_charset_bin;
             (yyval.num)=MYSQL_TYPE_MEDIUM_BLOB;
@@ -25950,7 +25950,7 @@ yyreduce:
 
   case 738:
 /* Line 1792 of yacc.c  */
-#line 6611 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6611 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->charset=&my_charset_bin;
             (yyval.num)=MYSQL_TYPE_LONG_BLOB;
@@ -25959,7 +25959,7 @@ yyreduce:
 
   case 739:
 /* Line 1792 of yacc.c  */
-#line 6616 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6616 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->charset=&my_charset_bin;
             (yyval.num)=MYSQL_TYPE_MEDIUM_BLOB;
@@ -25968,7 +25968,7 @@ yyreduce:
 
   case 740:
 /* Line 1792 of yacc.c  */
-#line 6621 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6621 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->charset= (yyvsp[(3) - (3)].charset_with_flags).charset;
             Lex->type|= (yyvsp[(3) - (3)].charset_with_flags).type_flags;
@@ -25978,7 +25978,7 @@ yyreduce:
 
   case 741:
 /* Line 1792 of yacc.c  */
-#line 6627 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6627 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->charset= (yyvsp[(2) - (2)].charset_with_flags).charset;
             Lex->type|= (yyvsp[(2) - (2)].charset_with_flags).type_flags;
@@ -25988,7 +25988,7 @@ yyreduce:
 
   case 742:
 /* Line 1792 of yacc.c  */
-#line 6633 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6633 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char *>((yyvsp[(2) - (3)].c_str));
             Lex->charset= (yyvsp[(3) - (3)].charset_with_flags).charset;
@@ -25999,7 +25999,7 @@ yyreduce:
 
   case 743:
 /* Line 1792 of yacc.c  */
-#line 6640 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6640 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->charset= (yyvsp[(2) - (2)].charset_with_flags).charset;
             Lex->type|= (yyvsp[(2) - (2)].charset_with_flags).type_flags;
@@ -26009,7 +26009,7 @@ yyreduce:
 
   case 744:
 /* Line 1792 of yacc.c  */
-#line 6646 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6646 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->charset= (yyvsp[(2) - (2)].charset_with_flags).charset;
             Lex->type|= (yyvsp[(2) - (2)].charset_with_flags).type_flags;
@@ -26019,7 +26019,7 @@ yyreduce:
 
   case 745:
 /* Line 1792 of yacc.c  */
-#line 6652 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6652 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char *>((yyvsp[(2) - (3)].precision).length);
             Lex->dec= const_cast<char *>((yyvsp[(2) - (3)].precision).dec);
@@ -26029,7 +26029,7 @@ yyreduce:
 
   case 746:
 /* Line 1792 of yacc.c  */
-#line 6658 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6658 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char *>((yyvsp[(2) - (3)].precision).length);
             Lex->dec= const_cast<char *>((yyvsp[(2) - (3)].precision).dec);
@@ -26039,7 +26039,7 @@ yyreduce:
 
   case 747:
 /* Line 1792 of yacc.c  */
-#line 6664 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6664 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char *>((yyvsp[(2) - (3)].precision).length);
             Lex->dec= const_cast<char *>((yyvsp[(2) - (3)].precision).dec);
@@ -26049,13 +26049,13 @@ yyreduce:
 
   case 748:
 /* Line 1792 of yacc.c  */
-#line 6670 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6670 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {Lex->interval_list.empty();}
     break;
 
   case 749:
 /* Line 1792 of yacc.c  */
-#line 6672 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6672 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->charset= (yyvsp[(6) - (6)].charset_with_flags).charset;
             Lex->type|= (yyvsp[(6) - (6)].charset_with_flags).type_flags;
@@ -26065,13 +26065,13 @@ yyreduce:
 
   case 750:
 /* Line 1792 of yacc.c  */
-#line 6678 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6678 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->interval_list.empty();}
     break;
 
   case 751:
 /* Line 1792 of yacc.c  */
-#line 6680 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6680 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->charset= (yyvsp[(6) - (6)].charset_with_flags).charset;
             Lex->type|= (yyvsp[(6) - (6)].charset_with_flags).type_flags;
@@ -26081,7 +26081,7 @@ yyreduce:
 
   case 752:
 /* Line 1792 of yacc.c  */
-#line 6686 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6686 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->charset= (yyvsp[(2) - (2)].charset_with_flags).charset;
             Lex->type|= (yyvsp[(2) - (2)].charset_with_flags).type_flags;
@@ -26091,7 +26091,7 @@ yyreduce:
 
   case 753:
 /* Line 1792 of yacc.c  */
-#line 6692 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6692 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)=MYSQL_TYPE_LONGLONG;
             Lex->type|= (AUTO_INCREMENT_FLAG | NOT_NULL_FLAG | UNSIGNED_FLAG |
@@ -26101,7 +26101,7 @@ yyreduce:
 
   case 754:
 /* Line 1792 of yacc.c  */
-#line 6698 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6698 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->charset=&my_charset_bin;
             (yyval.num)=MYSQL_TYPE_JSON;
@@ -26110,19 +26110,19 @@ yyreduce:
 
   case 755:
 /* Line 1792 of yacc.c  */
-#line 6705 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6705 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= Field::GEOM_GEOMETRY; }
     break;
 
   case 756:
 /* Line 1792 of yacc.c  */
-#line 6706 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6706 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= Field::GEOM_GEOMETRYCOLLECTION; }
     break;
 
   case 757:
 /* Line 1792 of yacc.c  */
-#line 6708 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6708 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->length= const_cast<char*>(STRINGIFY_ARG
                                            (MAX_LEN_GEOM_POINT_FIELD));
@@ -26132,127 +26132,127 @@ yyreduce:
 
   case 758:
 /* Line 1792 of yacc.c  */
-#line 6713 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6713 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= Field::GEOM_MULTIPOINT; }
     break;
 
   case 759:
 /* Line 1792 of yacc.c  */
-#line 6714 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6714 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= Field::GEOM_LINESTRING; }
     break;
 
   case 760:
 /* Line 1792 of yacc.c  */
-#line 6715 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6715 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= Field::GEOM_MULTILINESTRING; }
     break;
 
   case 761:
 /* Line 1792 of yacc.c  */
-#line 6716 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6716 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= Field::GEOM_POLYGON; }
     break;
 
   case 762:
 /* Line 1792 of yacc.c  */
-#line 6717 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6717 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= Field::GEOM_MULTIPOLYGON; }
     break;
 
   case 763:
 /* Line 1792 of yacc.c  */
-#line 6721 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6721 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 764:
 /* Line 1792 of yacc.c  */
-#line 6725 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6725 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 765:
 /* Line 1792 of yacc.c  */
-#line 6726 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6726 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 766:
 /* Line 1792 of yacc.c  */
-#line 6730 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6730 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 767:
 /* Line 1792 of yacc.c  */
-#line 6731 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6731 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 768:
 /* Line 1792 of yacc.c  */
-#line 6735 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6735 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 769:
 /* Line 1792 of yacc.c  */
-#line 6736 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6736 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 770:
 /* Line 1792 of yacc.c  */
-#line 6737 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6737 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 771:
 /* Line 1792 of yacc.c  */
-#line 6738 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6738 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 772:
 /* Line 1792 of yacc.c  */
-#line 6739 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6739 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 773:
 /* Line 1792 of yacc.c  */
-#line 6743 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6743 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=MYSQL_TYPE_LONG; }
     break;
 
   case 774:
 /* Line 1792 of yacc.c  */
-#line 6744 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6744 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=MYSQL_TYPE_TINY; }
     break;
 
   case 775:
 /* Line 1792 of yacc.c  */
-#line 6745 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6745 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=MYSQL_TYPE_SHORT; }
     break;
 
   case 776:
 /* Line 1792 of yacc.c  */
-#line 6746 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6746 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=MYSQL_TYPE_INT24; }
     break;
 
   case 777:
 /* Line 1792 of yacc.c  */
-#line 6747 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6747 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=MYSQL_TYPE_LONGLONG; }
     break;
 
   case 778:
 /* Line 1792 of yacc.c  */
-#line 6752 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6752 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= YYTHD->variables.sql_mode & MODE_REAL_AS_FLOAT ?
               MYSQL_TYPE_FLOAT : MYSQL_TYPE_DOUBLE;
@@ -26261,19 +26261,19 @@ yyreduce:
 
   case 779:
 /* Line 1792 of yacc.c  */
-#line 6757 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6757 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=MYSQL_TYPE_DOUBLE; }
     break;
 
   case 780:
 /* Line 1792 of yacc.c  */
-#line 6759 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6759 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=MYSQL_TYPE_DOUBLE; }
     break;
 
   case 781:
 /* Line 1792 of yacc.c  */
-#line 6764 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6764 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.precision).length= NULL;
             (yyval.precision).dec= NULL;
@@ -26282,7 +26282,7 @@ yyreduce:
 
   case 782:
 /* Line 1792 of yacc.c  */
-#line 6769 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6769 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.precision).length= (yyvsp[(1) - (1)].c_str);
             (yyval.precision).dec= NULL;
@@ -26291,7 +26291,7 @@ yyreduce:
 
   case 784:
 /* Line 1792 of yacc.c  */
-#line 6778 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6778 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.precision).length= (yyvsp[(2) - (5)].lex_str).str;
             (yyval.precision).dec= (yyvsp[(4) - (5)].lex_str).str;
@@ -26300,31 +26300,31 @@ yyreduce:
 
   case 785:
 /* Line 1792 of yacc.c  */
-#line 6786 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6786 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.c_str)= NULL; }
     break;
 
   case 786:
 /* Line 1792 of yacc.c  */
-#line 6787 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6787 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.c_str)= (yyvsp[(2) - (3)].lex_str).str; }
     break;
 
   case 787:
 /* Line 1792 of yacc.c  */
-#line 6791 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6791 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= 0; }
     break;
 
   case 788:
 /* Line 1792 of yacc.c  */
-#line 6792 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6792 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= 0; }
     break;
 
   case 789:
 /* Line 1792 of yacc.c  */
-#line 6794 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6794 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
              int error;
              (yyval.ulong_num)= (ulong) my_strtoll10((yyvsp[(2) - (3)].lex_str).str, NULL, &error);
@@ -26333,79 +26333,79 @@ yyreduce:
 
   case 790:
 /* Line 1792 of yacc.c  */
-#line 6801 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6801 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 791:
 /* Line 1792 of yacc.c  */
-#line 6802 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6802 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 792:
 /* Line 1792 of yacc.c  */
-#line 6806 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6806 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 793:
 /* Line 1792 of yacc.c  */
-#line 6807 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6807 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 794:
 /* Line 1792 of yacc.c  */
-#line 6811 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6811 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 795:
 /* Line 1792 of yacc.c  */
-#line 6812 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6812 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= UNSIGNED_FLAG;}
     break;
 
   case 796:
 /* Line 1792 of yacc.c  */
-#line 6813 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6813 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= UNSIGNED_FLAG | ZEROFILL_FLAG; }
     break;
 
   case 797:
 /* Line 1792 of yacc.c  */
-#line 6817 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6817 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.c_str)= (yyvsp[(2) - (3)].lex_str).str; }
     break;
 
   case 798:
 /* Line 1792 of yacc.c  */
-#line 6818 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6818 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.c_str)= (yyvsp[(2) - (3)].lex_str).str; }
     break;
 
   case 799:
 /* Line 1792 of yacc.c  */
-#line 6819 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6819 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.c_str)= (yyvsp[(2) - (3)].lex_str).str; }
     break;
 
   case 800:
 /* Line 1792 of yacc.c  */
-#line 6820 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6820 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.c_str)= (yyvsp[(2) - (3)].lex_str).str; }
     break;
 
   case 801:
 /* Line 1792 of yacc.c  */
-#line 6823 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6823 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.c_str)= NULL; /* use default length */ }
     break;
 
   case 803:
 /* Line 1792 of yacc.c  */
-#line 6829 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6829 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.precision).length= NULL;
             (yyval.precision).dec = NULL;
@@ -26414,25 +26414,25 @@ yyreduce:
 
   case 805:
 /* Line 1792 of yacc.c  */
-#line 6837 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6837 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 806:
 /* Line 1792 of yacc.c  */
-#line 6838 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6838 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 807:
 /* Line 1792 of yacc.c  */
-#line 6842 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6842 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 809:
 /* Line 1792 of yacc.c  */
-#line 6848 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6848 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->type&= ~ NOT_NULL_FLAG;
             Lex->type|= EXPLICIT_NULL_FLAG;
@@ -26441,19 +26441,19 @@ yyreduce:
 
   case 810:
 /* Line 1792 of yacc.c  */
-#line 6852 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6852 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= NOT_NULL_FLAG; }
     break;
 
   case 811:
 /* Line 1792 of yacc.c  */
-#line 6853 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6853 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->default_value=(yyvsp[(2) - (2)].item); }
     break;
 
   case 812:
 /* Line 1792 of yacc.c  */
-#line 6855 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6855 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Item *item= new (YYTHD->mem_root)
               Item_func_now_local(static_cast<uint8>((yyvsp[(3) - (3)].ulong_num)));
@@ -26465,13 +26465,13 @@ yyreduce:
 
   case 813:
 /* Line 1792 of yacc.c  */
-#line 6862 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6862 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= AUTO_INCREMENT_FLAG | NOT_NULL_FLAG; }
     break;
 
   case 814:
 /* Line 1792 of yacc.c  */
-#line 6864 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6864 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->type|= AUTO_INCREMENT_FLAG | NOT_NULL_FLAG | UNIQUE_FLAG;
@@ -26481,7 +26481,7 @@ yyreduce:
 
   case 815:
 /* Line 1792 of yacc.c  */
-#line 6870 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6870 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->type|= PRI_KEY_FLAG | NOT_NULL_FLAG;
@@ -26491,7 +26491,7 @@ yyreduce:
 
   case 816:
 /* Line 1792 of yacc.c  */
-#line 6876 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6876 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->type|= UNIQUE_FLAG;
@@ -26501,7 +26501,7 @@ yyreduce:
 
   case 817:
 /* Line 1792 of yacc.c  */
-#line 6882 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6882 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->type|= UNIQUE_KEY_FLAG;
@@ -26511,13 +26511,13 @@ yyreduce:
 
   case 818:
 /* Line 1792 of yacc.c  */
-#line 6887 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6887 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->comment= (yyvsp[(2) - (2)].lex_str); }
     break;
 
   case 819:
 /* Line 1792 of yacc.c  */
-#line 6889 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6889 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (Lex->charset && !my_charset_same(Lex->charset,(yyvsp[(2) - (2)].charset)))
             {
@@ -26534,7 +26534,7 @@ yyreduce:
 
   case 820:
 /* Line 1792 of yacc.c  */
-#line 6902 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6902 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->type&= ~(FIELD_FLAGS_COLUMN_FORMAT_MASK);
             Lex->type|=
@@ -26544,7 +26544,7 @@ yyreduce:
 
   case 821:
 /* Line 1792 of yacc.c  */
-#line 6908 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6908 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->type&= ~(FIELD_FLAGS_COLUMN_FORMAT_MASK);
             Lex->type|=
@@ -26554,7 +26554,7 @@ yyreduce:
 
   case 822:
 /* Line 1792 of yacc.c  */
-#line 6914 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6914 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->type&= ~(FIELD_FLAGS_COLUMN_FORMAT_MASK);
             Lex->type|=
@@ -26564,7 +26564,7 @@ yyreduce:
 
   case 823:
 /* Line 1792 of yacc.c  */
-#line 6920 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6920 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->type&= ~(FIELD_FLAGS_STORAGE_MEDIA_MASK);
             Lex->type|= (HA_SM_DEFAULT << FIELD_FLAGS_STORAGE_MEDIA);
@@ -26573,7 +26573,7 @@ yyreduce:
 
   case 824:
 /* Line 1792 of yacc.c  */
-#line 6925 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6925 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->type&= ~(FIELD_FLAGS_STORAGE_MEDIA_MASK);
             Lex->type|= (HA_SM_DISK << FIELD_FLAGS_STORAGE_MEDIA);
@@ -26582,7 +26582,7 @@ yyreduce:
 
   case 825:
 /* Line 1792 of yacc.c  */
-#line 6930 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6930 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->type&= ~(FIELD_FLAGS_STORAGE_MEDIA_MASK);
             Lex->type|= (HA_SM_MEMORY << FIELD_FLAGS_STORAGE_MEDIA);
@@ -26591,7 +26591,7 @@ yyreduce:
 
   case 826:
 /* Line 1792 of yacc.c  */
-#line 6939 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6939 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
           (yyval.num)= (yyvsp[(1) - (2)].num);
 
@@ -26612,7 +26612,7 @@ yyreduce:
 
   case 827:
 /* Line 1792 of yacc.c  */
-#line 6960 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6960 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.ulong_num)= (yyvsp[(2) - (2)].ulong_num);
           }
@@ -26620,7 +26620,7 @@ yyreduce:
 
   case 828:
 /* Line 1792 of yacc.c  */
-#line 6966 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6966 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= new (YYTHD->mem_root)
               Item_func_now_local(static_cast<uint8>((yyvsp[(1) - (1)].ulong_num)));
@@ -26631,25 +26631,25 @@ yyreduce:
 
   case 829:
 /* Line 1792 of yacc.c  */
-#line 6973 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6973 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)=(yyvsp[(1) - (1)].item); }
     break;
 
   case 830:
 /* Line 1792 of yacc.c  */
-#line 6977 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6977 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 831:
 /* Line 1792 of yacc.c  */
-#line 6978 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6978 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 832:
 /* Line 1792 of yacc.c  */
-#line 6983 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6983 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!((yyval.charset)=get_charset_by_csname((yyvsp[(1) - (1)].lex_str).str,MY_CS_PRIMARY,MYF(0))))
             {
@@ -26661,37 +26661,37 @@ yyreduce:
 
   case 833:
 /* Line 1792 of yacc.c  */
-#line 6990 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6990 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)= &my_charset_bin; }
     break;
 
   case 834:
 /* Line 1792 of yacc.c  */
-#line 6994 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6994 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)=(yyvsp[(1) - (1)].charset);   }
     break;
 
   case 835:
 /* Line 1792 of yacc.c  */
-#line 6995 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6995 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)=NULL; }
     break;
 
   case 836:
 /* Line 1792 of yacc.c  */
-#line 6999 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 6999 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)= NULL; }
     break;
 
   case 837:
 /* Line 1792 of yacc.c  */
-#line 7000 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7000 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)= (yyvsp[(2) - (2)].charset); }
     break;
 
   case 838:
 /* Line 1792 of yacc.c  */
-#line 7005 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7005 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!((yyval.charset)=get_charset_by_csname((yyvsp[(1) - (1)].lex_str).str,MY_CS_PRIMARY,MYF(0))) &&
                 !((yyval.charset)=get_old_charset_by_name((yyvsp[(1) - (1)].lex_str).str)))
@@ -26704,25 +26704,25 @@ yyreduce:
 
   case 839:
 /* Line 1792 of yacc.c  */
-#line 7013 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7013 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)= &my_charset_bin; }
     break;
 
   case 840:
 /* Line 1792 of yacc.c  */
-#line 7017 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7017 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)=(yyvsp[(1) - (1)].charset);   }
     break;
 
   case 841:
 /* Line 1792 of yacc.c  */
-#line 7018 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7018 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)=NULL; }
     break;
 
   case 842:
 /* Line 1792 of yacc.c  */
-#line 7023 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7023 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!((yyval.charset)= mysqld_collation_get_by_name((yyvsp[(1) - (1)].lex_str).str)))
               MYSQL_YYABORT;
@@ -26731,73 +26731,73 @@ yyreduce:
 
   case 843:
 /* Line 1792 of yacc.c  */
-#line 7030 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7030 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)=NULL; }
     break;
 
   case 844:
 /* Line 1792 of yacc.c  */
-#line 7031 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7031 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)=(yyvsp[(2) - (2)].charset); }
     break;
 
   case 845:
 /* Line 1792 of yacc.c  */
-#line 7035 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7035 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)= NULL; }
     break;
 
   case 846:
 /* Line 1792 of yacc.c  */
-#line 7036 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7036 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)= (yyvsp[(2) - (2)].charset); }
     break;
 
   case 847:
 /* Line 1792 of yacc.c  */
-#line 7040 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7040 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)=(yyvsp[(1) - (1)].charset); }
     break;
 
   case 848:
 /* Line 1792 of yacc.c  */
-#line 7041 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7041 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)=NULL; }
     break;
 
   case 849:
 /* Line 1792 of yacc.c  */
-#line 7045 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7045 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 850:
 /* Line 1792 of yacc.c  */
-#line 7046 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7046 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 851:
 /* Line 1792 of yacc.c  */
-#line 7051 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7051 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)= &my_charset_latin1; }
     break;
 
   case 852:
 /* Line 1792 of yacc.c  */
-#line 7052 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7052 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)= &my_charset_latin1_bin; }
     break;
 
   case 853:
 /* Line 1792 of yacc.c  */
-#line 7053 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7053 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.charset)= &my_charset_latin1_bin; }
     break;
 
   case 854:
 /* Line 1792 of yacc.c  */
-#line 7058 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7058 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!((yyval.charset)= get_charset_by_csname("ucs2", MY_CS_PRIMARY,MYF(0))))
             {
@@ -26809,7 +26809,7 @@ yyreduce:
 
   case 855:
 /* Line 1792 of yacc.c  */
-#line 7066 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7066 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!((yyval.charset)= mysqld_collation_get_by_name("ucs2_bin")))
               MYSQL_YYABORT;
@@ -26818,7 +26818,7 @@ yyreduce:
 
   case 856:
 /* Line 1792 of yacc.c  */
-#line 7071 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7071 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!((yyval.charset)= mysqld_collation_get_by_name("ucs2_bin")))
               my_error(ER_UNKNOWN_COLLATION, MYF(0), "ucs2_bin");
@@ -26827,7 +26827,7 @@ yyreduce:
 
   case 857:
 /* Line 1792 of yacc.c  */
-#line 7079 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7079 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.charset_with_flags).charset= NULL;
             (yyval.charset_with_flags).type_flags= 0;
@@ -26836,7 +26836,7 @@ yyreduce:
 
   case 858:
 /* Line 1792 of yacc.c  */
-#line 7084 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7084 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.charset_with_flags).charset= (yyvsp[(1) - (1)].charset);
             (yyval.charset_with_flags).type_flags= 0;
@@ -26845,7 +26845,7 @@ yyreduce:
 
   case 859:
 /* Line 1792 of yacc.c  */
-#line 7089 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7089 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.charset_with_flags).charset= (yyvsp[(1) - (1)].charset);
             (yyval.charset_with_flags).type_flags= 0;
@@ -26854,7 +26854,7 @@ yyreduce:
 
   case 860:
 /* Line 1792 of yacc.c  */
-#line 7094 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7094 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.charset_with_flags).charset= &my_charset_bin;
             (yyval.charset_with_flags).type_flags= 0;
@@ -26863,7 +26863,7 @@ yyreduce:
 
   case 861:
 /* Line 1792 of yacc.c  */
-#line 7099 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7099 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.charset_with_flags).charset= (yyvsp[(2) - (3)].charset);
             (yyval.charset_with_flags).type_flags= (yyvsp[(3) - (3)].ulong_num);
@@ -26872,7 +26872,7 @@ yyreduce:
 
   case 862:
 /* Line 1792 of yacc.c  */
-#line 7104 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7104 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.charset_with_flags).charset= NULL;
             (yyval.charset_with_flags).type_flags= BINCMP_FLAG;
@@ -26881,7 +26881,7 @@ yyreduce:
 
   case 863:
 /* Line 1792 of yacc.c  */
-#line 7109 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7109 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.charset_with_flags).charset= (yyvsp[(3) - (3)].charset);
             (yyval.charset_with_flags).type_flags= BINCMP_FLAG;
@@ -26890,19 +26890,19 @@ yyreduce:
 
   case 864:
 /* Line 1792 of yacc.c  */
-#line 7116 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7116 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= 0; }
     break;
 
   case 865:
 /* Line 1792 of yacc.c  */
-#line 7117 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7117 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= BINCMP_FLAG; }
     break;
 
   case 866:
 /* Line 1792 of yacc.c  */
-#line 7122 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7122 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
           if ((yyvsp[(2) - (2)].ulong_num) == 0)
           {
@@ -26914,55 +26914,55 @@ yyreduce:
 
   case 867:
 /* Line 1792 of yacc.c  */
-#line 7130 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7130 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= (yyvsp[(2) - (4)].ulong_num); }
     break;
 
   case 868:
 /* Line 1792 of yacc.c  */
-#line 7134 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7134 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= 0; }
     break;
 
   case 869:
 /* Line 1792 of yacc.c  */
-#line 7135 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7135 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= 1 << MY_STRXFRM_DESC_SHIFT; }
     break;
 
   case 870:
 /* Line 1792 of yacc.c  */
-#line 7139 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7139 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= 1 << MY_STRXFRM_REVERSE_SHIFT; }
     break;
 
   case 871:
 /* Line 1792 of yacc.c  */
-#line 7142 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7142 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= 0; }
     break;
 
   case 872:
 /* Line 1792 of yacc.c  */
-#line 7143 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7143 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= (yyvsp[(1) - (1)].ulong_num); }
     break;
 
   case 873:
 /* Line 1792 of yacc.c  */
-#line 7144 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7144 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= (yyvsp[(1) - (2)].ulong_num) | (yyvsp[(2) - (2)].ulong_num); }
     break;
 
   case 874:
 /* Line 1792 of yacc.c  */
-#line 7145 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7145 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= (yyvsp[(1) - (1)].ulong_num) ; }
     break;
 
   case 875:
 /* Line 1792 of yacc.c  */
-#line 7150 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7150 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
           (yyval.ulong_num)= (yyvsp[(1) - (1)].ulong_num) < 1 ? 1 : ((yyvsp[(1) - (1)].ulong_num) > MY_STRXFRM_NLEVELS ? MY_STRXFRM_NLEVELS : (yyvsp[(1) - (1)].ulong_num));
           (yyval.ulong_num)--;
@@ -26971,7 +26971,7 @@ yyreduce:
 
   case 876:
 /* Line 1792 of yacc.c  */
-#line 7158 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7158 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
           (yyval.ulong_num)= (1 | (yyvsp[(2) - (2)].ulong_num)) << (yyvsp[(1) - (2)].ulong_num);
         }
@@ -26979,19 +26979,19 @@ yyreduce:
 
   case 877:
 /* Line 1792 of yacc.c  */
-#line 7164 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7164 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= (yyvsp[(1) - (1)].ulong_num); }
     break;
 
   case 878:
 /* Line 1792 of yacc.c  */
-#line 7165 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7165 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)|= (yyvsp[(3) - (3)].ulong_num); }
     break;
 
   case 879:
 /* Line 1792 of yacc.c  */
-#line 7170 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7170 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
           uint start= (yyvsp[(1) - (3)].ulong_num);
           uint end= (yyvsp[(3) - (3)].ulong_num);
@@ -27002,31 +27002,31 @@ yyreduce:
 
   case 880:
 /* Line 1792 of yacc.c  */
-#line 7179 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7179 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= (yyvsp[(1) - (1)].ulong_num); }
     break;
 
   case 881:
 /* Line 1792 of yacc.c  */
-#line 7180 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7180 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= (yyvsp[(1) - (1)].ulong_num); }
     break;
 
   case 882:
 /* Line 1792 of yacc.c  */
-#line 7184 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7184 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= 0; }
     break;
 
   case 883:
 /* Line 1792 of yacc.c  */
-#line 7185 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7185 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= (yyvsp[(2) - (2)].ulong_num); }
     break;
 
   case 886:
 /* Line 1792 of yacc.c  */
-#line 7199 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7199 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table)=(yyvsp[(2) - (5)].table);
           }
@@ -27034,13 +27034,13 @@ yyreduce:
 
   case 887:
 /* Line 1792 of yacc.c  */
-#line 7206 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7206 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->ref_list.empty(); }
     break;
 
   case 889:
 /* Line 1792 of yacc.c  */
-#line 7212 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7212 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Key_part_spec *key= new Key_part_spec((yyvsp[(3) - (3)].lex_str), 0);
             if (key == NULL)
@@ -27051,7 +27051,7 @@ yyreduce:
 
   case 890:
 /* Line 1792 of yacc.c  */
-#line 7219 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7219 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Key_part_spec *key= new Key_part_spec((yyvsp[(1) - (1)].lex_str), 0);
             if (key == NULL)
@@ -27064,31 +27064,31 @@ yyreduce:
 
   case 891:
 /* Line 1792 of yacc.c  */
-#line 7231 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7231 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->fk_match_option= FK_MATCH_UNDEF; }
     break;
 
   case 892:
 /* Line 1792 of yacc.c  */
-#line 7233 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7233 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->fk_match_option= FK_MATCH_FULL; }
     break;
 
   case 893:
 /* Line 1792 of yacc.c  */
-#line 7235 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7235 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->fk_match_option= FK_MATCH_PARTIAL; }
     break;
 
   case 894:
 /* Line 1792 of yacc.c  */
-#line 7237 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7237 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->fk_match_option= FK_MATCH_SIMPLE; }
     break;
 
   case 895:
 /* Line 1792 of yacc.c  */
-#line 7242 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7242 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->fk_update_opt= FK_OPTION_UNDEF;
@@ -27098,7 +27098,7 @@ yyreduce:
 
   case 896:
 /* Line 1792 of yacc.c  */
-#line 7248 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7248 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->fk_update_opt= (yyvsp[(3) - (3)].m_fk_option);
@@ -27108,7 +27108,7 @@ yyreduce:
 
   case 897:
 /* Line 1792 of yacc.c  */
-#line 7254 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7254 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->fk_update_opt= FK_OPTION_UNDEF;
@@ -27118,7 +27118,7 @@ yyreduce:
 
   case 898:
 /* Line 1792 of yacc.c  */
-#line 7261 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7261 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->fk_update_opt= (yyvsp[(3) - (6)].m_fk_option);
@@ -27128,7 +27128,7 @@ yyreduce:
 
   case 899:
 /* Line 1792 of yacc.c  */
-#line 7268 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7268 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->fk_update_opt= (yyvsp[(6) - (6)].m_fk_option);
@@ -27138,109 +27138,109 @@ yyreduce:
 
   case 900:
 /* Line 1792 of yacc.c  */
-#line 7276 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7276 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.m_fk_option)= FK_OPTION_RESTRICT; }
     break;
 
   case 901:
 /* Line 1792 of yacc.c  */
-#line 7277 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7277 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.m_fk_option)= FK_OPTION_CASCADE; }
     break;
 
   case 902:
 /* Line 1792 of yacc.c  */
-#line 7278 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7278 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.m_fk_option)= FK_OPTION_SET_NULL; }
     break;
 
   case 903:
 /* Line 1792 of yacc.c  */
-#line 7279 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7279 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.m_fk_option)= FK_OPTION_NO_ACTION; }
     break;
 
   case 904:
 /* Line 1792 of yacc.c  */
-#line 7280 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7280 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.m_fk_option)= FK_OPTION_DEFAULT;  }
     break;
 
   case 905:
 /* Line 1792 of yacc.c  */
-#line 7284 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7284 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.key_type)= KEYTYPE_MULTIPLE; }
     break;
 
   case 906:
 /* Line 1792 of yacc.c  */
-#line 7288 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7288 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.key_type)= KEYTYPE_PRIMARY; }
     break;
 
   case 907:
 /* Line 1792 of yacc.c  */
-#line 7289 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7289 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.key_type)= KEYTYPE_UNIQUE; }
     break;
 
   case 908:
 /* Line 1792 of yacc.c  */
-#line 7293 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7293 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 909:
 /* Line 1792 of yacc.c  */
-#line 7294 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7294 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 910:
 /* Line 1792 of yacc.c  */
-#line 7298 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7298 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 912:
 /* Line 1792 of yacc.c  */
-#line 7303 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7303 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 913:
 /* Line 1792 of yacc.c  */
-#line 7304 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7304 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 914:
 /* Line 1792 of yacc.c  */
-#line 7305 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7305 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 915:
 /* Line 1792 of yacc.c  */
-#line 7309 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7309 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.key_type)= KEYTYPE_MULTIPLE; }
     break;
 
   case 916:
 /* Line 1792 of yacc.c  */
-#line 7310 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7310 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.key_type)= KEYTYPE_UNIQUE; }
     break;
 
   case 917:
 /* Line 1792 of yacc.c  */
-#line 7314 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7314 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.key_type)= KEYTYPE_FULLTEXT;}
     break;
 
   case 918:
 /* Line 1792 of yacc.c  */
-#line 7319 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7319 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.key_type)= KEYTYPE_SPATIAL;
           }
@@ -27248,7 +27248,7 @@ yyreduce:
 
   case 919:
 /* Line 1792 of yacc.c  */
-#line 7325 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7325 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->key_create_info= default_key_create_info;
           }
@@ -27256,49 +27256,49 @@ yyreduce:
 
   case 922:
 /* Line 1792 of yacc.c  */
-#line 7342 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7342 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 924:
 /* Line 1792 of yacc.c  */
-#line 7347 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7347 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 926:
 /* Line 1792 of yacc.c  */
-#line 7352 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7352 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 934:
 /* Line 1792 of yacc.c  */
-#line 7372 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7372 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->key_create_info.algorithm= (yyvsp[(2) - (2)].key_alg); }
     break;
 
   case 935:
 /* Line 1792 of yacc.c  */
-#line 7373 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7373 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->key_create_info.algorithm= (yyvsp[(2) - (2)].key_alg); }
     break;
 
   case 936:
 /* Line 1792 of yacc.c  */
-#line 7378 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7378 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->key_create_info.block_size= (yyvsp[(3) - (3)].ulong_num); }
     break;
 
   case 937:
 /* Line 1792 of yacc.c  */
-#line 7379 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7379 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->key_create_info.comment= (yyvsp[(2) - (2)].lex_str); }
     break;
 
   case 942:
 /* Line 1792 of yacc.c  */
-#line 7394 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7394 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX_CSTRING plugin_name= {(yyvsp[(3) - (3)].lex_str).str, (yyvsp[(3) - (3)].lex_str).length};
             if (plugin_is_ready(plugin_name, MYSQL_FTPARSER_PLUGIN))
@@ -27313,37 +27313,37 @@ yyreduce:
 
   case 943:
 /* Line 1792 of yacc.c  */
-#line 7407 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7407 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.key_alg)= HA_KEY_ALG_BTREE; }
     break;
 
   case 944:
 /* Line 1792 of yacc.c  */
-#line 7408 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7408 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.key_alg)= HA_KEY_ALG_RTREE; }
     break;
 
   case 945:
 /* Line 1792 of yacc.c  */
-#line 7409 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7409 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.key_alg)= HA_KEY_ALG_HASH; }
     break;
 
   case 946:
 /* Line 1792 of yacc.c  */
-#line 7413 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7413 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->col_list.push_back((yyvsp[(3) - (4)].key_part)); }
     break;
 
   case 947:
 /* Line 1792 of yacc.c  */
-#line 7414 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7414 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->col_list.push_back((yyvsp[(1) - (2)].key_part)); }
     break;
 
   case 948:
 /* Line 1792 of yacc.c  */
-#line 7419 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7419 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.key_part)= new Key_part_spec((yyvsp[(1) - (1)].lex_str), 0);
             if ((yyval.key_part) == NULL)
@@ -27353,7 +27353,7 @@ yyreduce:
 
   case 949:
 /* Line 1792 of yacc.c  */
-#line 7425 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7425 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             int key_part_len= atoi((yyvsp[(3) - (4)].lex_str).str);
             if (!key_part_len)
@@ -27368,43 +27368,43 @@ yyreduce:
 
   case 950:
 /* Line 1792 of yacc.c  */
-#line 7438 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7438 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)= null_lex_str; }
     break;
 
   case 951:
 /* Line 1792 of yacc.c  */
-#line 7439 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7439 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)= (yyvsp[(1) - (1)].lex_str); }
     break;
 
   case 952:
 /* Line 1792 of yacc.c  */
-#line 7443 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7443 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)= null_lex_str; }
     break;
 
   case 953:
 /* Line 1792 of yacc.c  */
-#line 7444 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7444 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)= (yyvsp[(2) - (2)].lex_str); }
     break;
 
   case 954:
 /* Line 1792 of yacc.c  */
-#line 7448 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7448 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->interval_list.push_back((yyvsp[(1) - (1)].string)); }
     break;
 
   case 955:
 /* Line 1792 of yacc.c  */
-#line 7449 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7449 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->interval_list.push_back((yyvsp[(3) - (3)].string)); }
     break;
 
   case 956:
 /* Line 1792 of yacc.c  */
-#line 7457 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7457 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -27435,7 +27435,7 @@ yyreduce:
 
   case 957:
 /* Line 1792 of yacc.c  */
-#line 7484 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7484 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -27451,7 +27451,7 @@ yyreduce:
 
   case 958:
 /* Line 1792 of yacc.c  */
-#line 7496 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7496 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_info.default_table_charset= NULL;
             Lex->create_info.used_fields= 0;
@@ -27460,7 +27460,7 @@ yyreduce:
 
   case 959:
 /* Line 1792 of yacc.c  */
-#line 7501 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7501 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command=SQLCOM_ALTER_DB;
@@ -27473,7 +27473,7 @@ yyreduce:
 
   case 960:
 /* Line 1792 of yacc.c  */
-#line 7510 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7510 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             push_deprecated_warn_no_replacement(YYTHD,
@@ -27490,7 +27490,7 @@ yyreduce:
 
   case 961:
 /* Line 1792 of yacc.c  */
-#line 7523 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7523 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
 
@@ -27505,7 +27505,7 @@ yyreduce:
 
   case 962:
 /* Line 1792 of yacc.c  */
-#line 7534 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7534 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
 
@@ -27516,7 +27516,7 @@ yyreduce:
 
   case 963:
 /* Line 1792 of yacc.c  */
-#line 7541 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7541 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
 
@@ -27531,7 +27531,7 @@ yyreduce:
 
   case 964:
 /* Line 1792 of yacc.c  */
-#line 7552 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7552 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
 
@@ -27542,7 +27542,7 @@ yyreduce:
 
   case 965:
 /* Line 1792 of yacc.c  */
-#line 7559 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7559 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
 
@@ -27557,13 +27557,13 @@ yyreduce:
 
   case 966:
 /* Line 1792 of yacc.c  */
-#line 7570 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7570 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 967:
 /* Line 1792 of yacc.c  */
-#line 7577 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7577 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
 
@@ -27579,13 +27579,13 @@ yyreduce:
 
   case 968:
 /* Line 1792 of yacc.c  */
-#line 7589 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7589 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 969:
 /* Line 1792 of yacc.c  */
-#line 7591 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7591 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /*
               It is safe to use Lex->spname because
@@ -27605,7 +27605,7 @@ yyreduce:
 
   case 970:
 /* Line 1792 of yacc.c  */
-#line 7611 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7611 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!((yyvsp[(6) - (10)].num) || (yyvsp[(7) - (10)].num) || (yyvsp[(8) - (10)].num) || (yyvsp[(9) - (10)].num) || (yyvsp[(10) - (10)].num)))
             {
@@ -27622,7 +27622,7 @@ yyreduce:
 
   case 971:
 /* Line 1792 of yacc.c  */
-#line 7624 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7624 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->ts_cmd_type= ALTER_TABLESPACE;
@@ -27631,7 +27631,7 @@ yyreduce:
 
   case 972:
 /* Line 1792 of yacc.c  */
-#line 7629 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7629 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->ts_cmd_type= ALTER_LOGFILE_GROUP;
@@ -27640,7 +27640,7 @@ yyreduce:
 
   case 973:
 /* Line 1792 of yacc.c  */
-#line 7634 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7634 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->ts_cmd_type= CHANGE_FILE_TABLESPACE;
@@ -27649,7 +27649,7 @@ yyreduce:
 
   case 974:
 /* Line 1792 of yacc.c  */
-#line 7639 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7639 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->ts_cmd_type= ALTER_ACCESS_MODE_TABLESPACE;
@@ -27658,7 +27658,7 @@ yyreduce:
 
   case 975:
 /* Line 1792 of yacc.c  */
-#line 7644 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7644 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_ALTER_SERVER;
@@ -27670,7 +27670,7 @@ yyreduce:
 
   case 977:
 /* Line 1792 of yacc.c  */
-#line 7654 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7654 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyvsp[(2) - (5)].lex_user)->auth.str= (yyvsp[(5) - (5)].lex_str).str;
             (yyvsp[(2) - (5)].lex_user)->auth.length= (yyvsp[(5) - (5)].lex_str).length;
@@ -27681,13 +27681,13 @@ yyreduce:
 
   case 978:
 /* Line 1792 of yacc.c  */
-#line 7660 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7660 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { MAKE_CMD((yyvsp[(1) - (1)].statement)); }
     break;
 
   case 979:
 /* Line 1792 of yacc.c  */
-#line 7665 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7665 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_ALTER_USER;
@@ -27697,13 +27697,13 @@ yyreduce:
 
   case 980:
 /* Line 1792 of yacc.c  */
-#line 7673 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7673 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 984:
 /* Line 1792 of yacc.c  */
-#line 7684 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7684 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->alter_password.update_account_locked_column= true;
@@ -27713,7 +27713,7 @@ yyreduce:
 
   case 985:
 /* Line 1792 of yacc.c  */
-#line 7690 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7690 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->alter_password.update_account_locked_column= true;
@@ -27723,7 +27723,7 @@ yyreduce:
 
   case 986:
 /* Line 1792 of yacc.c  */
-#line 7696 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7696 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->alter_password.update_password_expired_fields= true;
@@ -27733,7 +27733,7 @@ yyreduce:
 
   case 987:
 /* Line 1792 of yacc.c  */
-#line 7702 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7702 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             if ((yyvsp[(3) - (4)].ulong_num) == 0 || (yyvsp[(3) - (4)].ulong_num) > UINT_MAX16)
@@ -27751,7 +27751,7 @@ yyreduce:
 
   case 988:
 /* Line 1792 of yacc.c  */
-#line 7716 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7716 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->alter_password.update_password_expired_fields= true;
@@ -27761,7 +27761,7 @@ yyreduce:
 
   case 989:
 /* Line 1792 of yacc.c  */
-#line 7722 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7722 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_password.update_password_expired_fields= true;
           }
@@ -27769,31 +27769,31 @@ yyreduce:
 
   case 990:
 /* Line 1792 of yacc.c  */
-#line 7728 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7728 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 991:
 /* Line 1792 of yacc.c  */
-#line 7732 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7732 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 993:
 /* Line 1792 of yacc.c  */
-#line 7737 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7737 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 994:
 /* Line 1792 of yacc.c  */
-#line 7738 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7738 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 995:
 /* Line 1792 of yacc.c  */
-#line 7743 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7743 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->mqh.questions=(yyvsp[(2) - (2)].ulong_num);
@@ -27803,7 +27803,7 @@ yyreduce:
 
   case 996:
 /* Line 1792 of yacc.c  */
-#line 7749 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7749 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->mqh.updates=(yyvsp[(2) - (2)].ulong_num);
@@ -27813,7 +27813,7 @@ yyreduce:
 
   case 997:
 /* Line 1792 of yacc.c  */
-#line 7755 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7755 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->mqh.conn_per_hour= (yyvsp[(2) - (2)].ulong_num);
@@ -27823,7 +27823,7 @@ yyreduce:
 
   case 998:
 /* Line 1792 of yacc.c  */
-#line 7761 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7761 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->mqh.user_conn= (yyvsp[(2) - (2)].ulong_num);
@@ -27833,7 +27833,7 @@ yyreduce:
 
   case 999:
 /* Line 1792 of yacc.c  */
-#line 7770 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7770 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /* empty LEX_USER means current_user */
             LEX_USER *curr_user;
@@ -27848,37 +27848,37 @@ yyreduce:
 
   case 1000:
 /* Line 1792 of yacc.c  */
-#line 7783 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7783 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 0;}
     break;
 
   case 1001:
 /* Line 1792 of yacc.c  */
-#line 7784 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7784 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 1; }
     break;
 
   case 1002:
 /* Line 1792 of yacc.c  */
-#line 7785 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7785 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 1; }
     break;
 
   case 1003:
 /* Line 1792 of yacc.c  */
-#line 7786 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7786 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 1; }
     break;
 
   case 1004:
 /* Line 1792 of yacc.c  */
-#line 7790 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7790 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 0;}
     break;
 
   case 1005:
 /* Line 1792 of yacc.c  */
-#line 7792 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7792 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /*
               Use lex's spname to hold the new name.
@@ -27891,31 +27891,31 @@ yyreduce:
 
   case 1006:
 /* Line 1792 of yacc.c  */
-#line 7803 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7803 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 0;}
     break;
 
   case 1007:
 /* Line 1792 of yacc.c  */
-#line 7804 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7804 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 1; }
     break;
 
   case 1008:
 /* Line 1792 of yacc.c  */
-#line 7808 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7808 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str).str= 0; (yyval.lex_str).length= 0; }
     break;
 
   case 1009:
 /* Line 1792 of yacc.c  */
-#line 7809 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7809 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)= (yyvsp[(1) - (1)].lex_str); }
     break;
 
   case 1019:
 /* Line 1792 of yacc.c  */
-#line 7829 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7829 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->m_sql_cmd= new (YYTHD->mem_root)
               Sql_cmd_discard_import_tablespace(
@@ -27927,7 +27927,7 @@ yyreduce:
 
   case 1020:
 /* Line 1792 of yacc.c  */
-#line 7837 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7837 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->m_sql_cmd= new (YYTHD->mem_root)
               Sql_cmd_discard_import_tablespace(
@@ -27939,7 +27939,7 @@ yyreduce:
 
   case 1022:
 /* Line 1792 of yacc.c  */
-#line 7853 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7853 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_info.flags|= Alter_info::ALTER_DROP_PARTITION;
           }
@@ -27947,7 +27947,7 @@ yyreduce:
 
   case 1023:
 /* Line 1792 of yacc.c  */
-#line 7858 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7858 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_info.flags|= Alter_info::ALTER_REBUILD_PARTITION;
@@ -27957,7 +27957,7 @@ yyreduce:
 
   case 1024:
 /* Line 1792 of yacc.c  */
-#line 7865 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7865 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -27973,7 +27973,7 @@ yyreduce:
 
   case 1026:
 /* Line 1792 of yacc.c  */
-#line 7879 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7879 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -27989,7 +27989,7 @@ yyreduce:
 
   case 1027:
 /* Line 1792 of yacc.c  */
-#line 7891 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7891 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -28004,7 +28004,7 @@ yyreduce:
 
   case 1029:
 /* Line 1792 of yacc.c  */
-#line 7904 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7904 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -28020,7 +28020,7 @@ yyreduce:
 
   case 1031:
 /* Line 1792 of yacc.c  */
-#line 7917 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7917 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_info.flags|= Alter_info::ALTER_COALESCE_PARTITION;
@@ -28031,7 +28031,7 @@ yyreduce:
 
   case 1032:
 /* Line 1792 of yacc.c  */
-#line 7924 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7924 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -28046,7 +28046,7 @@ yyreduce:
 
   case 1034:
 /* Line 1792 of yacc.c  */
-#line 7937 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7937 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -28075,7 +28075,7 @@ yyreduce:
 
   case 1035:
 /* Line 1792 of yacc.c  */
-#line 7963 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7963 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->m_sql_cmd= new (YYTHD->mem_root)
               Sql_cmd_discard_import_tablespace(
@@ -28087,7 +28087,7 @@ yyreduce:
 
   case 1036:
 /* Line 1792 of yacc.c  */
-#line 7972 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7972 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->m_sql_cmd= new (YYTHD->mem_root)
               Sql_cmd_discard_import_tablespace(
@@ -28099,7 +28099,7 @@ yyreduce:
 
   case 1039:
 /* Line 1792 of yacc.c  */
-#line 7988 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7988 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_info.with_validation= Alter_info::ALTER_WITH_VALIDATION;
           }
@@ -28107,7 +28107,7 @@ yyreduce:
 
   case 1040:
 /* Line 1792 of yacc.c  */
-#line 7992 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 7992 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_info.with_validation=
               Alter_info::ALTER_WITHOUT_VALIDATION;
@@ -28116,7 +28116,7 @@ yyreduce:
 
   case 1041:
 /* Line 1792 of yacc.c  */
-#line 8000 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8000 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_info.flags|= Alter_info::ALTER_REMOVE_PARTITIONING;
           }
@@ -28124,7 +28124,7 @@ yyreduce:
 
   case 1042:
 /* Line 1792 of yacc.c  */
-#line 8007 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8007 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_info.flags|= Alter_info::ALTER_ALL_PARTITION;
           }
@@ -28132,7 +28132,7 @@ yyreduce:
 
   case 1044:
 /* Line 1792 of yacc.c  */
-#line 8015 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8015 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->part_info= new partition_info();
@@ -28148,13 +28148,13 @@ yyreduce:
 
   case 1045:
 /* Line 1792 of yacc.c  */
-#line 8027 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8027 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1047:
 /* Line 1792 of yacc.c  */
-#line 8033 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8033 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->part_info->num_parts= lex->part_info->partitions.elements;
@@ -28163,7 +28163,7 @@ yyreduce:
 
   case 1048:
 /* Line 1792 of yacc.c  */
-#line 8038 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8038 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->part_info->num_parts= (yyvsp[(2) - (2)].ulong_num);
           }
@@ -28171,7 +28171,7 @@ yyreduce:
 
   case 1049:
 /* Line 1792 of yacc.c  */
-#line 8045 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8045 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->part_info= new partition_info();
@@ -28186,7 +28186,7 @@ yyreduce:
 
   case 1051:
 /* Line 1792 of yacc.c  */
-#line 8060 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8060 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_info.flags|= Alter_info::ALTER_TABLE_REORG;
           }
@@ -28194,7 +28194,7 @@ yyreduce:
 
   case 1052:
 /* Line 1792 of yacc.c  */
-#line 8064 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8064 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_info.flags|= Alter_info::ALTER_REORGANIZE_PARTITION;
           }
@@ -28202,7 +28202,7 @@ yyreduce:
 
   case 1053:
 /* Line 1792 of yacc.c  */
-#line 8068 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8068 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             partition_info *part_info= Lex->part_info;
             part_info->num_parts= part_info->partitions.elements;
@@ -28211,19 +28211,19 @@ yyreduce:
 
   case 1054:
 /* Line 1792 of yacc.c  */
-#line 8075 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8075 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1055:
 /* Line 1792 of yacc.c  */
-#line 8076 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8076 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1056:
 /* Line 1792 of yacc.c  */
-#line 8081 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8081 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             String *s= new (YYTHD->mem_root) String((const char *) (yyvsp[(1) - (1)].lex_str).str,
                                                     (yyvsp[(1) - (1)].lex_str).length,
@@ -28240,7 +28240,7 @@ yyreduce:
 
   case 1062:
 /* Line 1792 of yacc.c  */
-#line 8112 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8112 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->change=0;
@@ -28250,7 +28250,7 @@ yyreduce:
 
   case 1063:
 /* Line 1792 of yacc.c  */
-#line 8121 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8121 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_last_non_select_table= Lex->last_table();
           }
@@ -28258,7 +28258,7 @@ yyreduce:
 
   case 1064:
 /* Line 1792 of yacc.c  */
-#line 8125 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8125 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_last_non_select_table= Lex->last_table();
             Lex->alter_info.flags|= Alter_info::ALTER_ADD_INDEX;
@@ -28267,7 +28267,7 @@ yyreduce:
 
   case 1066:
 /* Line 1792 of yacc.c  */
-#line 8131 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8131 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->change= (yyvsp[(3) - (3)].lex_str).str;
@@ -28277,7 +28277,7 @@ yyreduce:
 
   case 1067:
 /* Line 1792 of yacc.c  */
-#line 8137 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8137 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_last_non_select_table= Lex->last_table();
           }
@@ -28285,7 +28285,7 @@ yyreduce:
 
   case 1068:
 /* Line 1792 of yacc.c  */
-#line 8141 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8141 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->length=lex->dec=0; lex->type=0;
@@ -28299,7 +28299,7 @@ yyreduce:
 
   case 1069:
 /* Line 1792 of yacc.c  */
-#line 8151 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8151 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             if (add_field_to_list(lex->thd,&(yyvsp[(3) - (5)].lex_str),
@@ -28316,7 +28316,7 @@ yyreduce:
 
   case 1070:
 /* Line 1792 of yacc.c  */
-#line 8164 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8164 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->create_last_non_select_table= Lex->last_table();
           }
@@ -28324,7 +28324,7 @@ yyreduce:
 
   case 1071:
 /* Line 1792 of yacc.c  */
-#line 8168 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8168 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             Alter_drop *ad= new Alter_drop(Alter_drop::COLUMN, (yyvsp[(3) - (4)].lex_str).str);
@@ -28337,7 +28337,7 @@ yyreduce:
 
   case 1072:
 /* Line 1792 of yacc.c  */
-#line 8177 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8177 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             Alter_drop *ad= new Alter_drop(Alter_drop::FOREIGN_KEY, (yyvsp[(4) - (4)].lex_str).str);
@@ -28350,7 +28350,7 @@ yyreduce:
 
   case 1073:
 /* Line 1792 of yacc.c  */
-#line 8186 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8186 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             Alter_drop *ad= new Alter_drop(Alter_drop::KEY, primary_key_name);
@@ -28363,7 +28363,7 @@ yyreduce:
 
   case 1074:
 /* Line 1792 of yacc.c  */
-#line 8195 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8195 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             Alter_drop *ad= new Alter_drop(Alter_drop::KEY, (yyvsp[(3) - (3)].lex_str).str);
@@ -28376,7 +28376,7 @@ yyreduce:
 
   case 1075:
 /* Line 1792 of yacc.c  */
-#line 8204 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8204 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->alter_info.keys_onoff= Alter_info::DISABLE;
@@ -28386,7 +28386,7 @@ yyreduce:
 
   case 1076:
 /* Line 1792 of yacc.c  */
-#line 8210 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8210 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->alter_info.keys_onoff= Alter_info::ENABLE;
@@ -28396,7 +28396,7 @@ yyreduce:
 
   case 1077:
 /* Line 1792 of yacc.c  */
-#line 8216 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8216 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             Alter_column *ac= new Alter_column((yyvsp[(3) - (6)].lex_str).str,(yyvsp[(6) - (6)].item));
@@ -28409,7 +28409,7 @@ yyreduce:
 
   case 1078:
 /* Line 1792 of yacc.c  */
-#line 8225 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8225 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             Alter_column *ac= new Alter_column((yyvsp[(3) - (5)].lex_str).str, (Item*) 0);
@@ -28422,7 +28422,7 @@ yyreduce:
 
   case 1079:
 /* Line 1792 of yacc.c  */
-#line 8234 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8234 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             size_t dummy;
@@ -28456,7 +28456,7 @@ yyreduce:
 
   case 1080:
 /* Line 1792 of yacc.c  */
-#line 8264 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8264 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             Alter_rename_key *ak= new (YYTHD->mem_root)
@@ -28470,7 +28470,7 @@ yyreduce:
 
   case 1081:
 /* Line 1792 of yacc.c  */
-#line 8274 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8274 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!(yyvsp[(4) - (5)].charset))
             {
@@ -28495,7 +28495,7 @@ yyreduce:
 
   case 1082:
 /* Line 1792 of yacc.c  */
-#line 8295 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8295 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->alter_info.flags|= Alter_info::ALTER_OPTIONS;
@@ -28509,7 +28509,7 @@ yyreduce:
 
   case 1083:
 /* Line 1792 of yacc.c  */
-#line 8305 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8305 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_info.flags|= Alter_info::ALTER_RECREATE;
           }
@@ -28517,7 +28517,7 @@ yyreduce:
 
   case 1084:
 /* Line 1792 of yacc.c  */
-#line 8309 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8309 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->alter_info.flags|= Alter_info::ALTER_ORDER;
@@ -28526,7 +28526,7 @@ yyreduce:
 
   case 1085:
 /* Line 1792 of yacc.c  */
-#line 8314 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8314 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_info.flags|= Alter_info::ALTER_UPGRADE_PARTITIONING;
           }
@@ -28534,7 +28534,7 @@ yyreduce:
 
   case 1094:
 /* Line 1792 of yacc.c  */
-#line 8334 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8334 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_info.requested_algorithm=
               Alter_info::ALTER_TABLE_ALGORITHM_DEFAULT;
@@ -28543,7 +28543,7 @@ yyreduce:
 
   case 1095:
 /* Line 1792 of yacc.c  */
-#line 8339 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8339 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (Lex->alter_info.set_requested_algorithm(&(yyvsp[(3) - (3)].lex_str)))
             {
@@ -28555,7 +28555,7 @@ yyreduce:
 
   case 1096:
 /* Line 1792 of yacc.c  */
-#line 8350 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8350 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_info.requested_lock=
               Alter_info::ALTER_TABLE_LOCK_DEFAULT;
@@ -28564,7 +28564,7 @@ yyreduce:
 
   case 1097:
 /* Line 1792 of yacc.c  */
-#line 8355 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8355 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (Lex->alter_info.set_requested_lock(&(yyvsp[(3) - (3)].lex_str)))
             {
@@ -28576,55 +28576,55 @@ yyreduce:
 
   case 1098:
 /* Line 1792 of yacc.c  */
-#line 8365 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8365 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1099:
 /* Line 1792 of yacc.c  */
-#line 8366 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8366 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1100:
 /* Line 1792 of yacc.c  */
-#line 8370 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8370 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.is_not_empty)= false; }
     break;
 
   case 1101:
 /* Line 1792 of yacc.c  */
-#line 8371 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8371 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.is_not_empty)= true; }
     break;
 
   case 1102:
 /* Line 1792 of yacc.c  */
-#line 8375 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8375 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->drop_mode= DROP_DEFAULT; }
     break;
 
   case 1103:
 /* Line 1792 of yacc.c  */
-#line 8376 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8376 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->drop_mode= DROP_RESTRICT; }
     break;
 
   case 1104:
 /* Line 1792 of yacc.c  */
-#line 8377 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8377 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->drop_mode= DROP_CASCADE; }
     break;
 
   case 1105:
 /* Line 1792 of yacc.c  */
-#line 8381 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8381 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1106:
 /* Line 1792 of yacc.c  */
-#line 8383 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8383 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             store_position_for_column((yyvsp[(2) - (2)].lex_str).str);
             Lex->alter_info.flags |= Alter_info::ALTER_COLUMN_ORDER;
@@ -28633,7 +28633,7 @@ yyreduce:
 
   case 1107:
 /* Line 1792 of yacc.c  */
-#line 8388 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8388 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             store_position_for_column(first_keyword);
             Lex->alter_info.flags |= Alter_info::ALTER_COLUMN_ORDER;
@@ -28642,31 +28642,31 @@ yyreduce:
 
   case 1108:
 /* Line 1792 of yacc.c  */
-#line 8395 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8395 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1109:
 /* Line 1792 of yacc.c  */
-#line 8396 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8396 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1110:
 /* Line 1792 of yacc.c  */
-#line 8397 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8397 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1111:
 /* Line 1792 of yacc.c  */
-#line 8398 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8398 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1112:
 /* Line 1792 of yacc.c  */
-#line 8403 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8403 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
                    LEX *lex=Lex;
                    lex->sql_command = SQLCOM_START_GROUP_REPLICATION;
@@ -28675,7 +28675,7 @@ yyreduce:
 
   case 1113:
 /* Line 1792 of yacc.c  */
-#line 8408 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8408 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
                    LEX *lex=Lex;
                    lex->sql_command = SQLCOM_STOP_GROUP_REPLICATION;
@@ -28684,13 +28684,13 @@ yyreduce:
 
   case 1114:
 /* Line 1792 of yacc.c  */
-#line 8415 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8415 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1115:
 /* Line 1792 of yacc.c  */
-#line 8417 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8417 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
           LEX *lex=Lex;
           lex->sql_command = SQLCOM_SLAVE_STOP;
@@ -28701,7 +28701,7 @@ yyreduce:
 
   case 1116:
 /* Line 1792 of yacc.c  */
-#line 8427 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8427 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             /* Clean previous slave connection values */
@@ -28716,7 +28716,7 @@ yyreduce:
 
   case 1117:
 /* Line 1792 of yacc.c  */
-#line 8442 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8442 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /*
               It is not possible to set user's information when
@@ -28737,7 +28737,7 @@ yyreduce:
 
   case 1119:
 /* Line 1792 of yacc.c  */
-#line 8463 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8463 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_BEGIN;
@@ -28754,7 +28754,7 @@ yyreduce:
 
   case 1120:
 /* Line 1792 of yacc.c  */
-#line 8479 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8479 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= 0;
           }
@@ -28762,7 +28762,7 @@ yyreduce:
 
   case 1121:
 /* Line 1792 of yacc.c  */
-#line 8483 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8483 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= (yyvsp[(1) - (1)].num);
           }
@@ -28770,7 +28770,7 @@ yyreduce:
 
   case 1122:
 /* Line 1792 of yacc.c  */
-#line 8490 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8490 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= (yyvsp[(1) - (1)].num);
           }
@@ -28778,7 +28778,7 @@ yyreduce:
 
   case 1123:
 /* Line 1792 of yacc.c  */
-#line 8494 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8494 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= (yyvsp[(1) - (3)].num) | (yyvsp[(3) - (3)].num);
           }
@@ -28786,7 +28786,7 @@ yyreduce:
 
   case 1124:
 /* Line 1792 of yacc.c  */
-#line 8501 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8501 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= MYSQL_START_TRANS_OPT_WITH_CONS_SNAPSHOT;
           }
@@ -28794,7 +28794,7 @@ yyreduce:
 
   case 1125:
 /* Line 1792 of yacc.c  */
-#line 8505 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8505 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= MYSQL_START_TRANS_OPT_READ_ONLY;
           }
@@ -28802,7 +28802,7 @@ yyreduce:
 
   case 1126:
 /* Line 1792 of yacc.c  */
-#line 8509 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8509 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= MYSQL_START_TRANS_OPT_READ_WRITE;
           }
@@ -28810,7 +28810,7 @@ yyreduce:
 
   case 1128:
 /* Line 1792 of yacc.c  */
-#line 8520 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8520 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /* empty */
           }
@@ -28818,7 +28818,7 @@ yyreduce:
 
   case 1129:
 /* Line 1792 of yacc.c  */
-#line 8524 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8524 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->slave_connection.user= (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -28826,7 +28826,7 @@ yyreduce:
 
   case 1130:
 /* Line 1792 of yacc.c  */
-#line 8530 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8530 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /* empty */
           }
@@ -28834,7 +28834,7 @@ yyreduce:
 
   case 1131:
 /* Line 1792 of yacc.c  */
-#line 8534 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8534 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->slave_connection.password= (yyvsp[(3) - (3)].lex_str).str;
             Lex->contains_plaintext_password= true;
@@ -28843,7 +28843,7 @@ yyreduce:
 
   case 1132:
 /* Line 1792 of yacc.c  */
-#line 8540 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8540 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /* empty */
           }
@@ -28851,7 +28851,7 @@ yyreduce:
 
   case 1133:
 /* Line 1792 of yacc.c  */
-#line 8544 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8544 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->slave_connection.plugin_auth= (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -28859,7 +28859,7 @@ yyreduce:
 
   case 1134:
 /* Line 1792 of yacc.c  */
-#line 8550 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8550 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /* empty */
           }
@@ -28867,7 +28867,7 @@ yyreduce:
 
   case 1135:
 /* Line 1792 of yacc.c  */
-#line 8554 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8554 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->slave_connection.plugin_dir= (yyvsp[(3) - (3)].lex_str).str;
           }
@@ -28875,7 +28875,7 @@ yyreduce:
 
   case 1136:
 /* Line 1792 of yacc.c  */
-#line 8561 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8561 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= 0;
           }
@@ -28883,7 +28883,7 @@ yyreduce:
 
   case 1137:
 /* Line 1792 of yacc.c  */
-#line 8565 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8565 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= (yyvsp[(1) - (1)].num);
           }
@@ -28891,7 +28891,7 @@ yyreduce:
 
   case 1138:
 /* Line 1792 of yacc.c  */
-#line 8572 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8572 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= (yyvsp[(1) - (1)].num);
           }
@@ -28899,7 +28899,7 @@ yyreduce:
 
   case 1139:
 /* Line 1792 of yacc.c  */
-#line 8576 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8576 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= (yyvsp[(1) - (3)].num) | (yyvsp[(3) - (3)].num);
           }
@@ -28907,7 +28907,7 @@ yyreduce:
 
   case 1140:
 /* Line 1792 of yacc.c  */
-#line 8583 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8583 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= SLAVE_SQL;
           }
@@ -28915,7 +28915,7 @@ yyreduce:
 
   case 1141:
 /* Line 1792 of yacc.c  */
-#line 8587 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8587 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= SLAVE_IO;
           }
@@ -28923,7 +28923,7 @@ yyreduce:
 
   case 1142:
 /* Line 1792 of yacc.c  */
-#line 8594 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8594 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->mi.slave_until= false;
@@ -28932,7 +28932,7 @@ yyreduce:
 
   case 1143:
 /* Line 1792 of yacc.c  */
-#line 8599 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8599 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             if (((lex->mi.log_file_name || lex->mi.pos) &&
@@ -28959,7 +28959,7 @@ yyreduce:
 
   case 1146:
 /* Line 1792 of yacc.c  */
-#line 8627 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8627 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.gtid= (yyvsp[(3) - (3)].lex_str).str;
             Lex->mi.gtid_until_condition= LEX_MASTER_INFO::UNTIL_SQL_BEFORE_GTIDS;
@@ -28968,7 +28968,7 @@ yyreduce:
 
   case 1147:
 /* Line 1792 of yacc.c  */
-#line 8632 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8632 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.gtid= (yyvsp[(3) - (3)].lex_str).str;
             Lex->mi.gtid_until_condition= LEX_MASTER_INFO::UNTIL_SQL_AFTER_GTIDS;
@@ -28977,7 +28977,7 @@ yyreduce:
 
   case 1148:
 /* Line 1792 of yacc.c  */
-#line 8637 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8637 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->mi.until_after_gaps= true;
           }
@@ -28985,7 +28985,7 @@ yyreduce:
 
   case 1149:
 /* Line 1792 of yacc.c  */
-#line 8644 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8644 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command = SQLCOM_CHECKSUM;
@@ -28996,31 +28996,31 @@ yyreduce:
 
   case 1150:
 /* Line 1792 of yacc.c  */
-#line 8651 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8651 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1151:
 /* Line 1792 of yacc.c  */
-#line 8655 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8655 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->check_opt.flags= 0; }
     break;
 
   case 1152:
 /* Line 1792 of yacc.c  */
-#line 8656 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8656 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->check_opt.flags= T_QUICK; }
     break;
 
   case 1153:
 /* Line 1792 of yacc.c  */
-#line 8657 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8657 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->check_opt.flags= T_EXTEND; }
     break;
 
   case 1154:
 /* Line 1792 of yacc.c  */
-#line 8662 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8662 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command = SQLCOM_REPAIR;
@@ -29034,7 +29034,7 @@ yyreduce:
 
   case 1155:
 /* Line 1792 of yacc.c  */
-#line 8672 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8672 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX* lex= thd->lex;
@@ -29047,49 +29047,49 @@ yyreduce:
 
   case 1156:
 /* Line 1792 of yacc.c  */
-#line 8683 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8683 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->check_opt.flags = T_MEDIUM; }
     break;
 
   case 1157:
 /* Line 1792 of yacc.c  */
-#line 8684 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8684 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1158:
 /* Line 1792 of yacc.c  */
-#line 8688 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8688 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1159:
 /* Line 1792 of yacc.c  */
-#line 8689 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8689 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1160:
 /* Line 1792 of yacc.c  */
-#line 8693 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8693 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->check_opt.flags|= T_QUICK; }
     break;
 
   case 1161:
 /* Line 1792 of yacc.c  */
-#line 8694 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8694 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->check_opt.flags|= T_EXTEND; }
     break;
 
   case 1162:
 /* Line 1792 of yacc.c  */
-#line 8695 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8695 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->check_opt.sql_flags|= TT_USEFRM; }
     break;
 
   case 1163:
 /* Line 1792 of yacc.c  */
-#line 8700 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8700 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command = SQLCOM_ANALYZE;
@@ -29103,7 +29103,7 @@ yyreduce:
 
   case 1164:
 /* Line 1792 of yacc.c  */
-#line 8710 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8710 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX* lex= thd->lex;
@@ -29116,7 +29116,7 @@ yyreduce:
 
   case 1165:
 /* Line 1792 of yacc.c  */
-#line 8722 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8722 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command = SQLCOM_BINLOG_BASE64_EVENT;
             Lex->comment= (yyvsp[(2) - (2)].lex_str);
@@ -29125,7 +29125,7 @@ yyreduce:
 
   case 1166:
 /* Line 1792 of yacc.c  */
-#line 8730 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8730 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
 
@@ -29144,7 +29144,7 @@ yyreduce:
 
   case 1167:
 /* Line 1792 of yacc.c  */
-#line 8745 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8745 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX* lex= thd->lex;
@@ -29157,67 +29157,67 @@ yyreduce:
 
   case 1168:
 /* Line 1792 of yacc.c  */
-#line 8756 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8756 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->check_opt.flags = T_MEDIUM; }
     break;
 
   case 1169:
 /* Line 1792 of yacc.c  */
-#line 8757 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8757 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1170:
 /* Line 1792 of yacc.c  */
-#line 8761 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8761 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1171:
 /* Line 1792 of yacc.c  */
-#line 8762 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8762 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1172:
 /* Line 1792 of yacc.c  */
-#line 8766 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8766 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->check_opt.flags|= T_QUICK; }
     break;
 
   case 1173:
 /* Line 1792 of yacc.c  */
-#line 8767 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8767 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->check_opt.flags|= T_FAST; }
     break;
 
   case 1174:
 /* Line 1792 of yacc.c  */
-#line 8768 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8768 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->check_opt.flags|= T_MEDIUM; }
     break;
 
   case 1175:
 /* Line 1792 of yacc.c  */
-#line 8769 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8769 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->check_opt.flags|= T_EXTEND; }
     break;
 
   case 1176:
 /* Line 1792 of yacc.c  */
-#line 8770 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8770 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->check_opt.flags|= T_CHECK_ONLY_CHANGED; }
     break;
 
   case 1177:
 /* Line 1792 of yacc.c  */
-#line 8771 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8771 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->check_opt.sql_flags|= TT_FOR_UPGRADE; }
     break;
 
   case 1178:
 /* Line 1792 of yacc.c  */
-#line 8776 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8776 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command = SQLCOM_OPTIMIZE;
@@ -29231,7 +29231,7 @@ yyreduce:
 
   case 1179:
 /* Line 1792 of yacc.c  */
-#line 8786 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8786 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX* lex= thd->lex;
@@ -29244,25 +29244,25 @@ yyreduce:
 
   case 1180:
 /* Line 1792 of yacc.c  */
-#line 8797 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8797 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 0; }
     break;
 
   case 1181:
 /* Line 1792 of yacc.c  */
-#line 8798 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8798 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 1; }
     break;
 
   case 1182:
 /* Line 1792 of yacc.c  */
-#line 8799 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8799 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 1; }
     break;
 
   case 1183:
 /* Line 1792 of yacc.c  */
-#line 8804 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8804 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command= SQLCOM_RENAME_TABLE;
           }
@@ -29270,13 +29270,13 @@ yyreduce:
 
   case 1184:
 /* Line 1792 of yacc.c  */
-#line 8808 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8808 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1185:
 /* Line 1792 of yacc.c  */
-#line 8810 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8810 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command = SQLCOM_RENAME_USER;
           }
@@ -29284,7 +29284,7 @@ yyreduce:
 
   case 1186:
 /* Line 1792 of yacc.c  */
-#line 8817 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8817 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (Lex->users_list.push_back((yyvsp[(1) - (3)].lex_user)) || Lex->users_list.push_back((yyvsp[(3) - (3)].lex_user)))
               MYSQL_YYABORT;
@@ -29293,7 +29293,7 @@ yyreduce:
 
   case 1187:
 /* Line 1792 of yacc.c  */
-#line 8822 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8822 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (Lex->users_list.push_back((yyvsp[(3) - (5)].lex_user)) || Lex->users_list.push_back((yyvsp[(5) - (5)].lex_user)))
               MYSQL_YYABORT;
@@ -29302,7 +29302,7 @@ yyreduce:
 
   case 1190:
 /* Line 1792 of yacc.c  */
-#line 8835 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8835 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             SELECT_LEX *sl= Select;
@@ -29316,7 +29316,7 @@ yyreduce:
 
   case 1191:
 /* Line 1792 of yacc.c  */
-#line 8848 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8848 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_info.reset();
           }
@@ -29324,7 +29324,7 @@ yyreduce:
 
   case 1192:
 /* Line 1792 of yacc.c  */
-#line 8852 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8852 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command= SQLCOM_ASSIGN_TO_KEYCACHE;
@@ -29334,7 +29334,7 @@ yyreduce:
 
   case 1197:
 /* Line 1792 of yacc.c  */
-#line 8871 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8871 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!Select->add_table_to_list(YYTHD, (yyvsp[(1) - (2)].table), NULL, 0, TL_READ,
                                            MDL_SHARED_READ,
@@ -29345,7 +29345,7 @@ yyreduce:
 
   case 1198:
 /* Line 1792 of yacc.c  */
-#line 8881 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8881 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!Select->add_table_to_list(YYTHD, (yyvsp[(1) - (3)].table), NULL, 0, TL_READ,
                                            MDL_SHARED_READ,
@@ -29356,19 +29356,19 @@ yyreduce:
 
   case 1199:
 /* Line 1792 of yacc.c  */
-#line 8890 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8890 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)= (yyvsp[(1) - (1)].lex_str); }
     break;
 
   case 1200:
 /* Line 1792 of yacc.c  */
-#line 8891 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8891 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str) = default_key_cache_base; }
     break;
 
   case 1201:
 /* Line 1792 of yacc.c  */
-#line 8896 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8896 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command=SQLCOM_PRELOAD_KEYS;
@@ -29378,13 +29378,13 @@ yyreduce:
 
   case 1202:
 /* Line 1792 of yacc.c  */
-#line 8902 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8902 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1207:
 /* Line 1792 of yacc.c  */
-#line 8917 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8917 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!Select->add_table_to_list(YYTHD, (yyvsp[(1) - (3)].table), NULL, (yyvsp[(3) - (3)].num), TL_READ,
                                            MDL_SHARED_READ,
@@ -29395,7 +29395,7 @@ yyreduce:
 
   case 1208:
 /* Line 1792 of yacc.c  */
-#line 8927 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8927 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!Select->add_table_to_list(YYTHD, (yyvsp[(1) - (4)].table), NULL, (yyvsp[(4) - (4)].num), TL_READ,
                                            MDL_SHARED_READ,
@@ -29406,7 +29406,7 @@ yyreduce:
 
   case 1209:
 /* Line 1792 of yacc.c  */
-#line 8937 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8937 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->alter_info.flags|= Alter_info::ALTER_ADMIN_PARTITION;
           }
@@ -29414,13 +29414,13 @@ yyreduce:
 
   case 1212:
 /* Line 1792 of yacc.c  */
-#line 8948 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8948 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.key_usage_list)= NULL; }
     break;
 
   case 1213:
 /* Line 1792 of yacc.c  */
-#line 8950 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8950 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             init_index_hints((yyvsp[(3) - (4)].key_usage_list), INDEX_HINT_USE,
                              old_mode ? INDEX_HINT_MASK_JOIN
@@ -29431,19 +29431,19 @@ yyreduce:
 
   case 1214:
 /* Line 1792 of yacc.c  */
-#line 8960 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8960 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 0; }
     break;
 
   case 1215:
 /* Line 1792 of yacc.c  */
-#line 8961 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8961 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= TL_OPTION_IGNORE_LEAVES; }
     break;
 
   case 1216:
 /* Line 1792 of yacc.c  */
-#line 8971 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8971 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select)= NEW_PTN PT_select((yyvsp[(1) - (1)].select_init), SQLCOM_SELECT);
           }
@@ -29451,7 +29451,7 @@ yyreduce:
 
   case 1217:
 /* Line 1792 of yacc.c  */
-#line 8979 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8979 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_init)= NEW_PTN PT_select_init2((yyvsp[(1) - (3)].optimizer_hints), (yyvsp[(2) - (3)].select_part2), (yyvsp[(3) - (3)].union_list));
           }
@@ -29459,7 +29459,7 @@ yyreduce:
 
   case 1218:
 /* Line 1792 of yacc.c  */
-#line 8983 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8983 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_init)= NEW_PTN PT_select_init_parenthesis((yyvsp[(2) - (4)].select_paren), (yyvsp[(4) - (4)].node));
           }
@@ -29467,7 +29467,7 @@ yyreduce:
 
   case 1219:
 /* Line 1792 of yacc.c  */
-#line 8990 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8990 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_paren)= NEW_PTN PT_select_paren((yyvsp[(1) - (2)].optimizer_hints), (yyvsp[(2) - (2)].select_part2));
           }
@@ -29475,13 +29475,13 @@ yyreduce:
 
   case 1220:
 /* Line 1792 of yacc.c  */
-#line 8993 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8993 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.select_paren)= (yyvsp[(2) - (3)].select_paren); }
     break;
 
   case 1221:
 /* Line 1792 of yacc.c  */
-#line 8999 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 8999 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_paren_derived)= NEW_PTN PT_select_paren_derived((yyvsp[(1) - (3)].optimizer_hints), (yyvsp[(2) - (3)].select_part2_derived), (yyvsp[(3) - (3)].table_expression));
           }
@@ -29489,13 +29489,13 @@ yyreduce:
 
   case 1222:
 /* Line 1792 of yacc.c  */
-#line 9002 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9002 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.select_paren_derived)= (yyvsp[(2) - (3)].select_paren_derived); }
     break;
 
   case 1223:
 /* Line 1792 of yacc.c  */
-#line 9015 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9015 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_part2)= NEW_PTN PT_select_part2((yyvsp[(1) - (4)].select_options_and_item_list), NULL, NULL, NULL, NULL, NULL,
                                         (yyvsp[(2) - (4)].order), (yyvsp[(3) - (4)].limit_clause), NULL, NULL, (yyvsp[(4) - (4)].select_lock_type));
@@ -29504,7 +29504,7 @@ yyreduce:
 
   case 1224:
 /* Line 1792 of yacc.c  */
-#line 9020 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9020 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_part2)= NEW_PTN PT_select_part2((yyvsp[(1) - (3)].select_options_and_item_list), (yyvsp[(2) - (3)].into_destination), NULL, NULL, NULL, NULL, NULL,
                                         NULL, NULL, NULL, (yyvsp[(3) - (3)].select_lock_type));
@@ -29513,7 +29513,7 @@ yyreduce:
 
   case 1225:
 /* Line 1792 of yacc.c  */
-#line 9035 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9035 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(2) - (11)].into_destination) && (yyvsp[(10) - (11)].into_destination))
             {
@@ -29534,7 +29534,7 @@ yyreduce:
 
   case 1226:
 /* Line 1792 of yacc.c  */
-#line 9054 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9054 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /*
               TODO: remove this semantic action (currently this removal
@@ -29545,7 +29545,7 @@ yyreduce:
 
   case 1227:
 /* Line 1792 of yacc.c  */
-#line 9061 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9061 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_options_and_item_list)= NEW_PTN PT_select_options_and_item_list((yyvsp[(2) - (3)].select_options), (yyvsp[(3) - (3)].item_list2));
           }
@@ -29553,7 +29553,7 @@ yyreduce:
 
   case 1228:
 /* Line 1792 of yacc.c  */
-#line 9076 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9076 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table_expression)= NEW_PTN PT_table_expression((yyvsp[(1) - (8)].table_reference_list), (yyvsp[(2) - (8)].item), (yyvsp[(3) - (8)].group), (yyvsp[(4) - (8)].item), (yyvsp[(5) - (8)].order), (yyvsp[(6) - (8)].limit_clause), (yyvsp[(7) - (8)].procedure_analyse), (yyvsp[(8) - (8)].select_lock_type));
           }
@@ -29561,19 +29561,19 @@ yyreduce:
 
   case 1229:
 /* Line 1792 of yacc.c  */
-#line 9082 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9082 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.table_reference_list)= (yyvsp[(2) - (2)].table_reference_list); }
     break;
 
   case 1230:
 /* Line 1792 of yacc.c  */
-#line 9086 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9086 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.table_reference_list)= NULL; }
     break;
 
   case 1232:
 /* Line 1792 of yacc.c  */
-#line 9092 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9092 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table_reference_list)= NEW_PTN PT_table_reference_list((yyvsp[(1) - (1)].join_table_list));
           }
@@ -29581,13 +29581,13 @@ yyreduce:
 
   case 1233:
 /* Line 1792 of yacc.c  */
-#line 9095 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9095 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.table_reference_list)= NULL; }
     break;
 
   case 1234:
 /* Line 1792 of yacc.c  */
-#line 9104 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9104 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_options).query_spec_options= 0;
             (yyval.select_options).sql_cache= SELECT_LEX::SQL_CACHE_UNSPECIFIED;
@@ -29596,7 +29596,7 @@ yyreduce:
 
   case 1236:
 /* Line 1792 of yacc.c  */
-#line 9113 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9113 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyval.select_options).merge((yyvsp[(1) - (2)].select_options), (yyvsp[(2) - (2)].select_options)))
               MYSQL_YYABORT;
@@ -29605,7 +29605,7 @@ yyreduce:
 
   case 1238:
 /* Line 1792 of yacc.c  */
-#line 9122 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9122 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_options).query_spec_options= (yyvsp[(1) - (1)].ulonglong_number);
             (yyval.select_options).sql_cache= SELECT_LEX::SQL_CACHE_UNSPECIFIED;
@@ -29614,7 +29614,7 @@ yyreduce:
 
   case 1239:
 /* Line 1792 of yacc.c  */
-#line 9127 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9127 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /*
               Allow this flag only on the first top-level SELECT statement, if
@@ -29627,7 +29627,7 @@ yyreduce:
 
   case 1240:
 /* Line 1792 of yacc.c  */
-#line 9136 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9136 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /*
               Allow this flag only on the first top-level SELECT statement, if
@@ -29640,13 +29640,13 @@ yyreduce:
 
   case 1241:
 /* Line 1792 of yacc.c  */
-#line 9147 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9147 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.select_lock_type).is_set= false; }
     break;
 
   case 1242:
 /* Line 1792 of yacc.c  */
-#line 9149 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9149 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_lock_type).is_set= true;
             (yyval.select_lock_type).lock_type= TL_WRITE;
@@ -29656,7 +29656,7 @@ yyreduce:
 
   case 1243:
 /* Line 1792 of yacc.c  */
-#line 9155 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9155 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_lock_type).is_set= true;
             (yyval.select_lock_type).lock_type= TL_READ_WITH_SHARED_LOCKS;
@@ -29666,7 +29666,7 @@ yyreduce:
 
   case 1244:
 /* Line 1792 of yacc.c  */
-#line 9164 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9164 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(1) - (3)].item_list2) == NULL || (yyvsp[(1) - (3)].item_list2)->push_back((yyvsp[(3) - (3)].item)))
               MYSQL_YYABORT;
@@ -29676,7 +29676,7 @@ yyreduce:
 
   case 1245:
 /* Line 1792 of yacc.c  */
-#line 9170 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9170 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list2)= NEW_PTN PT_select_item_list;
             if ((yyval.item_list2) == NULL || (yyval.item_list2)->push_back((yyvsp[(1) - (1)].item)))
@@ -29686,7 +29686,7 @@ yyreduce:
 
   case 1246:
 /* Line 1792 of yacc.c  */
-#line 9176 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9176 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Item *item= NEW_PTN Item_field((yyloc), NULL, NULL, "*");
             (yyval.item_list2)= NEW_PTN PT_select_item_list;
@@ -29697,13 +29697,13 @@ yyreduce:
 
   case 1247:
 /* Line 1792 of yacc.c  */
-#line 9185 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9185 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= (yyvsp[(1) - (1)].item); }
     break;
 
   case 1248:
 /* Line 1792 of yacc.c  */
-#line 9187 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9187 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_expr_with_alias((yyloc), (yyvsp[(1) - (2)].item), (yylsp[(1) - (2)]).cpp, (yyvsp[(2) - (2)].lex_str));
           }
@@ -29711,49 +29711,49 @@ yyreduce:
 
   case 1249:
 /* Line 1792 of yacc.c  */
-#line 9194 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9194 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)=null_lex_str;}
     break;
 
   case 1250:
 /* Line 1792 of yacc.c  */
-#line 9195 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9195 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)=(yyvsp[(2) - (2)].lex_str); }
     break;
 
   case 1251:
 /* Line 1792 of yacc.c  */
-#line 9196 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9196 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)=(yyvsp[(2) - (2)].lex_str); }
     break;
 
   case 1252:
 /* Line 1792 of yacc.c  */
-#line 9197 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9197 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)=(yyvsp[(1) - (1)].lex_str); }
     break;
 
   case 1253:
 /* Line 1792 of yacc.c  */
-#line 9198 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9198 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)=(yyvsp[(1) - (1)].lex_str); }
     break;
 
   case 1254:
 /* Line 1792 of yacc.c  */
-#line 9202 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9202 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1255:
 /* Line 1792 of yacc.c  */
-#line 9203 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9203 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1256:
 /* Line 1792 of yacc.c  */
-#line 9209 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9209 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= flatten_associative_operator<Item_cond_or,
                                              Item_func::COND_OR_FUNC>(
@@ -29763,7 +29763,7 @@ yyreduce:
 
   case 1257:
 /* Line 1792 of yacc.c  */
-#line 9215 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9215 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /* XOR is a proprietary extension */
             (yyval.item) = NEW_PTN Item_func_xor((yyloc), (yyvsp[(1) - (3)].item), (yyvsp[(3) - (3)].item));
@@ -29772,7 +29772,7 @@ yyreduce:
 
   case 1258:
 /* Line 1792 of yacc.c  */
-#line 9220 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9220 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= flatten_associative_operator<Item_cond_and,
                                              Item_func::COND_AND_FUNC>(
@@ -29782,7 +29782,7 @@ yyreduce:
 
   case 1259:
 /* Line 1792 of yacc.c  */
-#line 9226 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9226 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_negate_expression((yyloc), (yyvsp[(2) - (2)].item));
           }
@@ -29790,7 +29790,7 @@ yyreduce:
 
   case 1260:
 /* Line 1792 of yacc.c  */
-#line 9230 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9230 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_istrue((yyloc), (yyvsp[(1) - (3)].item));
           }
@@ -29798,7 +29798,7 @@ yyreduce:
 
   case 1261:
 /* Line 1792 of yacc.c  */
-#line 9234 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9234 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_isnottrue((yyloc), (yyvsp[(1) - (4)].item));
           }
@@ -29806,7 +29806,7 @@ yyreduce:
 
   case 1262:
 /* Line 1792 of yacc.c  */
-#line 9238 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9238 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_isfalse((yyloc), (yyvsp[(1) - (3)].item));
           }
@@ -29814,7 +29814,7 @@ yyreduce:
 
   case 1263:
 /* Line 1792 of yacc.c  */
-#line 9242 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9242 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_isnotfalse((yyloc), (yyvsp[(1) - (4)].item));
           }
@@ -29822,7 +29822,7 @@ yyreduce:
 
   case 1264:
 /* Line 1792 of yacc.c  */
-#line 9246 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9246 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_isnull((yyloc), (yyvsp[(1) - (3)].item));
           }
@@ -29830,7 +29830,7 @@ yyreduce:
 
   case 1265:
 /* Line 1792 of yacc.c  */
-#line 9250 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9250 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_isnotnull((yyloc), (yyvsp[(1) - (4)].item));
           }
@@ -29838,7 +29838,7 @@ yyreduce:
 
   case 1267:
 /* Line 1792 of yacc.c  */
-#line 9258 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9258 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_isnull((yyloc), (yyvsp[(1) - (3)].item));
           }
@@ -29846,7 +29846,7 @@ yyreduce:
 
   case 1268:
 /* Line 1792 of yacc.c  */
-#line 9262 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9262 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_isnotnull((yyloc), (yyvsp[(1) - (4)].item));
           }
@@ -29854,7 +29854,7 @@ yyreduce:
 
   case 1269:
 /* Line 1792 of yacc.c  */
-#line 9266 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9266 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_comp_op((yyloc), (yyvsp[(1) - (3)].item), (yyvsp[(2) - (3)].boolfunc2creator), (yyvsp[(3) - (3)].item));
           }
@@ -29862,7 +29862,7 @@ yyreduce:
 
   case 1270:
 /* Line 1792 of yacc.c  */
-#line 9270 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9270 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(2) - (6)].boolfunc2creator) == &comp_equal_creator)
               /*
@@ -29879,7 +29879,7 @@ yyreduce:
 
   case 1272:
 /* Line 1792 of yacc.c  */
-#line 9287 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9287 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_in_subselect((yyloc), (yyvsp[(1) - (5)].item), (yyvsp[(4) - (5)].subselect));
           }
@@ -29887,7 +29887,7 @@ yyreduce:
 
   case 1273:
 /* Line 1792 of yacc.c  */
-#line 9291 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9291 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Item *item= NEW_PTN Item_in_subselect((yyloc), (yyvsp[(1) - (6)].item), (yyvsp[(5) - (6)].subselect));
             (yyval.item)= NEW_PTN PTI_negate_expression((yyloc), item);
@@ -29896,7 +29896,7 @@ yyreduce:
 
   case 1274:
 /* Line 1792 of yacc.c  */
-#line 9296 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9296 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_handle_sql2003_note184_exception((yyloc), (yyvsp[(1) - (5)].item), true, (yyvsp[(4) - (5)].item));
           }
@@ -29904,7 +29904,7 @@ yyreduce:
 
   case 1275:
 /* Line 1792 of yacc.c  */
-#line 9300 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9300 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(6) - (7)].item_list2) == NULL || (yyvsp[(6) - (7)].item_list2)->push_front((yyvsp[(4) - (7)].item)) || (yyvsp[(6) - (7)].item_list2)->push_front((yyvsp[(1) - (7)].item)))
               MYSQL_YYABORT;
@@ -29915,7 +29915,7 @@ yyreduce:
 
   case 1276:
 /* Line 1792 of yacc.c  */
-#line 9307 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9307 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_handle_sql2003_note184_exception((yyloc), (yyvsp[(1) - (6)].item), false, (yyvsp[(5) - (6)].item));
           }
@@ -29923,7 +29923,7 @@ yyreduce:
 
   case 1277:
 /* Line 1792 of yacc.c  */
-#line 9311 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9311 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(7) - (8)].item_list2) == NULL || (yyvsp[(7) - (8)].item_list2)->push_front((yyvsp[(5) - (8)].item)) || (yyvsp[(7) - (8)].item_list2)->value.push_front((yyvsp[(1) - (8)].item)))
               MYSQL_YYABORT;
@@ -29934,7 +29934,7 @@ yyreduce:
 
   case 1278:
 /* Line 1792 of yacc.c  */
-#line 9318 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9318 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_between((yyloc), (yyvsp[(1) - (5)].item), (yyvsp[(3) - (5)].item), (yyvsp[(5) - (5)].item), false);
           }
@@ -29942,7 +29942,7 @@ yyreduce:
 
   case 1279:
 /* Line 1792 of yacc.c  */
-#line 9322 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9322 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_between((yyloc), (yyvsp[(1) - (6)].item), (yyvsp[(4) - (6)].item), (yyvsp[(6) - (6)].item), true);
           }
@@ -29950,7 +29950,7 @@ yyreduce:
 
   case 1280:
 /* Line 1792 of yacc.c  */
-#line 9326 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9326 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Item *item1= NEW_PTN Item_func_soundex((yyloc), (yyvsp[(1) - (4)].item));
             Item *item4= NEW_PTN Item_func_soundex((yyloc), (yyvsp[(4) - (4)].item));
@@ -29962,7 +29962,7 @@ yyreduce:
 
   case 1281:
 /* Line 1792 of yacc.c  */
-#line 9334 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9334 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_like((yyloc), (yyvsp[(1) - (4)].item), (yyvsp[(3) - (4)].item), (yyvsp[(4) - (4)].item));
           }
@@ -29970,7 +29970,7 @@ yyreduce:
 
   case 1282:
 /* Line 1792 of yacc.c  */
-#line 9338 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9338 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Item *item= NEW_PTN Item_func_like((yyloc), (yyvsp[(1) - (5)].item), (yyvsp[(4) - (5)].item), (yyvsp[(5) - (5)].item));
             if (item == NULL)
@@ -29981,7 +29981,7 @@ yyreduce:
 
   case 1283:
 /* Line 1792 of yacc.c  */
-#line 9345 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9345 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_regex((yyloc), (yyvsp[(1) - (3)].item), (yyvsp[(3) - (3)].item));
           }
@@ -29989,7 +29989,7 @@ yyreduce:
 
   case 1284:
 /* Line 1792 of yacc.c  */
-#line 9349 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9349 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Item *item= NEW_PTN Item_func_regex((yyloc), (yyvsp[(1) - (4)].item), (yyvsp[(4) - (4)].item));
             (yyval.item)= NEW_PTN PTI_negate_expression((yyloc), item);
@@ -29998,7 +29998,7 @@ yyreduce:
 
   case 1286:
 /* Line 1792 of yacc.c  */
-#line 9358 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9358 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_bit_or((yyloc), (yyvsp[(1) - (3)].item), (yyvsp[(3) - (3)].item));
           }
@@ -30006,7 +30006,7 @@ yyreduce:
 
   case 1287:
 /* Line 1792 of yacc.c  */
-#line 9362 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9362 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_bit_and((yyloc), (yyvsp[(1) - (3)].item), (yyvsp[(3) - (3)].item));
           }
@@ -30014,7 +30014,7 @@ yyreduce:
 
   case 1288:
 /* Line 1792 of yacc.c  */
-#line 9366 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9366 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_shift_left((yyloc), (yyvsp[(1) - (3)].item), (yyvsp[(3) - (3)].item));
           }
@@ -30022,7 +30022,7 @@ yyreduce:
 
   case 1289:
 /* Line 1792 of yacc.c  */
-#line 9370 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9370 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_shift_right((yyloc), (yyvsp[(1) - (3)].item), (yyvsp[(3) - (3)].item));
           }
@@ -30030,7 +30030,7 @@ yyreduce:
 
   case 1290:
 /* Line 1792 of yacc.c  */
-#line 9374 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9374 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_plus((yyloc), (yyvsp[(1) - (3)].item), (yyvsp[(3) - (3)].item));
           }
@@ -30038,7 +30038,7 @@ yyreduce:
 
   case 1291:
 /* Line 1792 of yacc.c  */
-#line 9378 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9378 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_minus((yyloc), (yyvsp[(1) - (3)].item), (yyvsp[(3) - (3)].item));
           }
@@ -30046,7 +30046,7 @@ yyreduce:
 
   case 1292:
 /* Line 1792 of yacc.c  */
-#line 9382 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9382 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_date_add_interval((yyloc), (yyvsp[(1) - (5)].item), (yyvsp[(4) - (5)].item), (yyvsp[(5) - (5)].interval), 0);
           }
@@ -30054,7 +30054,7 @@ yyreduce:
 
   case 1293:
 /* Line 1792 of yacc.c  */
-#line 9386 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9386 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_date_add_interval((yyloc), (yyvsp[(1) - (5)].item), (yyvsp[(4) - (5)].item), (yyvsp[(5) - (5)].interval), 1);
           }
@@ -30062,7 +30062,7 @@ yyreduce:
 
   case 1294:
 /* Line 1792 of yacc.c  */
-#line 9390 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9390 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_mul((yyloc), (yyvsp[(1) - (3)].item), (yyvsp[(3) - (3)].item));
           }
@@ -30070,7 +30070,7 @@ yyreduce:
 
   case 1295:
 /* Line 1792 of yacc.c  */
-#line 9394 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9394 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_div((yyloc), (yyvsp[(1) - (3)].item),(yyvsp[(3) - (3)].item));
           }
@@ -30078,7 +30078,7 @@ yyreduce:
 
   case 1296:
 /* Line 1792 of yacc.c  */
-#line 9398 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9398 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_mod((yyloc), (yyvsp[(1) - (3)].item),(yyvsp[(3) - (3)].item));
           }
@@ -30086,7 +30086,7 @@ yyreduce:
 
   case 1297:
 /* Line 1792 of yacc.c  */
-#line 9402 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9402 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_int_div((yyloc), (yyvsp[(1) - (3)].item),(yyvsp[(3) - (3)].item));
           }
@@ -30094,7 +30094,7 @@ yyreduce:
 
   case 1298:
 /* Line 1792 of yacc.c  */
-#line 9406 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9406 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_mod((yyloc), (yyvsp[(1) - (3)].item), (yyvsp[(3) - (3)].item));
           }
@@ -30102,7 +30102,7 @@ yyreduce:
 
   case 1299:
 /* Line 1792 of yacc.c  */
-#line 9410 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9410 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_bit_xor((yyloc), (yyvsp[(1) - (3)].item), (yyvsp[(3) - (3)].item));
           }
@@ -30110,61 +30110,61 @@ yyreduce:
 
   case 1309:
 /* Line 1792 of yacc.c  */
-#line 9437 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9437 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.boolfunc2creator) = &comp_eq_creator; }
     break;
 
   case 1310:
 /* Line 1792 of yacc.c  */
-#line 9438 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9438 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.boolfunc2creator) = &comp_equal_creator; }
     break;
 
   case 1311:
 /* Line 1792 of yacc.c  */
-#line 9439 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9439 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.boolfunc2creator) = &comp_ge_creator; }
     break;
 
   case 1312:
 /* Line 1792 of yacc.c  */
-#line 9440 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9440 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.boolfunc2creator) = &comp_gt_creator; }
     break;
 
   case 1313:
 /* Line 1792 of yacc.c  */
-#line 9441 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9441 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.boolfunc2creator) = &comp_le_creator; }
     break;
 
   case 1314:
 /* Line 1792 of yacc.c  */
-#line 9442 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9442 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.boolfunc2creator) = &comp_lt_creator; }
     break;
 
   case 1315:
 /* Line 1792 of yacc.c  */
-#line 9443 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9443 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.boolfunc2creator) = &comp_ne_creator; }
     break;
 
   case 1316:
 /* Line 1792 of yacc.c  */
-#line 9447 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9447 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num) = 1; }
     break;
 
   case 1317:
 /* Line 1792 of yacc.c  */
-#line 9448 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9448 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num) = 0; }
     break;
 
   case 1323:
 /* Line 1792 of yacc.c  */
-#line 9458 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9458 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_set_collation((yyloc), (yyvsp[(1) - (3)].item), (yyvsp[(3) - (3)].lex_str));
           }
@@ -30172,13 +30172,13 @@ yyreduce:
 
   case 1325:
 /* Line 1792 of yacc.c  */
-#line 9462 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9462 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= (yyvsp[(1) - (1)].param_marker); }
     break;
 
   case 1328:
 /* Line 1792 of yacc.c  */
-#line 9466 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9466 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_concat((yyloc), (yyvsp[(1) - (3)].item), (yyvsp[(3) - (3)].item));
           }
@@ -30186,7 +30186,7 @@ yyreduce:
 
   case 1329:
 /* Line 1792 of yacc.c  */
-#line 9470 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9470 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= (yyvsp[(2) - (2)].item); // TODO: do we really want to ignore unary '+' before any kind of literals?
           }
@@ -30194,7 +30194,7 @@ yyreduce:
 
   case 1330:
 /* Line 1792 of yacc.c  */
-#line 9474 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9474 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_neg((yyloc), (yyvsp[(2) - (2)].item));
           }
@@ -30202,7 +30202,7 @@ yyreduce:
 
   case 1331:
 /* Line 1792 of yacc.c  */
-#line 9478 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9478 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_bit_neg((yyloc), (yyvsp[(2) - (2)].item));
           }
@@ -30210,7 +30210,7 @@ yyreduce:
 
   case 1332:
 /* Line 1792 of yacc.c  */
-#line 9482 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9482 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_negate_expression((yyloc), (yyvsp[(2) - (2)].item));
           }
@@ -30218,7 +30218,7 @@ yyreduce:
 
   case 1333:
 /* Line 1792 of yacc.c  */
-#line 9486 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9486 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_singlerow_subselect((yyloc), (yyvsp[(2) - (3)].subselect));
           }
@@ -30226,13 +30226,13 @@ yyreduce:
 
   case 1334:
 /* Line 1792 of yacc.c  */
-#line 9490 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9490 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= (yyvsp[(2) - (3)].item); }
     break;
 
   case 1335:
 /* Line 1792 of yacc.c  */
-#line 9492 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9492 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_row((yyloc), (yyvsp[(2) - (5)].item), (yyvsp[(4) - (5)].item_list2)->value);
           }
@@ -30240,7 +30240,7 @@ yyreduce:
 
   case 1336:
 /* Line 1792 of yacc.c  */
-#line 9496 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9496 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_row((yyloc), (yyvsp[(3) - (6)].item), (yyvsp[(5) - (6)].item_list2)->value);
           }
@@ -30248,7 +30248,7 @@ yyreduce:
 
   case 1337:
 /* Line 1792 of yacc.c  */
-#line 9500 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9500 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_exists_subselect((yyloc), (yyvsp[(3) - (4)].subselect));
           }
@@ -30256,7 +30256,7 @@ yyreduce:
 
   case 1338:
 /* Line 1792 of yacc.c  */
-#line 9504 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9504 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_odbc_date((yyloc), (yyvsp[(2) - (4)].lex_str), (yyvsp[(3) - (4)].item));
           }
@@ -30264,7 +30264,7 @@ yyreduce:
 
   case 1339:
 /* Line 1792 of yacc.c  */
-#line 9508 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9508 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_match((yyloc), (yyvsp[(2) - (7)].item_list2), (yyvsp[(5) - (7)].item), (yyvsp[(6) - (7)].num));
           }
@@ -30272,7 +30272,7 @@ yyreduce:
 
   case 1340:
 /* Line 1792 of yacc.c  */
-#line 9512 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9512 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= create_func_cast(YYTHD, (yylsp[(2) - (2)]), (yyvsp[(2) - (2)].item), ITEM_CAST_CHAR, &my_charset_bin);
           }
@@ -30280,7 +30280,7 @@ yyreduce:
 
   case 1341:
 /* Line 1792 of yacc.c  */
-#line 9516 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9516 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= create_func_cast(YYTHD, (yylsp[(3) - (6)]), (yyvsp[(3) - (6)].item), &(yyvsp[(5) - (6)].cast_type));
           }
@@ -30288,7 +30288,7 @@ yyreduce:
 
   case 1342:
 /* Line 1792 of yacc.c  */
-#line 9520 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9520 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_case((yyloc), *(yyvsp[(3) - (5)].item_list), (yyvsp[(2) - (5)].item), (yyvsp[(4) - (5)].item) );
           }
@@ -30296,7 +30296,7 @@ yyreduce:
 
   case 1343:
 /* Line 1792 of yacc.c  */
-#line 9524 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9524 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= create_func_cast(YYTHD, (yylsp[(3) - (6)]), (yyvsp[(3) - (6)].item), &(yyvsp[(5) - (6)].cast_type));
           }
@@ -30304,7 +30304,7 @@ yyreduce:
 
   case 1344:
 /* Line 1792 of yacc.c  */
-#line 9528 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9528 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_conv_charset((yyloc), (yyvsp[(3) - (6)].item),(yyvsp[(5) - (6)].charset));
           }
@@ -30312,7 +30312,7 @@ yyreduce:
 
   case 1345:
 /* Line 1792 of yacc.c  */
-#line 9532 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9532 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_default_value((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30320,7 +30320,7 @@ yyreduce:
 
   case 1346:
 /* Line 1792 of yacc.c  */
-#line 9536 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9536 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_insert_value((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30328,7 +30328,7 @@ yyreduce:
 
   case 1347:
 /* Line 1792 of yacc.c  */
-#line 9541 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9541 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_date_add_interval((yyloc), (yyvsp[(5) - (5)].item), (yyvsp[(2) - (5)].item), (yyvsp[(3) - (5)].interval), 0);
           }
@@ -30336,7 +30336,7 @@ yyreduce:
 
   case 1348:
 /* Line 1792 of yacc.c  */
-#line 9545 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9545 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Item_string *path=
               NEW_PTN Item_string((yyloc), (yyvsp[(3) - (3)].lex_str).str, (yyvsp[(3) - (3)].lex_str).length,
@@ -30347,7 +30347,7 @@ yyreduce:
 
   case 1349:
 /* Line 1792 of yacc.c  */
-#line 9561 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9561 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_char((yyloc), (yyvsp[(3) - (4)].item_list2));
           }
@@ -30355,7 +30355,7 @@ yyreduce:
 
   case 1350:
 /* Line 1792 of yacc.c  */
-#line 9565 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9565 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_char((yyloc), (yyvsp[(3) - (6)].item_list2), (yyvsp[(5) - (6)].charset));
           }
@@ -30363,7 +30363,7 @@ yyreduce:
 
   case 1351:
 /* Line 1792 of yacc.c  */
-#line 9569 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9569 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_current_user((yyloc));
           }
@@ -30371,7 +30371,7 @@ yyreduce:
 
   case 1352:
 /* Line 1792 of yacc.c  */
-#line 9573 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9573 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_date_typecast((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30379,7 +30379,7 @@ yyreduce:
 
   case 1353:
 /* Line 1792 of yacc.c  */
-#line 9577 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9577 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_dayofmonth((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30387,7 +30387,7 @@ yyreduce:
 
   case 1354:
 /* Line 1792 of yacc.c  */
-#line 9581 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9581 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_hour((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30395,7 +30395,7 @@ yyreduce:
 
   case 1355:
 /* Line 1792 of yacc.c  */
-#line 9585 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9585 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_insert((yyloc), (yyvsp[(3) - (10)].item), (yyvsp[(5) - (10)].item), (yyvsp[(7) - (10)].item), (yyvsp[(9) - (10)].item));
           }
@@ -30403,7 +30403,7 @@ yyreduce:
 
   case 1356:
 /* Line 1792 of yacc.c  */
-#line 9589 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9589 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_interval((yyloc), YYTHD->mem_root, (yyvsp[(3) - (6)].item), (yyvsp[(5) - (6)].item));
           }
@@ -30411,7 +30411,7 @@ yyreduce:
 
   case 1357:
 /* Line 1792 of yacc.c  */
-#line 9593 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9593 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_interval((yyloc), YYTHD->mem_root, (yyvsp[(3) - (8)].item), (yyvsp[(5) - (8)].item), (yyvsp[(7) - (8)].item_list2));
           }
@@ -30419,7 +30419,7 @@ yyreduce:
 
   case 1358:
 /* Line 1792 of yacc.c  */
-#line 9597 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9597 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_left((yyloc), (yyvsp[(3) - (6)].item), (yyvsp[(5) - (6)].item));
           }
@@ -30427,7 +30427,7 @@ yyreduce:
 
   case 1359:
 /* Line 1792 of yacc.c  */
-#line 9601 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9601 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_minute((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30435,7 +30435,7 @@ yyreduce:
 
   case 1360:
 /* Line 1792 of yacc.c  */
-#line 9605 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9605 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_month((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30443,7 +30443,7 @@ yyreduce:
 
   case 1361:
 /* Line 1792 of yacc.c  */
-#line 9609 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9609 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_right((yyloc), (yyvsp[(3) - (6)].item), (yyvsp[(5) - (6)].item));
           }
@@ -30451,7 +30451,7 @@ yyreduce:
 
   case 1362:
 /* Line 1792 of yacc.c  */
-#line 9613 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9613 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_second((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30459,7 +30459,7 @@ yyreduce:
 
   case 1363:
 /* Line 1792 of yacc.c  */
-#line 9617 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9617 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_time_typecast((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30467,7 +30467,7 @@ yyreduce:
 
   case 1364:
 /* Line 1792 of yacc.c  */
-#line 9621 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9621 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_datetime_typecast((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30475,7 +30475,7 @@ yyreduce:
 
   case 1365:
 /* Line 1792 of yacc.c  */
-#line 9625 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9625 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_add_time((yyloc), (yyvsp[(3) - (6)].item), (yyvsp[(5) - (6)].item), 1, 0);
           }
@@ -30483,7 +30483,7 @@ yyreduce:
 
   case 1366:
 /* Line 1792 of yacc.c  */
-#line 9629 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9629 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_trim((yyloc), (yyvsp[(3) - (4)].item),
                                        Item_func_trim::TRIM_BOTH_DEFAULT);
@@ -30492,7 +30492,7 @@ yyreduce:
 
   case 1367:
 /* Line 1792 of yacc.c  */
-#line 9634 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9634 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_trim((yyloc), (yyvsp[(6) - (7)].item), (yyvsp[(4) - (7)].item),
                                        Item_func_trim::TRIM_LEADING);
@@ -30501,7 +30501,7 @@ yyreduce:
 
   case 1368:
 /* Line 1792 of yacc.c  */
-#line 9639 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9639 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_trim((yyloc), (yyvsp[(6) - (7)].item), (yyvsp[(4) - (7)].item),
                                        Item_func_trim::TRIM_TRAILING);
@@ -30510,7 +30510,7 @@ yyreduce:
 
   case 1369:
 /* Line 1792 of yacc.c  */
-#line 9644 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9644 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_trim((yyloc), (yyvsp[(6) - (7)].item), (yyvsp[(4) - (7)].item), Item_func_trim::TRIM_BOTH);
           }
@@ -30518,7 +30518,7 @@ yyreduce:
 
   case 1370:
 /* Line 1792 of yacc.c  */
-#line 9648 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9648 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_trim((yyloc), (yyvsp[(5) - (6)].item), Item_func_trim::TRIM_LEADING);
           }
@@ -30526,7 +30526,7 @@ yyreduce:
 
   case 1371:
 /* Line 1792 of yacc.c  */
-#line 9652 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9652 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_trim((yyloc), (yyvsp[(5) - (6)].item), Item_func_trim::TRIM_TRAILING);
           }
@@ -30534,7 +30534,7 @@ yyreduce:
 
   case 1372:
 /* Line 1792 of yacc.c  */
-#line 9656 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9656 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_trim((yyloc), (yyvsp[(5) - (6)].item), Item_func_trim::TRIM_BOTH);
           }
@@ -30542,7 +30542,7 @@ yyreduce:
 
   case 1373:
 /* Line 1792 of yacc.c  */
-#line 9660 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9660 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_trim((yyloc), (yyvsp[(5) - (6)].item), (yyvsp[(3) - (6)].item),
                                        Item_func_trim::TRIM_BOTH_DEFAULT);
@@ -30551,7 +30551,7 @@ yyreduce:
 
   case 1374:
 /* Line 1792 of yacc.c  */
-#line 9665 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9665 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_user((yyloc));
           }
@@ -30559,7 +30559,7 @@ yyreduce:
 
   case 1375:
 /* Line 1792 of yacc.c  */
-#line 9669 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9669 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_year((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30567,7 +30567,7 @@ yyreduce:
 
   case 1376:
 /* Line 1792 of yacc.c  */
-#line 9688 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9688 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_date_add_interval((yyloc), (yyvsp[(3) - (6)].item), (yyvsp[(5) - (6)].item), INTERVAL_DAY, 0);
           }
@@ -30575,7 +30575,7 @@ yyreduce:
 
   case 1377:
 /* Line 1792 of yacc.c  */
-#line 9692 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9692 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_date_add_interval((yyloc), (yyvsp[(3) - (8)].item), (yyvsp[(6) - (8)].item), (yyvsp[(7) - (8)].interval), 0);
           }
@@ -30583,7 +30583,7 @@ yyreduce:
 
   case 1378:
 /* Line 1792 of yacc.c  */
-#line 9696 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9696 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_curdate_local((yyloc));
           }
@@ -30591,7 +30591,7 @@ yyreduce:
 
   case 1379:
 /* Line 1792 of yacc.c  */
-#line 9700 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9700 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_curtime_local((yyloc), static_cast<uint8>((yyvsp[(2) - (2)].ulong_num)));
           }
@@ -30599,7 +30599,7 @@ yyreduce:
 
   case 1380:
 /* Line 1792 of yacc.c  */
-#line 9705 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9705 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_date_add_interval((yyloc), (yyvsp[(3) - (8)].item), (yyvsp[(6) - (8)].item), (yyvsp[(7) - (8)].interval), 0);
           }
@@ -30607,7 +30607,7 @@ yyreduce:
 
   case 1381:
 /* Line 1792 of yacc.c  */
-#line 9710 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9710 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_date_add_interval((yyloc), (yyvsp[(3) - (8)].item), (yyvsp[(6) - (8)].item), (yyvsp[(7) - (8)].interval), 1);
           }
@@ -30615,7 +30615,7 @@ yyreduce:
 
   case 1382:
 /* Line 1792 of yacc.c  */
-#line 9714 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9714 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_extract((yyloc),  (yyvsp[(3) - (6)].interval), (yyvsp[(5) - (6)].item));
           }
@@ -30623,7 +30623,7 @@ yyreduce:
 
   case 1383:
 /* Line 1792 of yacc.c  */
-#line 9718 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9718 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_get_format((yyloc), (yyvsp[(3) - (6)].date_time_type), (yyvsp[(5) - (6)].item));
           }
@@ -30631,7 +30631,7 @@ yyreduce:
 
   case 1384:
 /* Line 1792 of yacc.c  */
-#line 9722 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9722 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_function_call_nonkeyword_now((yyloc),
               static_cast<uint8>((yyvsp[(1) - (1)].ulong_num)));
@@ -30640,7 +30640,7 @@ yyreduce:
 
   case 1385:
 /* Line 1792 of yacc.c  */
-#line 9727 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9727 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_locate((yyloc), (yyvsp[(5) - (6)].item),(yyvsp[(3) - (6)].item));
           }
@@ -30648,7 +30648,7 @@ yyreduce:
 
   case 1386:
 /* Line 1792 of yacc.c  */
-#line 9731 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9731 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_date_add_interval((yyloc), (yyvsp[(3) - (6)].item), (yyvsp[(5) - (6)].item), INTERVAL_DAY, 1);
           }
@@ -30656,7 +30656,7 @@ yyreduce:
 
   case 1387:
 /* Line 1792 of yacc.c  */
-#line 9735 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9735 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_date_add_interval((yyloc), (yyvsp[(3) - (8)].item), (yyvsp[(6) - (8)].item), (yyvsp[(7) - (8)].interval), 1);
           }
@@ -30664,7 +30664,7 @@ yyreduce:
 
   case 1388:
 /* Line 1792 of yacc.c  */
-#line 9739 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9739 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_substr((yyloc), (yyvsp[(3) - (8)].item),(yyvsp[(5) - (8)].item),(yyvsp[(7) - (8)].item));
           }
@@ -30672,7 +30672,7 @@ yyreduce:
 
   case 1389:
 /* Line 1792 of yacc.c  */
-#line 9743 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9743 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_substr((yyloc), (yyvsp[(3) - (6)].item),(yyvsp[(5) - (6)].item));
           }
@@ -30680,7 +30680,7 @@ yyreduce:
 
   case 1390:
 /* Line 1792 of yacc.c  */
-#line 9747 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9747 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_substr((yyloc), (yyvsp[(3) - (8)].item),(yyvsp[(5) - (8)].item),(yyvsp[(7) - (8)].item));
           }
@@ -30688,7 +30688,7 @@ yyreduce:
 
   case 1391:
 /* Line 1792 of yacc.c  */
-#line 9751 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9751 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_substr((yyloc), (yyvsp[(3) - (6)].item),(yyvsp[(5) - (6)].item));
           }
@@ -30696,7 +30696,7 @@ yyreduce:
 
   case 1392:
 /* Line 1792 of yacc.c  */
-#line 9755 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9755 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_function_call_nonkeyword_sysdate((yyloc),
               static_cast<uint8>((yyvsp[(2) - (2)].ulong_num)));
@@ -30705,7 +30705,7 @@ yyreduce:
 
   case 1393:
 /* Line 1792 of yacc.c  */
-#line 9760 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9760 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_date_add_interval((yyloc), (yyvsp[(7) - (8)].item), (yyvsp[(5) - (8)].item), (yyvsp[(3) - (8)].interval_time_st), 0);
           }
@@ -30713,7 +30713,7 @@ yyreduce:
 
   case 1394:
 /* Line 1792 of yacc.c  */
-#line 9764 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9764 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_timestamp_diff((yyloc), (yyvsp[(5) - (8)].item),(yyvsp[(7) - (8)].item),(yyvsp[(3) - (8)].interval_time_st));
           }
@@ -30721,7 +30721,7 @@ yyreduce:
 
   case 1395:
 /* Line 1792 of yacc.c  */
-#line 9768 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9768 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_curdate_utc((yyloc));
           }
@@ -30729,7 +30729,7 @@ yyreduce:
 
   case 1396:
 /* Line 1792 of yacc.c  */
-#line 9772 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9772 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_curtime_utc((yyloc), static_cast<uint8>((yyvsp[(2) - (2)].ulong_num)));
           }
@@ -30737,7 +30737,7 @@ yyreduce:
 
   case 1397:
 /* Line 1792 of yacc.c  */
-#line 9776 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9776 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_now_utc((yyloc), static_cast<uint8>((yyvsp[(2) - (2)].ulong_num)));
           }
@@ -30745,7 +30745,7 @@ yyreduce:
 
   case 1398:
 /* Line 1792 of yacc.c  */
-#line 9788 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9788 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_ascii((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30753,7 +30753,7 @@ yyreduce:
 
   case 1399:
 /* Line 1792 of yacc.c  */
-#line 9792 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9792 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_charset((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30761,7 +30761,7 @@ yyreduce:
 
   case 1400:
 /* Line 1792 of yacc.c  */
-#line 9796 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9796 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_coalesce((yyloc), (yyvsp[(3) - (4)].item_list2));
           }
@@ -30769,7 +30769,7 @@ yyreduce:
 
   case 1401:
 /* Line 1792 of yacc.c  */
-#line 9800 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9800 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_collation((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30777,7 +30777,7 @@ yyreduce:
 
   case 1402:
 /* Line 1792 of yacc.c  */
-#line 9804 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9804 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_database((yyloc));
           }
@@ -30785,7 +30785,7 @@ yyreduce:
 
   case 1403:
 /* Line 1792 of yacc.c  */
-#line 9808 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9808 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_if((yyloc), (yyvsp[(3) - (8)].item),(yyvsp[(5) - (8)].item),(yyvsp[(7) - (8)].item));
           }
@@ -30793,7 +30793,7 @@ yyreduce:
 
   case 1404:
 /* Line 1792 of yacc.c  */
-#line 9812 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9812 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_format((yyloc), (yyvsp[(3) - (6)].item), (yyvsp[(5) - (6)].item));
           }
@@ -30801,7 +30801,7 @@ yyreduce:
 
   case 1405:
 /* Line 1792 of yacc.c  */
-#line 9816 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9816 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_format((yyloc), (yyvsp[(3) - (8)].item), (yyvsp[(5) - (8)].item), (yyvsp[(7) - (8)].item));
           }
@@ -30809,7 +30809,7 @@ yyreduce:
 
   case 1406:
 /* Line 1792 of yacc.c  */
-#line 9820 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9820 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_microsecond((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30817,7 +30817,7 @@ yyreduce:
 
   case 1407:
 /* Line 1792 of yacc.c  */
-#line 9824 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9824 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_mod((yyloc), (yyvsp[(3) - (6)].item), (yyvsp[(5) - (6)].item));
           }
@@ -30825,7 +30825,7 @@ yyreduce:
 
   case 1408:
 /* Line 1792 of yacc.c  */
-#line 9828 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9828 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_password((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30833,7 +30833,7 @@ yyreduce:
 
   case 1409:
 /* Line 1792 of yacc.c  */
-#line 9832 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9832 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_quarter((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30841,7 +30841,7 @@ yyreduce:
 
   case 1410:
 /* Line 1792 of yacc.c  */
-#line 9836 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9836 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_repeat((yyloc), (yyvsp[(3) - (6)].item),(yyvsp[(5) - (6)].item));
           }
@@ -30849,7 +30849,7 @@ yyreduce:
 
   case 1411:
 /* Line 1792 of yacc.c  */
-#line 9840 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9840 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_replace((yyloc), (yyvsp[(3) - (8)].item),(yyvsp[(5) - (8)].item),(yyvsp[(7) - (8)].item));
           }
@@ -30857,7 +30857,7 @@ yyreduce:
 
   case 1412:
 /* Line 1792 of yacc.c  */
-#line 9844 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9844 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_reverse((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -30865,7 +30865,7 @@ yyreduce:
 
   case 1413:
 /* Line 1792 of yacc.c  */
-#line 9848 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9848 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_row_count((yyloc));
           }
@@ -30873,7 +30873,7 @@ yyreduce:
 
   case 1414:
 /* Line 1792 of yacc.c  */
-#line 9852 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9852 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_round((yyloc), (yyvsp[(3) - (6)].item),(yyvsp[(5) - (6)].item),1);
           }
@@ -30881,7 +30881,7 @@ yyreduce:
 
   case 1415:
 /* Line 1792 of yacc.c  */
-#line 9856 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9856 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_week((yyloc), (yyvsp[(3) - (4)].item), NULL);
           }
@@ -30889,7 +30889,7 @@ yyreduce:
 
   case 1416:
 /* Line 1792 of yacc.c  */
-#line 9860 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9860 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_week((yyloc), (yyvsp[(3) - (6)].item), (yyvsp[(5) - (6)].item));
           }
@@ -30897,7 +30897,7 @@ yyreduce:
 
   case 1417:
 /* Line 1792 of yacc.c  */
-#line 9864 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9864 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_weight_string((yyloc), (yyvsp[(3) - (5)].item), 0, 0, (yyvsp[(4) - (5)].ulong_num));
           }
@@ -30905,7 +30905,7 @@ yyreduce:
 
   case 1418:
 /* Line 1792 of yacc.c  */
-#line 9868 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9868 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_weight_string((yyloc), (yyvsp[(3) - (8)].item), 0, (yyvsp[(6) - (8)].ulong_num),
                         (yyvsp[(7) - (8)].ulong_num) | MY_STRXFRM_PAD_WITH_SPACE);
@@ -30914,7 +30914,7 @@ yyreduce:
 
   case 1419:
 /* Line 1792 of yacc.c  */
-#line 9873 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9873 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_weight_string((yyloc),
                         (yyvsp[(3) - (7)].item), 0, (yyvsp[(6) - (7)].ulong_num), MY_STRXFRM_PAD_WITH_SPACE, true);
@@ -30923,7 +30923,7 @@ yyreduce:
 
   case 1420:
 /* Line 1792 of yacc.c  */
-#line 9878 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9878 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_weight_string((yyloc), (yyvsp[(3) - (10)].item), (yyvsp[(5) - (10)].ulong_num), (yyvsp[(7) - (10)].ulong_num), (yyvsp[(9) - (10)].ulong_num));
           }
@@ -30931,7 +30931,7 @@ yyreduce:
 
   case 1422:
 /* Line 1792 of yacc.c  */
-#line 9886 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9886 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             push_deprecated_warn(YYTHD, "CONTAINS", "MBRCONTAINS");
             (yyval.item)= NEW_PTN Item_func_spatial_mbr_rel((yyloc), (yyvsp[(3) - (6)].item), (yyvsp[(5) - (6)].item),
@@ -30941,7 +30941,7 @@ yyreduce:
 
   case 1423:
 /* Line 1792 of yacc.c  */
-#line 9892 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9892 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_spatial_collection((yyloc), (yyvsp[(3) - (4)].item_list2),
                         Geometry::wkb_geometrycollection,
@@ -30951,7 +30951,7 @@ yyreduce:
 
   case 1424:
 /* Line 1792 of yacc.c  */
-#line 9898 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9898 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_spatial_collection((yyloc), (yyvsp[(3) - (4)].item_list2),
                         Geometry::wkb_linestring,
@@ -30961,7 +30961,7 @@ yyreduce:
 
   case 1425:
 /* Line 1792 of yacc.c  */
-#line 9904 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9904 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_spatial_collection((yyloc), (yyvsp[(3) - (4)].item_list2),
                         Geometry::wkb_multilinestring,
@@ -30971,7 +30971,7 @@ yyreduce:
 
   case 1426:
 /* Line 1792 of yacc.c  */
-#line 9910 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9910 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_spatial_collection((yyloc), (yyvsp[(3) - (4)].item_list2),
                         Geometry::wkb_multipoint,
@@ -30981,7 +30981,7 @@ yyreduce:
 
   case 1427:
 /* Line 1792 of yacc.c  */
-#line 9916 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9916 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_spatial_collection((yyloc), (yyvsp[(3) - (4)].item_list2),
                         Geometry::wkb_multipolygon,
@@ -30991,7 +30991,7 @@ yyreduce:
 
   case 1428:
 /* Line 1792 of yacc.c  */
-#line 9922 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9922 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_point((yyloc), (yyvsp[(3) - (6)].item),(yyvsp[(5) - (6)].item));
           }
@@ -30999,7 +30999,7 @@ yyreduce:
 
   case 1429:
 /* Line 1792 of yacc.c  */
-#line 9926 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9926 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_spatial_collection((yyloc), (yyvsp[(3) - (4)].item_list2),
                         Geometry::wkb_polygon,
@@ -31009,7 +31009,7 @@ yyreduce:
 
   case 1430:
 /* Line 1792 of yacc.c  */
-#line 9944 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9944 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_function_call_generic_ident_sys((yylsp[(1) - (4)]), (yyvsp[(1) - (4)].lex_str), (yyvsp[(3) - (4)].item_list2));
           }
@@ -31017,7 +31017,7 @@ yyreduce:
 
   case 1431:
 /* Line 1792 of yacc.c  */
-#line 9948 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9948 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_function_call_generic_2d((yyloc), (yyvsp[(1) - (6)].lex_str), (yyvsp[(3) - (6)].lex_str), (yyvsp[(5) - (6)].item_list2));
           }
@@ -31025,13 +31025,13 @@ yyreduce:
 
   case 1432:
 /* Line 1792 of yacc.c  */
-#line 9955 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9955 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= (yyvsp[(1) - (2)].num) | (yyvsp[(2) - (2)].num); }
     break;
 
   case 1433:
 /* Line 1792 of yacc.c  */
-#line 9957 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9957 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= FT_BOOL;
             DBUG_EXECUTE_IF("simulate_bug18831513",
@@ -31045,43 +31045,43 @@ yyreduce:
 
   case 1434:
 /* Line 1792 of yacc.c  */
-#line 9969 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9969 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= FT_NL; }
     break;
 
   case 1435:
 /* Line 1792 of yacc.c  */
-#line 9970 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9970 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= FT_NL; }
     break;
 
   case 1436:
 /* Line 1792 of yacc.c  */
-#line 9974 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9974 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 0;         }
     break;
 
   case 1437:
 /* Line 1792 of yacc.c  */
-#line 9975 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9975 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= FT_EXPAND; }
     break;
 
   case 1438:
 /* Line 1792 of yacc.c  */
-#line 9979 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9979 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item_list2)= NULL; }
     break;
 
   case 1439:
 /* Line 1792 of yacc.c  */
-#line 9980 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9980 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item_list2)= (yyvsp[(1) - (1)].item_list2); }
     break;
 
   case 1440:
 /* Line 1792 of yacc.c  */
-#line 9985 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9985 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list2)= NEW_PTN PT_item_list;
             if ((yyval.item_list2) == NULL || (yyval.item_list2)->push_back((yyvsp[(1) - (1)].item)))
@@ -31091,7 +31091,7 @@ yyreduce:
 
   case 1441:
 /* Line 1792 of yacc.c  */
-#line 9991 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 9991 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(1) - (3)].item_list2) == NULL || (yyvsp[(1) - (3)].item_list2)->push_back((yyvsp[(3) - (3)].item)))
               MYSQL_YYABORT;
@@ -31101,7 +31101,7 @@ yyreduce:
 
   case 1442:
 /* Line 1792 of yacc.c  */
-#line 10000 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10000 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_udf_expr((yyloc), (yyvsp[(1) - (2)].item), (yyvsp[(2) - (2)].lex_str), (yylsp[(1) - (2)]).cpp);
           }
@@ -31109,7 +31109,7 @@ yyreduce:
 
   case 1443:
 /* Line 1792 of yacc.c  */
-#line 10007 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10007 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_avg((yyloc), (yyvsp[(3) - (4)].item), FALSE);
           }
@@ -31117,7 +31117,7 @@ yyreduce:
 
   case 1444:
 /* Line 1792 of yacc.c  */
-#line 10011 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10011 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_avg((yyloc), (yyvsp[(4) - (5)].item), TRUE);
           }
@@ -31125,7 +31125,7 @@ yyreduce:
 
   case 1445:
 /* Line 1792 of yacc.c  */
-#line 10015 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10015 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_and((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -31133,7 +31133,7 @@ yyreduce:
 
   case 1446:
 /* Line 1792 of yacc.c  */
-#line 10019 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10019 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_or((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -31141,7 +31141,7 @@ yyreduce:
 
   case 1447:
 /* Line 1792 of yacc.c  */
-#line 10023 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10023 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_xor((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -31149,7 +31149,7 @@ yyreduce:
 
   case 1448:
 /* Line 1792 of yacc.c  */
-#line 10027 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10027 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_count_sym((yyloc));
           }
@@ -31157,7 +31157,7 @@ yyreduce:
 
   case 1449:
 /* Line 1792 of yacc.c  */
-#line 10031 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10031 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_count((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -31165,7 +31165,7 @@ yyreduce:
 
   case 1450:
 /* Line 1792 of yacc.c  */
-#line 10035 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10035 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= new Item_sum_count((yyloc), (yyvsp[(4) - (5)].item_list2));
           }
@@ -31173,7 +31173,7 @@ yyreduce:
 
   case 1451:
 /* Line 1792 of yacc.c  */
-#line 10039 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10039 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_min((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -31181,7 +31181,7 @@ yyreduce:
 
   case 1452:
 /* Line 1792 of yacc.c  */
-#line 10048 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10048 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_min((yyloc), (yyvsp[(4) - (5)].item));
           }
@@ -31189,7 +31189,7 @@ yyreduce:
 
   case 1453:
 /* Line 1792 of yacc.c  */
-#line 10052 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10052 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_max((yyloc), (yyvsp[(3) - (4)].item));
           }
@@ -31197,7 +31197,7 @@ yyreduce:
 
   case 1454:
 /* Line 1792 of yacc.c  */
-#line 10056 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10056 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_max((yyloc), (yyvsp[(4) - (5)].item));
           }
@@ -31205,7 +31205,7 @@ yyreduce:
 
   case 1455:
 /* Line 1792 of yacc.c  */
-#line 10060 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10060 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_std((yyloc), (yyvsp[(3) - (4)].item), 0);
           }
@@ -31213,7 +31213,7 @@ yyreduce:
 
   case 1456:
 /* Line 1792 of yacc.c  */
-#line 10064 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10064 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_variance((yyloc), (yyvsp[(3) - (4)].item), 0);
           }
@@ -31221,7 +31221,7 @@ yyreduce:
 
   case 1457:
 /* Line 1792 of yacc.c  */
-#line 10068 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10068 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_std((yyloc), (yyvsp[(3) - (4)].item), 1);
           }
@@ -31229,7 +31229,7 @@ yyreduce:
 
   case 1458:
 /* Line 1792 of yacc.c  */
-#line 10072 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10072 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_variance((yyloc), (yyvsp[(3) - (4)].item), 1);
           }
@@ -31237,7 +31237,7 @@ yyreduce:
 
   case 1459:
 /* Line 1792 of yacc.c  */
-#line 10076 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10076 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_sum((yyloc), (yyvsp[(3) - (4)].item), FALSE);
           }
@@ -31245,7 +31245,7 @@ yyreduce:
 
   case 1460:
 /* Line 1792 of yacc.c  */
-#line 10080 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10080 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_sum_sum((yyloc), (yyvsp[(4) - (5)].item), TRUE);
           }
@@ -31253,7 +31253,7 @@ yyreduce:
 
   case 1461:
 /* Line 1792 of yacc.c  */
-#line 10087 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10087 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_func_group_concat((yyloc), (yyvsp[(3) - (7)].num), (yyvsp[(4) - (7)].item_list2), (yyvsp[(5) - (7)].order_list), (yyvsp[(6) - (7)].string));
           }
@@ -31261,13 +31261,13 @@ yyreduce:
 
   case 1462:
 /* Line 1792 of yacc.c  */
-#line 10093 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10093 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= (yyvsp[(2) - (2)].item); }
     break;
 
   case 1463:
 /* Line 1792 of yacc.c  */
-#line 10098 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10098 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_variable_aux_set_var((yyloc), (yyvsp[(1) - (3)].lex_str), (yyvsp[(3) - (3)].item));
           }
@@ -31275,7 +31275,7 @@ yyreduce:
 
   case 1464:
 /* Line 1792 of yacc.c  */
-#line 10102 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10102 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_variable_aux_ident_or_text((yyloc), (yyvsp[(1) - (1)].lex_str));
           }
@@ -31283,7 +31283,7 @@ yyreduce:
 
   case 1465:
 /* Line 1792 of yacc.c  */
-#line 10106 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10106 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_variable_aux_3d((yyloc), (yyvsp[(2) - (4)].var_type), (yyvsp[(3) - (4)].lex_str), (yylsp[(3) - (4)]), (yyvsp[(4) - (4)].lex_str));
           }
@@ -31291,19 +31291,19 @@ yyreduce:
 
   case 1466:
 /* Line 1792 of yacc.c  */
-#line 10112 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10112 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num) = 0; }
     break;
 
   case 1467:
 /* Line 1792 of yacc.c  */
-#line 10113 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10113 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num) = 1; }
     break;
 
   case 1468:
 /* Line 1792 of yacc.c  */
-#line 10118 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10118 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.string)= new (YYTHD->mem_root) String(",", 1, &my_charset_latin1);
             if ((yyval.string) == NULL)
@@ -31313,25 +31313,25 @@ yyreduce:
 
   case 1469:
 /* Line 1792 of yacc.c  */
-#line 10123 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10123 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.string) = (yyvsp[(2) - (2)].string); }
     break;
 
   case 1470:
 /* Line 1792 of yacc.c  */
-#line 10127 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10127 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.order_list)= NULL; }
     break;
 
   case 1471:
 /* Line 1792 of yacc.c  */
-#line 10128 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10128 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.order_list)= (yyvsp[(3) - (3)].order_list); }
     break;
 
   case 1472:
 /* Line 1792 of yacc.c  */
-#line 10133 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10133 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyvsp[(1) - (3)].order_list)->push_back((yyvsp[(3) - (3)].order_expr));
             (yyval.order_list)= (yyvsp[(1) - (3)].order_list);
@@ -31340,7 +31340,7 @@ yyreduce:
 
   case 1473:
 /* Line 1792 of yacc.c  */
-#line 10138 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10138 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.order_list)= NEW_PTN PT_gorder_list();
             if ((yyvsp[(1) - (1)].order_expr) == NULL)
@@ -31351,7 +31351,7 @@ yyreduce:
 
   case 1474:
 /* Line 1792 of yacc.c  */
-#line 10148 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10148 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_in_sum_expr((yylsp[(1) - (2)]), (yyvsp[(2) - (2)].item));
           }
@@ -31359,7 +31359,7 @@ yyreduce:
 
   case 1475:
 /* Line 1792 of yacc.c  */
-#line 10155 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10155 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.cast_type).target= ITEM_CAST_CHAR;
             (yyval.cast_type).charset= &my_charset_bin;
@@ -31371,7 +31371,7 @@ yyreduce:
 
   case 1476:
 /* Line 1792 of yacc.c  */
-#line 10163 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10163 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.cast_type).target= ITEM_CAST_CHAR;
             (yyval.cast_type).charset= (yyvsp[(3) - (3)].charset_with_flags).charset;
@@ -31383,7 +31383,7 @@ yyreduce:
 
   case 1477:
 /* Line 1792 of yacc.c  */
-#line 10171 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10171 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.cast_type).target= ITEM_CAST_CHAR;
             (yyval.cast_type).charset= national_charset_info;
@@ -31395,7 +31395,7 @@ yyreduce:
 
   case 1478:
 /* Line 1792 of yacc.c  */
-#line 10179 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10179 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.cast_type).target= ITEM_CAST_SIGNED_INT;
             (yyval.cast_type).charset= NULL;
@@ -31407,7 +31407,7 @@ yyreduce:
 
   case 1479:
 /* Line 1792 of yacc.c  */
-#line 10187 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10187 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.cast_type).target= ITEM_CAST_SIGNED_INT;
             (yyval.cast_type).charset= NULL;
@@ -31419,7 +31419,7 @@ yyreduce:
 
   case 1480:
 /* Line 1792 of yacc.c  */
-#line 10195 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10195 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.cast_type).target= ITEM_CAST_UNSIGNED_INT;
             (yyval.cast_type).charset= NULL;
@@ -31431,7 +31431,7 @@ yyreduce:
 
   case 1481:
 /* Line 1792 of yacc.c  */
-#line 10203 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10203 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.cast_type).target= ITEM_CAST_UNSIGNED_INT;
             (yyval.cast_type).charset= NULL;
@@ -31443,7 +31443,7 @@ yyreduce:
 
   case 1482:
 /* Line 1792 of yacc.c  */
-#line 10211 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10211 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.cast_type).target= ITEM_CAST_DATE;
             (yyval.cast_type).charset= NULL;
@@ -31455,7 +31455,7 @@ yyreduce:
 
   case 1483:
 /* Line 1792 of yacc.c  */
-#line 10219 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10219 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.cast_type).target= ITEM_CAST_TIME;
             (yyval.cast_type).charset= NULL;
@@ -31467,7 +31467,7 @@ yyreduce:
 
   case 1484:
 /* Line 1792 of yacc.c  */
-#line 10227 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10227 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.cast_type).target= ITEM_CAST_DATETIME;
             (yyval.cast_type).charset= NULL;
@@ -31479,7 +31479,7 @@ yyreduce:
 
   case 1485:
 /* Line 1792 of yacc.c  */
-#line 10235 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10235 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.cast_type).target=ITEM_CAST_DECIMAL;
             (yyval.cast_type).charset= NULL;
@@ -31491,7 +31491,7 @@ yyreduce:
 
   case 1486:
 /* Line 1792 of yacc.c  */
-#line 10243 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10243 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.cast_type).target=ITEM_CAST_JSON;
             (yyval.cast_type).charset= NULL;
@@ -31503,13 +31503,13 @@ yyreduce:
 
   case 1487:
 /* Line 1792 of yacc.c  */
-#line 10253 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10253 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item_list2)= NULL; }
     break;
 
   case 1489:
 /* Line 1792 of yacc.c  */
-#line 10259 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10259 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list2)= NEW_PTN PT_item_list;
             if ((yyval.item_list2) == NULL || (yyval.item_list2)->push_back((yyvsp[(1) - (1)].item)))
@@ -31519,7 +31519,7 @@ yyreduce:
 
   case 1490:
 /* Line 1792 of yacc.c  */
-#line 10265 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10265 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(1) - (3)].item_list2) == NULL || (yyvsp[(1) - (3)].item_list2)->push_back((yyvsp[(3) - (3)].item)))
               MYSQL_YYABORT;
@@ -31529,19 +31529,19 @@ yyreduce:
 
   case 1491:
 /* Line 1792 of yacc.c  */
-#line 10273 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10273 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item_list2)= (yyvsp[(1) - (1)].item_list2); }
     break;
 
   case 1492:
 /* Line 1792 of yacc.c  */
-#line 10274 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10274 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item_list2)= (yyvsp[(2) - (3)].item_list2); }
     break;
 
   case 1493:
 /* Line 1792 of yacc.c  */
-#line 10279 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10279 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list2)= NEW_PTN PT_item_list;
             if ((yyval.item_list2) == NULL || (yyval.item_list2)->push_back((yyvsp[(1) - (1)].item)))
@@ -31551,7 +31551,7 @@ yyreduce:
 
   case 1494:
 /* Line 1792 of yacc.c  */
-#line 10285 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10285 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(1) - (3)].item_list2) == NULL || (yyvsp[(1) - (3)].item_list2)->push_back((yyvsp[(3) - (3)].item)))
               MYSQL_YYABORT;
@@ -31561,31 +31561,31 @@ yyreduce:
 
   case 1495:
 /* Line 1792 of yacc.c  */
-#line 10293 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10293 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= NULL; }
     break;
 
   case 1496:
 /* Line 1792 of yacc.c  */
-#line 10294 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10294 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= (yyvsp[(1) - (1)].item); }
     break;
 
   case 1497:
 /* Line 1792 of yacc.c  */
-#line 10298 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10298 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= NULL; }
     break;
 
   case 1498:
 /* Line 1792 of yacc.c  */
-#line 10299 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10299 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= (yyvsp[(2) - (2)].item); }
     break;
 
   case 1499:
 /* Line 1792 of yacc.c  */
-#line 10304 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10304 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list)= new List<Item>;
             if ((yyval.item_list) == NULL)
@@ -31597,7 +31597,7 @@ yyreduce:
 
   case 1500:
 /* Line 1792 of yacc.c  */
-#line 10312 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10312 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyvsp[(1) - (5)].item_list)->push_back((yyvsp[(3) - (5)].item));
             (yyvsp[(1) - (5)].item_list)->push_back((yyvsp[(5) - (5)].item));
@@ -31607,7 +31607,7 @@ yyreduce:
 
   case 1502:
 /* Line 1792 of yacc.c  */
-#line 10324 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10324 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table_list2)= NEW_PTN PT_table_ref_join_table((yyvsp[(1) - (1)].node));
           }
@@ -31615,7 +31615,7 @@ yyreduce:
 
   case 1503:
 /* Line 1792 of yacc.c  */
-#line 10331 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10331 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.join_table_list)= NEW_PTN PT_join_table_list((yyloc), (yyvsp[(1) - (1)].table_list2));
           }
@@ -31623,13 +31623,13 @@ yyreduce:
 
   case 1505:
 /* Line 1792 of yacc.c  */
-#line 10345 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10345 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.table_list2)= (yyvsp[(3) - (4)].table_list2); }
     break;
 
   case 1507:
 /* Line 1792 of yacc.c  */
-#line 10353 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10353 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table_list2)= NEW_PTN PT_derived_table_list((yyloc), (yyvsp[(1) - (3)].table_list2), (yyvsp[(3) - (3)].table_list2));
           }
@@ -31637,7 +31637,7 @@ yyreduce:
 
   case 1508:
 /* Line 1792 of yacc.c  */
-#line 10373 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10373 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.node)= NEW_PTN PT_join_table<JTT_NORMAL>((yyvsp[(1) - (3)].table_list2), (yylsp[(2) - (3)]), (yyvsp[(3) - (3)].table_list2));
           }
@@ -31645,7 +31645,7 @@ yyreduce:
 
   case 1509:
 /* Line 1792 of yacc.c  */
-#line 10377 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10377 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.node)= NEW_PTN PT_join_table<JTT_STRAIGHT>((yyvsp[(1) - (3)].table_list2), (yylsp[(2) - (3)]), (yyvsp[(3) - (3)].table_list2));
           }
@@ -31653,7 +31653,7 @@ yyreduce:
 
   case 1510:
 /* Line 1792 of yacc.c  */
-#line 10383 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10383 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.node)= NEW_PTN PT_join_table_on<JTT_NORMAL>((yyvsp[(1) - (5)].table_list2), (yylsp[(2) - (5)]), (yyvsp[(3) - (5)].table_list2), (yyvsp[(5) - (5)].item));
           }
@@ -31661,7 +31661,7 @@ yyreduce:
 
   case 1511:
 /* Line 1792 of yacc.c  */
-#line 10389 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10389 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.node)= NEW_PTN PT_join_table_on<JTT_STRAIGHT>((yyvsp[(1) - (5)].table_list2), (yylsp[(2) - (5)]), (yyvsp[(3) - (5)].table_list2), (yyvsp[(5) - (5)].item));
           }
@@ -31669,7 +31669,7 @@ yyreduce:
 
   case 1512:
 /* Line 1792 of yacc.c  */
-#line 10395 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10395 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.node)= NEW_PTN PT_join_table_using<JTT_NORMAL>((yyvsp[(1) - (7)].table_list2), (yylsp[(2) - (7)]), (yyvsp[(3) - (7)].table_list2), (yyvsp[(6) - (7)].string_list));
           }
@@ -31677,7 +31677,7 @@ yyreduce:
 
   case 1513:
 /* Line 1792 of yacc.c  */
-#line 10399 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10399 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.node)= NEW_PTN PT_join_table<JTT_NATURAL>((yyvsp[(1) - (4)].table_list2), (yylsp[(2) - (4)]), (yyvsp[(4) - (4)].table_list2));
           }
@@ -31685,7 +31685,7 @@ yyreduce:
 
   case 1514:
 /* Line 1792 of yacc.c  */
-#line 10407 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10407 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.node)= NEW_PTN PT_join_table_on<JTT_LEFT>((yyvsp[(1) - (7)].table_list2), (yylsp[(2) - (7)]), (yyvsp[(5) - (7)].table_list2), (yyvsp[(7) - (7)].item));
           }
@@ -31693,7 +31693,7 @@ yyreduce:
 
   case 1515:
 /* Line 1792 of yacc.c  */
-#line 10412 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10412 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.node)= NEW_PTN PT_join_table_using<JTT_LEFT>((yyvsp[(1) - (9)].table_list2), (yylsp[(2) - (9)]), (yyvsp[(5) - (9)].table_list2), (yyvsp[(8) - (9)].string_list));
           }
@@ -31701,7 +31701,7 @@ yyreduce:
 
   case 1516:
 /* Line 1792 of yacc.c  */
-#line 10416 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10416 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.node)= NEW_PTN PT_join_table<JTT_NATURAL_LEFT>((yyvsp[(1) - (6)].table_list2), (yylsp[(2) - (6)]), (yyvsp[(6) - (6)].table_list2));
           }
@@ -31709,7 +31709,7 @@ yyreduce:
 
   case 1517:
 /* Line 1792 of yacc.c  */
-#line 10424 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10424 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.node)= NEW_PTN PT_join_table_on<JTT_RIGHT>((yyvsp[(1) - (7)].table_list2), (yylsp[(2) - (7)]), (yyvsp[(5) - (7)].table_list2), (yyvsp[(7) - (7)].item));
           }
@@ -31717,7 +31717,7 @@ yyreduce:
 
   case 1518:
 /* Line 1792 of yacc.c  */
-#line 10429 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10429 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.node)= NEW_PTN PT_join_table_using<JTT_RIGHT>((yyvsp[(1) - (9)].table_list2), (yylsp[(2) - (9)]), (yyvsp[(5) - (9)].table_list2), (yyvsp[(8) - (9)].string_list));
           }
@@ -31725,7 +31725,7 @@ yyreduce:
 
   case 1519:
 /* Line 1792 of yacc.c  */
-#line 10433 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10433 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.node)= NEW_PTN PT_join_table<JTT_NATURAL_RIGHT>((yyvsp[(1) - (6)].table_list2), (yylsp[(2) - (6)]), (yyvsp[(6) - (6)].table_list2));
           }
@@ -31733,31 +31733,31 @@ yyreduce:
 
   case 1520:
 /* Line 1792 of yacc.c  */
-#line 10439 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10439 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1521:
 /* Line 1792 of yacc.c  */
-#line 10440 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10440 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1522:
 /* Line 1792 of yacc.c  */
-#line 10441 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10441 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1523:
 /* Line 1792 of yacc.c  */
-#line 10449 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10449 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.string_list)= NULL; }
     break;
 
   case 1525:
 /* Line 1792 of yacc.c  */
-#line 10455 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10455 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.string_list)= (yyvsp[(3) - (4)].string_list);
           }
@@ -31765,7 +31765,7 @@ yyreduce:
 
   case 1526:
 /* Line 1792 of yacc.c  */
-#line 10470 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10470 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table_list2)= NEW_PTN PT_table_factor_table_ident((yyvsp[(1) - (4)].table), (yyvsp[(2) - (4)].string_list), (yyvsp[(3) - (4)].lex_str_ptr), (yyvsp[(4) - (4)].key_usage_list));
           }
@@ -31773,7 +31773,7 @@ yyreduce:
 
   case 1527:
 /* Line 1792 of yacc.c  */
-#line 10474 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10474 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table_list2)= NEW_PTN PT_table_factor_select_sym((yyloc), (yyvsp[(1) - (4)].optimizer_hints), (yyvsp[(2) - (4)].select_options), (yyvsp[(3) - (4)].item_list2), (yyvsp[(4) - (4)].table_expression));
           }
@@ -31781,7 +31781,7 @@ yyreduce:
 
   case 1528:
 /* Line 1792 of yacc.c  */
-#line 10496 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10496 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table_list2)= NEW_PTN PT_table_factor_parenthesis((yyvsp[(2) - (4)].table_list2), (yyvsp[(4) - (4)].lex_str_ptr), (yylsp[(4) - (4)]));
           }
@@ -31789,7 +31789,7 @@ yyreduce:
 
   case 1529:
 /* Line 1792 of yacc.c  */
-#line 10523 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10523 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table_list2)= NEW_PTN PT_select_derived_union_select((yyvsp[(1) - (2)].table_list2), (yyvsp[(2) - (2)].node), (yylsp[(2) - (2)]));
           }
@@ -31797,7 +31797,7 @@ yyreduce:
 
   case 1530:
 /* Line 1792 of yacc.c  */
-#line 10527 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10527 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table_list2)= NEW_PTN PT_select_derived_union_union((yyvsp[(1) - (4)].table_list2), (yylsp[(2) - (4)]), (yyvsp[(3) - (4)].num), (yyvsp[(4) - (4)].select_lex2));
           }
@@ -31805,7 +31805,7 @@ yyreduce:
 
   case 1531:
 /* Line 1792 of yacc.c  */
-#line 10534 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10534 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /*
               TODO: remove this semantic action (currently this removal
@@ -31816,7 +31816,7 @@ yyreduce:
 
   case 1532:
 /* Line 1792 of yacc.c  */
-#line 10541 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10541 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_part2_derived)= NEW_PTN PT_select_part2_derived((yyvsp[(2) - (3)].ulonglong_number), (yyvsp[(3) - (3)].item_list2));
           }
@@ -31824,7 +31824,7 @@ yyreduce:
 
   case 1533:
 /* Line 1792 of yacc.c  */
-#line 10549 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10549 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table_list2)= NEW_PTN PT_select_derived((yylsp[(1) - (1)]), (yyvsp[(1) - (1)].table_list2));
           }
@@ -31832,19 +31832,19 @@ yyreduce:
 
   case 1534:
 /* Line 1792 of yacc.c  */
-#line 10555 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10555 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1535:
 /* Line 1792 of yacc.c  */
-#line 10556 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10556 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1536:
 /* Line 1792 of yacc.c  */
-#line 10561 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10561 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= old_mode ?  INDEX_HINT_MASK_JOIN : INDEX_HINT_MASK_ALL;
           }
@@ -31852,37 +31852,37 @@ yyreduce:
 
   case 1537:
 /* Line 1792 of yacc.c  */
-#line 10564 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10564 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= INDEX_HINT_MASK_JOIN;  }
     break;
 
   case 1538:
 /* Line 1792 of yacc.c  */
-#line 10565 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10565 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= INDEX_HINT_MASK_ORDER; }
     break;
 
   case 1539:
 /* Line 1792 of yacc.c  */
-#line 10566 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10566 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= INDEX_HINT_MASK_GROUP; }
     break;
 
   case 1540:
 /* Line 1792 of yacc.c  */
-#line 10570 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10570 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.index_hint)= INDEX_HINT_FORCE; }
     break;
 
   case 1541:
 /* Line 1792 of yacc.c  */
-#line 10571 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10571 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.index_hint)= INDEX_HINT_IGNORE; }
     break;
 
   case 1542:
 /* Line 1792 of yacc.c  */
-#line 10577 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10577 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             init_index_hints((yyvsp[(5) - (6)].key_usage_list), (yyvsp[(1) - (6)].index_hint), (yyvsp[(3) - (6)].num));
             (yyval.key_usage_list)= (yyvsp[(5) - (6)].key_usage_list);
@@ -31891,7 +31891,7 @@ yyreduce:
 
   case 1543:
 /* Line 1792 of yacc.c  */
-#line 10583 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10583 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             init_index_hints((yyvsp[(5) - (6)].key_usage_list), INDEX_HINT_USE, (yyvsp[(3) - (6)].num));
             (yyval.key_usage_list)= (yyvsp[(5) - (6)].key_usage_list);
@@ -31900,7 +31900,7 @@ yyreduce:
 
   case 1545:
 /* Line 1792 of yacc.c  */
-#line 10592 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10592 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyvsp[(2) - (2)].key_usage_list)->concat((yyvsp[(1) - (2)].key_usage_list));
             (yyval.key_usage_list)= (yyvsp[(2) - (2)].key_usage_list);
@@ -31909,13 +31909,13 @@ yyreduce:
 
   case 1546:
 /* Line 1792 of yacc.c  */
-#line 10599 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10599 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.key_usage_list)= NULL; }
     break;
 
   case 1549:
 /* Line 1792 of yacc.c  */
-#line 10609 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10609 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.key_usage_list)= new (YYTHD->mem_root) List<Index_hint>;
             Index_hint *hint= new (YYTHD->mem_root) Index_hint(NULL, 0);
@@ -31926,7 +31926,7 @@ yyreduce:
 
   case 1551:
 /* Line 1792 of yacc.c  */
-#line 10620 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10620 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.key_usage_element)= new (YYTHD->mem_root) Index_hint((yyvsp[(1) - (1)].lex_str).str, (yyvsp[(1) - (1)].lex_str).length);
             if ((yyval.key_usage_element) == NULL)
@@ -31936,7 +31936,7 @@ yyreduce:
 
   case 1552:
 /* Line 1792 of yacc.c  */
-#line 10626 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10626 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.key_usage_element)= new (YYTHD->mem_root) Index_hint(STRING_WITH_LEN("PRIMARY"));
             if ((yyval.key_usage_element) == NULL)
@@ -31946,7 +31946,7 @@ yyreduce:
 
   case 1553:
 /* Line 1792 of yacc.c  */
-#line 10635 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10635 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.key_usage_list)= new (YYTHD->mem_root) List<Index_hint>;
             if ((yyval.key_usage_list) == NULL || (yyval.key_usage_list)->push_front((yyvsp[(1) - (1)].key_usage_element)))
@@ -31956,7 +31956,7 @@ yyreduce:
 
   case 1554:
 /* Line 1792 of yacc.c  */
-#line 10641 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10641 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyval.key_usage_list)->push_front((yyvsp[(3) - (3)].key_usage_element)))
               MYSQL_YYABORT;
@@ -31965,7 +31965,7 @@ yyreduce:
 
   case 1555:
 /* Line 1792 of yacc.c  */
-#line 10649 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10649 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!((yyval.string_list)= new List<String>))
               MYSQL_YYABORT;
@@ -31980,7 +31980,7 @@ yyreduce:
 
   case 1556:
 /* Line 1792 of yacc.c  */
-#line 10660 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10660 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             String *s= new (YYTHD->mem_root) String((const char *) (yyvsp[(3) - (3)].lex_str).str,
                                                     (yyvsp[(3) - (3)].lex_str).length,
@@ -31994,163 +31994,163 @@ yyreduce:
 
   case 1557:
 /* Line 1792 of yacc.c  */
-#line 10672 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10672 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1558:
 /* Line 1792 of yacc.c  */
-#line 10673 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10673 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval)=INTERVAL_DAY_HOUR; }
     break;
 
   case 1559:
 /* Line 1792 of yacc.c  */
-#line 10674 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10674 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval)=INTERVAL_DAY_MICROSECOND; }
     break;
 
   case 1560:
 /* Line 1792 of yacc.c  */
-#line 10675 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10675 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval)=INTERVAL_DAY_MINUTE; }
     break;
 
   case 1561:
 /* Line 1792 of yacc.c  */
-#line 10676 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10676 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval)=INTERVAL_DAY_SECOND; }
     break;
 
   case 1562:
 /* Line 1792 of yacc.c  */
-#line 10677 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10677 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval)=INTERVAL_HOUR_MICROSECOND; }
     break;
 
   case 1563:
 /* Line 1792 of yacc.c  */
-#line 10678 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10678 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval)=INTERVAL_HOUR_MINUTE; }
     break;
 
   case 1564:
 /* Line 1792 of yacc.c  */
-#line 10679 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10679 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval)=INTERVAL_HOUR_SECOND; }
     break;
 
   case 1565:
 /* Line 1792 of yacc.c  */
-#line 10680 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10680 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval)=INTERVAL_MINUTE_MICROSECOND; }
     break;
 
   case 1566:
 /* Line 1792 of yacc.c  */
-#line 10681 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10681 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval)=INTERVAL_MINUTE_SECOND; }
     break;
 
   case 1567:
 /* Line 1792 of yacc.c  */
-#line 10682 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10682 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval)=INTERVAL_SECOND_MICROSECOND; }
     break;
 
   case 1568:
 /* Line 1792 of yacc.c  */
-#line 10683 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10683 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval)=INTERVAL_YEAR_MONTH; }
     break;
 
   case 1569:
 /* Line 1792 of yacc.c  */
-#line 10687 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10687 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval_time_st)=INTERVAL_DAY; }
     break;
 
   case 1570:
 /* Line 1792 of yacc.c  */
-#line 10688 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10688 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval_time_st)=INTERVAL_WEEK; }
     break;
 
   case 1571:
 /* Line 1792 of yacc.c  */
-#line 10689 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10689 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval_time_st)=INTERVAL_HOUR; }
     break;
 
   case 1572:
 /* Line 1792 of yacc.c  */
-#line 10690 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10690 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval_time_st)=INTERVAL_MINUTE; }
     break;
 
   case 1573:
 /* Line 1792 of yacc.c  */
-#line 10691 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10691 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval_time_st)=INTERVAL_MONTH; }
     break;
 
   case 1574:
 /* Line 1792 of yacc.c  */
-#line 10692 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10692 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval_time_st)=INTERVAL_QUARTER; }
     break;
 
   case 1575:
 /* Line 1792 of yacc.c  */
-#line 10693 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10693 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval_time_st)=INTERVAL_SECOND; }
     break;
 
   case 1576:
 /* Line 1792 of yacc.c  */
-#line 10694 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10694 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval_time_st)=INTERVAL_MICROSECOND; }
     break;
 
   case 1577:
 /* Line 1792 of yacc.c  */
-#line 10695 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10695 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.interval_time_st)=INTERVAL_YEAR; }
     break;
 
   case 1578:
 /* Line 1792 of yacc.c  */
-#line 10699 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10699 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {(yyval.date_time_type)= MYSQL_TIMESTAMP_DATE; }
     break;
 
   case 1579:
 /* Line 1792 of yacc.c  */
-#line 10700 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10700 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {(yyval.date_time_type)= MYSQL_TIMESTAMP_TIME; }
     break;
 
   case 1580:
 /* Line 1792 of yacc.c  */
-#line 10701 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10701 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {(yyval.date_time_type)= MYSQL_TIMESTAMP_DATETIME; }
     break;
 
   case 1581:
 /* Line 1792 of yacc.c  */
-#line 10702 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10702 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {(yyval.date_time_type)= MYSQL_TIMESTAMP_DATETIME; }
     break;
 
   case 1585:
 /* Line 1792 of yacc.c  */
-#line 10712 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10712 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str_ptr)=0; }
     break;
 
   case 1586:
 /* Line 1792 of yacc.c  */
-#line 10714 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10714 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.lex_str_ptr)= (LEX_STRING*) sql_memdup(&(yyvsp[(2) - (2)].lex_str),sizeof(LEX_STRING));
             if ((yyval.lex_str_ptr) == NULL)
@@ -32160,13 +32160,13 @@ yyreduce:
 
   case 1589:
 /* Line 1792 of yacc.c  */
-#line 10727 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10727 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= NULL; }
     break;
 
   case 1590:
 /* Line 1792 of yacc.c  */
-#line 10729 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10729 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= new PTI_context<CTX_WHERE>((yyloc), (yyvsp[(2) - (2)].item));
           }
@@ -32174,13 +32174,13 @@ yyreduce:
 
   case 1591:
 /* Line 1792 of yacc.c  */
-#line 10735 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10735 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= NULL; }
     break;
 
   case 1592:
 /* Line 1792 of yacc.c  */
-#line 10737 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10737 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= new PTI_context<CTX_HAVING>((yyloc), (yyvsp[(2) - (2)].item));
           }
@@ -32188,25 +32188,25 @@ yyreduce:
 
   case 1593:
 /* Line 1792 of yacc.c  */
-#line 10743 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10743 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= (yyvsp[(2) - (2)].item); }
     break;
 
   case 1594:
 /* Line 1792 of yacc.c  */
-#line 10744 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10744 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= NULL; }
     break;
 
   case 1595:
 /* Line 1792 of yacc.c  */
-#line 10752 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10752 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.group)= NULL; }
     break;
 
   case 1596:
 /* Line 1792 of yacc.c  */
-#line 10754 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10754 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.group)= NEW_PTN PT_group((yyvsp[(3) - (4)].order_list), (yyvsp[(4) - (4)].olap_type));
           }
@@ -32214,7 +32214,7 @@ yyreduce:
 
   case 1597:
 /* Line 1792 of yacc.c  */
-#line 10761 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10761 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyvsp[(1) - (3)].order_list)->push_back((yyvsp[(3) - (3)].order_expr));
             (yyval.order_list)= (yyvsp[(1) - (3)].order_list);
@@ -32223,7 +32223,7 @@ yyreduce:
 
   case 1598:
 /* Line 1792 of yacc.c  */
-#line 10766 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10766 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.order_list)= NEW_PTN PT_order_list();
             if ((yyvsp[(1) - (1)].order_expr) == NULL)
@@ -32234,25 +32234,25 @@ yyreduce:
 
   case 1599:
 /* Line 1792 of yacc.c  */
-#line 10775 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10775 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.olap_type)= UNSPECIFIED_OLAP_TYPE; }
     break;
 
   case 1600:
 /* Line 1792 of yacc.c  */
-#line 10776 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10776 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.olap_type)= CUBE_TYPE; }
     break;
 
   case 1601:
 /* Line 1792 of yacc.c  */
-#line 10784 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10784 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.olap_type)= ROLLUP_TYPE; }
     break;
 
   case 1605:
 /* Line 1792 of yacc.c  */
-#line 10809 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10809 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(1) - (2)].item), &(yyvsp[(1) - (2)].item));
 
@@ -32269,13 +32269,13 @@ yyreduce:
 
   case 1606:
 /* Line 1792 of yacc.c  */
-#line 10828 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10828 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.order)= NULL; }
     break;
 
   case 1608:
 /* Line 1792 of yacc.c  */
-#line 10834 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10834 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.order)= NEW_PTN PT_order((yyvsp[(3) - (3)].order_list));
           }
@@ -32283,7 +32283,7 @@ yyreduce:
 
   case 1609:
 /* Line 1792 of yacc.c  */
-#line 10841 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10841 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyvsp[(1) - (3)].order_list)->push_back((yyvsp[(3) - (3)].order_expr));
             (yyval.order_list)= (yyvsp[(1) - (3)].order_list);
@@ -32292,7 +32292,7 @@ yyreduce:
 
   case 1610:
 /* Line 1792 of yacc.c  */
-#line 10846 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10846 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.order_list)= NEW_PTN PT_order_list();
             if ((yyvsp[(1) - (1)].order_expr) == NULL)
@@ -32303,31 +32303,31 @@ yyreduce:
 
   case 1611:
 /* Line 1792 of yacc.c  */
-#line 10855 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10855 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num) =  1; }
     break;
 
   case 1612:
 /* Line 1792 of yacc.c  */
-#line 10856 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10856 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num) =1; }
     break;
 
   case 1613:
 /* Line 1792 of yacc.c  */
-#line 10857 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10857 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num) =0; }
     break;
 
   case 1614:
 /* Line 1792 of yacc.c  */
-#line 10861 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10861 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.limit_clause)= NULL; }
     break;
 
   case 1616:
 /* Line 1792 of yacc.c  */
-#line 10867 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10867 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.limit_clause)= NEW_PTN PT_limit_clause((yyvsp[(2) - (2)].limit_options));
           }
@@ -32335,7 +32335,7 @@ yyreduce:
 
   case 1617:
 /* Line 1792 of yacc.c  */
-#line 10874 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10874 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.limit_options).limit= (yyvsp[(1) - (1)].item);
             (yyval.limit_options).opt_offset= NULL;
@@ -32345,7 +32345,7 @@ yyreduce:
 
   case 1618:
 /* Line 1792 of yacc.c  */
-#line 10880 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10880 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.limit_options).limit= (yyvsp[(3) - (3)].item);
             (yyval.limit_options).opt_offset= (yyvsp[(1) - (3)].item);
@@ -32355,7 +32355,7 @@ yyreduce:
 
   case 1619:
 /* Line 1792 of yacc.c  */
-#line 10886 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10886 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.limit_options).limit= (yyvsp[(1) - (3)].item);
             (yyval.limit_options).opt_offset= (yyvsp[(3) - (3)].item);
@@ -32365,7 +32365,7 @@ yyreduce:
 
   case 1620:
 /* Line 1792 of yacc.c  */
-#line 10895 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10895 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_limit_option_ident((yyloc), (yyvsp[(1) - (1)].lex_str), (yylsp[(1) - (1)]).raw);
           }
@@ -32373,7 +32373,7 @@ yyreduce:
 
   case 1621:
 /* Line 1792 of yacc.c  */
-#line 10899 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10899 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_limit_option_param_marker((yyloc), (yyvsp[(1) - (1)].param_marker));
           }
@@ -32381,7 +32381,7 @@ yyreduce:
 
   case 1622:
 /* Line 1792 of yacc.c  */
-#line 10903 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10903 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_uint((yyloc), (yyvsp[(1) - (1)].lex_str).str, (yyvsp[(1) - (1)].lex_str).length);
           }
@@ -32389,7 +32389,7 @@ yyreduce:
 
   case 1623:
 /* Line 1792 of yacc.c  */
-#line 10907 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10907 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_uint((yyloc), (yyvsp[(1) - (1)].lex_str).str, (yyvsp[(1) - (1)].lex_str).length);
           }
@@ -32397,7 +32397,7 @@ yyreduce:
 
   case 1624:
 /* Line 1792 of yacc.c  */
-#line 10911 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10911 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_uint((yyloc), (yyvsp[(1) - (1)].lex_str).str, (yyvsp[(1) - (1)].lex_str).length);
           }
@@ -32405,151 +32405,151 @@ yyreduce:
 
   case 1625:
 /* Line 1792 of yacc.c  */
-#line 10917 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10917 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= NULL; }
     break;
 
   case 1626:
 /* Line 1792 of yacc.c  */
-#line 10918 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10918 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= (yyvsp[(2) - (2)].item); }
     break;
 
   case 1627:
 /* Line 1792 of yacc.c  */
-#line 10922 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10922 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulong_num)= (ulong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1628:
 /* Line 1792 of yacc.c  */
-#line 10923 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10923 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= (ulong) my_strtoll((yyvsp[(1) - (1)].lex_str).str, (char**) 0, 16); }
     break;
 
   case 1629:
 /* Line 1792 of yacc.c  */
-#line 10924 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10924 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulong_num)= (ulong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1630:
 /* Line 1792 of yacc.c  */
-#line 10925 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10925 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulong_num)= (ulong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1631:
 /* Line 1792 of yacc.c  */
-#line 10926 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10926 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulong_num)= (ulong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1632:
 /* Line 1792 of yacc.c  */
-#line 10927 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10927 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulong_num)= (ulong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1633:
 /* Line 1792 of yacc.c  */
-#line 10931 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10931 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulong_num)= (ulong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1634:
 /* Line 1792 of yacc.c  */
-#line 10932 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10932 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulong_num)= (ulong) my_strtoll((yyvsp[(1) - (1)].lex_str).str, (char**) 0, 16); }
     break;
 
   case 1635:
 /* Line 1792 of yacc.c  */
-#line 10933 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10933 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulong_num)= (ulong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1636:
 /* Line 1792 of yacc.c  */
-#line 10934 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10934 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulong_num)= (ulong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1637:
 /* Line 1792 of yacc.c  */
-#line 10935 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10935 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { MYSQL_YYABORT; }
     break;
 
   case 1638:
 /* Line 1792 of yacc.c  */
-#line 10939 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10939 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulonglong_number)= (ulonglong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1639:
 /* Line 1792 of yacc.c  */
-#line 10940 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10940 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulonglong_number)= (ulonglong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1640:
 /* Line 1792 of yacc.c  */
-#line 10941 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10941 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulonglong_number)= (ulonglong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1641:
 /* Line 1792 of yacc.c  */
-#line 10942 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10942 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulonglong_number)= (ulonglong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1642:
 /* Line 1792 of yacc.c  */
-#line 10943 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10943 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulonglong_number)= (ulonglong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1643:
 /* Line 1792 of yacc.c  */
-#line 10947 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10947 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulonglong_number)= (ulonglong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1644:
 /* Line 1792 of yacc.c  */
-#line 10948 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10948 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulonglong_number)= (ulonglong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1645:
 /* Line 1792 of yacc.c  */
-#line 10949 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10949 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { int error; (yyval.ulonglong_number)= (ulonglong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error); }
     break;
 
   case 1646:
 /* Line 1792 of yacc.c  */
-#line 10950 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10950 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { MYSQL_YYABORT; }
     break;
 
   case 1647:
 /* Line 1792 of yacc.c  */
-#line 10955 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10955 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { my_syntax_error(ER(ER_ONLY_INTEGERS_ALLOWED)); }
     break;
 
   case 1650:
 /* Line 1792 of yacc.c  */
-#line 10964 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10964 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.procedure_analyse)= NULL; }
     break;
 
   case 1651:
 /* Line 1792 of yacc.c  */
-#line 10967 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10967 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.procedure_analyse)= NEW_PTN PT_procedure_analyse((yyvsp[(4) - (5)].procedure_analyse_params));
           }
@@ -32557,7 +32557,7 @@ yyreduce:
 
   case 1652:
 /* Line 1792 of yacc.c  */
-#line 10974 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10974 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.procedure_analyse_params).max_tree_elements= Proc_analyse_params::default_max_tree_elements;
             (yyval.procedure_analyse_params).max_treemem= Proc_analyse_params::default_max_treemem;
@@ -32566,7 +32566,7 @@ yyreduce:
 
   case 1653:
 /* Line 1792 of yacc.c  */
-#line 10979 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10979 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.procedure_analyse_params).max_tree_elements= static_cast<uint>((yyvsp[(1) - (1)].ulonglong_number));
             (yyval.procedure_analyse_params).max_treemem= Proc_analyse_params::default_max_treemem;
@@ -32575,7 +32575,7 @@ yyreduce:
 
   case 1654:
 /* Line 1792 of yacc.c  */
-#line 10984 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10984 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.procedure_analyse_params).max_tree_elements= static_cast<uint>((yyvsp[(1) - (3)].ulonglong_number));
             (yyval.procedure_analyse_params).max_treemem= static_cast<uint>((yyvsp[(3) - (3)].ulonglong_number));
@@ -32584,7 +32584,7 @@ yyreduce:
 
   case 1655:
 /* Line 1792 of yacc.c  */
-#line 10992 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 10992 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             int error;
             (yyval.ulonglong_number)= (ulonglong) my_strtoll10((yyvsp[(1) - (1)].lex_str).str, (char**) 0, &error);
@@ -32598,7 +32598,7 @@ yyreduce:
 
   case 1656:
 /* Line 1792 of yacc.c  */
-#line 11005 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11005 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_var_list)= (yyvsp[(1) - (3)].select_var_list);
             if ((yyval.select_var_list) == NULL || (yyval.select_var_list)->push_back((yyvsp[(3) - (3)].select_var_ident)))
@@ -32608,7 +32608,7 @@ yyreduce:
 
   case 1657:
 /* Line 1792 of yacc.c  */
-#line 11011 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11011 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_var_list)= NEW_PTN PT_select_var_list;
             if ((yyval.select_var_list) == NULL || (yyval.select_var_list)->push_back((yyvsp[(1) - (1)].select_var_ident)))
@@ -32618,7 +32618,7 @@ yyreduce:
 
   case 1658:
 /* Line 1792 of yacc.c  */
-#line 11020 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11020 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_var_ident)= NEW_PTN PT_select_var((yyvsp[(2) - (2)].lex_str));
           }
@@ -32626,7 +32626,7 @@ yyreduce:
 
   case 1659:
 /* Line 1792 of yacc.c  */
-#line 11024 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11024 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_var_ident)= NEW_PTN PT_select_sp_var((yyvsp[(1) - (1)].lex_str));
           }
@@ -32634,13 +32634,13 @@ yyreduce:
 
   case 1660:
 /* Line 1792 of yacc.c  */
-#line 11030 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11030 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.into_destination)= NULL; }
     break;
 
   case 1662:
 /* Line 1792 of yacc.c  */
-#line 11036 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11036 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.into_destination)= (yyvsp[(2) - (2)].into_destination);
           }
@@ -32648,7 +32648,7 @@ yyreduce:
 
   case 1663:
 /* Line 1792 of yacc.c  */
-#line 11045 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11045 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.into_destination)= NEW_PTN PT_into_destination_outfile((yyvsp[(2) - (5)].lex_str), (yyvsp[(3) - (5)].charset), (yyvsp[(4) - (5)].field_separators), (yyvsp[(5) - (5)].line_separators));
           }
@@ -32656,7 +32656,7 @@ yyreduce:
 
   case 1664:
 /* Line 1792 of yacc.c  */
-#line 11049 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11049 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.into_destination)= NEW_PTN PT_into_destination_dumpfile((yyvsp[(2) - (2)].lex_str));
           }
@@ -32664,13 +32664,13 @@ yyreduce:
 
   case 1665:
 /* Line 1792 of yacc.c  */
-#line 11052 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11052 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.into_destination)= (yyvsp[(1) - (1)].select_var_list); }
     break;
 
   case 1666:
 /* Line 1792 of yacc.c  */
-#line 11061 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11061 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select)= NEW_PTN PT_select(
                   NEW_PTN PT_select_init2(NULL,
@@ -32682,7 +32682,7 @@ yyreduce:
 
   case 1667:
 /* Line 1792 of yacc.c  */
-#line 11072 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11072 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_options).query_spec_options= 0;
             (yyval.select_options).sql_cache= SELECT_LEX::SQL_CACHE_UNSPECIFIED;
@@ -32691,7 +32691,7 @@ yyreduce:
 
   case 1668:
 /* Line 1792 of yacc.c  */
-#line 11084 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11084 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command = SQLCOM_DROP_TABLE;
@@ -32704,19 +32704,19 @@ yyreduce:
 
   case 1669:
 /* Line 1792 of yacc.c  */
-#line 11093 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11093 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1670:
 /* Line 1792 of yacc.c  */
-#line 11094 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11094 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1671:
 /* Line 1792 of yacc.c  */
-#line 11095 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11095 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             Alter_drop *ad= new Alter_drop(Alter_drop::KEY, (yyvsp[(3) - (6)].lex_str).str);
@@ -32736,13 +32736,13 @@ yyreduce:
 
   case 1672:
 /* Line 1792 of yacc.c  */
-#line 11110 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11110 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1673:
 /* Line 1792 of yacc.c  */
-#line 11112 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11112 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command= SQLCOM_DROP_DB;
@@ -32753,7 +32753,7 @@ yyreduce:
 
   case 1674:
 /* Line 1792 of yacc.c  */
-#line 11119 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11119 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -32780,7 +32780,7 @@ yyreduce:
 
   case 1675:
 /* Line 1792 of yacc.c  */
-#line 11142 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11142 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /*
               Unlike DROP PROCEDURE, "DROP FUNCTION ident" should work
@@ -32816,7 +32816,7 @@ yyreduce:
 
   case 1676:
 /* Line 1792 of yacc.c  */
-#line 11174 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11174 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             if (lex->sphead)
@@ -32832,7 +32832,7 @@ yyreduce:
 
   case 1677:
 /* Line 1792 of yacc.c  */
-#line 11186 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11186 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
              LEX *lex=Lex;
              lex->sql_command= SQLCOM_DROP_USER;
@@ -32842,7 +32842,7 @@ yyreduce:
 
   case 1678:
 /* Line 1792 of yacc.c  */
-#line 11192 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11192 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_DROP_VIEW;
@@ -32854,13 +32854,13 @@ yyreduce:
 
   case 1679:
 /* Line 1792 of yacc.c  */
-#line 11200 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11200 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1680:
 /* Line 1792 of yacc.c  */
-#line 11202 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11202 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->drop_if_exists= (yyvsp[(3) - (4)].num);
             Lex->spname= (yyvsp[(4) - (4)].spname);
@@ -32870,7 +32870,7 @@ yyreduce:
 
   case 1681:
 /* Line 1792 of yacc.c  */
-#line 11208 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11208 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_DROP_TRIGGER;
@@ -32881,7 +32881,7 @@ yyreduce:
 
   case 1682:
 /* Line 1792 of yacc.c  */
-#line 11215 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11215 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->ts_cmd_type= DROP_TABLESPACE;
@@ -32890,7 +32890,7 @@ yyreduce:
 
   case 1683:
 /* Line 1792 of yacc.c  */
-#line 11220 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11220 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->alter_tablespace_info->ts_cmd_type= DROP_LOGFILE_GROUP;
@@ -32899,7 +32899,7 @@ yyreduce:
 
   case 1684:
 /* Line 1792 of yacc.c  */
-#line 11225 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11225 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command = SQLCOM_DROP_SERVER;
             Lex->m_sql_cmd=
@@ -32909,7 +32909,7 @@ yyreduce:
 
   case 1687:
 /* Line 1792 of yacc.c  */
-#line 11239 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11239 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!Select->add_table_to_list(YYTHD, (yyvsp[(1) - (1)].table), NULL,
                                            TL_OPTION_UPDATING,
@@ -32921,7 +32921,7 @@ yyreduce:
 
   case 1688:
 /* Line 1792 of yacc.c  */
-#line 11250 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11250 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table_ident_list).init(YYTHD->mem_root);
             if ((yyval.table_ident_list).push_back((yyvsp[(1) - (1)].table_ident)))
@@ -32931,7 +32931,7 @@ yyreduce:
 
   case 1689:
 /* Line 1792 of yacc.c  */
-#line 11256 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11256 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table_ident_list)= (yyvsp[(1) - (3)].table_ident_list);
             if ((yyval.table_ident_list).push_back((yyvsp[(3) - (3)].table_ident)))
@@ -32941,31 +32941,31 @@ yyreduce:
 
   case 1690:
 /* Line 1792 of yacc.c  */
-#line 11264 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11264 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 0; }
     break;
 
   case 1691:
 /* Line 1792 of yacc.c  */
-#line 11265 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11265 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 1; }
     break;
 
   case 1692:
 /* Line 1792 of yacc.c  */
-#line 11269 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11269 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 0; }
     break;
 
   case 1693:
 /* Line 1792 of yacc.c  */
-#line 11270 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11270 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 1; }
     break;
 
   case 1701:
 /* Line 1792 of yacc.c  */
-#line 11300 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11300 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.statement)= NEW_PTN PT_insert(false, (yyvsp[(1) - (8)].optimizer_hints), (yyvsp[(2) - (8)].lock_type), (yyvsp[(3) - (8)].is_not_empty), (yyvsp[(5) - (8)].table), (yyvsp[(6) - (8)].string_list),
                                   (yyvsp[(7) - (8)].column_row_value_list_pair).column_list, (yyvsp[(7) - (8)].column_row_value_list_pair).row_value_list,
@@ -32976,7 +32976,7 @@ yyreduce:
 
   case 1702:
 /* Line 1792 of yacc.c  */
-#line 11315 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11315 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             PT_insert_values_list *one_row= NEW_PTN PT_insert_values_list;
             if (one_row == NULL || one_row->push_back(&(yyvsp[(8) - (9)].column_value_list_pair).value_list->value))
@@ -32990,7 +32990,7 @@ yyreduce:
 
   case 1703:
 /* Line 1792 of yacc.c  */
-#line 11332 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11332 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.statement)= NEW_PTN PT_insert(false, (yyvsp[(1) - (8)].optimizer_hints), (yyvsp[(2) - (8)].lock_type), (yyvsp[(3) - (8)].is_not_empty), (yyvsp[(5) - (8)].table), (yyvsp[(6) - (8)].string_list),
                                   (yyvsp[(7) - (8)].insert_from_subquery).column_list, NULL,
@@ -33001,7 +33001,7 @@ yyreduce:
 
   case 1704:
 /* Line 1792 of yacc.c  */
-#line 11347 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11347 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.statement)= NEW_PTN PT_insert(true, (yyvsp[(1) - (6)].optimizer_hints), (yyvsp[(2) - (6)].lock_type), false, (yyvsp[(4) - (6)].table), (yyvsp[(5) - (6)].string_list),
                                   (yyvsp[(6) - (6)].column_row_value_list_pair).column_list, (yyvsp[(6) - (6)].column_row_value_list_pair).row_value_list,
@@ -33012,7 +33012,7 @@ yyreduce:
 
   case 1705:
 /* Line 1792 of yacc.c  */
-#line 11360 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11360 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             PT_insert_values_list *one_row= NEW_PTN PT_insert_values_list;
             if (one_row == NULL || one_row->push_back(&(yyvsp[(7) - (7)].column_value_list_pair).value_list->value))
@@ -33026,7 +33026,7 @@ yyreduce:
 
   case 1706:
 /* Line 1792 of yacc.c  */
-#line 11375 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11375 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.statement)= NEW_PTN PT_insert(true, (yyvsp[(1) - (6)].optimizer_hints), (yyvsp[(2) - (6)].lock_type), false, (yyvsp[(4) - (6)].table), (yyvsp[(5) - (6)].string_list),
                                   (yyvsp[(6) - (6)].insert_from_subquery).column_list, NULL,
@@ -33037,19 +33037,19 @@ yyreduce:
 
   case 1707:
 /* Line 1792 of yacc.c  */
-#line 11384 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11384 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lock_type)= TL_WRITE_CONCURRENT_DEFAULT; }
     break;
 
   case 1708:
 /* Line 1792 of yacc.c  */
-#line 11385 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11385 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lock_type)= TL_WRITE_LOW_PRIORITY; }
     break;
 
   case 1709:
 /* Line 1792 of yacc.c  */
-#line 11387 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11387 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
           (yyval.lock_type)= TL_WRITE_CONCURRENT_DEFAULT;
 
@@ -33062,19 +33062,19 @@ yyreduce:
 
   case 1710:
 /* Line 1792 of yacc.c  */
-#line 11395 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11395 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lock_type)= TL_WRITE; }
     break;
 
   case 1711:
 /* Line 1792 of yacc.c  */
-#line 11399 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11399 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lock_type)= (yyvsp[(1) - (1)].lock_type); }
     break;
 
   case 1712:
 /* Line 1792 of yacc.c  */
-#line 11401 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11401 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
           (yyval.lock_type)= TL_WRITE_DEFAULT;
 
@@ -33087,7 +33087,7 @@ yyreduce:
 
   case 1715:
 /* Line 1792 of yacc.c  */
-#line 11418 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11418 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.column_row_value_list_pair).column_list= NEW_PTN PT_item_list;
             (yyval.column_row_value_list_pair).row_value_list= (yyvsp[(1) - (1)].values_list);
@@ -33096,7 +33096,7 @@ yyreduce:
 
   case 1716:
 /* Line 1792 of yacc.c  */
-#line 11423 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11423 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.column_row_value_list_pair).column_list= NEW_PTN PT_item_list;
             (yyval.column_row_value_list_pair).row_value_list= (yyvsp[(3) - (3)].values_list);
@@ -33105,7 +33105,7 @@ yyreduce:
 
   case 1717:
 /* Line 1792 of yacc.c  */
-#line 11428 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11428 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.column_row_value_list_pair).column_list= (yyvsp[(2) - (4)].item_list2);
             (yyval.column_row_value_list_pair).row_value_list= (yyvsp[(4) - (4)].values_list);
@@ -33114,7 +33114,7 @@ yyreduce:
 
   case 1718:
 /* Line 1792 of yacc.c  */
-#line 11436 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11436 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.insert_from_subquery).column_list= NEW_PTN PT_item_list;
             (yyval.insert_from_subquery).insert_query_expression= (yyvsp[(1) - (1)].insert_query_expression);
@@ -33123,7 +33123,7 @@ yyreduce:
 
   case 1719:
 /* Line 1792 of yacc.c  */
-#line 11441 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11441 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.insert_from_subquery).column_list= NEW_PTN PT_item_list;
             (yyval.insert_from_subquery).insert_query_expression= (yyvsp[(3) - (3)].insert_query_expression);
@@ -33132,7 +33132,7 @@ yyreduce:
 
   case 1720:
 /* Line 1792 of yacc.c  */
-#line 11446 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11446 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.insert_from_subquery).column_list= (yyvsp[(2) - (4)].item_list2);
             (yyval.insert_from_subquery).insert_query_expression= (yyvsp[(4) - (4)].insert_query_expression);
@@ -33141,7 +33141,7 @@ yyreduce:
 
   case 1721:
 /* Line 1792 of yacc.c  */
-#line 11454 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11454 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyval.item_list2)->push_back((yyvsp[(3) - (3)].item)))
               MYSQL_YYABORT;
@@ -33151,7 +33151,7 @@ yyreduce:
 
   case 1722:
 /* Line 1792 of yacc.c  */
-#line 11460 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11460 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list2)= NEW_PTN PT_item_list;
             if ((yyval.item_list2) == NULL || (yyval.item_list2)->push_back((yyvsp[(1) - (1)].item)))
@@ -33161,7 +33161,7 @@ yyreduce:
 
   case 1723:
 /* Line 1792 of yacc.c  */
-#line 11469 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11469 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.values_list)= (yyvsp[(2) - (2)].values_list);
           }
@@ -33169,7 +33169,7 @@ yyreduce:
 
   case 1724:
 /* Line 1792 of yacc.c  */
-#line 11476 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11476 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.insert_query_expression)= NEW_PTN PT_insert_query_expression(false, (yyvsp[(1) - (2)].create_select), (yyvsp[(2) - (2)].union_list));
           }
@@ -33177,7 +33177,7 @@ yyreduce:
 
   case 1725:
 /* Line 1792 of yacc.c  */
-#line 11480 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11480 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.insert_query_expression)= NEW_PTN PT_insert_query_expression(true, (yyvsp[(2) - (4)].create_select), (yyvsp[(4) - (4)].node));
           }
@@ -33185,7 +33185,7 @@ yyreduce:
 
   case 1728:
 /* Line 1792 of yacc.c  */
-#line 11492 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11492 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyval.values_list)->push_back(&(yyvsp[(3) - (3)].item_list2)->value))
               MYSQL_YYABORT;
@@ -33194,7 +33194,7 @@ yyreduce:
 
   case 1729:
 /* Line 1792 of yacc.c  */
-#line 11497 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11497 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.values_list)= NEW_PTN PT_insert_values_list;
             if ((yyval.values_list) == NULL || (yyval.values_list)->push_back(&(yyvsp[(1) - (1)].item_list2)->value))
@@ -33204,37 +33204,37 @@ yyreduce:
 
   case 1730:
 /* Line 1792 of yacc.c  */
-#line 11506 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11506 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1731:
 /* Line 1792 of yacc.c  */
-#line 11507 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11507 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1732:
 /* Line 1792 of yacc.c  */
-#line 11511 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11511 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1733:
 /* Line 1792 of yacc.c  */
-#line 11512 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11512 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1734:
 /* Line 1792 of yacc.c  */
-#line 11516 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11516 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item_list2)= (yyvsp[(2) - (3)].item_list2); }
     break;
 
   case 1735:
 /* Line 1792 of yacc.c  */
-#line 11521 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11521 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list2)= NEW_PTN PT_item_list;
             if ((yyval.item_list2) == NULL)
@@ -33244,7 +33244,7 @@ yyreduce:
 
   case 1737:
 /* Line 1792 of yacc.c  */
-#line 11531 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11531 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(1) - (3)].item_list2)->push_back((yyvsp[(3) - (3)].item)))
               MYSQL_YYABORT;
@@ -33254,7 +33254,7 @@ yyreduce:
 
   case 1738:
 /* Line 1792 of yacc.c  */
-#line 11537 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11537 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item_list2)= NEW_PTN PT_item_list;
             if ((yyval.item_list2) == NULL || (yyval.item_list2)->push_back((yyvsp[(1) - (1)].item)))
@@ -33264,7 +33264,7 @@ yyreduce:
 
   case 1740:
 /* Line 1792 of yacc.c  */
-#line 11547 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11547 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_default_value((yyloc));
           }
@@ -33272,7 +33272,7 @@ yyreduce:
 
   case 1741:
 /* Line 1792 of yacc.c  */
-#line 11554 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11554 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.column_value_list_pair).value_list= NULL;
             (yyval.column_value_list_pair).column_list= NULL;
@@ -33281,7 +33281,7 @@ yyreduce:
 
   case 1742:
 /* Line 1792 of yacc.c  */
-#line 11559 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11559 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.column_value_list_pair)= (yyvsp[(5) - (5)].column_value_list_pair);
           }
@@ -33289,7 +33289,7 @@ yyreduce:
 
   case 1743:
 /* Line 1792 of yacc.c  */
-#line 11576 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11576 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.statement)= NEW_PTN PT_update((yyvsp[(1) - (9)].optimizer_hints), (yyvsp[(2) - (9)].lock_type), (yyvsp[(3) - (9)].is_not_empty), (yyvsp[(4) - (9)].join_table_list), (yyvsp[(6) - (9)].column_value_list_pair).column_list, (yyvsp[(6) - (9)].column_value_list_pair).value_list,
                                   (yyvsp[(7) - (9)].item), (yyvsp[(8) - (9)].order), (yyvsp[(9) - (9)].item));
@@ -33298,7 +33298,7 @@ yyreduce:
 
   case 1744:
 /* Line 1792 of yacc.c  */
-#line 11584 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11584 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.column_value_list_pair)= (yyvsp[(1) - (3)].column_value_list_pair);
             if ((yyval.column_value_list_pair).column_list->push_back((yyvsp[(3) - (3)].column_value_pair).column) ||
@@ -33309,7 +33309,7 @@ yyreduce:
 
   case 1745:
 /* Line 1792 of yacc.c  */
-#line 11591 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11591 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.column_value_list_pair).column_list= NEW_PTN PT_item_list;
             (yyval.column_value_list_pair).value_list= NEW_PTN PT_item_list;
@@ -33322,7 +33322,7 @@ yyreduce:
 
   case 1746:
 /* Line 1792 of yacc.c  */
-#line 11603 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11603 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.column_value_pair).column= (yyvsp[(1) - (3)].item);
             (yyval.column_value_pair).value= (yyvsp[(3) - (3)].item);
@@ -33331,19 +33331,19 @@ yyreduce:
 
   case 1747:
 /* Line 1792 of yacc.c  */
-#line 11610 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11610 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lock_type)= TL_WRITE_DEFAULT; }
     break;
 
   case 1748:
 /* Line 1792 of yacc.c  */
-#line 11611 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11611 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lock_type)= TL_WRITE_LOW_PRIORITY; }
     break;
 
   case 1749:
 /* Line 1792 of yacc.c  */
-#line 11625 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11625 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.statement)= NEW_PTN PT_delete(YYTHD->mem_root, (yyvsp[(1) - (8)].optimizer_hints), (yyvsp[(2) - (8)].num), (yyvsp[(4) - (8)].table), (yyvsp[(5) - (8)].string_list), (yyvsp[(6) - (8)].item), (yyvsp[(7) - (8)].order), (yyvsp[(8) - (8)].item));
           }
@@ -33351,7 +33351,7 @@ yyreduce:
 
   case 1750:
 /* Line 1792 of yacc.c  */
-#line 11634 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11634 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.statement)= NEW_PTN PT_delete((yyvsp[(1) - (6)].optimizer_hints), (yyvsp[(2) - (6)].num), (yyvsp[(3) - (6)].table_ident_list), (yyvsp[(5) - (6)].join_table_list), (yyvsp[(6) - (6)].item));
           }
@@ -33359,7 +33359,7 @@ yyreduce:
 
   case 1751:
 /* Line 1792 of yacc.c  */
-#line 11644 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11644 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.statement)= NEW_PTN PT_delete((yyvsp[(1) - (7)].optimizer_hints), (yyvsp[(2) - (7)].num), (yyvsp[(4) - (7)].table_ident_list), (yyvsp[(6) - (7)].join_table_list), (yyvsp[(7) - (7)].item));
           }
@@ -33367,37 +33367,37 @@ yyreduce:
 
   case 1754:
 /* Line 1792 of yacc.c  */
-#line 11655 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11655 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= 0; }
     break;
 
   case 1755:
 /* Line 1792 of yacc.c  */
-#line 11656 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11656 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= (yyvsp[(1) - (2)].opt_delete_option) | (yyvsp[(2) - (2)].num); }
     break;
 
   case 1756:
 /* Line 1792 of yacc.c  */
-#line 11660 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11660 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.opt_delete_option)= DELETE_QUICK; }
     break;
 
   case 1757:
 /* Line 1792 of yacc.c  */
-#line 11661 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11661 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.opt_delete_option)= DELETE_LOW_PRIORITY; }
     break;
 
   case 1758:
 /* Line 1792 of yacc.c  */
-#line 11662 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11662 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.opt_delete_option)= DELETE_IGNORE; }
     break;
 
   case 1759:
 /* Line 1792 of yacc.c  */
-#line 11667 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11667 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX* lex= Lex;
             lex->sql_command= SQLCOM_TRUNCATE;
@@ -33409,7 +33409,7 @@ yyreduce:
 
   case 1760:
 /* Line 1792 of yacc.c  */
-#line 11675 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11675 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX* lex= thd->lex;
@@ -33422,7 +33422,7 @@ yyreduce:
 
   case 1767:
 /* Line 1792 of yacc.c  */
-#line 11700 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11700 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
       Lex->profile_options|= PROFILE_CPU;
     }
@@ -33430,7 +33430,7 @@ yyreduce:
 
   case 1768:
 /* Line 1792 of yacc.c  */
-#line 11704 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11704 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
       Lex->profile_options|= PROFILE_MEMORY;
     }
@@ -33438,7 +33438,7 @@ yyreduce:
 
   case 1769:
 /* Line 1792 of yacc.c  */
-#line 11708 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11708 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
       Lex->profile_options|= PROFILE_BLOCK_IO;
     }
@@ -33446,7 +33446,7 @@ yyreduce:
 
   case 1770:
 /* Line 1792 of yacc.c  */
-#line 11712 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11712 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
       Lex->profile_options|= PROFILE_CONTEXT;
     }
@@ -33454,7 +33454,7 @@ yyreduce:
 
   case 1771:
 /* Line 1792 of yacc.c  */
-#line 11716 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11716 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
       Lex->profile_options|= PROFILE_PAGE_FAULTS;
     }
@@ -33462,7 +33462,7 @@ yyreduce:
 
   case 1772:
 /* Line 1792 of yacc.c  */
-#line 11720 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11720 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
       Lex->profile_options|= PROFILE_IPC;
     }
@@ -33470,7 +33470,7 @@ yyreduce:
 
   case 1773:
 /* Line 1792 of yacc.c  */
-#line 11724 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11724 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
       Lex->profile_options|= PROFILE_SWAPS;
     }
@@ -33478,7 +33478,7 @@ yyreduce:
 
   case 1774:
 /* Line 1792 of yacc.c  */
-#line 11728 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11728 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
       Lex->profile_options|= PROFILE_SOURCE;
     }
@@ -33486,7 +33486,7 @@ yyreduce:
 
   case 1775:
 /* Line 1792 of yacc.c  */
-#line 11732 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11732 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
       Lex->profile_options|= PROFILE_ALL;
     }
@@ -33494,7 +33494,7 @@ yyreduce:
 
   case 1776:
 /* Line 1792 of yacc.c  */
-#line 11739 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11739 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
       Lex->query_id= 0;
     }
@@ -33502,7 +33502,7 @@ yyreduce:
 
   case 1777:
 /* Line 1792 of yacc.c  */
-#line 11743 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11743 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
       int error;
       Lex->query_id= static_cast<my_thread_id>(my_strtoll10((yyvsp[(3) - (3)].lex_str).str, NULL, &error));
@@ -33513,7 +33513,7 @@ yyreduce:
 
   case 1778:
 /* Line 1792 of yacc.c  */
-#line 11755 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11755 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             memset(&lex->create_info, 0, sizeof(lex->create_info));
@@ -33522,7 +33522,7 @@ yyreduce:
 
   case 1780:
 /* Line 1792 of yacc.c  */
-#line 11764 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11764 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
              LEX *lex= Lex;
              lex->sql_command= SQLCOM_SHOW_DATABASES;
@@ -33533,7 +33533,7 @@ yyreduce:
 
   case 1781:
 /* Line 1792 of yacc.c  */
-#line 11771 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11771 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
              LEX *lex= Lex;
              lex->sql_command= SQLCOM_SHOW_TABLES;
@@ -33545,7 +33545,7 @@ yyreduce:
 
   case 1782:
 /* Line 1792 of yacc.c  */
-#line 11779 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11779 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
              LEX *lex= Lex;
              lex->sql_command= SQLCOM_SHOW_TRIGGERS;
@@ -33557,7 +33557,7 @@ yyreduce:
 
   case 1783:
 /* Line 1792 of yacc.c  */
-#line 11787 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11787 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
              LEX *lex= Lex;
              lex->sql_command= SQLCOM_SHOW_EVENTS;
@@ -33569,7 +33569,7 @@ yyreduce:
 
   case 1784:
 /* Line 1792 of yacc.c  */
-#line 11795 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11795 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
              LEX *lex= Lex;
              lex->sql_command= SQLCOM_SHOW_TABLE_STATUS;
@@ -33581,7 +33581,7 @@ yyreduce:
 
   case 1785:
 /* Line 1792 of yacc.c  */
-#line 11803 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11803 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_SHOW_OPEN_TABLES;
@@ -33593,7 +33593,7 @@ yyreduce:
 
   case 1786:
 /* Line 1792 of yacc.c  */
-#line 11811 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11811 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_SHOW_PLUGINS;
@@ -33604,19 +33604,19 @@ yyreduce:
 
   case 1787:
 /* Line 1792 of yacc.c  */
-#line 11818 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11818 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->create_info.db_type= (yyvsp[(2) - (3)].db_type); }
     break;
 
   case 1788:
 /* Line 1792 of yacc.c  */
-#line 11820 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11820 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->create_info.db_type= NULL; }
     break;
 
   case 1789:
 /* Line 1792 of yacc.c  */
-#line 11822 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11822 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_SHOW_FIELDS;
@@ -33629,7 +33629,7 @@ yyreduce:
 
   case 1790:
 /* Line 1792 of yacc.c  */
-#line 11831 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11831 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command = SQLCOM_SHOW_BINLOGS;
           }
@@ -33637,7 +33637,7 @@ yyreduce:
 
   case 1791:
 /* Line 1792 of yacc.c  */
-#line 11835 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11835 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command = SQLCOM_SHOW_SLAVE_HOSTS;
           }
@@ -33645,7 +33645,7 @@ yyreduce:
 
   case 1792:
 /* Line 1792 of yacc.c  */
-#line 11839 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11839 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_SHOW_BINLOG_EVENTS;
@@ -33654,7 +33654,7 @@ yyreduce:
 
   case 1793:
 /* Line 1792 of yacc.c  */
-#line 11844 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11844 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(6) - (6)].limit_clause) != NULL)
               CONTEXTUALIZE((yyvsp[(6) - (6)].limit_clause));
@@ -33663,7 +33663,7 @@ yyreduce:
 
   case 1794:
 /* Line 1792 of yacc.c  */
-#line 11849 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11849 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_SHOW_RELAYLOG_EVENTS;
@@ -33672,7 +33672,7 @@ yyreduce:
 
   case 1795:
 /* Line 1792 of yacc.c  */
-#line 11854 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11854 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(6) - (7)].limit_clause) != NULL)
               CONTEXTUALIZE((yyvsp[(6) - (7)].limit_clause));
@@ -33681,7 +33681,7 @@ yyreduce:
 
   case 1796:
 /* Line 1792 of yacc.c  */
-#line 11863 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11863 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(5) - (5)].item) != NULL)
               ITEMIZE((yyvsp[(5) - (5)].item), &(yyvsp[(5) - (5)].item));
@@ -33698,7 +33698,7 @@ yyreduce:
 
   case 1797:
 /* Line 1792 of yacc.c  */
-#line 11876 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11876 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command= SQLCOM_SHOW_STORAGE_ENGINES;
@@ -33709,7 +33709,7 @@ yyreduce:
 
   case 1798:
 /* Line 1792 of yacc.c  */
-#line 11883 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11883 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command= SQLCOM_SHOW_PRIVILEGES;
@@ -33718,7 +33718,7 @@ yyreduce:
 
   case 1799:
 /* Line 1792 of yacc.c  */
-#line 11888 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11888 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->keep_diagnostics= DA_KEEP_DIAGNOSTICS; // SHOW WARNINGS doesn't clear them.
             Parse_context pc(YYTHD, Select);
@@ -33728,7 +33728,7 @@ yyreduce:
 
   case 1800:
 /* Line 1792 of yacc.c  */
-#line 11894 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11894 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->keep_diagnostics= DA_KEEP_DIAGNOSTICS; // SHOW ERRORS doesn't clear them.
             Parse_context pc(YYTHD, Select);
@@ -33738,7 +33738,7 @@ yyreduce:
 
   case 1801:
 /* Line 1792 of yacc.c  */
-#line 11900 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11900 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(2) - (2)].limit_clause) != NULL)
               CONTEXTUALIZE((yyvsp[(2) - (2)].limit_clause));
@@ -33750,7 +33750,7 @@ yyreduce:
 
   case 1802:
 /* Line 1792 of yacc.c  */
-#line 11908 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11908 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(2) - (2)].limit_clause) != NULL)
               CONTEXTUALIZE((yyvsp[(2) - (2)].limit_clause));
@@ -33762,7 +33762,7 @@ yyreduce:
 
   case 1803:
 /* Line 1792 of yacc.c  */
-#line 11916 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11916 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             push_warning_printf(YYTHD, Sql_condition::SL_WARNING,
                                 ER_WARN_DEPRECATED_SYNTAX,
@@ -33774,7 +33774,7 @@ yyreduce:
 
   case 1804:
 /* Line 1792 of yacc.c  */
-#line 11924 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11924 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(4) - (4)].limit_clause) != NULL)
               CONTEXTUALIZE((yyvsp[(4) - (4)].limit_clause));
@@ -33788,7 +33788,7 @@ yyreduce:
 
   case 1805:
 /* Line 1792 of yacc.c  */
-#line 11934 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11934 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -33823,13 +33823,13 @@ yyreduce:
 
   case 1806:
 /* Line 1792 of yacc.c  */
-#line 11965 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11965 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->sql_command= SQLCOM_SHOW_PROCESSLIST;}
     break;
 
   case 1807:
 /* Line 1792 of yacc.c  */
-#line 11967 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11967 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -33864,7 +33864,7 @@ yyreduce:
 
   case 1808:
 /* Line 1792 of yacc.c  */
-#line 11998 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 11998 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_SHOW_CHARSETS;
@@ -33875,7 +33875,7 @@ yyreduce:
 
   case 1809:
 /* Line 1792 of yacc.c  */
-#line 12005 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12005 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_SHOW_COLLATIONS;
@@ -33886,7 +33886,7 @@ yyreduce:
 
   case 1810:
 /* Line 1792 of yacc.c  */
-#line 12012 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12012 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command= SQLCOM_SHOW_GRANTS;
@@ -33900,7 +33900,7 @@ yyreduce:
 
   case 1811:
 /* Line 1792 of yacc.c  */
-#line 12022 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12022 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command= SQLCOM_SHOW_GRANTS;
@@ -33911,7 +33911,7 @@ yyreduce:
 
   case 1812:
 /* Line 1792 of yacc.c  */
-#line 12029 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12029 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command=SQLCOM_SHOW_CREATE_DB;
             Lex->create_info.options=(yyvsp[(3) - (4)].num);
@@ -33921,7 +33921,7 @@ yyreduce:
 
   case 1813:
 /* Line 1792 of yacc.c  */
-#line 12035 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12035 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command = SQLCOM_SHOW_CREATE;
@@ -33934,7 +33934,7 @@ yyreduce:
 
   case 1814:
 /* Line 1792 of yacc.c  */
-#line 12044 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12044 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command = SQLCOM_SHOW_CREATE;
@@ -33946,7 +33946,7 @@ yyreduce:
 
   case 1815:
 /* Line 1792 of yacc.c  */
-#line 12052 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12052 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command = SQLCOM_SHOW_MASTER_STAT;
           }
@@ -33954,7 +33954,7 @@ yyreduce:
 
   case 1816:
 /* Line 1792 of yacc.c  */
-#line 12056 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12056 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command = SQLCOM_SHOW_SLAVE_STAT;
           }
@@ -33962,7 +33962,7 @@ yyreduce:
 
   case 1817:
 /* Line 1792 of yacc.c  */
-#line 12060 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12060 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
 
@@ -33973,7 +33973,7 @@ yyreduce:
 
   case 1818:
 /* Line 1792 of yacc.c  */
-#line 12067 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12067 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
 
@@ -33984,7 +33984,7 @@ yyreduce:
 
   case 1819:
 /* Line 1792 of yacc.c  */
-#line 12074 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12074 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_SHOW_CREATE_TRIGGER;
@@ -33994,7 +33994,7 @@ yyreduce:
 
   case 1820:
 /* Line 1792 of yacc.c  */
-#line 12080 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12080 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_SHOW_STATUS_PROC;
@@ -34005,7 +34005,7 @@ yyreduce:
 
   case 1821:
 /* Line 1792 of yacc.c  */
-#line 12087 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12087 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_SHOW_STATUS_FUNC;
@@ -34016,7 +34016,7 @@ yyreduce:
 
   case 1822:
 /* Line 1792 of yacc.c  */
-#line 12094 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12094 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command= SQLCOM_SHOW_PROC_CODE;
             Lex->spname= (yyvsp[(3) - (3)].spname);
@@ -34025,7 +34025,7 @@ yyreduce:
 
   case 1823:
 /* Line 1792 of yacc.c  */
-#line 12099 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12099 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command= SQLCOM_SHOW_FUNC_CODE;
             Lex->spname= (yyvsp[(3) - (3)].spname);
@@ -34034,7 +34034,7 @@ yyreduce:
 
   case 1824:
 /* Line 1792 of yacc.c  */
-#line 12104 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12104 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->spname= (yyvsp[(3) - (3)].spname);
             Lex->sql_command = SQLCOM_SHOW_CREATE_EVENT;
@@ -34043,7 +34043,7 @@ yyreduce:
 
   case 1825:
 /* Line 1792 of yacc.c  */
-#line 12109 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12109 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command= SQLCOM_SHOW_CREATE_USER;
@@ -34053,73 +34053,73 @@ yyreduce:
 
   case 1826:
 /* Line 1792 of yacc.c  */
-#line 12118 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12118 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->sql_command= SQLCOM_SHOW_ENGINE_STATUS; }
     break;
 
   case 1827:
 /* Line 1792 of yacc.c  */
-#line 12120 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12120 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->sql_command= SQLCOM_SHOW_ENGINE_MUTEX; }
     break;
 
   case 1828:
 /* Line 1792 of yacc.c  */
-#line 12122 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12122 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->sql_command= SQLCOM_SHOW_ENGINE_LOGS; }
     break;
 
   case 1833:
 /* Line 1792 of yacc.c  */
-#line 12136 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12136 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.simple_string)= 0; }
     break;
 
   case 1834:
 /* Line 1792 of yacc.c  */
-#line 12137 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12137 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.simple_string)= (yyvsp[(2) - (2)].lex_str).str; }
     break;
 
   case 1835:
 /* Line 1792 of yacc.c  */
-#line 12141 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12141 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->verbose=0; }
     break;
 
   case 1836:
 /* Line 1792 of yacc.c  */
-#line 12142 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12142 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->verbose=1; }
     break;
 
   case 1839:
 /* Line 1792 of yacc.c  */
-#line 12151 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12151 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->mi.log_file_name = 0; }
     break;
 
   case 1840:
 /* Line 1792 of yacc.c  */
-#line 12152 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12152 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->mi.log_file_name = (yyvsp[(2) - (2)].lex_str).str; }
     break;
 
   case 1841:
 /* Line 1792 of yacc.c  */
-#line 12156 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12156 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->mi.pos = 4; /* skip magic number */ }
     break;
 
   case 1842:
 /* Line 1792 of yacc.c  */
-#line 12157 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12157 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->mi.pos = (yyvsp[(2) - (2)].ulonglong_number); }
     break;
 
   case 1844:
 /* Line 1792 of yacc.c  */
-#line 12163 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12163 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->wild= new (YYTHD->mem_root) String((yyvsp[(2) - (2)].lex_str).str, (yyvsp[(2) - (2)].lex_str).length,
                                                     system_charset_info);
@@ -34130,7 +34130,7 @@ yyreduce:
 
   case 1845:
 /* Line 1792 of yacc.c  */
-#line 12170 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12170 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(2) - (2)].item), &(yyvsp[(2) - (2)].item));
 
@@ -34142,7 +34142,7 @@ yyreduce:
 
   case 1847:
 /* Line 1792 of yacc.c  */
-#line 12182 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12182 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->wild= new (YYTHD->mem_root) String((yyvsp[(2) - (2)].lex_str).str, (yyvsp[(2) - (2)].lex_str).length,
                                                     system_charset_info);
@@ -34153,7 +34153,7 @@ yyreduce:
 
   case 1848:
 /* Line 1792 of yacc.c  */
-#line 12189 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12189 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (show_compatibility_56)
             {
@@ -34180,7 +34180,7 @@ yyreduce:
 
   case 1849:
 /* Line 1792 of yacc.c  */
-#line 12216 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12216 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->current_select()->parsing_place= CTX_SELECT_LIST;
@@ -34194,7 +34194,7 @@ yyreduce:
 
   case 1850:
 /* Line 1792 of yacc.c  */
-#line 12226 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12226 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             // Ensure we're resetting parsing context of the right select
             DBUG_ASSERT(Select->parsing_place == CTX_SELECT_LIST);
@@ -34204,7 +34204,7 @@ yyreduce:
 
   case 1851:
 /* Line 1792 of yacc.c  */
-#line 12232 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12232 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->describe|= DESCRIBE_NORMAL;
           }
@@ -34212,37 +34212,37 @@ yyreduce:
 
   case 1853:
 /* Line 1792 of yacc.c  */
-#line 12239 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12239 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { CONTEXTUALIZE((yyvsp[(1) - (1)].select)); }
     break;
 
   case 1854:
 /* Line 1792 of yacc.c  */
-#line 12240 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12240 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { MAKE_CMD((yyvsp[(1) - (1)].statement)); }
     break;
 
   case 1855:
 /* Line 1792 of yacc.c  */
-#line 12241 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12241 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { MAKE_CMD((yyvsp[(1) - (1)].statement)); }
     break;
 
   case 1856:
 /* Line 1792 of yacc.c  */
-#line 12242 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12242 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { MAKE_CMD((yyvsp[(1) - (1)].statement)); }
     break;
 
   case 1857:
 /* Line 1792 of yacc.c  */
-#line 12243 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12243 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { MAKE_CMD((yyvsp[(1) - (1)].statement)); }
     break;
 
   case 1858:
 /* Line 1792 of yacc.c  */
-#line 12245 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12245 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command= SQLCOM_EXPLAIN_OTHER;
             if (Lex->sphead)
@@ -34257,7 +34257,7 @@ yyreduce:
 
   case 1861:
 /* Line 1792 of yacc.c  */
-#line 12264 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12264 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((Lex->explain_format= new Explain_format_traditional) == NULL)
               MYSQL_YYABORT;
@@ -34266,7 +34266,7 @@ yyreduce:
 
   case 1862:
 /* Line 1792 of yacc.c  */
-#line 12269 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12269 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((Lex->explain_format= new Explain_format_traditional) == NULL)
               MYSQL_YYABORT;
@@ -34276,7 +34276,7 @@ yyreduce:
 
   case 1863:
 /* Line 1792 of yacc.c  */
-#line 12275 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12275 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((Lex->explain_format= new Explain_format_traditional) == NULL)
               MYSQL_YYABORT;
@@ -34286,7 +34286,7 @@ yyreduce:
 
   case 1864:
 /* Line 1792 of yacc.c  */
-#line 12281 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12281 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!my_strcasecmp(system_charset_info, (yyvsp[(3) - (3)].lex_str).str, "JSON"))
             {
@@ -34308,19 +34308,19 @@ yyreduce:
 
   case 1865:
 /* Line 1792 of yacc.c  */
-#line 12301 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12301 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1866:
 /* Line 1792 of yacc.c  */
-#line 12302 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12302 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->wild= (yyvsp[(1) - (1)].string); }
     break;
 
   case 1867:
 /* Line 1792 of yacc.c  */
-#line 12304 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12304 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->wild= new (YYTHD->mem_root) String((const char*) (yyvsp[(1) - (1)].lex_str).str,
                                                     (yyvsp[(1) - (1)].lex_str).length,
@@ -34332,7 +34332,7 @@ yyreduce:
 
   case 1868:
 /* Line 1792 of yacc.c  */
-#line 12318 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12318 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command= SQLCOM_FLUSH;
@@ -34343,13 +34343,13 @@ yyreduce:
 
   case 1869:
 /* Line 1792 of yacc.c  */
-#line 12325 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12325 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1870:
 /* Line 1792 of yacc.c  */
-#line 12330 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12330 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->type|= REFRESH_TABLES;
             /*
@@ -34363,25 +34363,25 @@ yyreduce:
 
   case 1871:
 /* Line 1792 of yacc.c  */
-#line 12339 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12339 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1872:
 /* Line 1792 of yacc.c  */
-#line 12340 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12340 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1874:
 /* Line 1792 of yacc.c  */
-#line 12345 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12345 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1875:
 /* Line 1792 of yacc.c  */
-#line 12347 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12347 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             TABLE_LIST *tables= Lex->query_tables;
             Lex->type|= REFRESH_READ_LOCK;
@@ -34396,7 +34396,7 @@ yyreduce:
 
   case 1876:
 /* Line 1792 of yacc.c  */
-#line 12358 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12358 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (Lex->query_tables == NULL) // Table list can't be empty
             {
@@ -34408,7 +34408,7 @@ yyreduce:
 
   case 1877:
 /* Line 1792 of yacc.c  */
-#line 12366 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12366 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             TABLE_LIST *tables= Lex->query_tables;
             Lex->type|= REFRESH_FOR_EXPORT;
@@ -34423,109 +34423,109 @@ yyreduce:
 
   case 1879:
 /* Line 1792 of yacc.c  */
-#line 12381 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12381 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1880:
 /* Line 1792 of yacc.c  */
-#line 12386 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12386 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_ERROR_LOG; }
     break;
 
   case 1881:
 /* Line 1792 of yacc.c  */
-#line 12388 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12388 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_ENGINE_LOG; }
     break;
 
   case 1882:
 /* Line 1792 of yacc.c  */
-#line 12390 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12390 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_GENERAL_LOG; }
     break;
 
   case 1883:
 /* Line 1792 of yacc.c  */
-#line 12392 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12392 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_SLOW_LOG; }
     break;
 
   case 1884:
 /* Line 1792 of yacc.c  */
-#line 12394 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12394 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_BINARY_LOG; }
     break;
 
   case 1885:
 /* Line 1792 of yacc.c  */
-#line 12396 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12396 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_RELAY_LOG; }
     break;
 
   case 1886:
 /* Line 1792 of yacc.c  */
-#line 12398 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12398 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_QUERY_CACHE_FREE; }
     break;
 
   case 1887:
 /* Line 1792 of yacc.c  */
-#line 12400 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12400 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_HOSTS; }
     break;
 
   case 1888:
 /* Line 1792 of yacc.c  */
-#line 12402 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12402 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_GRANT; }
     break;
 
   case 1889:
 /* Line 1792 of yacc.c  */
-#line 12404 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12404 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_LOG; }
     break;
 
   case 1890:
 /* Line 1792 of yacc.c  */
-#line 12406 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12406 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_STATUS; }
     break;
 
   case 1891:
 /* Line 1792 of yacc.c  */
-#line 12408 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12408 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_DES_KEY_FILE; }
     break;
 
   case 1892:
 /* Line 1792 of yacc.c  */
-#line 12410 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12410 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_USER_RESOURCES; }
     break;
 
   case 1893:
 /* Line 1792 of yacc.c  */
-#line 12412 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12412 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_OPTIMIZER_COSTS; }
     break;
 
   case 1894:
 /* Line 1792 of yacc.c  */
-#line 12416 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12416 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1895:
 /* Line 1792 of yacc.c  */
-#line 12417 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12417 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1896:
 /* Line 1792 of yacc.c  */
-#line 12422 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12422 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command= SQLCOM_RESET; lex->type=0;
@@ -34534,43 +34534,43 @@ yyreduce:
 
   case 1897:
 /* Line 1792 of yacc.c  */
-#line 12427 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12427 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1900:
 /* Line 1792 of yacc.c  */
-#line 12436 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12436 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_SLAVE; }
     break;
 
   case 1902:
 /* Line 1792 of yacc.c  */
-#line 12438 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12438 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_MASTER; }
     break;
 
   case 1903:
 /* Line 1792 of yacc.c  */
-#line 12439 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12439 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type|= REFRESH_QUERY_CACHE;}
     break;
 
   case 1904:
 /* Line 1792 of yacc.c  */
-#line 12443 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12443 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->reset_slave_info.all= false; }
     break;
 
   case 1905:
 /* Line 1792 of yacc.c  */
-#line 12444 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12444 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->reset_slave_info.all= true; }
     break;
 
   case 1906:
 /* Line 1792 of yacc.c  */
-#line 12449 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12449 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->type=0;
@@ -34580,13 +34580,13 @@ yyreduce:
 
   case 1907:
 /* Line 1792 of yacc.c  */
-#line 12455 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12455 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1909:
 /* Line 1792 of yacc.c  */
-#line 12464 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12464 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->to_log = (yyvsp[(2) - (2)].lex_str).str;
           }
@@ -34594,7 +34594,7 @@ yyreduce:
 
   case 1910:
 /* Line 1792 of yacc.c  */
-#line 12468 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12468 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(2) - (2)].item), &(yyvsp[(2) - (2)].item));
 
@@ -34607,7 +34607,7 @@ yyreduce:
 
   case 1911:
 /* Line 1792 of yacc.c  */
-#line 12482 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12482 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(3) - (3)].item), &(yyvsp[(3) - (3)].item));
 
@@ -34620,25 +34620,25 @@ yyreduce:
 
   case 1912:
 /* Line 1792 of yacc.c  */
-#line 12493 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12493 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type= 0; }
     break;
 
   case 1913:
 /* Line 1792 of yacc.c  */
-#line 12494 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12494 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type= 0; }
     break;
 
   case 1914:
 /* Line 1792 of yacc.c  */
-#line 12495 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12495 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->type= ONLY_KILL_QUERY; }
     break;
 
   case 1915:
 /* Line 1792 of yacc.c  */
-#line 12502 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12502 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command=SQLCOM_CHANGE_DB;
@@ -34648,7 +34648,7 @@ yyreduce:
 
   case 1916:
 /* Line 1792 of yacc.c  */
-#line 12513 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12513 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -34664,7 +34664,7 @@ yyreduce:
 
   case 1917:
 /* Line 1792 of yacc.c  */
-#line 12525 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12525 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command= SQLCOM_LOAD;
@@ -34678,7 +34678,7 @@ yyreduce:
 
   case 1918:
 /* Line 1792 of yacc.c  */
-#line 12535 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12535 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             /* Fix lock for LOAD DATA CONCURRENT REPLACE */
@@ -34700,13 +34700,13 @@ yyreduce:
 
   case 1919:
 /* Line 1792 of yacc.c  */
-#line 12553 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12553 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->exchange->cs= (yyvsp[(15) - (15)].charset); }
     break;
 
   case 1920:
 /* Line 1792 of yacc.c  */
-#line 12557 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12557 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->exchange->field.merge_field_separators((yyvsp[(18) - (22)].field_separators));
             Lex->exchange->line.merge_line_separators((yyvsp[(19) - (22)].line_separators));
@@ -34715,79 +34715,79 @@ yyreduce:
 
   case 1921:
 /* Line 1792 of yacc.c  */
-#line 12564 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12564 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.filetype)= FILETYPE_CSV; }
     break;
 
   case 1922:
 /* Line 1792 of yacc.c  */
-#line 12565 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12565 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.filetype)= FILETYPE_XML; }
     break;
 
   case 1923:
 /* Line 1792 of yacc.c  */
-#line 12569 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12569 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=0;}
     break;
 
   case 1924:
 /* Line 1792 of yacc.c  */
-#line 12570 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12570 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=1;}
     break;
 
   case 1925:
 /* Line 1792 of yacc.c  */
-#line 12574 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12574 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lock_type)= TL_WRITE_DEFAULT; }
     break;
 
   case 1926:
 /* Line 1792 of yacc.c  */
-#line 12575 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12575 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lock_type)= TL_WRITE_CONCURRENT_INSERT; }
     break;
 
   case 1927:
 /* Line 1792 of yacc.c  */
-#line 12576 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12576 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lock_type)= TL_WRITE_LOW_PRIORITY; }
     break;
 
   case 1928:
 /* Line 1792 of yacc.c  */
-#line 12580 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12580 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->duplicates=DUP_ERROR; }
     break;
 
   case 1929:
 /* Line 1792 of yacc.c  */
-#line 12581 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12581 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->duplicates=DUP_REPLACE; }
     break;
 
   case 1930:
 /* Line 1792 of yacc.c  */
-#line 12582 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12582 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->set_ignore(true); }
     break;
 
   case 1931:
 /* Line 1792 of yacc.c  */
-#line 12586 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12586 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.field_separators).cleanup(); }
     break;
 
   case 1932:
 /* Line 1792 of yacc.c  */
-#line 12587 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12587 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.field_separators)= (yyvsp[(2) - (2)].field_separators); }
     break;
 
   case 1933:
 /* Line 1792 of yacc.c  */
-#line 12592 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12592 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.field_separators)= (yyvsp[(1) - (2)].field_separators);
             (yyval.field_separators).merge_field_separators((yyvsp[(2) - (2)].field_separators));
@@ -34796,7 +34796,7 @@ yyreduce:
 
   case 1935:
 /* Line 1792 of yacc.c  */
-#line 12601 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12601 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.field_separators).cleanup();
             (yyval.field_separators).field_term= (yyvsp[(3) - (3)].string);
@@ -34805,7 +34805,7 @@ yyreduce:
 
   case 1936:
 /* Line 1792 of yacc.c  */
-#line 12606 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12606 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.field_separators).cleanup();
             (yyval.field_separators).enclosed= (yyvsp[(4) - (4)].string);
@@ -34815,7 +34815,7 @@ yyreduce:
 
   case 1937:
 /* Line 1792 of yacc.c  */
-#line 12612 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12612 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.field_separators).cleanup();
             (yyval.field_separators).enclosed= (yyvsp[(3) - (3)].string);
@@ -34824,7 +34824,7 @@ yyreduce:
 
   case 1938:
 /* Line 1792 of yacc.c  */
-#line 12617 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12617 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.field_separators).cleanup();
             (yyval.field_separators).escaped= (yyvsp[(3) - (3)].string);
@@ -34833,19 +34833,19 @@ yyreduce:
 
   case 1939:
 /* Line 1792 of yacc.c  */
-#line 12624 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12624 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.line_separators).cleanup(); }
     break;
 
   case 1940:
 /* Line 1792 of yacc.c  */
-#line 12625 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12625 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.line_separators)= (yyvsp[(2) - (2)].line_separators); }
     break;
 
   case 1941:
 /* Line 1792 of yacc.c  */
-#line 12630 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12630 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.line_separators)= (yyvsp[(1) - (2)].line_separators);
             (yyval.line_separators).merge_line_separators((yyvsp[(2) - (2)].line_separators));
@@ -34854,7 +34854,7 @@ yyreduce:
 
   case 1943:
 /* Line 1792 of yacc.c  */
-#line 12639 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12639 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.line_separators).cleanup();
             (yyval.line_separators).line_term= (yyvsp[(3) - (3)].string);
@@ -34863,7 +34863,7 @@ yyreduce:
 
   case 1944:
 /* Line 1792 of yacc.c  */
-#line 12644 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12644 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.line_separators).cleanup();
             (yyval.line_separators).line_start= (yyvsp[(3) - (3)].string);
@@ -34872,19 +34872,19 @@ yyreduce:
 
   case 1945:
 /* Line 1792 of yacc.c  */
-#line 12651 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12651 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { }
     break;
 
   case 1946:
 /* Line 1792 of yacc.c  */
-#line 12653 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12653 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->exchange->line.line_term = (yyvsp[(4) - (4)].string); }
     break;
 
   case 1948:
 /* Line 1792 of yacc.c  */
-#line 12658 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12658 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             DBUG_ASSERT(Lex->exchange != 0);
             Lex->exchange->skip_lines= atol((yyvsp[(2) - (3)].lex_str).str);
@@ -34893,55 +34893,55 @@ yyreduce:
 
   case 1949:
 /* Line 1792 of yacc.c  */
-#line 12665 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12665 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { }
     break;
 
   case 1950:
 /* Line 1792 of yacc.c  */
-#line 12667 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12667 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { }
     break;
 
   case 1951:
 /* Line 1792 of yacc.c  */
-#line 12671 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12671 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1952:
 /* Line 1792 of yacc.c  */
-#line 12672 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12672 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1953:
 /* Line 1792 of yacc.c  */
-#line 12673 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12673 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1954:
 /* Line 1792 of yacc.c  */
-#line 12678 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12678 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->load_field_list.push_back((yyvsp[(3) - (3)].item)); }
     break;
 
   case 1955:
 /* Line 1792 of yacc.c  */
-#line 12680 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12680 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->load_field_list.push_back((yyvsp[(1) - (1)].item)); }
     break;
 
   case 1956:
 /* Line 1792 of yacc.c  */
-#line 12684 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12684 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { ITEMIZE((yyvsp[(1) - (1)].item), &(yyval.item)); }
     break;
 
   case 1957:
 /* Line 1792 of yacc.c  */
-#line 12686 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12686 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= new (YYTHD->mem_root) Item_user_var_as_out_param((yyvsp[(2) - (2)].lex_str));
             if ((yyval.item) == NULL)
@@ -34951,19 +34951,19 @@ yyreduce:
 
   case 1958:
 /* Line 1792 of yacc.c  */
-#line 12694 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12694 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1959:
 /* Line 1792 of yacc.c  */
-#line 12695 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12695 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 1962:
 /* Line 1792 of yacc.c  */
-#line 12705 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12705 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(1) - (3)].item), &(yyvsp[(1) - (3)].item));
             ITEMIZE((yyvsp[(3) - (3)].item), &(yyvsp[(3) - (3)].item));
@@ -34985,7 +34985,7 @@ yyreduce:
 
   case 1963:
 /* Line 1792 of yacc.c  */
-#line 12728 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12728 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.text_literal)= NEW_PTN PTI_text_literal_text_string((yyloc),
                 YYTHD->m_parser_state->m_lip.text_string_is_7bit(), (yyvsp[(1) - (1)].lex_str));
@@ -34994,7 +34994,7 @@ yyreduce:
 
   case 1964:
 /* Line 1792 of yacc.c  */
-#line 12733 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12733 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.text_literal)= NEW_PTN PTI_text_literal_nchar_string((yyloc),
                 YYTHD->m_parser_state->m_lip.text_string_is_7bit(), (yyvsp[(1) - (1)].lex_str));
@@ -35003,7 +35003,7 @@ yyreduce:
 
   case 1965:
 /* Line 1792 of yacc.c  */
-#line 12738 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12738 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.text_literal)= NEW_PTN PTI_text_literal_underscore_charset((yyloc),
                 YYTHD->m_parser_state->m_lip.text_string_is_7bit(), (yyvsp[(1) - (2)].charset), (yyvsp[(2) - (2)].lex_str));
@@ -35012,7 +35012,7 @@ yyreduce:
 
   case 1966:
 /* Line 1792 of yacc.c  */
-#line 12743 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12743 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.text_literal)= NEW_PTN PTI_text_literal_concat((yyloc),
                 YYTHD->m_parser_state->m_lip.text_string_is_7bit(), (yyvsp[(1) - (2)].text_literal), (yyvsp[(2) - (2)].lex_str));
@@ -35021,7 +35021,7 @@ yyreduce:
 
   case 1967:
 /* Line 1792 of yacc.c  */
-#line 12751 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12751 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.string)= new (YYTHD->mem_root) String((yyvsp[(1) - (1)].lex_str).str,
                                              (yyvsp[(1) - (1)].lex_str).length,
@@ -35033,7 +35033,7 @@ yyreduce:
 
   case 1968:
 /* Line 1792 of yacc.c  */
-#line 12759 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12759 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX_STRING s= Item_hex_string::make_hex_str((yyvsp[(1) - (1)].lex_str).str, (yyvsp[(1) - (1)].lex_str).length);
             (yyval.string)= new (YYTHD->mem_root) String(s.str, s.length, &my_charset_bin);
@@ -35044,7 +35044,7 @@ yyreduce:
 
   case 1969:
 /* Line 1792 of yacc.c  */
-#line 12766 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12766 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX_STRING s= Item_bin_string::make_bin_str((yyvsp[(1) - (1)].lex_str).str, (yyvsp[(1) - (1)].lex_str).length);
             (yyval.string)= new (YYTHD->mem_root) String(s.str, s.length, &my_charset_bin);
@@ -35055,7 +35055,7 @@ yyreduce:
 
   case 1970:
 /* Line 1792 of yacc.c  */
-#line 12776 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12776 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.param_marker)= NEW_PTN Item_param((yyloc),
                                    (uint) ((yylsp[(1) - (1)]).raw.start - YYLIP->get_buf()));
@@ -35064,19 +35064,19 @@ yyreduce:
 
   case 1971:
 /* Line 1792 of yacc.c  */
-#line 12783 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12783 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { ITEMIZE((yyvsp[(1) - (1)].item), &(yyval.item)); }
     break;
 
   case 1972:
 /* Line 1792 of yacc.c  */
-#line 12784 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12784 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { ITEMIZE((yyvsp[(2) - (2)].item), &(yyval.item)); }
     break;
 
   case 1973:
 /* Line 1792 of yacc.c  */
-#line 12786 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12786 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             ITEMIZE((yyvsp[(2) - (2)].item), &(yyvsp[(2) - (2)].item));
 
@@ -35087,13 +35087,13 @@ yyreduce:
 
   case 1974:
 /* Line 1792 of yacc.c  */
-#line 12796 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12796 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= (yyvsp[(1) - (1)].text_literal); }
     break;
 
   case 1977:
 /* Line 1792 of yacc.c  */
-#line 12800 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12800 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex_input_stream *lip= YYLIP;
             /*
@@ -35110,7 +35110,7 @@ yyreduce:
 
   case 1978:
 /* Line 1792 of yacc.c  */
-#line 12813 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12813 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_int((yyloc), NAME_STRING("FALSE"), 0, 1);
           }
@@ -35118,7 +35118,7 @@ yyreduce:
 
   case 1979:
 /* Line 1792 of yacc.c  */
-#line 12817 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12817 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_int((yyloc), NAME_STRING("TRUE"), 1, 1);
           }
@@ -35126,7 +35126,7 @@ yyreduce:
 
   case 1980:
 /* Line 1792 of yacc.c  */
-#line 12821 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12821 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_hex_string((yyloc), (yyvsp[(1) - (1)].lex_str));
           }
@@ -35134,7 +35134,7 @@ yyreduce:
 
   case 1981:
 /* Line 1792 of yacc.c  */
-#line 12825 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12825 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_bin_string((yyloc), (yyvsp[(1) - (1)].lex_str));
           }
@@ -35142,7 +35142,7 @@ yyreduce:
 
   case 1982:
 /* Line 1792 of yacc.c  */
-#line 12829 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12829 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_literal_underscore_charset_hex_num((yyloc), (yyvsp[(1) - (2)].charset), (yyvsp[(2) - (2)].lex_str));
           }
@@ -35150,7 +35150,7 @@ yyreduce:
 
   case 1983:
 /* Line 1792 of yacc.c  */
-#line 12833 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12833 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_literal_underscore_charset_bin_num((yyloc), (yyvsp[(1) - (2)].charset), (yyvsp[(2) - (2)].lex_str));
           }
@@ -35158,7 +35158,7 @@ yyreduce:
 
   case 1984:
 /* Line 1792 of yacc.c  */
-#line 12840 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12840 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_num_literal_num((yyloc), (yyvsp[(1) - (1)].lex_str));
           }
@@ -35166,7 +35166,7 @@ yyreduce:
 
   case 1985:
 /* Line 1792 of yacc.c  */
-#line 12844 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12844 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_num_literal_num((yyloc), (yyvsp[(1) - (1)].lex_str));
           }
@@ -35174,7 +35174,7 @@ yyreduce:
 
   case 1986:
 /* Line 1792 of yacc.c  */
-#line 12848 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12848 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_uint((yyloc), (yyvsp[(1) - (1)].lex_str).str, (yyvsp[(1) - (1)].lex_str).length);
           }
@@ -35182,7 +35182,7 @@ yyreduce:
 
   case 1987:
 /* Line 1792 of yacc.c  */
-#line 12852 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12852 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_decimal((yyloc), (yyvsp[(1) - (1)].lex_str).str, (yyvsp[(1) - (1)].lex_str).length, YYCSCL);
           }
@@ -35190,7 +35190,7 @@ yyreduce:
 
   case 1988:
 /* Line 1792 of yacc.c  */
-#line 12856 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12856 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_float((yyloc), (yyvsp[(1) - (1)].lex_str).str, (yyvsp[(1) - (1)].lex_str).length);
           }
@@ -35198,7 +35198,7 @@ yyreduce:
 
   case 1989:
 /* Line 1792 of yacc.c  */
-#line 12864 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12864 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_temporal_literal((yyloc), (yyvsp[(2) - (2)].lex_str), MYSQL_TYPE_DATE, YYCSCL);
           }
@@ -35206,7 +35206,7 @@ yyreduce:
 
   case 1990:
 /* Line 1792 of yacc.c  */
-#line 12868 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12868 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_temporal_literal((yyloc), (yyvsp[(2) - (2)].lex_str), MYSQL_TYPE_TIME, YYCSCL);
           }
@@ -35214,7 +35214,7 @@ yyreduce:
 
   case 1991:
 /* Line 1792 of yacc.c  */
-#line 12872 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12872 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_temporal_literal((yyloc), (yyvsp[(2) - (2)].lex_str), MYSQL_TYPE_DATETIME, YYCSCL);
           }
@@ -35222,7 +35222,7 @@ yyreduce:
 
   case 1994:
 /* Line 1792 of yacc.c  */
-#line 12891 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12891 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_table_wild((yyloc), NULL, (yyvsp[(1) - (3)].lex_str).str);
           }
@@ -35230,7 +35230,7 @@ yyreduce:
 
   case 1995:
 /* Line 1792 of yacc.c  */
-#line 12895 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12895 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_table_wild((yyloc), (yyvsp[(1) - (5)].lex_str).str, (yyvsp[(3) - (5)].lex_str).str);
           }
@@ -35238,7 +35238,7 @@ yyreduce:
 
   case 1996:
 /* Line 1792 of yacc.c  */
-#line 12902 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12902 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.order_expr)= NEW_PTN PT_order_expr((yyvsp[(1) - (2)].item), (yyvsp[(2) - (2)].num));
           }
@@ -35246,7 +35246,7 @@ yyreduce:
 
   case 1997:
 /* Line 1792 of yacc.c  */
-#line 12909 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12909 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_simple_ident_ident((yyloc), (yyvsp[(1) - (1)].lex_str));
           }
@@ -35254,7 +35254,7 @@ yyreduce:
 
   case 1999:
 /* Line 1792 of yacc.c  */
-#line 12917 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12917 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_simple_ident_nospvar_ident((yyloc), (yyvsp[(1) - (1)].lex_str));
           }
@@ -35262,7 +35262,7 @@ yyreduce:
 
   case 2001:
 /* Line 1792 of yacc.c  */
-#line 12925 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12925 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_simple_ident_q_2d((yyloc), (yyvsp[(1) - (3)].lex_str).str, (yyvsp[(3) - (3)].lex_str).str);
           }
@@ -35270,7 +35270,7 @@ yyreduce:
 
   case 2002:
 /* Line 1792 of yacc.c  */
-#line 12929 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12929 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_simple_ident_q_3d((yyloc), NULL, (yyvsp[(2) - (4)].lex_str).str, (yyvsp[(4) - (4)].lex_str).str);
           }
@@ -35278,7 +35278,7 @@ yyreduce:
 
   case 2003:
 /* Line 1792 of yacc.c  */
-#line 12933 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12933 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN PTI_simple_ident_q_3d((yyloc), (yyvsp[(1) - (5)].lex_str).str, (yyvsp[(3) - (5)].lex_str).str, (yyvsp[(5) - (5)].lex_str).str);
           }
@@ -35286,13 +35286,13 @@ yyreduce:
 
   case 2004:
 /* Line 1792 of yacc.c  */
-#line 12939 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12939 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)=(yyvsp[(1) - (1)].lex_str);}
     break;
 
   case 2005:
 /* Line 1792 of yacc.c  */
-#line 12941 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12941 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             TABLE_LIST *table= Select->table_list.first;
             if (my_strcasecmp(table_alias_charset, (yyvsp[(1) - (5)].lex_str).str, table->db))
@@ -35312,7 +35312,7 @@ yyreduce:
 
   case 2006:
 /* Line 1792 of yacc.c  */
-#line 12957 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12957 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             TABLE_LIST *table= Select->table_list.first;
             if (my_strcasecmp(table_alias_charset, (yyvsp[(1) - (3)].lex_str).str, table->alias))
@@ -35326,13 +35326,13 @@ yyreduce:
 
   case 2007:
 /* Line 1792 of yacc.c  */
-#line 12966 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12966 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)=(yyvsp[(2) - (2)].lex_str);}
     break;
 
   case 2008:
 /* Line 1792 of yacc.c  */
-#line 12971 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12971 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table)= NEW_PTN Table_ident(to_lex_cstring((yyvsp[(1) - (1)].lex_str)));
             if ((yyval.table) == NULL)
@@ -35342,7 +35342,7 @@ yyreduce:
 
   case 2009:
 /* Line 1792 of yacc.c  */
-#line 12977 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12977 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (YYTHD->get_protocol()->has_client_capability(CLIENT_NO_SCHEMA))
               (yyval.table)= NEW_PTN Table_ident(to_lex_cstring((yyvsp[(3) - (3)].lex_str)));
@@ -35356,7 +35356,7 @@ yyreduce:
 
   case 2010:
 /* Line 1792 of yacc.c  */
-#line 12987 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12987 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /* For Delphi */
             (yyval.table)= NEW_PTN Table_ident(to_lex_cstring((yyvsp[(2) - (2)].lex_str)));
@@ -35367,7 +35367,7 @@ yyreduce:
 
   case 2011:
 /* Line 1792 of yacc.c  */
-#line 12997 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 12997 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table_ident)= NEW_PTN Table_ident(to_lex_cstring((yyvsp[(1) - (2)].lex_str)));
             if ((yyval.table_ident) == NULL)
@@ -35377,7 +35377,7 @@ yyreduce:
 
   case 2012:
 /* Line 1792 of yacc.c  */
-#line 13003 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13003 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.table_ident)= NEW_PTN Table_ident(YYTHD, to_lex_cstring((yyvsp[(1) - (4)].lex_str)),
                                     to_lex_cstring((yyvsp[(3) - (4)].lex_str)), 0);
@@ -35388,7 +35388,7 @@ yyreduce:
 
   case 2013:
 /* Line 1792 of yacc.c  */
-#line 13013 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13013 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX_CSTRING db= { any_db, strlen(any_db) };
             (yyval.table)= new Table_ident(YYTHD, db, to_lex_cstring((yyvsp[(1) - (1)].lex_str)), 0);
@@ -35399,13 +35399,13 @@ yyreduce:
 
   case 2014:
 /* Line 1792 of yacc.c  */
-#line 13022 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13022 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)= (yyvsp[(1) - (1)].lex_str); }
     break;
 
   case 2015:
 /* Line 1792 of yacc.c  */
-#line 13024 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13024 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
 
@@ -35436,7 +35436,7 @@ yyreduce:
 
   case 2016:
 /* Line 1792 of yacc.c  */
-#line 13054 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13054 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!strcont((yyvsp[(1) - (1)].lex_str).str, "\n"))
               (yyval.lex_str)= (yyvsp[(1) - (1)].lex_str);
@@ -35450,7 +35450,7 @@ yyreduce:
 
   case 2017:
 /* Line 1792 of yacc.c  */
-#line 13067 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13067 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (strcont((yyvsp[(1) - (1)].lex_str).str, "."))
               (yyval.lex_str)= (yyvsp[(1) - (1)].lex_str);
@@ -35464,7 +35464,7 @@ yyreduce:
 
   case 2018:
 /* Line 1792 of yacc.c  */
-#line 13080 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13080 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
 
@@ -35481,7 +35481,7 @@ yyreduce:
 
   case 2019:
 /* Line 1792 of yacc.c  */
-#line 13096 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13096 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
 
@@ -35498,7 +35498,7 @@ yyreduce:
 
   case 2020:
 /* Line 1792 of yacc.c  */
-#line 13112 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13112 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
 
@@ -35516,13 +35516,13 @@ yyreduce:
 
   case 2021:
 /* Line 1792 of yacc.c  */
-#line 13128 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13128 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)=(yyvsp[(1) - (1)].lex_str); }
     break;
 
   case 2022:
 /* Line 1792 of yacc.c  */
-#line 13130 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13130 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             (yyval.lex_str).str= thd->strmake((yyvsp[(1) - (1)].symbol).str, (yyvsp[(1) - (1)].symbol).length);
@@ -35534,13 +35534,13 @@ yyreduce:
 
   case 2023:
 /* Line 1792 of yacc.c  */
-#line 13140 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13140 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)=(yyvsp[(1) - (1)].lex_str); }
     break;
 
   case 2024:
 /* Line 1792 of yacc.c  */
-#line 13142 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13142 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             (yyval.lex_str).str= thd->strmake((yyvsp[(1) - (1)].symbol).str, (yyvsp[(1) - (1)].symbol).length);
@@ -35552,25 +35552,25 @@ yyreduce:
 
   case 2025:
 /* Line 1792 of yacc.c  */
-#line 13152 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13152 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)=(yyvsp[(1) - (1)].lex_str);}
     break;
 
   case 2026:
 /* Line 1792 of yacc.c  */
-#line 13153 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13153 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)=(yyvsp[(1) - (1)].lex_str);}
     break;
 
   case 2027:
 /* Line 1792 of yacc.c  */
-#line 13154 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13154 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.lex_str)=(yyvsp[(1) - (1)].lex_str);}
     break;
 
   case 2028:
 /* Line 1792 of yacc.c  */
-#line 13159 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13159 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             if (!((yyval.lex_user)=(LEX_USER*) thd->alloc(sizeof(st_lex_user))))
@@ -35602,7 +35602,7 @@ yyreduce:
 
   case 2029:
 /* Line 1792 of yacc.c  */
-#line 13187 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13187 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             if (!((yyval.lex_user)=(LEX_USER*) thd->alloc(sizeof(st_lex_user))))
@@ -35643,7 +35643,7 @@ yyreduce:
 
   case 2030:
 /* Line 1792 of yacc.c  */
-#line 13224 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13224 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!((yyval.lex_user)=(LEX_USER*) YYTHD->alloc(sizeof(st_lex_user))))
               MYSQL_YYABORT;
@@ -35658,2269 +35658,2269 @@ yyreduce:
 
   case 2031:
 /* Line 1792 of yacc.c  */
-#line 13238 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13238 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2032:
 /* Line 1792 of yacc.c  */
-#line 13239 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13239 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2033:
 /* Line 1792 of yacc.c  */
-#line 13240 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13240 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2034:
 /* Line 1792 of yacc.c  */
-#line 13241 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13241 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2035:
 /* Line 1792 of yacc.c  */
-#line 13242 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13242 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2036:
 /* Line 1792 of yacc.c  */
-#line 13243 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13243 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2037:
 /* Line 1792 of yacc.c  */
-#line 13244 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13244 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2038:
 /* Line 1792 of yacc.c  */
-#line 13245 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13245 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2039:
 /* Line 1792 of yacc.c  */
-#line 13246 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13246 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2040:
 /* Line 1792 of yacc.c  */
-#line 13247 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13247 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2041:
 /* Line 1792 of yacc.c  */
-#line 13248 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13248 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2042:
 /* Line 1792 of yacc.c  */
-#line 13249 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13249 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2043:
 /* Line 1792 of yacc.c  */
-#line 13250 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13250 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2044:
 /* Line 1792 of yacc.c  */
-#line 13251 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13251 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2045:
 /* Line 1792 of yacc.c  */
-#line 13252 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13252 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2046:
 /* Line 1792 of yacc.c  */
-#line 13253 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13253 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2047:
 /* Line 1792 of yacc.c  */
-#line 13254 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13254 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2048:
 /* Line 1792 of yacc.c  */
-#line 13255 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13255 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2049:
 /* Line 1792 of yacc.c  */
-#line 13256 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13256 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2050:
 /* Line 1792 of yacc.c  */
-#line 13257 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13257 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2051:
 /* Line 1792 of yacc.c  */
-#line 13258 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13258 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2052:
 /* Line 1792 of yacc.c  */
-#line 13259 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13259 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2053:
 /* Line 1792 of yacc.c  */
-#line 13260 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13260 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2054:
 /* Line 1792 of yacc.c  */
-#line 13261 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13261 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2055:
 /* Line 1792 of yacc.c  */
-#line 13262 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13262 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2056:
 /* Line 1792 of yacc.c  */
-#line 13263 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13263 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2057:
 /* Line 1792 of yacc.c  */
-#line 13264 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13264 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2058:
 /* Line 1792 of yacc.c  */
-#line 13265 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13265 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2059:
 /* Line 1792 of yacc.c  */
-#line 13266 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13266 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2060:
 /* Line 1792 of yacc.c  */
-#line 13267 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13267 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2061:
 /* Line 1792 of yacc.c  */
-#line 13268 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13268 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2062:
 /* Line 1792 of yacc.c  */
-#line 13269 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13269 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2063:
 /* Line 1792 of yacc.c  */
-#line 13270 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13270 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2064:
 /* Line 1792 of yacc.c  */
-#line 13271 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13271 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2065:
 /* Line 1792 of yacc.c  */
-#line 13272 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13272 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2066:
 /* Line 1792 of yacc.c  */
-#line 13273 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13273 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2067:
 /* Line 1792 of yacc.c  */
-#line 13274 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13274 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2068:
 /* Line 1792 of yacc.c  */
-#line 13275 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13275 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2069:
 /* Line 1792 of yacc.c  */
-#line 13276 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13276 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2070:
 /* Line 1792 of yacc.c  */
-#line 13277 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13277 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2071:
 /* Line 1792 of yacc.c  */
-#line 13278 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13278 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2072:
 /* Line 1792 of yacc.c  */
-#line 13279 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13279 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2073:
 /* Line 1792 of yacc.c  */
-#line 13280 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13280 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2074:
 /* Line 1792 of yacc.c  */
-#line 13281 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13281 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2075:
 /* Line 1792 of yacc.c  */
-#line 13282 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13282 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2076:
 /* Line 1792 of yacc.c  */
-#line 13283 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13283 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2077:
 /* Line 1792 of yacc.c  */
-#line 13284 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13284 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2078:
 /* Line 1792 of yacc.c  */
-#line 13285 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13285 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2079:
 /* Line 1792 of yacc.c  */
-#line 13286 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13286 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2080:
 /* Line 1792 of yacc.c  */
-#line 13287 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13287 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2081:
 /* Line 1792 of yacc.c  */
-#line 13288 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13288 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2082:
 /* Line 1792 of yacc.c  */
-#line 13289 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13289 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2083:
 /* Line 1792 of yacc.c  */
-#line 13290 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13290 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2084:
 /* Line 1792 of yacc.c  */
-#line 13291 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13291 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2085:
 /* Line 1792 of yacc.c  */
-#line 13292 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13292 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2086:
 /* Line 1792 of yacc.c  */
-#line 13293 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13293 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2087:
 /* Line 1792 of yacc.c  */
-#line 13294 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13294 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2088:
 /* Line 1792 of yacc.c  */
-#line 13304 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13304 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2089:
 /* Line 1792 of yacc.c  */
-#line 13305 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13305 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2090:
 /* Line 1792 of yacc.c  */
-#line 13306 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13306 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2091:
 /* Line 1792 of yacc.c  */
-#line 13307 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13307 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2092:
 /* Line 1792 of yacc.c  */
-#line 13308 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13308 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2093:
 /* Line 1792 of yacc.c  */
-#line 13309 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13309 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2094:
 /* Line 1792 of yacc.c  */
-#line 13310 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13310 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2095:
 /* Line 1792 of yacc.c  */
-#line 13311 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13311 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2096:
 /* Line 1792 of yacc.c  */
-#line 13312 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13312 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2097:
 /* Line 1792 of yacc.c  */
-#line 13313 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13313 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2098:
 /* Line 1792 of yacc.c  */
-#line 13314 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13314 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2099:
 /* Line 1792 of yacc.c  */
-#line 13315 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13315 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2100:
 /* Line 1792 of yacc.c  */
-#line 13316 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13316 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2101:
 /* Line 1792 of yacc.c  */
-#line 13317 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13317 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2102:
 /* Line 1792 of yacc.c  */
-#line 13318 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13318 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2103:
 /* Line 1792 of yacc.c  */
-#line 13319 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13319 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2104:
 /* Line 1792 of yacc.c  */
-#line 13320 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13320 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2105:
 /* Line 1792 of yacc.c  */
-#line 13321 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13321 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2106:
 /* Line 1792 of yacc.c  */
-#line 13322 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13322 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2107:
 /* Line 1792 of yacc.c  */
-#line 13323 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13323 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2108:
 /* Line 1792 of yacc.c  */
-#line 13324 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13324 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2109:
 /* Line 1792 of yacc.c  */
-#line 13325 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13325 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2110:
 /* Line 1792 of yacc.c  */
-#line 13326 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13326 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2111:
 /* Line 1792 of yacc.c  */
-#line 13327 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13327 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2112:
 /* Line 1792 of yacc.c  */
-#line 13328 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13328 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2113:
 /* Line 1792 of yacc.c  */
-#line 13329 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13329 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2114:
 /* Line 1792 of yacc.c  */
-#line 13330 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13330 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2115:
 /* Line 1792 of yacc.c  */
-#line 13331 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13331 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2116:
 /* Line 1792 of yacc.c  */
-#line 13332 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13332 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2117:
 /* Line 1792 of yacc.c  */
-#line 13333 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13333 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2118:
 /* Line 1792 of yacc.c  */
-#line 13334 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13334 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2119:
 /* Line 1792 of yacc.c  */
-#line 13335 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13335 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2120:
 /* Line 1792 of yacc.c  */
-#line 13336 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13336 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2121:
 /* Line 1792 of yacc.c  */
-#line 13337 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13337 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2122:
 /* Line 1792 of yacc.c  */
-#line 13338 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13338 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2123:
 /* Line 1792 of yacc.c  */
-#line 13339 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13339 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2124:
 /* Line 1792 of yacc.c  */
-#line 13340 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13340 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2125:
 /* Line 1792 of yacc.c  */
-#line 13341 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13341 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2126:
 /* Line 1792 of yacc.c  */
-#line 13342 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13342 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2127:
 /* Line 1792 of yacc.c  */
-#line 13343 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13343 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2128:
 /* Line 1792 of yacc.c  */
-#line 13344 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13344 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2129:
 /* Line 1792 of yacc.c  */
-#line 13345 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13345 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2130:
 /* Line 1792 of yacc.c  */
-#line 13346 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13346 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2131:
 /* Line 1792 of yacc.c  */
-#line 13347 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13347 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2132:
 /* Line 1792 of yacc.c  */
-#line 13348 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13348 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2133:
 /* Line 1792 of yacc.c  */
-#line 13349 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13349 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2134:
 /* Line 1792 of yacc.c  */
-#line 13350 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13350 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2135:
 /* Line 1792 of yacc.c  */
-#line 13351 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13351 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2136:
 /* Line 1792 of yacc.c  */
-#line 13356 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13356 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2137:
 /* Line 1792 of yacc.c  */
-#line 13357 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13357 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2138:
 /* Line 1792 of yacc.c  */
-#line 13358 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13358 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2139:
 /* Line 1792 of yacc.c  */
-#line 13359 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13359 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2140:
 /* Line 1792 of yacc.c  */
-#line 13360 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13360 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2141:
 /* Line 1792 of yacc.c  */
-#line 13361 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13361 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2142:
 /* Line 1792 of yacc.c  */
-#line 13362 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13362 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2143:
 /* Line 1792 of yacc.c  */
-#line 13363 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13363 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2144:
 /* Line 1792 of yacc.c  */
-#line 13364 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13364 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2145:
 /* Line 1792 of yacc.c  */
-#line 13365 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13365 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2146:
 /* Line 1792 of yacc.c  */
-#line 13366 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13366 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2147:
 /* Line 1792 of yacc.c  */
-#line 13367 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13367 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2148:
 /* Line 1792 of yacc.c  */
-#line 13368 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13368 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2149:
 /* Line 1792 of yacc.c  */
-#line 13369 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13369 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2150:
 /* Line 1792 of yacc.c  */
-#line 13370 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13370 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2151:
 /* Line 1792 of yacc.c  */
-#line 13371 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13371 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2152:
 /* Line 1792 of yacc.c  */
-#line 13372 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13372 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2153:
 /* Line 1792 of yacc.c  */
-#line 13373 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13373 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2154:
 /* Line 1792 of yacc.c  */
-#line 13374 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13374 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2155:
 /* Line 1792 of yacc.c  */
-#line 13375 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13375 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2156:
 /* Line 1792 of yacc.c  */
-#line 13376 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13376 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2157:
 /* Line 1792 of yacc.c  */
-#line 13377 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13377 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2158:
 /* Line 1792 of yacc.c  */
-#line 13378 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13378 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2159:
 /* Line 1792 of yacc.c  */
-#line 13379 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13379 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2160:
 /* Line 1792 of yacc.c  */
-#line 13380 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13380 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2161:
 /* Line 1792 of yacc.c  */
-#line 13381 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13381 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2162:
 /* Line 1792 of yacc.c  */
-#line 13382 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13382 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2163:
 /* Line 1792 of yacc.c  */
-#line 13383 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13383 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2164:
 /* Line 1792 of yacc.c  */
-#line 13384 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13384 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2165:
 /* Line 1792 of yacc.c  */
-#line 13385 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13385 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2166:
 /* Line 1792 of yacc.c  */
-#line 13386 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13386 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2167:
 /* Line 1792 of yacc.c  */
-#line 13387 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13387 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2168:
 /* Line 1792 of yacc.c  */
-#line 13388 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13388 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2169:
 /* Line 1792 of yacc.c  */
-#line 13389 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13389 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2170:
 /* Line 1792 of yacc.c  */
-#line 13390 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13390 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2171:
 /* Line 1792 of yacc.c  */
-#line 13391 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13391 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2172:
 /* Line 1792 of yacc.c  */
-#line 13392 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13392 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2173:
 /* Line 1792 of yacc.c  */
-#line 13393 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13393 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2174:
 /* Line 1792 of yacc.c  */
-#line 13394 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13394 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2175:
 /* Line 1792 of yacc.c  */
-#line 13395 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13395 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2176:
 /* Line 1792 of yacc.c  */
-#line 13396 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13396 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2177:
 /* Line 1792 of yacc.c  */
-#line 13397 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13397 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2178:
 /* Line 1792 of yacc.c  */
-#line 13398 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13398 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2179:
 /* Line 1792 of yacc.c  */
-#line 13399 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13399 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2180:
 /* Line 1792 of yacc.c  */
-#line 13400 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13400 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2181:
 /* Line 1792 of yacc.c  */
-#line 13401 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13401 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2182:
 /* Line 1792 of yacc.c  */
-#line 13402 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13402 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2183:
 /* Line 1792 of yacc.c  */
-#line 13403 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13403 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2184:
 /* Line 1792 of yacc.c  */
-#line 13404 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13404 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2185:
 /* Line 1792 of yacc.c  */
-#line 13405 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13405 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2186:
 /* Line 1792 of yacc.c  */
-#line 13406 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13406 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2187:
 /* Line 1792 of yacc.c  */
-#line 13407 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13407 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2188:
 /* Line 1792 of yacc.c  */
-#line 13408 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13408 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2189:
 /* Line 1792 of yacc.c  */
-#line 13409 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13409 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2190:
 /* Line 1792 of yacc.c  */
-#line 13410 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13410 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2191:
 /* Line 1792 of yacc.c  */
-#line 13411 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13411 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2192:
 /* Line 1792 of yacc.c  */
-#line 13412 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13412 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2193:
 /* Line 1792 of yacc.c  */
-#line 13413 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13413 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2194:
 /* Line 1792 of yacc.c  */
-#line 13414 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13414 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2195:
 /* Line 1792 of yacc.c  */
-#line 13415 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13415 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2196:
 /* Line 1792 of yacc.c  */
-#line 13416 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13416 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2197:
 /* Line 1792 of yacc.c  */
-#line 13417 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13417 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2198:
 /* Line 1792 of yacc.c  */
-#line 13418 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13418 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2199:
 /* Line 1792 of yacc.c  */
-#line 13419 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13419 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2200:
 /* Line 1792 of yacc.c  */
-#line 13420 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13420 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2201:
 /* Line 1792 of yacc.c  */
-#line 13421 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13421 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2202:
 /* Line 1792 of yacc.c  */
-#line 13422 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13422 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2203:
 /* Line 1792 of yacc.c  */
-#line 13423 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13423 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2204:
 /* Line 1792 of yacc.c  */
-#line 13424 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13424 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2205:
 /* Line 1792 of yacc.c  */
-#line 13425 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13425 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2206:
 /* Line 1792 of yacc.c  */
-#line 13426 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13426 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2207:
 /* Line 1792 of yacc.c  */
-#line 13427 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13427 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2208:
 /* Line 1792 of yacc.c  */
-#line 13428 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13428 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2209:
 /* Line 1792 of yacc.c  */
-#line 13429 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13429 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2210:
 /* Line 1792 of yacc.c  */
-#line 13430 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13430 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2211:
 /* Line 1792 of yacc.c  */
-#line 13431 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13431 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2212:
 /* Line 1792 of yacc.c  */
-#line 13432 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13432 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2213:
 /* Line 1792 of yacc.c  */
-#line 13433 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13433 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2214:
 /* Line 1792 of yacc.c  */
-#line 13434 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13434 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2215:
 /* Line 1792 of yacc.c  */
-#line 13435 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13435 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2216:
 /* Line 1792 of yacc.c  */
-#line 13436 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13436 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2217:
 /* Line 1792 of yacc.c  */
-#line 13437 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13437 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2218:
 /* Line 1792 of yacc.c  */
-#line 13438 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13438 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2219:
 /* Line 1792 of yacc.c  */
-#line 13439 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13439 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2220:
 /* Line 1792 of yacc.c  */
-#line 13440 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13440 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2221:
 /* Line 1792 of yacc.c  */
-#line 13441 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13441 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2222:
 /* Line 1792 of yacc.c  */
-#line 13442 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13442 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2223:
 /* Line 1792 of yacc.c  */
-#line 13443 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13443 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2224:
 /* Line 1792 of yacc.c  */
-#line 13444 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13444 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2225:
 /* Line 1792 of yacc.c  */
-#line 13445 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13445 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2226:
 /* Line 1792 of yacc.c  */
-#line 13446 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13446 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2227:
 /* Line 1792 of yacc.c  */
-#line 13447 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13447 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2228:
 /* Line 1792 of yacc.c  */
-#line 13448 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13448 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2229:
 /* Line 1792 of yacc.c  */
-#line 13449 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13449 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2230:
 /* Line 1792 of yacc.c  */
-#line 13450 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13450 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2231:
 /* Line 1792 of yacc.c  */
-#line 13451 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13451 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2232:
 /* Line 1792 of yacc.c  */
-#line 13452 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13452 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2233:
 /* Line 1792 of yacc.c  */
-#line 13453 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13453 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2234:
 /* Line 1792 of yacc.c  */
-#line 13454 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13454 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2235:
 /* Line 1792 of yacc.c  */
-#line 13455 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13455 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2236:
 /* Line 1792 of yacc.c  */
-#line 13456 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13456 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2237:
 /* Line 1792 of yacc.c  */
-#line 13457 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13457 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2238:
 /* Line 1792 of yacc.c  */
-#line 13458 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13458 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2239:
 /* Line 1792 of yacc.c  */
-#line 13459 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13459 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2240:
 /* Line 1792 of yacc.c  */
-#line 13460 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13460 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2241:
 /* Line 1792 of yacc.c  */
-#line 13461 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13461 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2242:
 /* Line 1792 of yacc.c  */
-#line 13462 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13462 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2243:
 /* Line 1792 of yacc.c  */
-#line 13463 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13463 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2244:
 /* Line 1792 of yacc.c  */
-#line 13464 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13464 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2245:
 /* Line 1792 of yacc.c  */
-#line 13465 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13465 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2246:
 /* Line 1792 of yacc.c  */
-#line 13466 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13466 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2247:
 /* Line 1792 of yacc.c  */
-#line 13467 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13467 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2248:
 /* Line 1792 of yacc.c  */
-#line 13468 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13468 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2249:
 /* Line 1792 of yacc.c  */
-#line 13469 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13469 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2250:
 /* Line 1792 of yacc.c  */
-#line 13470 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13470 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2251:
 /* Line 1792 of yacc.c  */
-#line 13471 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13471 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2252:
 /* Line 1792 of yacc.c  */
-#line 13472 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13472 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2253:
 /* Line 1792 of yacc.c  */
-#line 13473 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13473 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2254:
 /* Line 1792 of yacc.c  */
-#line 13474 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13474 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2255:
 /* Line 1792 of yacc.c  */
-#line 13475 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13475 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2256:
 /* Line 1792 of yacc.c  */
-#line 13476 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13476 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2257:
 /* Line 1792 of yacc.c  */
-#line 13477 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13477 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2258:
 /* Line 1792 of yacc.c  */
-#line 13478 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13478 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2259:
 /* Line 1792 of yacc.c  */
-#line 13479 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13479 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2260:
 /* Line 1792 of yacc.c  */
-#line 13480 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13480 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2261:
 /* Line 1792 of yacc.c  */
-#line 13481 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13481 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2262:
 /* Line 1792 of yacc.c  */
-#line 13482 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13482 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2263:
 /* Line 1792 of yacc.c  */
-#line 13483 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13483 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2264:
 /* Line 1792 of yacc.c  */
-#line 13484 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13484 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2265:
 /* Line 1792 of yacc.c  */
-#line 13485 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13485 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2266:
 /* Line 1792 of yacc.c  */
-#line 13486 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13486 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2267:
 /* Line 1792 of yacc.c  */
-#line 13487 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13487 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2268:
 /* Line 1792 of yacc.c  */
-#line 13488 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13488 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2269:
 /* Line 1792 of yacc.c  */
-#line 13489 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13489 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2270:
 /* Line 1792 of yacc.c  */
-#line 13490 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13490 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2271:
 /* Line 1792 of yacc.c  */
-#line 13491 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13491 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2272:
 /* Line 1792 of yacc.c  */
-#line 13492 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13492 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2273:
 /* Line 1792 of yacc.c  */
-#line 13493 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13493 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2274:
 /* Line 1792 of yacc.c  */
-#line 13494 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13494 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2275:
 /* Line 1792 of yacc.c  */
-#line 13495 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13495 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2276:
 /* Line 1792 of yacc.c  */
-#line 13496 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13496 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2277:
 /* Line 1792 of yacc.c  */
-#line 13497 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13497 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2278:
 /* Line 1792 of yacc.c  */
-#line 13498 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13498 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2279:
 /* Line 1792 of yacc.c  */
-#line 13499 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13499 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2280:
 /* Line 1792 of yacc.c  */
-#line 13500 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13500 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2281:
 /* Line 1792 of yacc.c  */
-#line 13501 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13501 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2282:
 /* Line 1792 of yacc.c  */
-#line 13502 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13502 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2283:
 /* Line 1792 of yacc.c  */
-#line 13503 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13503 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2284:
 /* Line 1792 of yacc.c  */
-#line 13504 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13504 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2285:
 /* Line 1792 of yacc.c  */
-#line 13505 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13505 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2286:
 /* Line 1792 of yacc.c  */
-#line 13506 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13506 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2287:
 /* Line 1792 of yacc.c  */
-#line 13507 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13507 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2288:
 /* Line 1792 of yacc.c  */
-#line 13508 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13508 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2289:
 /* Line 1792 of yacc.c  */
-#line 13509 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13509 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2290:
 /* Line 1792 of yacc.c  */
-#line 13510 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13510 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2291:
 /* Line 1792 of yacc.c  */
-#line 13511 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13511 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2292:
 /* Line 1792 of yacc.c  */
-#line 13512 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13512 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2293:
 /* Line 1792 of yacc.c  */
-#line 13513 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13513 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2294:
 /* Line 1792 of yacc.c  */
-#line 13514 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13514 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2295:
 /* Line 1792 of yacc.c  */
-#line 13515 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13515 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2296:
 /* Line 1792 of yacc.c  */
-#line 13516 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13516 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2297:
 /* Line 1792 of yacc.c  */
-#line 13517 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13517 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2298:
 /* Line 1792 of yacc.c  */
-#line 13518 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13518 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2299:
 /* Line 1792 of yacc.c  */
-#line 13519 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13519 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2300:
 /* Line 1792 of yacc.c  */
-#line 13520 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13520 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2301:
 /* Line 1792 of yacc.c  */
-#line 13521 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13521 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2302:
 /* Line 1792 of yacc.c  */
-#line 13522 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13522 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2303:
 /* Line 1792 of yacc.c  */
-#line 13523 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13523 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2304:
 /* Line 1792 of yacc.c  */
-#line 13524 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13524 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2305:
 /* Line 1792 of yacc.c  */
-#line 13525 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13525 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2306:
 /* Line 1792 of yacc.c  */
-#line 13526 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13526 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2307:
 /* Line 1792 of yacc.c  */
-#line 13527 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13527 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2308:
 /* Line 1792 of yacc.c  */
-#line 13528 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13528 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2309:
 /* Line 1792 of yacc.c  */
-#line 13529 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13529 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2310:
 /* Line 1792 of yacc.c  */
-#line 13530 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13530 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2311:
 /* Line 1792 of yacc.c  */
-#line 13531 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13531 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2312:
 /* Line 1792 of yacc.c  */
-#line 13532 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13532 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2313:
 /* Line 1792 of yacc.c  */
-#line 13533 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13533 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2314:
 /* Line 1792 of yacc.c  */
-#line 13534 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13534 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2315:
 /* Line 1792 of yacc.c  */
-#line 13535 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13535 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2316:
 /* Line 1792 of yacc.c  */
-#line 13536 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13536 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2317:
 /* Line 1792 of yacc.c  */
-#line 13537 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13537 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2318:
 /* Line 1792 of yacc.c  */
-#line 13538 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13538 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2319:
 /* Line 1792 of yacc.c  */
-#line 13539 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13539 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2320:
 /* Line 1792 of yacc.c  */
-#line 13540 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13540 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2321:
 /* Line 1792 of yacc.c  */
-#line 13541 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13541 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2322:
 /* Line 1792 of yacc.c  */
-#line 13542 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13542 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2323:
 /* Line 1792 of yacc.c  */
-#line 13543 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13543 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2324:
 /* Line 1792 of yacc.c  */
-#line 13544 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13544 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2325:
 /* Line 1792 of yacc.c  */
-#line 13545 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13545 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2326:
 /* Line 1792 of yacc.c  */
-#line 13546 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13546 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2327:
 /* Line 1792 of yacc.c  */
-#line 13547 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13547 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2328:
 /* Line 1792 of yacc.c  */
-#line 13548 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13548 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2329:
 /* Line 1792 of yacc.c  */
-#line 13549 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13549 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2330:
 /* Line 1792 of yacc.c  */
-#line 13550 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13550 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2331:
 /* Line 1792 of yacc.c  */
-#line 13551 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13551 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2332:
 /* Line 1792 of yacc.c  */
-#line 13552 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13552 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2333:
 /* Line 1792 of yacc.c  */
-#line 13553 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13553 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2334:
 /* Line 1792 of yacc.c  */
-#line 13554 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13554 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2335:
 /* Line 1792 of yacc.c  */
-#line 13555 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13555 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2336:
 /* Line 1792 of yacc.c  */
-#line 13556 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13556 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2337:
 /* Line 1792 of yacc.c  */
-#line 13557 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13557 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2338:
 /* Line 1792 of yacc.c  */
-#line 13558 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13558 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2339:
 /* Line 1792 of yacc.c  */
-#line 13559 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13559 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2340:
 /* Line 1792 of yacc.c  */
-#line 13560 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13560 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2341:
 /* Line 1792 of yacc.c  */
-#line 13561 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13561 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2342:
 /* Line 1792 of yacc.c  */
-#line 13562 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13562 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2343:
 /* Line 1792 of yacc.c  */
-#line 13563 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13563 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2344:
 /* Line 1792 of yacc.c  */
-#line 13564 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13564 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2345:
 /* Line 1792 of yacc.c  */
-#line 13565 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13565 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2346:
 /* Line 1792 of yacc.c  */
-#line 13566 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13566 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2347:
 /* Line 1792 of yacc.c  */
-#line 13567 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13567 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2348:
 /* Line 1792 of yacc.c  */
-#line 13568 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13568 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2349:
 /* Line 1792 of yacc.c  */
-#line 13569 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13569 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2350:
 /* Line 1792 of yacc.c  */
-#line 13570 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13570 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2351:
 /* Line 1792 of yacc.c  */
-#line 13571 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13571 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2352:
 /* Line 1792 of yacc.c  */
-#line 13572 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13572 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2353:
 /* Line 1792 of yacc.c  */
-#line 13573 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13573 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2354:
 /* Line 1792 of yacc.c  */
-#line 13574 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13574 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2355:
 /* Line 1792 of yacc.c  */
-#line 13575 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13575 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2356:
 /* Line 1792 of yacc.c  */
-#line 13576 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13576 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2357:
 /* Line 1792 of yacc.c  */
-#line 13577 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13577 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2358:
 /* Line 1792 of yacc.c  */
-#line 13578 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13578 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2359:
 /* Line 1792 of yacc.c  */
-#line 13579 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13579 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2360:
 /* Line 1792 of yacc.c  */
-#line 13580 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13580 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2361:
 /* Line 1792 of yacc.c  */
-#line 13581 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13581 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2362:
 /* Line 1792 of yacc.c  */
-#line 13582 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13582 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2363:
 /* Line 1792 of yacc.c  */
-#line 13583 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13583 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2364:
 /* Line 1792 of yacc.c  */
-#line 13584 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13584 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2365:
 /* Line 1792 of yacc.c  */
-#line 13585 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13585 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2366:
 /* Line 1792 of yacc.c  */
-#line 13586 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13586 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2367:
 /* Line 1792 of yacc.c  */
-#line 13587 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13587 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2368:
 /* Line 1792 of yacc.c  */
-#line 13588 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13588 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2369:
 /* Line 1792 of yacc.c  */
-#line 13589 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13589 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2370:
 /* Line 1792 of yacc.c  */
-#line 13590 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13590 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2371:
 /* Line 1792 of yacc.c  */
-#line 13591 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13591 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2372:
 /* Line 1792 of yacc.c  */
-#line 13592 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13592 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2373:
 /* Line 1792 of yacc.c  */
-#line 13593 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13593 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2374:
 /* Line 1792 of yacc.c  */
-#line 13594 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13594 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2375:
 /* Line 1792 of yacc.c  */
-#line 13595 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13595 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2376:
 /* Line 1792 of yacc.c  */
-#line 13596 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13596 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2377:
 /* Line 1792 of yacc.c  */
-#line 13597 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13597 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2378:
 /* Line 1792 of yacc.c  */
-#line 13598 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13598 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2379:
 /* Line 1792 of yacc.c  */
-#line 13599 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13599 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2380:
 /* Line 1792 of yacc.c  */
-#line 13600 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13600 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2381:
 /* Line 1792 of yacc.c  */
-#line 13601 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13601 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2382:
 /* Line 1792 of yacc.c  */
-#line 13602 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13602 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2383:
 /* Line 1792 of yacc.c  */
-#line 13603 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13603 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2384:
 /* Line 1792 of yacc.c  */
-#line 13604 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13604 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2385:
 /* Line 1792 of yacc.c  */
-#line 13605 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13605 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2386:
 /* Line 1792 of yacc.c  */
-#line 13606 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13606 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2387:
 /* Line 1792 of yacc.c  */
-#line 13607 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13607 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2388:
 /* Line 1792 of yacc.c  */
-#line 13608 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13608 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2389:
 /* Line 1792 of yacc.c  */
-#line 13609 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13609 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2390:
 /* Line 1792 of yacc.c  */
-#line 13610 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13610 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2391:
 /* Line 1792 of yacc.c  */
-#line 13611 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13611 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2392:
 /* Line 1792 of yacc.c  */
-#line 13612 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13612 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2393:
 /* Line 1792 of yacc.c  */
-#line 13613 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13613 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2394:
 /* Line 1792 of yacc.c  */
-#line 13614 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13614 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2395:
 /* Line 1792 of yacc.c  */
-#line 13615 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13615 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2396:
 /* Line 1792 of yacc.c  */
-#line 13616 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13616 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2397:
 /* Line 1792 of yacc.c  */
-#line 13617 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13617 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2398:
 /* Line 1792 of yacc.c  */
-#line 13618 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13618 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2399:
 /* Line 1792 of yacc.c  */
-#line 13619 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13619 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2400:
 /* Line 1792 of yacc.c  */
-#line 13620 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13620 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2401:
 /* Line 1792 of yacc.c  */
-#line 13621 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13621 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2402:
 /* Line 1792 of yacc.c  */
-#line 13622 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13622 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2403:
 /* Line 1792 of yacc.c  */
-#line 13623 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13623 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2404:
 /* Line 1792 of yacc.c  */
-#line 13624 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13624 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2405:
 /* Line 1792 of yacc.c  */
-#line 13625 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13625 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2406:
 /* Line 1792 of yacc.c  */
-#line 13626 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13626 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2407:
 /* Line 1792 of yacc.c  */
-#line 13627 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13627 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2408:
 /* Line 1792 of yacc.c  */
-#line 13639 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13639 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.set)= NEW_PTN PT_set((yylsp[(1) - (2)]), (yyvsp[(2) - (2)].start_option_value_list));
           }
@@ -37928,7 +37928,7 @@ yyreduce:
 
   case 2409:
 /* Line 1792 of yacc.c  */
-#line 13648 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13648 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.start_option_value_list)= NEW_PTN PT_start_option_value_list_no_type((yyvsp[(1) - (2)].option_value_no_option_type), (yylsp[(1) - (2)]), (yyvsp[(2) - (2)].option_value_list));
           }
@@ -37936,7 +37936,7 @@ yyreduce:
 
   case 2410:
 /* Line 1792 of yacc.c  */
-#line 13652 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13652 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.start_option_value_list)= NEW_PTN PT_start_option_value_list_transaction((yyvsp[(2) - (2)].transaction_characteristics), (yylsp[(2) - (2)]));
           }
@@ -37944,7 +37944,7 @@ yyreduce:
 
   case 2411:
 /* Line 1792 of yacc.c  */
-#line 13656 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13656 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.start_option_value_list)= NEW_PTN PT_start_option_value_list_type((yyvsp[(1) - (2)].var_type), (yyvsp[(2) - (2)].start_option_value_list_following_option_type));
           }
@@ -37952,7 +37952,7 @@ yyreduce:
 
   case 2412:
 /* Line 1792 of yacc.c  */
-#line 13660 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13660 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.start_option_value_list)= NEW_PTN PT_option_value_no_option_type_password((yyvsp[(3) - (3)].simple_string), (yylsp[(3) - (3)]));
           }
@@ -37960,7 +37960,7 @@ yyreduce:
 
   case 2413:
 /* Line 1792 of yacc.c  */
-#line 13664 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13664 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             push_deprecated_warn(YYTHD, "SET PASSWORD = "
                                  "PASSWORD('<plaintext_password>')",
@@ -37971,7 +37971,7 @@ yyreduce:
 
   case 2414:
 /* Line 1792 of yacc.c  */
-#line 13671 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13671 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.start_option_value_list)= NEW_PTN PT_option_value_no_option_type_password_for((yyvsp[(3) - (5)].lex_user), (yyvsp[(5) - (5)].simple_string), (yylsp[(5) - (5)]));
           }
@@ -37979,7 +37979,7 @@ yyreduce:
 
   case 2415:
 /* Line 1792 of yacc.c  */
-#line 13675 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13675 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             push_deprecated_warn(YYTHD, "SET PASSWORD FOR <user> = "
                                  "PASSWORD('<plaintext_password>')",
@@ -37991,7 +37991,7 @@ yyreduce:
 
   case 2416:
 /* Line 1792 of yacc.c  */
-#line 13688 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13688 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.start_option_value_list_following_option_type)=
               NEW_PTN PT_start_option_value_list_following_option_type_eq((yyvsp[(1) - (2)].option_value_following_option_type),
@@ -38002,7 +38002,7 @@ yyreduce:
 
   case 2417:
 /* Line 1792 of yacc.c  */
-#line 13695 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13695 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.start_option_value_list_following_option_type)= NEW_PTN
               PT_start_option_value_list_following_option_type_transaction((yyvsp[(2) - (2)].transaction_characteristics),
@@ -38012,19 +38012,19 @@ yyreduce:
 
   case 2418:
 /* Line 1792 of yacc.c  */
-#line 13704 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13704 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.option_value_list)= NULL; }
     break;
 
   case 2419:
 /* Line 1792 of yacc.c  */
-#line 13705 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13705 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.option_value_list)= (yyvsp[(2) - (2)].option_value_list); }
     break;
 
   case 2420:
 /* Line 1792 of yacc.c  */
-#line 13711 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13711 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.option_value_list)= NEW_PTN PT_option_value_list_head((yylsp[(0) - (1)]), (yyvsp[(1) - (1)].node), (yylsp[(1) - (1)]));
           }
@@ -38032,7 +38032,7 @@ yyreduce:
 
   case 2421:
 /* Line 1792 of yacc.c  */
-#line 13715 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13715 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.option_value_list)= NEW_PTN PT_option_value_list((yyvsp[(1) - (3)].option_value_list), (yylsp[(2) - (3)]), (yyvsp[(3) - (3)].node), (yylsp[(3) - (3)]));
           }
@@ -38040,7 +38040,7 @@ yyreduce:
 
   case 2422:
 /* Line 1792 of yacc.c  */
-#line 13723 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13723 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.node)= NEW_PTN PT_option_value_type((yyvsp[(1) - (2)].var_type), (yyvsp[(2) - (2)].option_value_following_option_type));
           }
@@ -38048,79 +38048,79 @@ yyreduce:
 
   case 2423:
 /* Line 1792 of yacc.c  */
-#line 13726 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13726 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.node)= (yyvsp[(1) - (1)].option_value_no_option_type); }
     break;
 
   case 2424:
 /* Line 1792 of yacc.c  */
-#line 13730 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13730 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.var_type)=OPT_GLOBAL; }
     break;
 
   case 2425:
 /* Line 1792 of yacc.c  */
-#line 13731 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13731 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.var_type)=OPT_SESSION; }
     break;
 
   case 2426:
 /* Line 1792 of yacc.c  */
-#line 13732 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13732 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.var_type)=OPT_SESSION; }
     break;
 
   case 2427:
 /* Line 1792 of yacc.c  */
-#line 13736 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13736 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.var_type)=OPT_SESSION; }
     break;
 
   case 2428:
 /* Line 1792 of yacc.c  */
-#line 13737 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13737 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.var_type)=OPT_GLOBAL; }
     break;
 
   case 2429:
 /* Line 1792 of yacc.c  */
-#line 13738 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13738 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.var_type)=OPT_SESSION; }
     break;
 
   case 2430:
 /* Line 1792 of yacc.c  */
-#line 13739 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13739 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.var_type)=OPT_SESSION; }
     break;
 
   case 2431:
 /* Line 1792 of yacc.c  */
-#line 13743 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13743 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.var_type)=OPT_DEFAULT; }
     break;
 
   case 2432:
 /* Line 1792 of yacc.c  */
-#line 13744 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13744 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.var_type)=OPT_GLOBAL; }
     break;
 
   case 2433:
 /* Line 1792 of yacc.c  */
-#line 13745 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13745 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.var_type)=OPT_SESSION; }
     break;
 
   case 2434:
 /* Line 1792 of yacc.c  */
-#line 13746 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13746 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.var_type)=OPT_SESSION; }
     break;
 
   case 2435:
 /* Line 1792 of yacc.c  */
-#line 13752 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13752 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.option_value_following_option_type)= NEW_PTN PT_option_value_following_option_type((yyloc), (yyvsp[(1) - (3)].internal_variable_name), (yyvsp[(3) - (3)].item));
           }
@@ -38128,7 +38128,7 @@ yyreduce:
 
   case 2436:
 /* Line 1792 of yacc.c  */
-#line 13762 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13762 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.option_value_no_option_type)= NEW_PTN PT_option_value_no_option_type_internal((yyvsp[(1) - (3)].internal_variable_name), (yyvsp[(3) - (3)].item), (yylsp[(3) - (3)]));
           }
@@ -38136,7 +38136,7 @@ yyreduce:
 
   case 2437:
 /* Line 1792 of yacc.c  */
-#line 13766 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13766 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.option_value_no_option_type)= NEW_PTN PT_option_value_no_option_type_user_var((yyvsp[(2) - (4)].lex_str), (yyvsp[(4) - (4)].item));
           }
@@ -38144,7 +38144,7 @@ yyreduce:
 
   case 2438:
 /* Line 1792 of yacc.c  */
-#line 13770 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13770 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.option_value_no_option_type)= NEW_PTN PT_option_value_no_option_type_sys_var((yyvsp[(3) - (6)].var_type), (yyvsp[(4) - (6)].internal_variable_name), (yyvsp[(6) - (6)].item));
           }
@@ -38152,7 +38152,7 @@ yyreduce:
 
   case 2439:
 /* Line 1792 of yacc.c  */
-#line 13774 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13774 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.option_value_no_option_type)= NEW_PTN PT_option_value_no_option_type_charset((yyvsp[(2) - (2)].charset));
           }
@@ -38160,7 +38160,7 @@ yyreduce:
 
   case 2440:
 /* Line 1792 of yacc.c  */
-#line 13778 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13778 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /*
               Bad syntax, always fails with an error
@@ -38171,7 +38171,7 @@ yyreduce:
 
   case 2441:
 /* Line 1792 of yacc.c  */
-#line 13785 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13785 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.option_value_no_option_type)= NEW_PTN PT_option_value_no_option_type_names_charset((yyvsp[(2) - (3)].charset), (yyvsp[(3) - (3)].charset));
           }
@@ -38179,7 +38179,7 @@ yyreduce:
 
   case 2442:
 /* Line 1792 of yacc.c  */
-#line 13792 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13792 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.internal_variable_name)= NEW_PTN PT_internal_variable_name_1d((yyvsp[(1) - (1)].lex_str));
           }
@@ -38187,7 +38187,7 @@ yyreduce:
 
   case 2443:
 /* Line 1792 of yacc.c  */
-#line 13796 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13796 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.internal_variable_name)= NEW_PTN PT_internal_variable_name_2d((yyloc), (yyvsp[(1) - (3)].lex_str), (yyvsp[(3) - (3)].lex_str));
           }
@@ -38195,7 +38195,7 @@ yyreduce:
 
   case 2444:
 /* Line 1792 of yacc.c  */
-#line 13800 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13800 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.internal_variable_name)= NEW_PTN PT_internal_variable_name_default((yyvsp[(3) - (3)].lex_str));
           }
@@ -38203,7 +38203,7 @@ yyreduce:
 
   case 2445:
 /* Line 1792 of yacc.c  */
-#line 13807 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13807 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.transaction_characteristics)= NEW_PTN PT_transaction_characteristics((yyvsp[(1) - (2)].transaction_access_mode), (yyvsp[(2) - (2)].isolation_level));
           }
@@ -38211,7 +38211,7 @@ yyreduce:
 
   case 2446:
 /* Line 1792 of yacc.c  */
-#line 13811 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13811 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.transaction_characteristics)= NEW_PTN PT_transaction_characteristics((yyvsp[(1) - (2)].isolation_level), (yyvsp[(2) - (2)].transaction_access_mode));
           }
@@ -38219,7 +38219,7 @@ yyreduce:
 
   case 2447:
 /* Line 1792 of yacc.c  */
-#line 13818 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13818 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.transaction_access_mode)= NEW_PTN PT_transaction_access_mode((yyvsp[(1) - (1)].num));
           }
@@ -38227,19 +38227,19 @@ yyreduce:
 
   case 2448:
 /* Line 1792 of yacc.c  */
-#line 13824 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13824 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.transaction_access_mode)= NULL; }
     break;
 
   case 2449:
 /* Line 1792 of yacc.c  */
-#line 13825 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13825 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.transaction_access_mode)= (yyvsp[(2) - (2)].transaction_access_mode); }
     break;
 
   case 2450:
 /* Line 1792 of yacc.c  */
-#line 13830 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13830 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.isolation_level)= NEW_PTN PT_isolation_level((yyvsp[(3) - (3)].tx_isolation));
           }
@@ -38247,55 +38247,55 @@ yyreduce:
 
   case 2451:
 /* Line 1792 of yacc.c  */
-#line 13836 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13836 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.isolation_level)= NULL; }
     break;
 
   case 2452:
 /* Line 1792 of yacc.c  */
-#line 13837 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13837 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.isolation_level)= (yyvsp[(2) - (2)].isolation_level); }
     break;
 
   case 2453:
 /* Line 1792 of yacc.c  */
-#line 13841 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13841 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= true; }
     break;
 
   case 2454:
 /* Line 1792 of yacc.c  */
-#line 13842 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13842 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= false; }
     break;
 
   case 2455:
 /* Line 1792 of yacc.c  */
-#line 13846 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13846 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.tx_isolation)= ISO_READ_UNCOMMITTED; }
     break;
 
   case 2456:
 /* Line 1792 of yacc.c  */
-#line 13847 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13847 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.tx_isolation)= ISO_READ_COMMITTED; }
     break;
 
   case 2457:
 /* Line 1792 of yacc.c  */
-#line 13848 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13848 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.tx_isolation)= ISO_REPEATABLE_READ; }
     break;
 
   case 2458:
 /* Line 1792 of yacc.c  */
-#line 13849 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13849 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.tx_isolation)= ISO_SERIALIZABLE; }
     break;
 
   case 2459:
 /* Line 1792 of yacc.c  */
-#line 13854 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13854 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.simple_string)=(yyvsp[(1) - (1)].lex_str).str;
             Lex->contains_plaintext_password= true;
@@ -38304,13 +38304,13 @@ yyreduce:
 
   case 2461:
 /* Line 1792 of yacc.c  */
-#line 13863 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13863 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.item)= NULL; }
     break;
 
   case 2462:
 /* Line 1792 of yacc.c  */
-#line 13865 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13865 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_string((yyloc), "ON",  2, system_charset_info);
           }
@@ -38318,7 +38318,7 @@ yyreduce:
 
   case 2463:
 /* Line 1792 of yacc.c  */
-#line 13869 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13869 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_string((yyloc), "ALL", 3, system_charset_info);
           }
@@ -38326,7 +38326,7 @@ yyreduce:
 
   case 2464:
 /* Line 1792 of yacc.c  */
-#line 13873 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13873 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.item)= NEW_PTN Item_string((yyloc), "binary", 6, system_charset_info);
           }
@@ -38334,7 +38334,7 @@ yyreduce:
 
   case 2465:
 /* Line 1792 of yacc.c  */
-#line 13882 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13882 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
 
@@ -38349,13 +38349,13 @@ yyreduce:
 
   case 2466:
 /* Line 1792 of yacc.c  */
-#line 13893 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13893 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2471:
 /* Line 1792 of yacc.c  */
-#line 13908 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13908 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             thr_lock_type lock_type= (thr_lock_type) (yyvsp[(3) - (3)].num);
             enum_mdl_type mdl_lock_type;
@@ -38384,19 +38384,19 @@ yyreduce:
 
   case 2472:
 /* Line 1792 of yacc.c  */
-#line 13935 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13935 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= TL_READ_NO_INSERT; }
     break;
 
   case 2473:
 /* Line 1792 of yacc.c  */
-#line 13936 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13936 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= TL_WRITE_DEFAULT; }
     break;
 
   case 2474:
 /* Line 1792 of yacc.c  */
-#line 13938 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13938 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.num)= TL_WRITE_LOW_PRIORITY;
             push_deprecated_warn(YYTHD, "LOW_PRIORITY WRITE", "WRITE");
@@ -38405,13 +38405,13 @@ yyreduce:
 
   case 2475:
 /* Line 1792 of yacc.c  */
-#line 13942 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13942 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)= TL_READ; }
     break;
 
   case 2476:
 /* Line 1792 of yacc.c  */
-#line 13947 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13947 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
 
@@ -38426,13 +38426,13 @@ yyreduce:
 
   case 2477:
 /* Line 1792 of yacc.c  */
-#line 13958 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13958 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2478:
 /* Line 1792 of yacc.c  */
-#line 13964 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13964 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command= SQLCOM_SHUTDOWN;
             (yyval.statement)= NEW_PTN PT_shutdown();
@@ -38441,7 +38441,7 @@ yyreduce:
 
   case 2479:
 /* Line 1792 of yacc.c  */
-#line 13972 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13972 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command= SQLCOM_ALTER_INSTANCE;
             (yyval.statement)= NEW_PTN PT_alter_instance((yyvsp[(3) - (3)].alter_instance_action));
@@ -38450,7 +38450,7 @@ yyreduce:
 
   case 2480:
 /* Line 1792 of yacc.c  */
-#line 13979 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13979 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (!my_strcasecmp(system_charset_info, (yyvsp[(2) - (4)].lex_str).str, "INNODB"))
             {
@@ -38466,7 +38466,7 @@ yyreduce:
 
   case 2481:
 /* Line 1792 of yacc.c  */
-#line 13998 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 13998 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -38486,7 +38486,7 @@ yyreduce:
 
   case 2482:
 /* Line 1792 of yacc.c  */
-#line 14014 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14014 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -38506,7 +38506,7 @@ yyreduce:
 
   case 2483:
 /* Line 1792 of yacc.c  */
-#line 14032 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14032 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                     /* #4 */
             LEX *lex=Lex;
             if (lex->sphead)
@@ -38528,7 +38528,7 @@ yyreduce:
 
   case 2484:
 /* Line 1792 of yacc.c  */
-#line 14052 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14052 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(6) - (7)].item) != NULL)
               ITEMIZE((yyvsp[(6) - (7)].item), &(yyvsp[(6) - (7)].item));
@@ -38557,55 +38557,55 @@ yyreduce:
 
   case 2485:
 /* Line 1792 of yacc.c  */
-#line 14079 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14079 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->ident= null_lex_str; (yyval.ha_read_mode)=(yyvsp[(1) - (1)].ha_read_mode); }
     break;
 
   case 2486:
 /* Line 1792 of yacc.c  */
-#line 14080 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14080 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->ident= (yyvsp[(1) - (2)].lex_str); (yyval.ha_read_mode)=(yyvsp[(2) - (2)].ha_read_mode); }
     break;
 
   case 2487:
 /* Line 1792 of yacc.c  */
-#line 14084 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14084 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ha_read_mode)= RFIRST; }
     break;
 
   case 2488:
 /* Line 1792 of yacc.c  */
-#line 14085 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14085 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ha_read_mode)= RNEXT;  }
     break;
 
   case 2489:
 /* Line 1792 of yacc.c  */
-#line 14089 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14089 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ha_read_mode)= RFIRST; }
     break;
 
   case 2490:
 /* Line 1792 of yacc.c  */
-#line 14090 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14090 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ha_read_mode)= RNEXT;  }
     break;
 
   case 2491:
 /* Line 1792 of yacc.c  */
-#line 14091 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14091 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ha_read_mode)= RPREV;  }
     break;
 
   case 2492:
 /* Line 1792 of yacc.c  */
-#line 14092 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14092 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ha_read_mode)= RLAST;  }
     break;
 
   case 2493:
 /* Line 1792 of yacc.c  */
-#line 14094 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14094 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             YYTHD->m_parser_state->m_yacc.m_ha_rkey_mode= (yyvsp[(1) - (1)].ha_rkey_mode);
           }
@@ -38613,7 +38613,7 @@ yyreduce:
 
   case 2494:
 /* Line 1792 of yacc.c  */
-#line 14098 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14098 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             CONTEXTUALIZE((yyvsp[(4) - (5)].item_list2));
             Lex->handler_insert_list= &(yyvsp[(4) - (5)].item_list2)->value;
@@ -38623,49 +38623,49 @@ yyreduce:
 
   case 2495:
 /* Line 1792 of yacc.c  */
-#line 14106 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14106 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ha_rkey_mode)=HA_READ_KEY_EXACT;   }
     break;
 
   case 2496:
 /* Line 1792 of yacc.c  */
-#line 14107 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14107 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ha_rkey_mode)=HA_READ_KEY_OR_NEXT; }
     break;
 
   case 2497:
 /* Line 1792 of yacc.c  */
-#line 14108 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14108 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ha_rkey_mode)=HA_READ_KEY_OR_PREV; }
     break;
 
   case 2498:
 /* Line 1792 of yacc.c  */
-#line 14109 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14109 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ha_rkey_mode)=HA_READ_AFTER_KEY;   }
     break;
 
   case 2499:
 /* Line 1792 of yacc.c  */
-#line 14110 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14110 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ha_rkey_mode)=HA_READ_BEFORE_KEY;  }
     break;
 
   case 2500:
 /* Line 1792 of yacc.c  */
-#line 14116 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14116 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->sql_command= SQLCOM_REVOKE; }
     break;
 
   case 2501:
 /* Line 1792 of yacc.c  */
-#line 14117 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14117 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2502:
 /* Line 1792 of yacc.c  */
-#line 14122 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14122 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->type= 0;
@@ -38674,7 +38674,7 @@ yyreduce:
 
   case 2503:
 /* Line 1792 of yacc.c  */
-#line 14127 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14127 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             if (lex->columns.elements)
@@ -38688,7 +38688,7 @@ yyreduce:
 
   case 2504:
 /* Line 1792 of yacc.c  */
-#line 14137 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14137 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             if (lex->columns.elements)
@@ -38702,7 +38702,7 @@ yyreduce:
 
   case 2505:
 /* Line 1792 of yacc.c  */
-#line 14147 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14147 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command = SQLCOM_REVOKE_ALL;
           }
@@ -38710,7 +38710,7 @@ yyreduce:
 
   case 2506:
 /* Line 1792 of yacc.c  */
-#line 14151 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14151 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->users_list.push_front ((yyvsp[(3) - (5)].lex_user));
@@ -38720,19 +38720,19 @@ yyreduce:
 
   case 2507:
 /* Line 1792 of yacc.c  */
-#line 14159 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14159 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->sql_command= SQLCOM_GRANT; }
     break;
 
   case 2508:
 /* Line 1792 of yacc.c  */
-#line 14160 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14160 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2509:
 /* Line 1792 of yacc.c  */
-#line 14166 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14166 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->type= 0;
@@ -38741,7 +38741,7 @@ yyreduce:
 
   case 2510:
 /* Line 1792 of yacc.c  */
-#line 14172 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14172 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             if (lex->columns.elements)
@@ -38755,7 +38755,7 @@ yyreduce:
 
   case 2511:
 /* Line 1792 of yacc.c  */
-#line 14183 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14183 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             if (lex->columns.elements)
@@ -38769,7 +38769,7 @@ yyreduce:
 
   case 2512:
 /* Line 1792 of yacc.c  */
-#line 14193 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14193 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->users_list.push_front ((yyvsp[(3) - (6)].lex_user));
@@ -38779,7 +38779,7 @@ yyreduce:
 
   case 2515:
 /* Line 1792 of yacc.c  */
-#line 14207 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14207 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             if (lex->grant == GLOBAL_ACLS &&
@@ -38790,7 +38790,7 @@ yyreduce:
 
   case 2516:
 /* Line 1792 of yacc.c  */
-#line 14214 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14214 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->all_privileges= 1;
             Lex->grant= GLOBAL_ACLS;
@@ -38799,223 +38799,223 @@ yyreduce:
 
   case 2521:
 /* Line 1792 of yacc.c  */
-#line 14232 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14232 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->which_columns = SELECT_ACL;}
     break;
 
   case 2522:
 /* Line 1792 of yacc.c  */
-#line 14233 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14233 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2523:
 /* Line 1792 of yacc.c  */
-#line 14235 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14235 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->which_columns = INSERT_ACL;}
     break;
 
   case 2524:
 /* Line 1792 of yacc.c  */
-#line 14236 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14236 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2525:
 /* Line 1792 of yacc.c  */
-#line 14238 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14238 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->which_columns = UPDATE_ACL; }
     break;
 
   case 2526:
 /* Line 1792 of yacc.c  */
-#line 14239 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14239 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2527:
 /* Line 1792 of yacc.c  */
-#line 14241 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14241 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->which_columns = REFERENCES_ACL;}
     break;
 
   case 2528:
 /* Line 1792 of yacc.c  */
-#line 14242 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14242 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2529:
 /* Line 1792 of yacc.c  */
-#line 14243 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14243 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= DELETE_ACL;}
     break;
 
   case 2530:
 /* Line 1792 of yacc.c  */
-#line 14244 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14244 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2531:
 /* Line 1792 of yacc.c  */
-#line 14245 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14245 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= INDEX_ACL;}
     break;
 
   case 2532:
 /* Line 1792 of yacc.c  */
-#line 14246 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14246 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= ALTER_ACL;}
     break;
 
   case 2533:
 /* Line 1792 of yacc.c  */
-#line 14247 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14247 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= CREATE_ACL;}
     break;
 
   case 2534:
 /* Line 1792 of yacc.c  */
-#line 14248 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14248 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= DROP_ACL;}
     break;
 
   case 2535:
 /* Line 1792 of yacc.c  */
-#line 14249 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14249 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= EXECUTE_ACL;}
     break;
 
   case 2536:
 /* Line 1792 of yacc.c  */
-#line 14250 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14250 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= RELOAD_ACL;}
     break;
 
   case 2537:
 /* Line 1792 of yacc.c  */
-#line 14251 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14251 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= SHUTDOWN_ACL;}
     break;
 
   case 2538:
 /* Line 1792 of yacc.c  */
-#line 14252 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14252 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= PROCESS_ACL;}
     break;
 
   case 2539:
 /* Line 1792 of yacc.c  */
-#line 14253 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14253 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= FILE_ACL;}
     break;
 
   case 2540:
 /* Line 1792 of yacc.c  */
-#line 14254 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14254 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= GRANT_ACL;}
     break;
 
   case 2541:
 /* Line 1792 of yacc.c  */
-#line 14255 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14255 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= SHOW_DB_ACL;}
     break;
 
   case 2542:
 /* Line 1792 of yacc.c  */
-#line 14256 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14256 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= SUPER_ACL;}
     break;
 
   case 2543:
 /* Line 1792 of yacc.c  */
-#line 14257 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14257 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= CREATE_TMP_ACL;}
     break;
 
   case 2544:
 /* Line 1792 of yacc.c  */
-#line 14258 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14258 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= LOCK_TABLES_ACL; }
     break;
 
   case 2545:
 /* Line 1792 of yacc.c  */
-#line 14259 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14259 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= REPL_SLAVE_ACL; }
     break;
 
   case 2546:
 /* Line 1792 of yacc.c  */
-#line 14260 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14260 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= REPL_CLIENT_ACL; }
     break;
 
   case 2547:
 /* Line 1792 of yacc.c  */
-#line 14261 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14261 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= CREATE_VIEW_ACL; }
     break;
 
   case 2548:
 /* Line 1792 of yacc.c  */
-#line 14262 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14262 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= SHOW_VIEW_ACL; }
     break;
 
   case 2549:
 /* Line 1792 of yacc.c  */
-#line 14263 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14263 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= CREATE_PROC_ACL; }
     break;
 
   case 2550:
 /* Line 1792 of yacc.c  */
-#line 14264 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14264 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= ALTER_PROC_ACL; }
     break;
 
   case 2551:
 /* Line 1792 of yacc.c  */
-#line 14265 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14265 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= CREATE_USER_ACL; }
     break;
 
   case 2552:
 /* Line 1792 of yacc.c  */
-#line 14266 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14266 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= EVENT_ACL;}
     break;
 
   case 2553:
 /* Line 1792 of yacc.c  */
-#line 14267 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14267 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= TRIGGER_ACL; }
     break;
 
   case 2554:
 /* Line 1792 of yacc.c  */
-#line 14268 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14268 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= CREATE_TABLESPACE_ACL; }
     break;
 
   case 2555:
 /* Line 1792 of yacc.c  */
-#line 14272 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14272 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2556:
 /* Line 1792 of yacc.c  */
-#line 14273 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14273 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2559:
 /* Line 1792 of yacc.c  */
-#line 14283 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14283 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             if (lex->x509_subject)
@@ -39029,7 +39029,7 @@ yyreduce:
 
   case 2560:
 /* Line 1792 of yacc.c  */
-#line 14293 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14293 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             if (lex->x509_issuer)
@@ -39043,7 +39043,7 @@ yyreduce:
 
   case 2561:
 /* Line 1792 of yacc.c  */
-#line 14303 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14303 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             if (lex->ssl_cipher)
@@ -39057,7 +39057,7 @@ yyreduce:
 
   case 2562:
 /* Line 1792 of yacc.c  */
-#line 14316 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14316 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             size_t dummy;
@@ -39076,7 +39076,7 @@ yyreduce:
 
   case 2563:
 /* Line 1792 of yacc.c  */
-#line 14331 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14331 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->current_select()->db = (yyvsp[(1) - (3)].lex_str).str;
@@ -39093,7 +39093,7 @@ yyreduce:
 
   case 2564:
 /* Line 1792 of yacc.c  */
-#line 14344 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14344 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->current_select()->db = NULL;
@@ -39110,7 +39110,7 @@ yyreduce:
 
   case 2565:
 /* Line 1792 of yacc.c  */
-#line 14357 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14357 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             if (!lex->current_select()->add_table_to_list(lex->thd, (yyvsp[(1) - (1)].table),NULL,
@@ -39123,7 +39123,7 @@ yyreduce:
 
   case 2566:
 /* Line 1792 of yacc.c  */
-#line 14369 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14369 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (Lex->users_list.push_back((yyvsp[(1) - (1)].lex_user)))
               MYSQL_YYABORT;
@@ -39132,7 +39132,7 @@ yyreduce:
 
   case 2567:
 /* Line 1792 of yacc.c  */
-#line 14374 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14374 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (Lex->users_list.push_back((yyvsp[(3) - (3)].lex_user)))
               MYSQL_YYABORT;
@@ -39141,7 +39141,7 @@ yyreduce:
 
   case 2568:
 /* Line 1792 of yacc.c  */
-#line 14382 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14382 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (Lex->users_list.push_back((yyvsp[(1) - (1)].lex_user)))
               MYSQL_YYABORT;
@@ -39150,7 +39150,7 @@ yyreduce:
 
   case 2569:
 /* Line 1792 of yacc.c  */
-#line 14387 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14387 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (Lex->users_list.push_back((yyvsp[(3) - (3)].lex_user)))
               MYSQL_YYABORT;
@@ -39159,7 +39159,7 @@ yyreduce:
 
   case 2570:
 /* Line 1792 of yacc.c  */
-#line 14395 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14395 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.lex_user)=(yyvsp[(1) - (4)].lex_user);
             (yyvsp[(1) - (4)].lex_user)->auth.str= (yyvsp[(4) - (4)].lex_str).str;
@@ -39171,7 +39171,7 @@ yyreduce:
 
   case 2571:
 /* Line 1792 of yacc.c  */
-#line 14403 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14403 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.lex_user)= (yyvsp[(1) - (5)].lex_user);
             (yyvsp[(1) - (5)].lex_user)->auth.str= (yyvsp[(5) - (5)].lex_str).str;
@@ -39190,7 +39190,7 @@ yyreduce:
 
   case 2572:
 /* Line 1792 of yacc.c  */
-#line 14418 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14418 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.lex_user)= (yyvsp[(1) - (4)].lex_user);
             (yyvsp[(1) - (4)].lex_user)->plugin.str= (yyvsp[(4) - (4)].lex_str).str;
@@ -39202,7 +39202,7 @@ yyreduce:
 
   case 2573:
 /* Line 1792 of yacc.c  */
-#line 14426 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14426 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.lex_user)= (yyvsp[(1) - (6)].lex_user);
             (yyvsp[(1) - (6)].lex_user)->plugin.str= (yyvsp[(4) - (6)].lex_str).str;
@@ -39216,7 +39216,7 @@ yyreduce:
 
   case 2574:
 /* Line 1792 of yacc.c  */
-#line 14436 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14436 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.lex_user)= (yyvsp[(1) - (6)].lex_user);
             (yyvsp[(1) - (6)].lex_user)->plugin.str= (yyvsp[(4) - (6)].lex_str).str;
@@ -39231,7 +39231,7 @@ yyreduce:
 
   case 2575:
 /* Line 1792 of yacc.c  */
-#line 14447 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14447 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.lex_user)= (yyvsp[(1) - (1)].lex_user);
             (yyvsp[(1) - (1)].lex_user)->auth= NULL_CSTR;
@@ -39240,7 +39240,7 @@ yyreduce:
 
   case 2576:
 /* Line 1792 of yacc.c  */
-#line 14455 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14455 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->grant |= lex->which_columns;
@@ -39249,7 +39249,7 @@ yyreduce:
 
   case 2580:
 /* Line 1792 of yacc.c  */
-#line 14469 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14469 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             String *new_str = new (YYTHD->mem_root) String((const char*) (yyvsp[(1) - (1)].lex_str).str,(yyvsp[(1) - (1)].lex_str).length,system_charset_info);
             if (new_str == NULL)
@@ -39278,7 +39278,7 @@ yyreduce:
 
   case 2582:
 /* Line 1792 of yacc.c  */
-#line 14498 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14498 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->ssl_type=SSL_TYPE_SPECIFIED;
           }
@@ -39286,7 +39286,7 @@ yyreduce:
 
   case 2583:
 /* Line 1792 of yacc.c  */
-#line 14502 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14502 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->ssl_type=SSL_TYPE_ANY;
           }
@@ -39294,7 +39294,7 @@ yyreduce:
 
   case 2584:
 /* Line 1792 of yacc.c  */
-#line 14506 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14506 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->ssl_type=SSL_TYPE_X509;
           }
@@ -39302,7 +39302,7 @@ yyreduce:
 
   case 2585:
 /* Line 1792 of yacc.c  */
-#line 14510 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14510 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->ssl_type=SSL_TYPE_NONE;
           }
@@ -39310,43 +39310,43 @@ yyreduce:
 
   case 2586:
 /* Line 1792 of yacc.c  */
-#line 14516 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14516 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2588:
 /* Line 1792 of yacc.c  */
-#line 14521 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14521 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2589:
 /* Line 1792 of yacc.c  */
-#line 14522 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14522 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= GRANT_ACL;}
     break;
 
   case 2590:
 /* Line 1792 of yacc.c  */
-#line 14526 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14526 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2591:
 /* Line 1792 of yacc.c  */
-#line 14527 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14527 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2592:
 /* Line 1792 of yacc.c  */
-#line 14531 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14531 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->grant |= GRANT_ACL;}
     break;
 
   case 2593:
 /* Line 1792 of yacc.c  */
-#line 14533 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14533 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->mqh.questions=(yyvsp[(2) - (2)].ulong_num);
@@ -39356,7 +39356,7 @@ yyreduce:
 
   case 2594:
 /* Line 1792 of yacc.c  */
-#line 14539 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14539 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->mqh.updates=(yyvsp[(2) - (2)].ulong_num);
@@ -39366,7 +39366,7 @@ yyreduce:
 
   case 2595:
 /* Line 1792 of yacc.c  */
-#line 14545 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14545 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->mqh.conn_per_hour= (yyvsp[(2) - (2)].ulong_num);
@@ -39376,7 +39376,7 @@ yyreduce:
 
   case 2596:
 /* Line 1792 of yacc.c  */
-#line 14551 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14551 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->mqh.user_conn= (yyvsp[(2) - (2)].ulong_num);
@@ -39386,7 +39386,7 @@ yyreduce:
 
   case 2597:
 /* Line 1792 of yacc.c  */
-#line 14560 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14560 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command = SQLCOM_BEGIN;
@@ -39396,73 +39396,73 @@ yyreduce:
 
   case 2598:
 /* Line 1792 of yacc.c  */
-#line 14565 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14565 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2599:
 /* Line 1792 of yacc.c  */
-#line 14569 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14569 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2600:
 /* Line 1792 of yacc.c  */
-#line 14570 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14570 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2601:
 /* Line 1792 of yacc.c  */
-#line 14575 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14575 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.m_yes_no_unk)= TVL_UNKNOWN; }
     break;
 
   case 2602:
 /* Line 1792 of yacc.c  */
-#line 14576 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14576 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.m_yes_no_unk)= TVL_NO; }
     break;
 
   case 2603:
 /* Line 1792 of yacc.c  */
-#line 14577 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14577 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.m_yes_no_unk)= TVL_YES; }
     break;
 
   case 2604:
 /* Line 1792 of yacc.c  */
-#line 14582 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14582 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.m_yes_no_unk)= TVL_UNKNOWN; }
     break;
 
   case 2605:
 /* Line 1792 of yacc.c  */
-#line 14583 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14583 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.m_yes_no_unk)= TVL_YES; }
     break;
 
   case 2606:
 /* Line 1792 of yacc.c  */
-#line 14584 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14584 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.m_yes_no_unk)= TVL_NO; }
     break;
 
   case 2607:
 /* Line 1792 of yacc.c  */
-#line 14588 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14588 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2608:
 /* Line 1792 of yacc.c  */
-#line 14589 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14589 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2609:
 /* Line 1792 of yacc.c  */
-#line 14594 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14594 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command= SQLCOM_COMMIT;
@@ -39475,7 +39475,7 @@ yyreduce:
 
   case 2610:
 /* Line 1792 of yacc.c  */
-#line 14606 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14606 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command= SQLCOM_ROLLBACK;
@@ -39488,7 +39488,7 @@ yyreduce:
 
   case 2611:
 /* Line 1792 of yacc.c  */
-#line 14616 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14616 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command= SQLCOM_ROLLBACK_TO_SAVEPOINT;
@@ -39498,7 +39498,7 @@ yyreduce:
 
   case 2612:
 /* Line 1792 of yacc.c  */
-#line 14625 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14625 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command= SQLCOM_SAVEPOINT;
@@ -39508,7 +39508,7 @@ yyreduce:
 
   case 2613:
 /* Line 1792 of yacc.c  */
-#line 14634 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14634 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex=Lex;
             lex->sql_command= SQLCOM_RELEASE_SAVEPOINT;
@@ -39518,13 +39518,13 @@ yyreduce:
 
   case 2614:
 /* Line 1792 of yacc.c  */
-#line 14647 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14647 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.union_list)= NULL; }
     break;
 
   case 2616:
 /* Line 1792 of yacc.c  */
-#line 14653 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14653 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.union_list)= NEW_PTN PT_union_list((yyvsp[(2) - (3)].num), (yyvsp[(3) - (3)].select_init));
           }
@@ -39532,37 +39532,37 @@ yyreduce:
 
   case 2617:
 /* Line 1792 of yacc.c  */
-#line 14659 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14659 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.node)= NULL; }
     break;
 
   case 2618:
 /* Line 1792 of yacc.c  */
-#line 14660 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14660 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.node)= (yyvsp[(1) - (1)].union_list); }
     break;
 
   case 2619:
 /* Line 1792 of yacc.c  */
-#line 14661 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14661 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.node)= (yyvsp[(1) - (1)].union_order_or_limit); }
     break;
 
   case 2620:
 /* Line 1792 of yacc.c  */
-#line 14665 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14665 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.node)= NULL; }
     break;
 
   case 2621:
 /* Line 1792 of yacc.c  */
-#line 14666 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14666 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.node)= (yyvsp[(1) - (1)].union_order_or_limit); }
     break;
 
   case 2622:
 /* Line 1792 of yacc.c  */
-#line 14671 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14671 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.union_order_or_limit)= NEW_PTN PT_union_order_or_limit((yyvsp[(1) - (1)].node));
           }
@@ -39570,7 +39570,7 @@ yyreduce:
 
   case 2623:
 /* Line 1792 of yacc.c  */
-#line 14678 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14678 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.node)= NEW_PTN PT_order_or_limit_order((yyvsp[(1) - (2)].order), (yyvsp[(2) - (2)].limit_clause));
           }
@@ -39578,31 +39578,31 @@ yyreduce:
 
   case 2624:
 /* Line 1792 of yacc.c  */
-#line 14681 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14681 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.node)= (yyvsp[(1) - (1)].limit_clause); }
     break;
 
   case 2625:
 /* Line 1792 of yacc.c  */
-#line 14685 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14685 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=1; }
     break;
 
   case 2626:
 /* Line 1792 of yacc.c  */
-#line 14686 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14686 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=1; }
     break;
 
   case 2627:
 /* Line 1792 of yacc.c  */
-#line 14687 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14687 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.num)=0; }
     break;
 
   case 2628:
 /* Line 1792 of yacc.c  */
-#line 14692 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14692 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_lex2)= NEW_PTN PT_query_specification_select((yyvsp[(1) - (3)].optimizer_hints), (yyvsp[(2) - (3)].select_part2_derived), (yyvsp[(3) - (3)].table_expression));
           }
@@ -39610,7 +39610,7 @@ yyreduce:
 
   case 2629:
 /* Line 1792 of yacc.c  */
-#line 14697 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14697 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_lex2)= NEW_PTN PT_query_specification_parenthesis((yyvsp[(2) - (4)].select_paren_derived), (yyvsp[(4) - (4)].node));
           }
@@ -39618,7 +39618,7 @@ yyreduce:
 
   case 2631:
 /* Line 1792 of yacc.c  */
-#line 14705 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14705 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.select_lex2)= NEW_PTN PT_query_expression_body_union((yyloc), (yyvsp[(1) - (4)].select_lex2), (yyvsp[(3) - (4)].num), (yyvsp[(4) - (4)].select_lex2));
           }
@@ -39626,7 +39626,7 @@ yyreduce:
 
   case 2632:
 /* Line 1792 of yacc.c  */
-#line 14712 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14712 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /*
               TODO: remove this semantic action (currently this removal
@@ -39637,7 +39637,7 @@ yyreduce:
 
   case 2633:
 /* Line 1792 of yacc.c  */
-#line 14719 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14719 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.subselect)= NEW_PTN PT_subselect((yyloc), (yyvsp[(2) - (2)].select_lex2));
           }
@@ -39645,13 +39645,13 @@ yyreduce:
 
   case 2634:
 /* Line 1792 of yacc.c  */
-#line 14725 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14725 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulonglong_number)= 0; }
     break;
 
   case 2636:
 /* Line 1792 of yacc.c  */
-#line 14731 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14731 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             (yyval.ulonglong_number)= (yyvsp[(1) - (2)].ulonglong_number) | (yyvsp[(2) - (2)].ulonglong_number);
           }
@@ -39659,73 +39659,73 @@ yyreduce:
 
   case 2638:
 /* Line 1792 of yacc.c  */
-#line 14738 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14738 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulonglong_number)= SELECT_STRAIGHT_JOIN; }
     break;
 
   case 2639:
 /* Line 1792 of yacc.c  */
-#line 14739 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14739 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulonglong_number)= SELECT_HIGH_PRIORITY; }
     break;
 
   case 2640:
 /* Line 1792 of yacc.c  */
-#line 14740 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14740 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulonglong_number)= SELECT_DISTINCT; }
     break;
 
   case 2641:
 /* Line 1792 of yacc.c  */
-#line 14741 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14741 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulonglong_number)= SELECT_SMALL_RESULT; }
     break;
 
   case 2642:
 /* Line 1792 of yacc.c  */
-#line 14742 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14742 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulonglong_number)= SELECT_BIG_RESULT; }
     break;
 
   case 2643:
 /* Line 1792 of yacc.c  */
-#line 14743 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14743 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulonglong_number)= OPTION_BUFFER_RESULT; }
     break;
 
   case 2644:
 /* Line 1792 of yacc.c  */
-#line 14744 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14744 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulonglong_number)= OPTION_FOUND_ROWS; }
     break;
 
   case 2645:
 /* Line 1792 of yacc.c  */
-#line 14745 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14745 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.ulonglong_number)= SELECT_ALL; }
     break;
 
   case 2646:
 /* Line 1792 of yacc.c  */
-#line 14756 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14756 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2647:
 /* Line 1792 of yacc.c  */
-#line 14758 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14758 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2648:
 /* Line 1792 of yacc.c  */
-#line 14760 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14760 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2662:
 /* Line 1792 of yacc.c  */
-#line 14793 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14793 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             /*
               We have to distinguish missing DEFINER-clause from case when
@@ -39740,7 +39740,7 @@ yyreduce:
 
   case 2663:
 /* Line 1792 of yacc.c  */
-#line 14807 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14807 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             YYTHD->lex->definer= get_current_user(YYTHD, (yyvsp[(3) - (3)].lex_user));
           }
@@ -39748,67 +39748,67 @@ yyreduce:
 
   case 2664:
 /* Line 1792 of yacc.c  */
-#line 14820 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14820 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2665:
 /* Line 1792 of yacc.c  */
-#line 14822 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14822 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2666:
 /* Line 1792 of yacc.c  */
-#line 14824 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14824 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2667:
 /* Line 1792 of yacc.c  */
-#line 14829 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14829 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->create_view_mode= VIEW_CREATE_OR_REPLACE; }
     break;
 
   case 2668:
 /* Line 1792 of yacc.c  */
-#line 14834 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14834 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->create_view_algorithm= VIEW_ALGORITHM_UNDEFINED; }
     break;
 
   case 2669:
 /* Line 1792 of yacc.c  */
-#line 14836 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14836 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->create_view_algorithm= VIEW_ALGORITHM_MERGE; }
     break;
 
   case 2670:
 /* Line 1792 of yacc.c  */
-#line 14838 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14838 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->create_view_algorithm= VIEW_ALGORITHM_TEMPTABLE; }
     break;
 
   case 2671:
 /* Line 1792 of yacc.c  */
-#line 14843 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14843 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->create_view_suid= VIEW_SUID_DEFAULT; }
     break;
 
   case 2672:
 /* Line 1792 of yacc.c  */
-#line 14845 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14845 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->create_view_suid= VIEW_SUID_DEFINER; }
     break;
 
   case 2673:
 /* Line 1792 of yacc.c  */
-#line 14847 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14847 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->create_view_suid= VIEW_SUID_INVOKER; }
     break;
 
   case 2674:
 /* Line 1792 of yacc.c  */
-#line 14852 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14852 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -39825,13 +39825,13 @@ yyreduce:
 
   case 2676:
 /* Line 1792 of yacc.c  */
-#line 14869 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14869 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2678:
 /* Line 1792 of yacc.c  */
-#line 14875 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14875 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
               Lex->view_list.push_back((LEX_STRING*)
               sql_memdup(&(yyvsp[(1) - (1)].lex_str), sizeof(LEX_STRING)));
@@ -39840,7 +39840,7 @@ yyreduce:
 
   case 2679:
 /* Line 1792 of yacc.c  */
-#line 14880 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14880 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
               Lex->view_list.push_back((LEX_STRING*)
               sql_memdup(&(yyvsp[(3) - (3)].lex_str), sizeof(LEX_STRING)));
@@ -39849,7 +39849,7 @@ yyreduce:
 
   case 2680:
 /* Line 1792 of yacc.c  */
-#line 14887 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14887 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->parsing_options.allows_variable= FALSE;
@@ -39860,7 +39860,7 @@ yyreduce:
 
   case 2681:
 /* Line 1792 of yacc.c  */
-#line 14894 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14894 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -39879,7 +39879,7 @@ yyreduce:
 
   case 2682:
 /* Line 1792 of yacc.c  */
-#line 14912 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14912 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (Lex->current_select()->set_braces(0))
             {
@@ -39899,7 +39899,7 @@ yyreduce:
 
   case 2683:
 /* Line 1792 of yacc.c  */
-#line 14928 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14928 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(3) - (3)].union_list) != NULL)
               CONTEXTUALIZE((yyvsp[(3) - (3)].union_list));
@@ -39908,7 +39908,7 @@ yyreduce:
 
   case 2684:
 /* Line 1792 of yacc.c  */
-#line 14933 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14933 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if ((yyvsp[(4) - (4)].node) != NULL)
               CONTEXTUALIZE((yyvsp[(4) - (4)].node));
@@ -39917,7 +39917,7 @@ yyreduce:
 
   case 2685:
 /* Line 1792 of yacc.c  */
-#line 14940 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14940 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->current_select()->set_braces(true);
           }
@@ -39925,7 +39925,7 @@ yyreduce:
 
   case 2686:
 /* Line 1792 of yacc.c  */
-#line 14944 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14944 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             if (setup_select_in_parentheses(Select))
               MYSQL_YYABORT;
@@ -39934,7 +39934,7 @@ yyreduce:
 
   case 2688:
 /* Line 1792 of yacc.c  */
-#line 14953 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14953 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->current_select()->table_list.save_and_clear(&Lex->save_list);
           }
@@ -39942,7 +39942,7 @@ yyreduce:
 
   case 2689:
 /* Line 1792 of yacc.c  */
-#line 14957 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14957 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             CONTEXTUALIZE((yyvsp[(3) - (3)].select_part2));
 
@@ -39952,43 +39952,43 @@ yyreduce:
 
   case 2690:
 /* Line 1792 of yacc.c  */
-#line 14966 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14966 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->create_view_check= VIEW_CHECK_NONE; }
     break;
 
   case 2691:
 /* Line 1792 of yacc.c  */
-#line 14968 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14968 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->create_view_check= VIEW_CHECK_CASCADED; }
     break;
 
   case 2692:
 /* Line 1792 of yacc.c  */
-#line 14970 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14970 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->create_view_check= VIEW_CHECK_CASCADED; }
     break;
 
   case 2693:
 /* Line 1792 of yacc.c  */
-#line 14972 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14972 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { Lex->create_view_check= VIEW_CHECK_LOCAL; }
     break;
 
   case 2694:
 /* Line 1792 of yacc.c  */
-#line 14983 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14983 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.trigger_action_order_type)= TRG_ORDER_FOLLOWS; }
     break;
 
   case 2695:
 /* Line 1792 of yacc.c  */
-#line 14985 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14985 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.trigger_action_order_type)= TRG_ORDER_PRECEDES; }
     break;
 
   case 2696:
 /* Line 1792 of yacc.c  */
-#line 14990 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14990 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
               (yyval.trg_characteristics).ordering_clause= TRG_ORDER_NONE;
               (yyval.trg_characteristics).anchor_trigger_name.str= NULL;
@@ -39998,7 +39998,7 @@ yyreduce:
 
   case 2697:
 /* Line 1792 of yacc.c  */
-#line 14997 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 14997 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
               (yyval.trg_characteristics).ordering_clause= (yyvsp[(1) - (2)].trigger_action_order_type);
               (yyval.trg_characteristics).anchor_trigger_name= (yyvsp[(2) - (2)].lex_str);
@@ -40007,7 +40007,7 @@ yyreduce:
 
   case 2698:
 /* Line 1792 of yacc.c  */
-#line 15014 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15014 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                 /* $11 */
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -40061,7 +40061,7 @@ yyreduce:
 
   case 2699:
 /* Line 1792 of yacc.c  */
-#line 15064 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15064 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { /* $13 */
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -40090,7 +40090,7 @@ yyreduce:
 
   case 2700:
 /* Line 1792 of yacc.c  */
-#line 15099 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15099 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -40111,7 +40111,7 @@ yyreduce:
 
   case 2701:
 /* Line 1792 of yacc.c  */
-#line 15117 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15117 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -40132,7 +40132,7 @@ yyreduce:
 
   case 2702:
 /* Line 1792 of yacc.c  */
-#line 15139 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15139 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { /* $4 */
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -40159,7 +40159,7 @@ yyreduce:
 
   case 2703:
 /* Line 1792 of yacc.c  */
-#line 15163 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15163 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { /* $7 */
             Lex->sphead->m_parser_data.set_parameter_end_ptr((yylsp[(6) - (6)]).cpp.start);
           }
@@ -40167,7 +40167,7 @@ yyreduce:
 
   case 2704:
 /* Line 1792 of yacc.c  */
-#line 15167 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15167 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { /* $9 */
             LEX *lex= Lex;
             lex->charset= NULL;
@@ -40180,7 +40180,7 @@ yyreduce:
 
   case 2705:
 /* Line 1792 of yacc.c  */
-#line 15176 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15176 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { /* $11 */
             LEX *lex= Lex;
             sp_head *sp= lex->sphead;
@@ -40207,7 +40207,7 @@ yyreduce:
 
   case 2706:
 /* Line 1792 of yacc.c  */
-#line 15199 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15199 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { /* $13 */
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -40219,7 +40219,7 @@ yyreduce:
 
   case 2707:
 /* Line 1792 of yacc.c  */
-#line 15207 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15207 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -40278,7 +40278,7 @@ yyreduce:
 
   case 2708:
 /* Line 1792 of yacc.c  */
-#line 15266 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15266 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                     /*$3*/
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -40302,7 +40302,7 @@ yyreduce:
 
   case 2709:
 /* Line 1792 of yacc.c  */
-#line 15286 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15286 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                     /*$5*/
             Lex->sphead->m_parser_data.set_parameter_start_ptr((yylsp[(4) - (4)]).cpp.end);
           }
@@ -40310,7 +40310,7 @@ yyreduce:
 
   case 2710:
 /* Line 1792 of yacc.c  */
-#line 15291 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15291 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                     /*$8*/
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -40322,7 +40322,7 @@ yyreduce:
 
   case 2711:
 /* Line 1792 of yacc.c  */
-#line 15299 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15299 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                     /*$10*/
             THD *thd= YYTHD;
             LEX *lex= thd->lex;
@@ -40334,7 +40334,7 @@ yyreduce:
 
   case 2712:
 /* Line 1792 of yacc.c  */
-#line 15307 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15307 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {                     /*$12*/
             THD *thd= YYTHD;
             LEX *lex= Lex;
@@ -40347,7 +40347,7 @@ yyreduce:
 
   case 2713:
 /* Line 1792 of yacc.c  */
-#line 15321 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15321 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command = SQLCOM_XA_START;
             Lex->m_sql_cmd= new (YYTHD->mem_root) Sql_cmd_xa_start((yyvsp[(3) - (4)].xid), (yyvsp[(4) - (4)].xa_option_type));
@@ -40356,7 +40356,7 @@ yyreduce:
 
   case 2714:
 /* Line 1792 of yacc.c  */
-#line 15326 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15326 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command = SQLCOM_XA_END;
             Lex->m_sql_cmd= new (YYTHD->mem_root) Sql_cmd_xa_end((yyvsp[(3) - (4)].xid), (yyvsp[(4) - (4)].xa_option_type));
@@ -40365,7 +40365,7 @@ yyreduce:
 
   case 2715:
 /* Line 1792 of yacc.c  */
-#line 15331 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15331 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command = SQLCOM_XA_PREPARE;
             Lex->m_sql_cmd= new (YYTHD->mem_root) Sql_cmd_xa_prepare((yyvsp[(3) - (3)].xid));
@@ -40374,7 +40374,7 @@ yyreduce:
 
   case 2716:
 /* Line 1792 of yacc.c  */
-#line 15336 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15336 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command = SQLCOM_XA_COMMIT;
             Lex->m_sql_cmd= new (YYTHD->mem_root) Sql_cmd_xa_commit((yyvsp[(3) - (4)].xid), (yyvsp[(4) - (4)].xa_option_type));
@@ -40383,7 +40383,7 @@ yyreduce:
 
   case 2717:
 /* Line 1792 of yacc.c  */
-#line 15341 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15341 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command = SQLCOM_XA_ROLLBACK;
             Lex->m_sql_cmd= new (YYTHD->mem_root) Sql_cmd_xa_rollback((yyvsp[(3) - (3)].xid));
@@ -40392,7 +40392,7 @@ yyreduce:
 
   case 2718:
 /* Line 1792 of yacc.c  */
-#line 15346 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15346 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             Lex->sql_command = SQLCOM_XA_RECOVER;
             Lex->m_sql_cmd= new (YYTHD->mem_root) Sql_cmd_xa_recover((yyvsp[(3) - (3)].is_not_empty));
@@ -40401,19 +40401,19 @@ yyreduce:
 
   case 2719:
 /* Line 1792 of yacc.c  */
-#line 15353 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15353 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.is_not_empty)= false; }
     break;
 
   case 2720:
 /* Line 1792 of yacc.c  */
-#line 15354 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15354 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.is_not_empty)= true; }
     break;
 
   case 2721:
 /* Line 1792 of yacc.c  */
-#line 15358 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15358 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             MYSQL_YYABORT_UNLESS((yyvsp[(1) - (1)].string)->length() <= MAXGTRIDSIZE);
             XID *xid;
@@ -40426,7 +40426,7 @@ yyreduce:
 
   case 2722:
 /* Line 1792 of yacc.c  */
-#line 15367 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15367 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             MYSQL_YYABORT_UNLESS((yyvsp[(1) - (3)].string)->length() <= MAXGTRIDSIZE &&
                                  (yyvsp[(3) - (3)].string)->length() <= MAXBQUALSIZE);
@@ -40440,7 +40440,7 @@ yyreduce:
 
   case 2723:
 /* Line 1792 of yacc.c  */
-#line 15377 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15377 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             // check for overwflow of xid format id 
             bool format_id_overflow_detected= ((yyvsp[(5) - (5)].ulong_num) > LONG_MAX);
@@ -40459,67 +40459,67 @@ yyreduce:
 
   case 2724:
 /* Line 1792 of yacc.c  */
-#line 15394 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15394 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2725:
 /* Line 1792 of yacc.c  */
-#line 15395 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15395 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {}
     break;
 
   case 2726:
 /* Line 1792 of yacc.c  */
-#line 15399 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15399 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.xa_option_type)= XA_NONE;        }
     break;
 
   case 2727:
 /* Line 1792 of yacc.c  */
-#line 15400 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15400 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.xa_option_type)= XA_JOIN;        }
     break;
 
   case 2728:
 /* Line 1792 of yacc.c  */
-#line 15401 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15401 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.xa_option_type)= XA_RESUME;      }
     break;
 
   case 2729:
 /* Line 1792 of yacc.c  */
-#line 15405 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15405 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.xa_option_type)= XA_NONE;        }
     break;
 
   case 2730:
 /* Line 1792 of yacc.c  */
-#line 15406 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15406 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.xa_option_type)= XA_ONE_PHASE;   }
     break;
 
   case 2731:
 /* Line 1792 of yacc.c  */
-#line 15411 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15411 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.xa_option_type)= XA_NONE;        }
     break;
 
   case 2732:
 /* Line 1792 of yacc.c  */
-#line 15413 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15413 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.xa_option_type)= XA_SUSPEND;     }
     break;
 
   case 2733:
 /* Line 1792 of yacc.c  */
-#line 15415 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15415 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     { (yyval.xa_option_type)= XA_FOR_MIGRATE; }
     break;
 
   case 2734:
 /* Line 1792 of yacc.c  */
-#line 15420 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15420 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_INSTALL_PLUGIN;
@@ -40529,7 +40529,7 @@ yyreduce:
 
   case 2735:
 /* Line 1792 of yacc.c  */
-#line 15429 "/export/home/pb2/build/sb_0-17781452-1454369753.15/mysql-5.7.11-release-export-8993117_gpl/sql/sql_yacc.yy"
+#line 15429 "/export/home/pb2/build/sb_0-18410672-1459188430.24/mysql-5.7.12-release-export-9240550_gpl/sql/sql_yacc.yy"
     {
             LEX *lex= Lex;
             lex->sql_command= SQLCOM_UNINSTALL_PLUGIN;
@@ -40539,7 +40539,7 @@ yyreduce:
 
 
 /* Line 1792 of yacc.c  */
-#line 40543 "/export/home/pb2/build/sb_0-17781452-1454369753.15/dist_GPL/sql/sql_yacc.cc"
+#line 40543 "/export/home/pb2/build/sb_0-18410672-1459188430.24/dist_GPL/sql/sql_yacc.cc"
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
