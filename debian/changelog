@@ -1,3 +1,24 @@
+mysql-5.7 (5.7.12-0ubuntu1) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: Update to 5.7.12 to fix security issues (LP: #1572559)
+    - http://www.oracle.com/technetwork/security-advisory/cpuapr2016v3-2985753.html
+    - CVE-2016-0639
+    - CVE-2016-0642
+    - CVE-2016-0643
+    - CVE-2016-0647
+    - CVE-2016-0648
+    - CVE-2016-0655
+    - CVE-2016-0657
+    - CVE-2016-0659
+    - CVE-2016-0662
+    - CVE-2016-0666
+    - CVE-2016-0667
+    - CVE-2016-2047
+  * d/p/fix-manpage-links.patch: drop (fixed upstream).
+  * Add NEWS entry missed from my previous upload.
+
+ -- Robie Basak <robie.basak@ubuntu.com>  Thu, 21 Apr 2016 12:05:40 +0100
+
 mysql-5.7 (5.7.11-0ubuntu6) xenial; urgency=medium
 
   [ Lars Tangvald ]
