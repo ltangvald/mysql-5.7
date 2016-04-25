@@ -63,6 +63,18 @@ test_mysqld_startup() {
   return $result
 }
 
+# Default config in 5.5 and older 5.6 installations contains two deprecated
+# options that were removed in 5.7. They were renamed, so we can fix this
+# automatically. We create a backup of the old file
+fix_old_config_options() {
+  sed -e 's/key_buffer[[:space:]]*=/# Obsolete key_buffer option renamed to key_buffer_size by maintainer script\nkey_buffer_size\t\t=/' \
+      -e 's/myisam-recover[[:space:]]*=/# Obsolete myisam-recover option renamed to myisam_recover_options by maintainer script\nmyisam_recover_options\t=/' /etc/mysql/my.cnf.migrated --in-place=.bak
+  # If nothing was changed, remove the new file
+  if cmp -s /etc/mysql/my.cnf.migrated /etc/mysql/my.cnf.migrated.bak; then
+    mv /etc/mysql/my.cnf.migrated.bak /etc/mysql/my.cnf.migrated
+  fi
+}
+
 # Check if there is passwordless root login
 test_mysql_access() {
   mysql --no-defaults -u root -h localhost </dev/null >/dev/null 2>&1
@@ -154,6 +166,12 @@ case "$1" in
     # mysql-server version from Woody lying around which used the same
     # data directory and then somewhen gets purged by the admin.
     db_set mysql-server/postrm_remove_database false || true
+
+    # Fix old options that were deprecated in 5.5 and removed in 5.7
+    if dpkg --compare-versions "$2" le-nl "5.7.12-1ubuntu1~"; then
+      echo "Renaming removed key_buffer and myisam-recover options (if present)"
+      fix_old_config_options
+    fi
 
     # Sanity check to make sure the server can start
     test_mysqld_startup
