@@ -45,6 +45,24 @@ invoke() {
   fi
 }
 
+# Check if server is able to start. If it fails we abort early and refer
+# the user to a wiki page with solutions for common configuration problems.
+test_mysqld_startup() {
+  # mysqld --verbose --help will output a full listing of settings and plugins.
+  # To do so it needs to initialize the database, so it can be used as a test
+  # for whether or not the server can start. We redirect stdout to /dev/null so
+  # only the error messages are left.
+  result=0
+  output=$(mysqld --verbose --help --innodb-read-only 2>&1 > /dev/null) || result=$?
+  if [ ! "$result" = "0" ]; then
+    echo "ERROR: Unable to start MySQL server:"
+    echo "$output"
+    echo "Please take a look at https://wiki.debian.org/MySQLFAQ for tips on fixing common upgrade issues."
+    echo "Once the problem is resolved, run apt-get --fix-broken install to retry."
+  fi
+  return $result
+}
+
 # Check if there is passwordless root login
 test_mysql_access() {
   mysql --no-defaults -u root -h localhost </dev/null >/dev/null 2>&1
@@ -137,6 +155,8 @@ case "$1" in
     # data directory and then somewhen gets purged by the admin.
     db_set mysql-server/postrm_remove_database false || true
 
+    # Sanity check to make sure the server can start
+    test_mysqld_startup
 
     ## On every reconfiguration the maintenance user is recreated.
     #
