@@ -20,6 +20,18 @@ def _add_my_conf_files(report, filename):
         except IndexError:
             continue
 
+'''
+Mitigation for upstream bug that can lead to statements containing passwords being written to error log
+We strip out any lines containing terms listed on http://dev.mysql.com/doc/refman/5.7/en/password-logging.html
+(LP: #1574458)
+'''
+def strip_protected(line):
+    protected_terms = ['grant', 'alter user', 'create user', 'set password', 'create server', 'alter server']
+    for term in protected_terms:
+        if term in line:
+            return '--- Line containing protected term %s stripped from log by apport hook. Ref. Launchpad bug #1574458' % term
+    return line
+
 def add_info(report):
     attach_conffiles(report, 'mysql-server-5.7', conffiles=None)
     key = 'Logs' + path_to_key('/var/log/daemon.log')
@@ -34,6 +46,7 @@ def add_info(report):
         key = 'Logs' + path_to_key('/var/log/mysql/error.log')
         report[key] = ""
         for line in read_file('/var/log/mysql/error.log').split('\n'):
+            line = strip_protected(line)
             report[key] += line + '\n'
     attach_mac_events(report, '/usr/sbin/mysqld')
     attach_file(report,'/etc/apparmor.d/usr.sbin.mysqld')
