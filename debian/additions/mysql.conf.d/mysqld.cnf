@@ -52,7 +52,7 @@ thread_cache_size       = 8
 # the first time they are touched
 myisam-recover-options  = BACKUP
 #max_connections        = 100
-#table_cache            = 64
+#table_open_cache       = 64
 #thread_concurrency     = 10
 #
 # * Query Cache Configuration
@@ -73,7 +73,8 @@ query_cache_size        = 16M
 log_error = /var/log/mysql/error.log
 #
 # Here you can see queries with especially long duration
-#log_slow_queries	= /var/log/mysql/mysql-slow.log
+#slow_query_log		= 1
+#slow_query_log_file	= /var/log/mysql/mysql-slow.log
 #long_query_time = 2
 #log-queries-not-using-indexes
 #
