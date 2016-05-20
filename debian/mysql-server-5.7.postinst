@@ -233,6 +233,8 @@ if [ "$1" = "configure" ]; then
       echo "mysql_upgrade failed with exit status $result" >&2
       exit 1
     fi
+    # Server should be restarted after running mysql_upgrade
+    invoke restart
   fi
   # Here we check to see if we can connect as root without a password
   # this should catch upgrades from previous versions where the root
