@@ -305,9 +305,6 @@ if [ "$1" = "configure" ]; then
       # If there is no root password set we enable the auth_socket plugin for the root user
       echo "USE mysql;"                                                                   >> "$initfile"
       echo "ALTER USER 'root'@'localhost' IDENTIFIED WITH 'auth_socket';"                 >> "$initfile"
-      # Bug: http://bugs.mysql.com/bug.php?id=80632
-      echo "UPDATE user SET password_expired='N', account_locked='N' WHERE user='root';"  >> "$initfile"
-      echo "FLUSH PRIVILEGES;"                                                            >> "$initfile"
       echo "SHUTDOWN;"                                                                    >> "$initfile"
       # The INSTALL PLUGIN line will throw an error if the plugin is already installed
       run_init_sql "$initfile"
