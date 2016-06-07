@@ -197,6 +197,8 @@ Files: cmd-line-utils/libedit/config.h
  VERSION
  plugin/innodb_memcached/daemon_memcached/*
  plugin/innodb_memcached/README-innodb_memcached
+ plugin/udf_services/*
+ rapid/*
 Copyright: UNKNOWN
 Comment: These files fall under the blanket license specified in the file
  COPYING and README
